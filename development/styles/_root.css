@@ -7,6 +7,12 @@
     --buttonColor: #B0FC33;
     --mobile-container-padding: 16px;
 
+
+    --BODY-12-16-font-family: var(--font);
+    --BODY-12-16-font-size: 12px;
+    --BODY-12-16-line-height: 16px;
+    --BODY-12-16-letter-spacing: 0;
+
     --H3-20-24-font-family: var(--font);
     --H3-20-24-font-size: 20px;
     --H3-20-24-line-height: 24px;

@@ -1,0 +1,10 @@
+.hide-on-smartphone {
+
+}
+
+
+@media (max-width: 575px) {
+    .hide-on-smartphone {
+        display: none;
+    }
+}
