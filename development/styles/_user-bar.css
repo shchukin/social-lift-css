@@ -1,0 +1,37 @@
+.user-bar {
+    display: inline-flex;
+    vertical-align: top;
+    align-items: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+    .user-bar__preview {
+        flex-shrink: 0;
+        margin-right: 8px;
+    }
+
+    .user-bar__name {
+        font-family: var(--H4-16-20-font-family);
+        font-size: var(--H4-16-20-font-size);
+        line-height: var(--H4-16-20-line-height);
+        letter-spacing: var(--H4-16-20-letter-spacing);
+    }
+
+
+.user-bar--smaller {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+    .user-bar--smaller .user-bar__preview {
+        margin-top: -2px;
+        margin-bottom: -2px;
+    }
+
+    .user-bar--smaller .user-bar__name {
+        font-family: var(--H4-16-20-font-family);
+        font-size: var(--H4-16-20-font-size);
+        line-height: var(--H4-16-20-line-height);
+        letter-spacing: var(--H4-16-20-letter-spacing);
+    }
+
+
