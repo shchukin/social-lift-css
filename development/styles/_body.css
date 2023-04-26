@@ -1,0 +1,7 @@
+/* .override */
+
+.kmfdm-body {
+    min-width: 0 !important;
+    background-color: #F3F4FA !important;
+    font-family: var(--font) !important;
+}

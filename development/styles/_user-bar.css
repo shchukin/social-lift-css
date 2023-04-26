@@ -1,0 +1,17 @@
+.user-bar {
+    display: inline-flex;
+    vertical-align: top;
+    align-items: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+    .user-bar__preview {
+        flex-shrink: 0;
+        margin-right: 8px;
+    }
+
+    .user-bar__name {
+        font-size: var(--H4-16-20-font-size);
+        line-height: var(--H4-16-20-line-height);
+        letter-spacing: var(--H4-16-20-letter-spacing);
+    }

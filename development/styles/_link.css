@@ -1,0 +1,9 @@
+/* .override */
+
+.link--inherit {
+    color: inherit;
+}
+
+.link--inherit:hover {
+    color: var(--buttonColor);
+}

@@ -1,0 +1,720 @@
+@import url(_html.css);
+@import url(_ancients.css);
+@import url(_body.css);
+@import url(_button.css);
+@import url(_custom-collapse.css);
+@import url(_custom-textarea.css);
+@import url(_countdown.css);
+@import url(_clearfix.css);
+@import url(_collapse.css);
+@import url(_content.css);
+@import url(_check.css);
+@import url(_cross.css);
+@import url(_date.css);
+@import url(_day.css);
+@import url(_details.css);
+@import url(_event.css);
+@import url(_event-preview.css);
+@import url(_input.css);
+@import url(_jump.css);
+@import url(_header.css);
+@import url(_body_head.css);
+@import url(_chat-actions.css);
+@import url(_chat-stat.css);
+@import url(_info.css);
+@import url(_link.css);
+@import url(_listing.css);
+@import url(_legend.css);
+@import url(_lesson.css);
+@import url(_list.css);
+@import url(_logo.css);
+@import url(_main.css);
+@import url(_message.css);
+@import url(_nav.css);
+@import url(_new-lessons.css);
+@import url(_page.css);
+@import url(_packs.css);
+@import url(_pagination.css);
+@import url(_person.css);
+@import url(_profile.css);
+@import url(_progress.css);
+@import url(_region.css);
+@import url(_room.css);
+@import url(_search.css);
+@import url(_select.css);
+@import url(_sidebar.css);
+@import url(_stage.css);
+@import url(_strut.css);
+@import url(_summary.css);
+@import url(_tabs.css);
+@import url(_team.css);
+@import url(_tiles.css);
+@import url(_timeline.css);
+@import url(_time-flow.css);
+@import url(_title.css);
+@import url(_video.css);
+@import url(_welcome.css);
+@import url(_wysiwyg.css);
+@import url(_sweet-alert.css);
+@import url(_popup.css);
+@import url(_alert.css);
+@import url(_overlay.css);
+@import url(_p_photos.css);
+@import url(_form-builder.css);
+@import url(_alert_message.css);
+@import url(_accordion-panel.css);
+@import url(_copied.css);
+@import url(_single-range.css);
+@import url(_pick-gradient.css);
+@import url(_offset-right-margin.css);
+@import url(_offset-bottom.css);
+@import url(_category.css);
+@import url(_category-edit-page.css);
+@import url(_page-item.css);
+@import url(_pages-edit-page.css);
+@import url(_pages-page.css);
+@import url(_emptiness.css);
+@import url(_inline-input-group.css);
+@import url(_panel-inner-container.css);
+@import url(_stopvideo.css);
+@import url(_purchase-page.css);
+@import url(_stat-item.css);
+@import url(_centering.css);
+@import url(_requisite.css);
+@import url(_invited-list.css);
+@import url(_userbar.css);
+@import url(_editble_ava.css);
+@import url(_required.css);
+@import url(_verify.css);
+@import url(_sticky-menu.css);
+@import url(_primary-navigation.css);
+@import url(_top-menu.css);
+@import url(_steps-page.css);
+@import url(_steps-single.css);
+@import url(_steps.css);
+@import url(_shop.css);
+@import url(_item-preview.css);
+@import url(_product-item.css);
+@import url(_product.css);
+@import url(_agree.css);
+@import url(_strikethrough.css);
+
+@import url(_promo.css);
+
+@import url(_investment.css);
+@import url(_invest-project.css);
+
+
+@import url(_card.css);
+@import url(_tab.css);
+@import url(_responses.css);
+@import url(_custom-textarea.css);
+@import url(_equal-padding.css);
+@import url(_day-options.css);
+@import url(_checkbox-bottom-offset.css);
+@import url(_offset-left-padding.css);
+@import url(_set-data.css);
+@import url(_no-margins.css);
+@import url(_forms-responses-page.css);
+@import url(_forms-edit-page.css);
+@import url(_form-item.css);
+@import url(_form-item.css);
+@import url(_forms-page.css);
+@import url(_event.css);
+@import url(_event-item.css);
+@import url(_event-date.css);
+@import url(_left-label.css);
+@import url(_settings-page.css);
+@import url(_inline-choice.css);
+@import url(_settings-group.css);
+@import url(_protocol.css);
+@import url(_limited-input.css);
+@import url(_settings-title.css);
+@import url(_handler.css);
+@import url(_options-list.css);
+@import url(_status.css);
+@import url(_secondary-settings.css);
+@import url(_select-group.css);
+@import url(_pick-choice.css);
+@import url(_settings-heading.css);
+@import url(_settings-submit.css);
+@import url(_settings-textarea.css);
+@import url(_settings-add.css);
+@import url(_settings-color-field.css);
+@import url(_graphic-setting.css);
+@import url(_settings-help.css);
+@import url(_russian-date.css);
+@import url(_input-note.css);
+@import url(_add-field.css);
+@import url(_new-domain-page.css);
+@import url(_site-domain.css);
+@import url(_inline-form-control.css);
+@import url(_advanced-radio-list.css);
+@import url(_shop-page.css);
+@import url(_is-active-check.css);
+@import url(_product-preview.css);
+@import url(_showcase.css);
+@import url(_product-title.css);
+@import url(_general-delete.css);
+@import url(_general-preview.css);
+@import url(_product-drag.css);
+@import url(_general-add.css);
+@import url(_emptiness.css);
+@import url(_stats-page.css);
+@import url(_shop-stats.css);
+@import url(_product-edit-page.css);
+@import url(_optional-choice.css);
+@import url(_offset-bottom.css);
+@import url(_news-page.css);
+@import url(_news-edit-page.css);
+@import url(_pseudo-label.css);
+@import url(_offset-right-padding.css);
+@import url(_offset-right-margin.css);
+@import url(_active-pin.css);
+@import url(_pages-edit-page.css);
+@import url(_pages-page.css);
+@import url(_page-item.css);
+@import url(_price-range.css);
+@import url(_addition-to-input.css);
+@import url(_add-extra-price.css);
+@import url(_sell-partner.css);
+@import url(_sell-partner-bonus.css);
+@import url(_category-edit-page.css);
+@import url(_events-edit-page.css);
+@import url(_category.css);
+@import url(_inline-input-group.css);
+@import url(_sortable-ghost.css);
+@import url(_pick-gradient.css);
+@import url(_gradient-angle.css);
+@import url(_panel-offset.css);
+@import url(_custom-collapse.css);
+@import url(_mini-offset.css);
+@import url(_events-page.css);
+@import url(_requests-page.css);
+@import url(_table-navigation.css);
+@import url(_now-showing.css);
+@import url(_show-lines.css);
+@import url(_sort-heading.css);
+@import url(_general-filter.css);
+@import url(_param-list.css);
+@import url(_checkbox-line.css);
+@import url(_inline-date.css);
+@import url(_date-range.css);
+@import url(_pick-time-range.css);
+@import url(_table-actions.css);
+@import url(_request-table.css);
+@import url(_column-headings.css);
+@import url(_window.css);
+@import url(_live-edit.css);
+@import url(_option-heading.css);
+@import url(_partnership-bonus.css);
+@import url(_mailing-page.css);
+@import url(_contacts-table.css);
+@import url(_filtering-by-subscription.css);
+@import url(_subscription-table.css);
+@import url(_deletable-row.css);
+@import url(_mailing-edit-contact-page.css);
+@import url(_subscription-wrap-list.css);
+@import url(_personalization-addition.css);
+@import url(_mailing-add-contact-page.css);
+@import url(_add-single-contact.css);
+@import url(_edit-mailing-contact.css);
+@import url(_edit-import-contacts-submit.css);
+@import url(_more-contacts-for-subscription.css);
+@import url(_contacts-wrap-list.css);
+@import url(_grey-text.css);
+@import url(_inline-time.css);
+@import url(_inline-date-time.css);
+@import url(_request-task.css);
+@import url(_additional-checklist.css);
+@import url(_additional-date.css);
+@import url(_adding-subscribers.css);
+@import url(_select-all-checkbox.css);
+@import url(_table-operations.css);
+@import url(_stats-single-page.css);
+@import url(_tariff-simple.css);
+@import url(_gradient-overlay.css);
+@import url(_logo-placeholder.css);
+@import url(_child.css);
+@import url(_payments.css);
+
+.hidden-xs{
+	position: absolute;
+	fill: #ffffff;
+}
+
+a:hover, a:focus{
+	color: #4db1eb;
+}
+.load{
+	cursor: progress;
+}
+.width_500{
+	width: 500px;
+}
+.darag-empty{
+	min-height: 10px!important;
+}
+.h-inline-block{
+	display: inline-block;
+}
+.h-width-auto{
+	width: auto;
+}
+.p_menu_top{
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+.p_menu_top li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+}
+.p_menu_top li:after{
+	//content: "|";
+	padding: 0 5px;
+}
+.p_menu_top li:last-child:after{
+	content: "";
+	padding: 0 5px;
+}
+#help_page{
+	font-size: 16px;
+    font-weight: 100;
+}
+.calc_table, .calc_table td{
+	border: 1px solid #ddd;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 19px;
+	text-align: center;
+}
+.calc_table td{
+	padding: 7px;
+}
+.calc_input{
+
+	text-align: center;
+}
+.table_header{
+	background: #E5F6FF;
+}
+#forget_page{
+	width: 300px;
+	height: 300px;
+	background: rgba(0,0,0, 0.6);
+	border-radius: 15px;
+	top:100px;
+	padding: 15px;
+	left: 50%;
+	margin-left: -150px;
+	text-align: center;
+}
+
+.width-auto{
+	width: auto!important;
+}
+.display-inline-block{
+	display: inline-block!important;
+}
+.popup_royalty2qpc{
+	min-height: 100px;
+	width: 550px;
+	margin-left: -250px;
+	border-radius: 20px;
+	padding: 15px;
+	height: 250px;
+}
+.h-align-center{
+	text-align: center;
+}
+.h-color-black{
+	color: #000!important;
+}
+
+.hide_pay_page #alert-demo{
+	display: none;
+}
+.hide_pay_page .bubble_blue, .hide_pay_page .bubble_green{
+	background: #c4c4c4;
+	cursor: default;
+	color: #fff;
+	border-color: #545454;
+	opacity: 0.6;
+}
+.hide_pay_page .bubble_blue:hover, .hide_pay_page .bubble_green:hover{
+	cursor: default;
+}
+.hide_pay_page .bubble_blue .icon_people {
+    background-position: -59px -61px;
+}
+
+.hide_pay_page .bubble_green .icon_circle {
+    background-position: -121px -55px;
+}
+
+
+
+.info-warning{
+	color: red;
+	font-weight: 500;
+}
+
+table td{
+	padding: 5px;
+}
+
+
+
+
+
+.page__top {
+
+}
+
+
+.main__text {
+  background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+
+  line-height: 26px;
+  font-size: 20px;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 1);
+}
+
+
+
+.loastpass_form{
+	width: 100%;
+	height: 100%;
+	padding: 15px 20px;
+	text-align: center;
+	color: #000;
+}
+
+.page__body > .region{
+	/*border: 1px solid #E8EBF0;*/
+}
+
+
+/*
+    after .3 seconds of animation we should remove rounding and overflow hidden
+    an round corners to items individually by 1px less ratio
+*/
+
+@keyframes removeRounding {
+	to {
+		overflow: visible;
+	}
+}
+
+@keyframes addTopRounding {
+	to {
+		border-top-right-radius: 19px;
+	}
+}
+@keyframes addBottomRounding {
+	to {
+		border-bottom-right-radius: 19px;
+	}
+}
+
+figure{
+	margin: 0;
+}
+figure svg{
+	vertical-align: middle;
+}
+.icons__plate {
+    color: #ececec;
+    font-size: 14px;
+    text-align: center;
+    fill: #ececec;
+    display: inline-block!important;
+    vertical-align: top;
+    position: relative;
+    z-index: 2;
+}
+.icons__plate-black{
+	fill: #000;
+}
+.icon--m {
+    height: 25px;
+    width: 25px;
+}
+.icon--mini{
+	width: 20px;
+	height: 20px;
+}
+.icon--nano{
+	width: 20px;
+	height: 20px;
+}
+.icon--micro{
+	width: 15px;
+	height: 15px;
+}
+.icon--med{
+	width: 30px;
+	height: 30px;
+}
+.icon--medium2{
+	width: 40px;
+	height: 40px;
+}
+.icon--biggest{
+	width: 100px;
+	height: 100px;
+}
+.icons__plate .icon__cnt {
+    transition: fill 1s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0s;
+}
+.icon__cnt, .replaced-svg {
+    background: inherit;
+    fill: inherit;
+    height: 100%;
+    pointer-events: none;
+    transform: translateX(0px);
+    width: 100%;
+}
+
+.region-header{
+	width: 100%;
+}
+.leftNavigate-item .icon--m{
+	width: 30px;
+	height: 30px;
+}
+
+.page__body{
+
+}
+.module-events .page__body {
+  margin-top: 0px;
+  padding-top: 0;
+  position: relative;
+  z-index: 2;
+}
+.body{
+	margin-top: 0px;
+}
+
+@media(max-width: 1180px){
+
+	.page__text img{
+		max-width: 650px!important;
+		height: auto!important;
+	}
+}
+
+.page__top{
+	padding-top: 60px;
+}
+
+
+
+.videoBox, .stopvideoBox{
+	text-align: center;
+	position: relative;
+}
+
+.videoBox:after, .stopvideoBox:after{ 
+	content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    left: calc(50% + 219px);
+    bottom: 0;
+}
+
+@media(max-height: 700px){
+	.main__text {
+	  line-height: 25px;
+	  font-size: 20px;
+	}
+	.page__top{
+		padding-top: 20px;
+	}
+
+	.arrows_wrap{
+		width: 80px;
+		height: 80px;
+	}
+	.stage{
+		padding-top: 0;
+	}
+}
+
+
+.width-auto{
+	display: inline-block!important;
+	width: auto!important;
+}
+
+.ui-slider .ui-state-active{
+	background: #5ebcff;
+}
+.ui-slider-handle{
+	border-radius: 50%;
+	cursor: pointer!important;
+}
+
+#deep-range{
+	width: 150px;
+	margin-bottom: 15px;
+	margin-top: 5px;
+}
+.ui-datepicker{
+	z-index: 3!important;
+}
+
+
+
+
+.bs-callout {
+    border: 3px solid #eee;
+    margin: 20px 0;
+    padding: 5px 20px;
+}
+.bs-callout-danger {
+    background-color: #fdf7f7;
+    border-color: #d9534f;
+}
+
+
+
+.welcome__fields .input__area{
+	color: #222;
+	background: none;
+}
+
+.icon-video-study{
+	width: 20px;
+	height: 20px;
+	fill: #09112B;
+	display: inline-block;
+	cursor: pointer;
+}
+.icon-video-study:hover{
+	fill: #15B2E4;
+}
+.icon-video-study .icon--ei-envelope{
+	width: 20px;
+	height: 20px;
+}
+
+.zeroclipboard-is-hover{
+	cursor: pointer;
+}
+.clipboard-btn.icons__plate{
+	fill: #09132C;
+}
+.zeroclipboard-is-hover.icons__plate{
+	fill: #F52E2E;
+}
+.button .icons__plate{
+	fill: #fff;
+}
+body{
+	opacity: 1!important;
+}
+.videoBox{
+	width: 699px;
+	height: 558px!important;
+	padding-top: 30px;
+	margin: 0 auto;
+	padding-left: 1px;
+}
+.videoBox.vimeo {
+	height: auto!important;
+}
+.leads_settings{
+	fill: #595959;
+}
+.leads_settings:hover{
+	fill: #05abe0;
+	cursor: pointer;
+}
+
+.payment_licency{
+	height: 200px;
+	overflow-y: scroll;
+	border: 1px solid #ccc;
+	font-size: 12px;
+}
+
+.payment_method__amount {
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.payment_confirmation {
+	display: flex;
+	vertical-align: middle;
+	width: 600px;
+	justify-content: left;
+	align-items: center;
+}
+.payment_legacy {
+	width: 300px;
+	min-width: 300px;
+	font-size: 11px;
+	color: #a1a1a1;
+}
+
+.success-wrap{
+	width: 0px;
+	height: 30px;
+	display: inline-block;
+	transition: width 1s;
+	overflow: hidden;
+}
+.success-wrap.showicon{
+	display: inline-block;
+	width: 30px;
+}
+.icon-success{
+	width: 20px;
+	height: 20px;
+	fill: #30c90a;
+	vertical-align: bottom;
+	display: inline-block;
+}
+
+
+#header_title_input{
+	color: #000;
+}
+
+.xdebug-var-dump{
+	padding-top: 80px;
+	padding-left: 60px;
+	font-size: 12px;
+}
+ln{
+	color: red!important;
+}
+.stopvideo{
+	background: #fff;
+    border-radius: 5px;
+}
+
+.ytp-watermark{
+	display: none!important;
+}
+
+.table th{
+	text-align: center;
+}
+.table td input{
+	text-align: center;
+}
+
+figure.icons__plate{
+	margin: 0!important;
+}
+.row {
+	margin-left: 0px;
+	margin-right: 0px;
+}

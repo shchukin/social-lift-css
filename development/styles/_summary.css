@@ -1,0 +1,33 @@
+.summary {
+
+}
+    .summary__section {
+
+    }
+        .summary__heading {
+            display: inline-block;
+            vertical-align: top;
+            width: 100%;
+            padding: 0;
+            border: none;
+            background-color: transparent;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            text-align: left;
+        }
+
+        .summary__widget {
+
+        }
+            .summary__note {
+                font-size: var(--UI-14-16-font-size);
+                line-height: var(--UI-14-16-line-height);
+                letter-spacing: var(--UI-14-16-letter-spacing);
+                color: var(--hintColor);
+            }
+
+            .summary__energy {
+
+            }

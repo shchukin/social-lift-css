@@ -1,0 +1,42 @@
+.welcome {
+
+}
+    .welcome__heading {
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 32px;
+        letter-spacing: -0.02em;
+    }
+
+    .welcome__list {
+        margin-top: 27px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px 24px;
+    }
+        .welcome__item {
+
+        }
+
+
+@media (max-width: 575px) {
+
+    .welcome {
+        padding: 9px var(--mobile-container-padding) 16px;
+        background-color: #FFFFFF;
+    }
+        .welcome__heading {
+            /*font-weight: bold;*/
+            font-size: 24px;
+            line-height: 28px;
+            /*letter-spacing: -0.02em;*/
+        }
+
+        .welcome__list {
+            margin-top: 14px;
+            display: block;
+        }
+            .welcome__item {
+
+            }
+}
