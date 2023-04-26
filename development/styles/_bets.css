@@ -72,6 +72,7 @@
         }
             .bets__row {
                 display: flex;
+                align-items: center;
             }
                 .bets__cell {
 
