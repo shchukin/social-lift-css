@@ -1,0 +1,176 @@
+.bets {
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+    .bets__head {
+        display: flex;
+        align-items: flex-start;
+    }
+        .bets__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 32px;
+            letter-spacing: -0.02em;
+        }
+
+        .bets__navigation {
+            padding: 4px;
+            margin-left: 15px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            background-color: #FFFFFF;
+            box-shadow: 0 -1px 0 rgba(25, 27, 41, 0.2);
+            border-radius: 32px;
+        }
+            .bets__link {
+                display: block;
+                padding: 10px 32px;
+                border-radius: 18px;
+                font-family: var(--font-ui);
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                color: inherit;
+            }
+
+            .bets__link:hover {
+                background-color: rgba(227, 228, 235, 0.5) !important;
+                color: inherit;
+                text-decoration: none;
+            }
+
+            .bets__link:active {
+                background-color: rgba(227, 228, 235, 0.75) !important;
+                color: inherit;
+                text-decoration: none;
+            }
+
+            .bets__link:focus {
+                color: inherit;
+                text-decoration: none;
+            }
+
+            .bets__link--current,
+            .bets__link--current:hover,
+            .bets__link--current:active {
+                background-color: #E3E4EB !important;
+                cursor: default;
+            }
+
+    .bets__table {
+        margin-top: 16px;
+        display: block;
+    }
+        .bets__section {
+            display: block;
+        }
+            .bets__row {
+                display: flex;
+                justify-content: space-between;
+            }
+                .bets__cell {
+
+                }
+
+                .bets__cell--player {
+                    text-align: left;
+                }
+
+                .bets__cell--date {
+                    flex-shrink: 0;
+                    text-align: left;
+                    width: 157px;
+                }
+
+                .bets__cell--number {
+                    flex-shrink: 0;
+                    text-align: right;
+                    width: 70px;
+                }
+
+                .bets__cell--referrals {
+                    flex-shrink: 0;
+                    text-align: right;
+                    width: 88px;
+                }
+
+                .bets__cell--total-bets {
+                    flex-shrink: 0;
+                    text-align: right;
+                    width: 94px;
+                }
+
+                .bets__cell--chance-to-win {
+                    flex-shrink: 0;
+                    text-align: right;
+                    width: 122px;
+                }
+
+                /* Ячейки внутри шапки таблицы */
+                .bets__section--head .bets__cell {
+                    padding: 8px 0;
+                    font-family: var(--UI-16-16-font-family);
+                    font-size: var(--UI-16-16-font-size);
+                    line-height: var(--UI-16-16-line-height);
+                    letter-spacing: var(--UI-16-16-letter-spacing);
+                    color: var(--primaryColor-50pct);
+                }
+
+                /* Ячейки внутри тела таблицы */
+                .bets__section--body .bets__cell {
+                    padding: 10px 0;
+                    font-family: var(--H4-16-20-font-family);
+                    font-size: var(--H4-16-20-font-size);
+                    line-height: var(--H4-16-20-line-height);
+                    letter-spacing: var(--H4-16-20-letter-spacing);
+                }
+
+                .bets__section--body .bets__cell--player {
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                }
+
+                .bets__section--body .bets__cell--date {
+
+                }
+
+                .bets__section--body .bets__cell--number {
+
+                }
+
+                .bets__section--body .bets__cell--referrals {
+
+                }
+
+                .bets__section--body .bets__cell--total-bets {
+
+                }
+
+
+                .bets__section--body .bets__cell--chance-to-win {
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                    font-family: var(--H3-20-24-font-family);
+                    font-size: var(--H3-20-24-font-size);
+                    line-height: var(--H3-20-24-line-height);
+                    letter-spacing: var(--H3-20-24-letter-spacing);
+                }
+
+    .bets__more {
+        margin-top: 8px !important;
+        margin-bottom: -8px !important;
+        padding: 10px 0;
+        border: none;
+        background-color: transparent;
+        font-family: var(--UI-16-16-font-family) !important;
+        font-weight: bold !important;
+        font-size: var(--UI-16-16-font-size) !important;
+        line-height: var(--UI-16-16-line-height) !important;
+        letter-spacing: var(--UI-16-16-letter-spacing) !important;
+        color: inherit;
+    }

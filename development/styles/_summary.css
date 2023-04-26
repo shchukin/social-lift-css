@@ -22,6 +22,7 @@
 
         }
             .summary__note {
+                font-family: var(--UI-14-16-font-family);
                 font-size: var(--UI-14-16-font-size);
                 line-height: var(--UI-14-16-line-height);
                 letter-spacing: var(--UI-14-16-letter-spacing);
