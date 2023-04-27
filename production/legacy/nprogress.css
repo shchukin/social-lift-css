@@ -1,0 +1,123 @@
+/* Make clicks pass-through */
+#nprogress {
+	pointer-events: none;
+}
+
+#nprogress .bar {
+	/* background: #dd2327;*/
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f21036+0,ed0488+60,ed0488+100 */
+	background: #f21036; /* Old browsers */
+	/*
+	background: -moz-linear-gradient(left, #f21036 0%, #ed4558 60%, #ed0b19 100%);
+	background: -webkit-linear-gradient(left, #f21036 0%,#ed4558 60%,#ed0b19 100%);
+	background: linear-gradient(to right, #f21036 0%, #ed4558 60%, #ed0b19 100%);
+	*/
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f21036', endColorstr='#ed0b19',GradientType=1 ); /* IE6-9 */
+
+	position: fixed;
+	z-index: 10310000;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 3px;
+
+	background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+	background-size: 400% 400%;
+	-webkit-animation: ProgressGradient 2s ease infinite;
+	-moz-animation: ProgressGradient 2s ease infinite;
+	animation: ProgressGradient 2s ease infinite;
+}
+
+@-webkit-keyframes ProgressGradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes ProgressGradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes ProgressGradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+/* Fancy blur effect */
+#nprogress .peg {
+	display: block;
+	position: absolute;
+	right: 0px;
+	width: 100px;
+	height: 100%;
+	box-shadow: 0 0 10px #ee609c, 0 0 5px #ee609c;
+	opacity: 1.0;
+
+	-webkit-transform: rotate(3deg) translate(0px, -4px);
+	-ms-transform: rotate(3deg) translate(0px, -4px);
+	transform: rotate(3deg) translate(0px, -4px);
+}
+
+/* Remove these to get rid of the spinner */
+#nprogress .spinner {
+	display: block;
+	position: fixed;
+	z-index: 1031;
+	top: 15px;
+	right: 15px;
+}
+
+#nprogress .spinner-icon {
+	width: 18px;
+	height: 18px;
+	box-sizing: border-box;
+
+	border: solid 2px transparent;
+	border-top-color: #29d;
+	border-left-color: #29d;
+	border-radius: 50%;
+
+	-webkit-animation: nprogress-spinner 400ms linear infinite;
+	animation: nprogress-spinner 400ms linear infinite;
+}
+
+.nprogress-custom-parent {
+	overflow: hidden;
+	position: relative;
+}
+
+.nprogress-custom-parent #nprogress .spinner,
+.nprogress-custom-parent #nprogress .bar {
+	position: absolute;
+}
+
+@-webkit-keyframes nprogress-spinner {
+	0%   { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes nprogress-spinner {
+	0%   { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}

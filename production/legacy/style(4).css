@@ -1,0 +1,227 @@
+.trash_wrap{
+	display: inline-block;
+	cursor: pointer;
+}
+.trash_wrap .icons__plate{
+	fill: #000;
+	color: #000;
+}
+.invest-project__verify{
+	font-size: 10px;
+}
+.invest-project__verify-wait{
+	color: #ff342e;
+}
+.amcharts-chart-div a{
+	display: none!important;
+}
+
+.invest_portfolio_chart_title_wrap{
+	width: 100%;
+	text-align: center;
+}
+
+#chartdiv{
+	width: 100%;
+	height: 300px;
+}
+
+.fixed-link-format {
+	display: inline-block !important;
+	width: 200px !important;
+}
+
+.invest-project__actions{
+	display: block;
+	width: 100%;
+	text-align: right;
+}
+.invest-project__item{
+	border: 1px solid #ccc;
+	padding: 20px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+.videoBox {
+	height: auto!important;
+}
+.portfolioAvatar{
+	width: 180px;
+	margin: 5px 0 0 0;
+	border-radius: 5px;
+}
+
+.portfolioWrap {
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	margin-bottom: 20px;
+	padding: 15px 0 30px 0;
+}
+
+@media (max-width: 900px) {
+	.portfolioAvatar {
+		width: 325px;
+		margin-bottom: 20px;
+	}
+	.portfolioWrap .col-xs-3 {
+		width: 100%!important;
+		text-align: left!important;
+		margin-bottom: 15px;
+	}
+	.portfolioWrap .col-xs-9 {
+		width: 100%!important;
+	}
+
+	.portfolioWrap .col-xs-4 {
+		width: 50%!important;
+	}
+	.portfolio_actions {
+		margin-top: 15px!important;
+	}
+	.portfolioWrap h2{
+		font-size: 18px!important;
+		padding: 0 5px;
+	}
+
+}
+/*************** SCROLLBAR BASE CSS ***************/
+
+.scroll-wrapper {
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: relative;
+}
+
+.scroll-wrapper > .scroll-content {
+	border: none !important;
+	box-sizing: content-box !important;
+	height: auto;
+	left: 0;
+	margin: 0;
+	max-height: none;
+	max-width: none !important;
+	overflow: scroll !important;
+	padding: 0;
+	position: relative !important;
+	top: 0;
+	width: auto !important;
+}
+
+.scroll-wrapper > .scroll-content::-webkit-scrollbar {
+	height: 0;
+	width: 0;
+}
+
+.scroll-element {
+	display: none;
+}
+.scroll-element, .scroll-element div {
+	box-sizing: content-box;
+}
+
+.scroll-element.scroll-x.scroll-scrollx_visible,
+.scroll-element.scroll-y.scroll-scrolly_visible {
+	display: block;
+}
+
+.scroll-element .scroll-bar,
+.scroll-element .scroll-arrow {
+	cursor: default;
+}
+
+.scroll-textarea {
+	border: 1px solid #cccccc;
+	border-top-color: #999999;
+}
+.scroll-textarea > .scroll-content {
+	overflow: hidden !important;
+}
+.scroll-textarea > .scroll-content > textarea {
+	border: none !important;
+	box-sizing: border-box;
+	height: 100% !important;
+	margin: 0;
+	max-height: none !important;
+	max-width: none !important;
+	overflow: scroll !important;
+	outline: none;
+	padding: 2px;
+	position: relative !important;
+	top: 0;
+	width: 100% !important;
+}
+.scroll-textarea > .scroll-content > textarea::-webkit-scrollbar {
+	height: 0;
+	width: 0;
+}
+
+
+
+
+/*************** SIMPLE INNER SCROLLBAR ***************/
+
+.portfolioWrap > .scroll-element,
+.portfolioWrap > .scroll-element div
+{
+	border: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	z-index: 10;
+}
+
+.portfolioWrap > .scroll-element div {
+	display: block;
+	height: 100%;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+.portfolioWrap > .scroll-element.scroll-x {
+	bottom: 2px;
+	height: 8px;
+	left: 0;
+	width: 100%;
+}
+
+.portfolioWrap > .scroll-element.scroll-y {
+	height: 100%;
+	right: 2px;
+	top: 0;
+	width: 8px;
+}
+
+.portfolioWrap > .scroll-element .scroll-element_outer {
+	overflow: hidden;
+}
+
+.portfolioWrap > .scroll-element .scroll-element_outer,
+.portfolioWrap > .scroll-element .scroll-element_track,
+.portfolioWrap > .scroll-element .scroll-bar {
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
+.portfolioWrap > .scroll-element .scroll-element_track,
+.portfolioWrap > .scroll-element .scroll-bar {
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+	filter: alpha(opacity=40);
+	opacity: 0.4;
+}
+
+.portfolioWrap > .scroll-element .scroll-element_track { background-color: #e0e0e0; }
+.portfolioWrap > .scroll-element .scroll-bar { background-color: #c2c2c2; }
+.portfolioWrap > .scroll-element:hover .scroll-bar { background-color: #919191; }
+.portfolioWrap > .scroll-element.scroll-draggable .scroll-bar { background-color: #919191; }
+
+
+/* update scrollbar offset if both scrolls are visible */
+
+.portfolioWrap > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_track { left: -12px; }
+.portfolioWrap > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_track { top: -12px; }
+
+
+.portfolioWrap > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size { left: -12px; }
+.portfolioWrap > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size { top: -12px; }
