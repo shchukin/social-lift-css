@@ -2,7 +2,7 @@
 
 .kmfdm-page__container {
     min-width: 0 !important;
-    width: auto !important;
+    width: 100% !important;
 }
 
 @media (max-width: 1199px) {
