@@ -167,7 +167,7 @@
 
 
 
-@media (max-width: 575px) {
+@media (max-width: 991px) {
 
     .bets {
         padding: 25px var(--mobile-container-padding) 16px;

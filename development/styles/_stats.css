@@ -42,7 +42,7 @@
         }
 
 
-@media (max-width: 575px) {
+@media (max-width: 991px) {
     .stats {
         display: none;
     }
