@@ -3,6 +3,10 @@
     --font-ui: 'Golos UI';
     --primaryColor: #191B29;
     --primaryColor-50pct: rgba(25, 27, 41, 0.5);
+    --primaryColor-60pct: rgba(25, 27, 41, 0.6);
+    --panelBackground: #E3E4EB;
+    --panelBackground35pct: rgba(227, 228, 235, 0.35);
+    --panelBackground50pct: rgba(227, 228, 235, 0.5);
     --hintColor: rgba(25, 27, 41, 0.5);
     --buttonColor: #B0FC33;
     --mobile-container-padding: 16px;
@@ -32,4 +36,9 @@
     --UI-16-16-font-size: 16px;
     --UI-16-16-line-height: 16px;
     --UI-16-16-letter-spacing: -0.01em;
+
+    --UI-20-20-font-family: var(--font-ui);
+    --UI-20-20-font-size: 20px;
+    --UI-20-20-line-height: 20px;
+    --UI-20-20-letter-spacing: -0.01em;
 }

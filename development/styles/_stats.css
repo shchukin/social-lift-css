@@ -1,0 +1,49 @@
+.stats {
+    padding-top: 60px;
+    padding-bottom: 56px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+    .stats__item {
+        padding-top: 64px;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
+    .stats__item--participants {
+        background-image: url("../images/stats-item-participants.svg");
+        background-size: 72px 40px;
+    }
+
+    .stats__item--bets {
+        background-image: url("../images/stats-item-bets.svg");
+        background-size: 72px 40px;
+    }
+
+    .stats__item--referrals {
+        background-image: url("../images/stats-item-referrals.svg");
+        background-size: 66px 40px;
+    }
+        .stats__heading {
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 40px;
+            text-align: center;
+        }
+
+        .stats__note {
+            margin-top: 8px;
+            text-align: center;
+            font-family: var(--UI-16-16-font-family);
+            font-size: var(--UI-16-16-font-size);
+            line-height: var(--UI-16-16-line-height);
+            letter-spacing: var(--UI-16-16-letter-spacing);
+            color: var(--primaryColor-50pct);
+        }
+
+
+@media (max-width: 575px) {
+    .stats {
+        display: none;
+    }
+}
