@@ -10,6 +10,6 @@
         vertical-align: top;
     }
 
-    .avatar:hover .avatar__image {
+    .avatar:not(.avatar--no-hover):hover .avatar__image {
         opacity: 0.8;
     }
