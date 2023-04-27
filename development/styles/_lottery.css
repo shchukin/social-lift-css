@@ -142,8 +142,9 @@
             text-align: center;
         }
             .lottery__progress {
-                margin-top: -3px;
-                margin-bottom: -3px;
+                margin-top: -2px;
+                margin-bottom: -4px;
+                margin-right: 16px;
             }
 
         .lottery__prize {

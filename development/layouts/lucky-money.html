@@ -4,6 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Lucky Money</title>
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <script src="../legacy/jquery-2.1.1.min.js"></script>
     <link href="../legacy/bootstrap.min.css" rel="stylesheet">
     <link href="../legacy/jquery-ui.min.css" rel="stylesheet">
     <link href="../legacy/colortip-1.0-jquery.css" rel="stylesheet">
@@ -1238,9 +1239,10 @@
                                     Total bets: 5
                                 </div>
                                 <div class="lottery__field">
-                                    <!-- temp -->
-                                    <div style="height: 48px; background: purple"></div>
-                                    <!--/temp -->
+                                    <div class="input input--larger-font input--center">
+                                        <button class="input__action input__action--refresh" type="button"><span class="kmfdm-visuallyhidden">Refresh</span></button>
+                                        <input class="input__widget" type="text" value="5" readonly>
+                                    </div>
                                 </div>
                                 <div class="lottery__operations">
                                     <div class="lottery__balance">
@@ -1261,9 +1263,10 @@
                                 </div>
                                 <div class="lottery__timeout">
                                     <div class="lottery__progress">
-                                        <!-- temp -->
-                                        <div style="width: 22px; height: 22px; background: purple;"></div>
-                                        <!--/temp -->
+                                        <svg class="round-loading" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle stroke="#EEEBE0" stroke-width="2" cx="11" cy="11" r="10"></circle>
+                                            <circle stroke-dashoffset="47.1239" stroke-dasharray="62.8319" stroke="#4FDB0D" stroke-width="2" cx="11" cy="11" r="10" transform="rotate(-90)" transform-origin="11 11"></circle>
+                                        </svg>
                                     </div>
                                     3d 20m 14s remaining
                                 </div>
@@ -1292,9 +1295,10 @@
                                     Total referrals: 200
                                 </div>
                                 <div class="lottery__field">
-                                    <!-- temp -->
-                                    <div style="height: 48px; background: purple"></div>
-                                    <!--/temp -->
+                                    <div class="input">
+                                        <button class="input__action input__action--copy" type="button"><span class="kmfdm-visuallyhidden">Copy</span></button>
+                                        <input class="input__widget" type="text" value="social-lift.me/app/2313123" readonly>
+                                    </div>
                                 </div>
                                 <a class="lottery__submit button" href="#">
                                     Share link

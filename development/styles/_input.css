@@ -1,0 +1,96 @@
+.input {
+    position: relative;
+}
+    .input__label {
+        display: inline-block;
+        vertical-align: top;
+        margin-bottom: 4px;
+    }
+
+    .input__widget {
+        width: 100%;
+        height: 48px;
+        vertical-align: top;
+        padding: 10px 14px;
+        background-color: #FFFFFF;
+        border: 2px solid #C7C9CF;
+        outline: none;
+        background-clip: padding-box; /* reset iOS default shadow */
+        border-radius: 10px; /* reset iOS default border-radius */
+        font-family: var(--font-ui) !important;
+        font-size: 16px !important;
+        line-height: 24px !important;
+        color: var(--primaryColor);
+    }
+
+    .input__widget:not([readonly]):hover {
+        border-color: #7E7E7E;
+    }
+
+    .input__widget:not([readonly]):focus {
+        border-color: var(--primaryColor);
+    }
+
+    /* stylelint-disable block-opening-brace-space-before */
+    .input__widget::-webkit-input-placeholder       { font-style: normal; color: #B3B3B3; }
+    .input__widget::-moz-placeholder                { font-style: normal; color: #B3B3B3; opacity: 1; }
+    .input__widget:-ms-input-placeholder            { font-style: normal; color: #B3B3B3; }
+    /* stylelint-enable */
+
+    .input__action {
+        position: absolute;
+        z-index: 10;
+        right: 0;
+        top: 0;
+        width: 48px;
+        height: 48px;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        background-size: 24px 24px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .input__action ~ .input__action {
+        right: 32px;
+    }
+
+    .input__action ~ .input__widget {
+        padding-right: 48px;
+    }
+
+    .input__action ~ .input__action ~ .input__widget {
+        padding-right: 80px;
+    }
+
+
+    .input__action--copy {
+        background-image: url("../images/input-copy.svg");
+    }
+
+    .input__action--share {
+        background-image: url("../images/input-share.svg");
+    }
+
+    .input__action--refresh {
+        background-image: url("../images/input-refresh.svg");
+    }
+
+
+.input--larger-font {
+
+}
+    .input--larger-font .input__widget {
+
+    }
+
+
+.input--center {
+
+}
+    .input--center .input__widget {
+        padding-right: 14px;
+        font-size: 28px !important;
+        text-align: center;
+    }

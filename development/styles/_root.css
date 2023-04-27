@@ -10,6 +10,7 @@
     --hintColor: rgba(25, 27, 41, 0.5);
     --buttonColor: #B0FC33;
     --mobile-container-padding: 16px;
+    --easeOutCirc: cubic-bezier(0, 0.55, 0.45, 1);
 
 
     --BODY-12-16-font-family: var(--font);

@@ -1,0 +1,10 @@
+.round-loading {
+    vertical-align: top;
+}
+    .round-loading circle {
+        stroke-linecap: round;
+    }
+
+    .round-loading--animated circle {
+        transition: stroke-dashoffset 0.3s var(--easeOutCirc);
+    }
