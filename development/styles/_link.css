@@ -7,3 +7,11 @@
 .link--inherit:hover {
     color: var(--buttonColor);
 }
+
+.link--text-alike {
+    color: var(--primaryColor);
+}
+
+.link--text-alike:hover {
+    color: var(--buttonColor);
+}

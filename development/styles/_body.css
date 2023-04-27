@@ -3,6 +3,9 @@
 .kmfdm-body {
     min-width: 0 !important;
     background-color: #F3F4FA !important;
-    font-family: var(--font) !important;
+    font-family: var(--BODY-16-24-font-family) !important;
+    font-size: var(--BODY-16-24-font-size) !important;
+    line-height: var(--BODY-16-24-line-height) !important;
+    letter-spacing: var(--BODY-16-24-letter-spacing) !important;
     color: var(--primaryColor) !important;
 }

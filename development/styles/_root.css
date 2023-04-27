@@ -4,6 +4,7 @@
     --primaryColor: #191B29;
     --primaryColor-50pct: rgba(25, 27, 41, 0.5);
     --primaryColor-60pct: rgba(25, 27, 41, 0.6);
+    --primaryColor-80pct: rgba(25, 27, 41, 0.8);
     --panelBackground: #E3E4EB;
     --panelBackground35pct: rgba(227, 228, 235, 0.35);
     --panelBackground50pct: rgba(227, 228, 235, 0.5);
@@ -17,6 +18,16 @@
     --BODY-12-16-font-size: 12px;
     --BODY-12-16-line-height: 16px;
     --BODY-12-16-letter-spacing: 0;
+
+    --BODY-14-20-font-family: var(--font);
+    --BODY-14-20-font-size: 14px;
+    --BODY-14-20-line-height: 20px;
+    --BODY-14-20-letter-spacing: 0;
+
+    --BODY-16-24-font-family: var(--font);
+    --BODY-16-24-font-size: 16px;
+    --BODY-16-24-line-height: 24px;
+    --BODY-16-24-letter-spacing: -0.01em;
 
     --H3-20-24-font-family: var(--font);
     --H3-20-24-font-size: 20px;

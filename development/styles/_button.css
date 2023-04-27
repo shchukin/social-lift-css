@@ -2,7 +2,7 @@
     display: inline-block;
     vertical-align: top;
     border: none;
-    padding: 17px 20px;
+    padding: 17px 32px;
     background-color: var(--buttonColor) !important;
     box-shadow: 0 1px 0 rgba(25, 27, 41, 0.2);
     border-radius: 27px;
@@ -22,11 +22,38 @@
     background-color: var(--buttonColor) !important;
 }
 
-
 .button:active {
     background-color: var(--buttonColor) !important;
 }
 
 .button:focus {
     background-color: var(--buttonColor) !important;
+}
+
+
+
+.button--secondary {
+    background-color: var(--panelBackground) !important;
+    box-shadow: none;
+}
+
+.button--secondary:hover {
+    background-color: var(--panelBackground) !important;
+}
+
+.button--secondary:active {
+    background-color: var(--panelBackground) !important;
+}
+
+.button--secondary:focus {
+    background-color: var(--panelBackground) !important;
+}
+
+
+
+.button--smaller {
+    padding: 10px 24px;
+    font-weight: 500;
+    font-size: 14px !important;
+    line-height: 16px !important;
 }

@@ -1,0 +1,9 @@
+.explainer {
+    width: 32px;
+    height: 32px;
+    background-image: url("../images/explainer.svg");
+}
+
+.explainer--protected {
+    background-image: url("../images/explainer-protected.svg");
+}

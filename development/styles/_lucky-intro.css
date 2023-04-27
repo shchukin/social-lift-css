@@ -1,0 +1,86 @@
+.lucky-intro {
+    max-width: 664px;
+    padding-bottom: 52px;
+}
+    .lucky-intro__heading {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        font-weight: bold;
+        font-size: 40px !important;
+        line-height: 40px !important;
+        letter-spacing: -0.02em;
+    }
+
+    .lucky-intro__description {
+        margin-top: 16px;
+        font-family: var(--BODY-16-24-font-family) !important;
+        font-size: var(--BODY-16-24-font-size) !important;
+        line-height: var(--BODY-16-24-line-height) !important;
+        letter-spacing: var(--BODY-16-24-letter-spacing) !important;
+        color: var(--primaryColor-80pct) !important;
+    }
+        .lucky-intro__description .link--text-alike {
+
+        }
+
+    .lucky-intro__footer {
+        margin-top: 24px;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+        .lucky-intro__submit {
+
+        }
+
+        .lucky-intro__details {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+
+
+@media (max-width: 767px) {
+
+    .lucky-intro {
+        /*max-width: 664px;*/
+        padding-bottom: 24px;
+    }
+        .lucky-intro__heading {
+            /*margin-top: 0 !important;*/
+            /*margin-bottom: 0 !important;*/
+            /*font-weight: bold;*/
+            font-size: 34px !important;
+            line-height: 40px !important;
+            /*letter-spacing: -0.02em;*/
+        }
+
+        .lucky-intro__description {
+            margin-top: 7px;
+            font-family: var(--BODY-14-20-font-family) !important;
+            font-size: var(--BODY-14-20-font-size) !important;
+            line-height: var(--BODY-14-20-line-height) !important;
+            letter-spacing: var(--BODY-14-20-letter-spacing) !important;
+            /*color: var(--primaryColor-80pct) !important;*/
+        }
+            .lucky-intro__description .link--text-alike {
+
+            }
+
+        .lucky-intro__footer {
+            margin-top: 8px;
+            /*display: flex;*/
+            /*align-items: center;*/
+            gap: 20px;
+        }
+            .lucky-intro__submit {
+
+            }
+
+            .lucky-intro__details {
+                /*display: flex;*/
+                /*align-items: center;*/
+                gap: 8px;
+            }
+}
