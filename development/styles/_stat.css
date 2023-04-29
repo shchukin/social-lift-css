@@ -1,0 +1,29 @@
+.stat {
+    background-repeat: no-repeat;
+    background-position: right center;
+    font-family: var(--UI-16-16-font-family) !important;
+    font-size: var(--UI-16-16-font-size) !important;
+    line-height: var(--UI-16-16-line-height) !important;
+    letter-spacing: var(--UI-16-16-letter-spacing) !important;
+}
+    .stat__param {
+        color: var(--hintColor);
+    }
+
+    .stat__value {
+        font-weight: bold;
+    }
+
+
+
+.stat--queue {
+    padding-right: 28px;
+    background-image: url("../images/stat-queue.svg");
+    background-size: 22px 16px;
+}
+
+.stat--energy {
+    padding-right: 18px;
+    background-image: url("../images/stat-energy.svg");
+    background-size: 16px 16px;
+}

@@ -25,3 +25,97 @@
         .queue__content {
             order: -1;
         }
+            .queue__head {
+                margin-top: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+                .queue__navigation {
+
+                }
+
+                .queue__sort {
+
+                }
+
+            .queue__list {
+                margin-top: 24px;
+            }
+                .queue__item {
+                    margin-top: 16px;
+                    background-color: #FFFFFF;
+                    box-shadow: 0 2px 0 rgba(25, 27, 41, 0.2);
+                    border-radius: 32px;
+                }
+
+                .queue__item:first-child {
+                    margin-top: 0;
+                }
+
+
+@media (max-width: 991px) {
+
+    .queue {
+        padding-left: var(--mobile-container-padding);
+        padding-right: var(--mobile-container-padding);
+    }
+        .queue__heading {
+            /*margin-top: 0 !important;*/
+            /*margin-bottom: 0 !important;*/
+            /*font-weight: bold;*/
+            /*font-size: 40px;*/
+            /*line-height: 40px;*/
+        }
+
+        .queue__body {
+            /*margin-top: 24px;*/
+            display: block;
+            /*grid-template-columns: 1fr 320px;*/
+            /*gap: 40px;*/
+            position: relative;
+            padding-top: 60px;
+        }
+            .queue__sidebar {
+
+            }
+                .queue__side-section {
+
+                }
+
+            .queue__content {
+                /*order: -1;*/
+            }
+                .queue__head {
+                    display: block;
+                    /*align-items: center;*/
+                    /*justify-content: space-between;*/
+                }
+                    .queue__navigation {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                    }
+
+                    .queue__sort {
+
+                    }
+
+                .queue__list {
+                    margin-top: 6px;
+                    margin-left: calc(-1 * var(--mobile-container-padding));
+                    margin-right: calc(-1 * var(--mobile-container-padding));
+                }
+                    .queue__item {
+                        /*margin-top: 16px;*/
+                        /*background-color: #FFFFFF;*/
+                        box-shadow: none;
+                        border-bottom: 1px solid #C7C9D0;
+                        border-radius: 0;
+                    }
+
+                    .queue__item:first-child {
+                        /*margin-top: 0;*/
+                    }
+}

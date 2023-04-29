@@ -1,6 +1,7 @@
 .lucky-intro {
     max-width: 664px;
     padding-bottom: 52px;
+    padding-left: var(--mobile-container-padding);
 }
     .lucky-intro__heading {
         margin-top: 0 !important;

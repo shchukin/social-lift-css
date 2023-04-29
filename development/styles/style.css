@@ -4,7 +4,7 @@
 
 @import url("_root.css");
 @import url("_queue.css");
-@import url("_menu.css");
+@import url("_aside.css");
 @import url("_welcome.css");
 @import url("_avatar.css");
 @import url("_bets.css");
@@ -20,3 +20,8 @@
 @import url("_action.css");
 @import url("_dash.css");
 @import url("_filter.css");
+@import url("_menu.css");
+@import url("_sort.css");
+@import url("_card.css");
+@import url("_stat.css");
+@import url("_health-bar.css");

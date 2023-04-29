@@ -1,0 +1,38 @@
+.card {
+    position: relative;
+    padding: 32px 40px 16px 120px;
+}
+    .card__preview {
+        position: absolute;
+        left: 24px;
+        top: 24px;
+    }
+
+    .card__head {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+        .card__summary {
+
+        }
+
+        .card__data {
+
+        }
+            .card__params {
+                display: flex;
+                align-items: baseline;
+                justify-content: flex-end;
+                gap: 16px;
+            }
+
+            .card__progress {
+                margin-top: 15px;
+            }
+
+            .card__body {
+                margin-top: 22px;
+                border-top: 1px solid #EBECF1;
+                padding-top: 16px;
+            }

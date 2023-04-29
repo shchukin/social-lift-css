@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Живая очередь</title>
+    <title>.health-bar</title>
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <script src="../legacy/jquery-2.1.1.min.js"></script>
     <link href="../legacy/bootstrap.min.css" rel="stylesheet">
@@ -24,7 +24,8 @@
     <link href="../legacy/plyr.css" rel="stylesheet">
     <link href="../legacy/_modules_main_templates_space_style.css.minify.css" rel="stylesheet" type="text/css" id="c83a1a7ebaf08549eb1759763b2975ff">
 
-    <link href="../styles/style.css" rel="stylesheet">
+    <link href="../styles/style.css" rel="stylesheet" type="text/css" id="c83a1a7ebaf08549eb1759763b2975ff">
+
 
     <style>
         :root {
@@ -410,7 +411,7 @@
             left: -110px;
         }
 
-        .kmfdm-statistics-menu__item, .search, .kmfdm-income__stat.kmfdm-single-stat, .kmfdm-income__wrap .kmfdm-income__get {
+        .kmfdm-statistics-summary__item, .search, .kmfdm-income__stat.kmfdm-single-stat, .kmfdm-income__wrap .kmfdm-income__get {
             border-radius: 20px !important;
             background: var(--smoke-white);
         }
@@ -496,7 +497,7 @@
             border: 1px solid rgb(245 247 248);
         }
 
-        .kmfdm-lesson__menu {
+        .kmfdm-lesson__summary {
             position: absolute !important;
             bottom: -40px;
             width: 100%;
@@ -583,7 +584,7 @@
             border-radius: 15px !important;
         }
 
-        .isMobile .kmfdm-lesson__menu {
+        .isMobile .kmfdm-lesson__summary {
             background: #fff !important;
             bottom: -32px;
         }
@@ -812,232 +813,112 @@
 </head>
 
 <body class="kmfdm-body custom-css-body module-main binded">
+
+
 <div class="kmfdm-page">
-    <div class="kmfdm-page__container userid-2833939">
-        <div class="kmfdm-page__body">
-            <div class="kmfdm-page__sidebar" id="leftNavigate">
 
-            </div>
-            <div class="kmfdm-page__content">
-                <main class="kmfdm-page__main kmfdm-main kmfdm-panel">
+    <div style="width: 600px; margin: 0 auto;">
+        <br>
+        <br>
+        <h1>.health-bar</h1>
 
-                    <!-- Внутренняя страница -->
-                    <div class="queue">
-                        <h1 class="queue__heading">
-                            Живая очередь
-                        </h1>
-                        <div class="queue__body">
-                            <div class="queue__sidebar">
-                                <div class="aside">
-                                    <div class="aside__section aside__section--expanded">
-                                        <button class="aside__heading" type="button">
-                                            Доступная энергия
-                                        </button>
-                                        <div class="aside__widget">
-                                            <div class="aside__energy">
-                                                1 200
-                                            </div>
-                                            <a class="aside__submit button button--small" href="#">
-                                                Пополнить
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="aside__section">
-                                        <button class="aside__heading" type="button">
-                                            Купить аватар
-                                        </button>
-                                        <div class="aside__widget">
-                                            <div class="aside__note">
-                                                Чем больше аватаров, тем больше призов
-                                            </div>
-                                            <div class="aside__preview">
-                                                <div class="avatar avatar--no-hover">
-                                                    <img class="avatar__image"
-                                                         srcset="../temp/crocodile-72x72@2x.jpg 2x"
-                                                         src="../temp/crocodile-72x72.jpg"
-                                                         width="72"
-                                                         height="72"
-                                                         alt=""
-                                                    >
-                                                </div>
-                                            </div>
-                                            <div class="aside__operations">
-                                                <button class="aside__action action action--minus" type="button">
-                                                    -
-                                                </button>
-                                                <div class="aside__value">
-                                                    1
-                                                </div>
-                                                <button class="aside__action action action--plus" type="button">
-                                                    +
-                                                </button>
-                                            </div>
-                                            <a class="aside__submit button button--small button--energy" href="#">
-                                                1 Аватар за 300
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="aside__section">
-                                        <button class="aside__heading" type="button">
-                                            Получить ускорители
-                                        </button>
-                                        <div class="aside__widget">
-                                            <div class="aside__note">
-                                                Чем быстрее скорость, тем больше шансов победить
-                                            </div>
-                                            <div class="aside__list">
-                                                <div class="aside__sub-heading">
-                                                    Пригласить друзей
-                                                </div>
-                                                <div class="aside__field input">
-                                                    <div class="input">
-                                                        <button class="input__action input__action--share" type="button"><span class="kmfdm-visuallyhidden">Refresh</span></button>
-                                                        <button class="input__action input__action--copy" type="button"><span class="kmfdm-visuallyhidden">Refresh</span></button>
-                                                        <input class="input__widget" type="text" readonly value="https://social-lift.com/lorem-impsum-dolor-sit-amen">
-                                                    </div>
-                                                </div>
-                                                <div class="aside__goal aside__goal--next-qualification">
-                                                    Следующая квалификация <strong>&nbsp;+10%</strong>
-                                                </div>
-                                                <a class="aside__more dash dash--more" href="#">
-                                                    Подробнее
-                                                </a>
-                                            </div>
-                                            <div class="aside__list">
-                                                <div class="aside__sub-heading">
-                                                    Выполнить задания
-                                                </div>
-                                                <div class="aside__goal aside__goal--completed-tasks">
-                                                    За выполнение заданий <strong>&nbsp;+10%</strong>
-                                                </div>
-                                                <div class="aside__item aside__item--completed">
-                                                    Попдисаться на Телеграм
-                                                </div>
-                                                <div class="aside__item aside__item--completed">
-                                                    Поставить аватарку
-                                                </div>
-                                                <a class="aside__item" href="#">
-                                                    Подключить бота
-                                                </a>
-                                                <a class="aside__more dash dash--more" href="#">
-                                                    Подробнее
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="queue__content">
-                                <div class="queue__head">
-                                    <div class="queue__navigation filter">
-                                        <a class="filter__link filter__link--current" href="#">
-                                            Мои аватары (4)
-                                        </a>
-                                        <a class="filter__link" href="#">
-                                            Вся очередь
-                                        </a>
-                                    </div>
-                                    <div class="queue__sort">
-                                        <div class="sort">
-                                            <button class="sort__handler" type="button">
-                                                <span class="sort__label">Сортировать:</span>
-                                                По уровню энергии
-                                            </button>
-                                            <div class="sort__dropdown menu">
-                                                <a class="menu__link" href="#">По уровню энергии</a>
-                                                <a class="menu__link" href="#">Lorem ipsum dolor sit amen</a>
-                                                <a class="menu__link" href="#">Consectetur adipiscing elit</a>
-                                                <a class="menu__link" href="#">Cras mattis rutrum pharetra</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="queue__list">
-                                    <div class="queue__item card">
-                                        <div class="card__preview avatar avatar--no-hover">
-                                            <img class="avatar__image"
-                                                 srcset="../temp/crocodile-72x72@2x.jpg 2x"
-                                                 src="../temp/crocodile-72x72.jpg"
-                                                 width="72"
-                                                 height="72"
-                                                 alt=""
-                                            >
-                                        </div>
-                                        <div class="card__head">
-                                            <div class="card__summary">
-                                                <div class="card__heading">
-                                                    <div class="choice">
-                                                        <input class="choice__widget" type="checkbox">
-                                                        <i class="choice__icon"></i>
-                                                        <span class="choice__label">3 этаж</span>
-                                                    </div>
-                                                </div>
-                                                <div class="card__queue stat stat--queue">
-                                                    <span class="stat__param">Место в очереди:</span>
-                                                    <span class="stat__value">1 200</span>
-                                                </div>
-                                            </div>
-                                            <div class="card__data">
-                                                <div class="card__params">
-                                                    <div class="card__energy stat stat--energy">
-                                                        <span class="stat__param">
-                                                            Энергия:
-                                                        </span>
-                                                        <span class="stat__value">
-                                                            1200
-                                                        </span>
-                                                    </div>
-                                                    <div class="card__energy stat">
-                                                        <span class="stat__param">
-                                                            Хватит на:
-                                                        </span>
-                                                        <span class="stat__value">
-                                                            2 дня
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <div class="card__progress health health--success health--larger">
-                                                    <div class="health__point health__point--filled"></div>
-                                                    <div class="health__point health__point--filled"></div>
-                                                    <div class="health__point health__point--filled"></div>
-                                                    <div class="health__point health__point--filled"></div>
-                                                    <div class="health__point health__point--filled"></div>
-                                                    <div class="health__point health__point--filled"></div>
-                                                    <div class="health__point health__point--filled"></div>
-                                                    <div class="health__point health__point--filled"></div>
-                                                    <div class="health__point health__point--filled"></div>
-                                                    <div class="health__point health__point--filled"></div>
-                                                    <div class="health__point health__point--filled"></div>
-                                                    <div class="health__point health__point--filled"></div>
-                                                    <div class="health__point"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card__body">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium aliquam atque autem culpa dolorem doloribus earum eum explicabo in laborum modi nemo nihil numquam officiis perferendis, repellendus rerum soluta tempore, veniam. A ab accusamus amet corporis cumque, dicta doloremque dolores, ea eligendi eveniet id in incidunt iure laborum magnam magni maiores maxime minima nemo nulla numquam odio perferendis porro praesentium quas recusandae repudiandae rerum temporibus tenetur voluptatibus. Adipisci harum hic ipsam possimus quisquam. Cupiditate nobis officiis possimus quasi, quia quod recusandae vero. Accusamus adipisci eligendi error minus molestiae sequi veniam vero voluptate voluptatem voluptatum? Aliquid atque cumque est, fuga fugiat laudantium maxime minus molestias nam nesciunt nisi, perspiciatis quaerat repellendus reprehenderit rerum sequi, vel. Ab accusamus ad asperiores atque, consectetur culpa debitis dolore, dolorem eligendi error eum ex id incidunt iste magni nam neque nisi nobis optio, perferendis quidem reprehenderit repudiandae ullam ut velit. Architecto doloremque ex laboriosam laborum, necessitatibus nulla odio praesentium reprehenderit! Architecto at laboriosam modi quaerat repellendus repudiandae vero vitae. Doloribus earum explicabo ipsa iste laborum necessitatibus nostrum quo saepe? Accusamus animi beatae consectetur dolorem doloribus excepturi facere, id iusto maiores molestiae, necessitatibus nemo praesentium quo similique, sint ut voluptates! Eum explicabo ipsa laboriosam qui sit!
-                                        </div>
-                                    </div>
-                                    <div class="queue__item">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium aliquam atque autem culpa dolorem doloribus earum eum explicabo in laborum modi nemo nihil numquam officiis perferendis, repellendus rerum soluta tempore, veniam. A ab accusamus amet corporis cumque, dicta doloremque dolores, ea eligendi eveniet id in incidunt iure laborum magnam magni maiores maxime minima nemo nulla numquam odio perferendis porro praesentium quas recusandae repudiandae rerum temporibus tenetur voluptatibus. Adipisci harum hic ipsam possimus quisquam. Cupiditate nobis officiis possimus quasi, quia quod recusandae vero. Accusamus adipisci eligendi error minus molestiae sequi veniam vero voluptate voluptatem voluptatum? Aliquid atque cumque est, fuga fugiat laudantium maxime minus molestias nam nesciunt nisi, perspiciatis quaerat repellendus reprehenderit rerum sequi, vel. Ab accusamus ad asperiores atque, consectetur culpa debitis dolore, dolorem eligendi error eum ex id incidunt iste magni nam neque nisi nobis optio, perferendis quidem reprehenderit repudiandae ullam ut velit. Architecto doloremque ex laboriosam laborum, necessitatibus nulla odio praesentium reprehenderit! Architecto at laboriosam modi quaerat repellendus repudiandae vero vitae. Doloribus earum explicabo ipsa iste laborum necessitatibus nostrum quo saepe? Accusamus animi beatae consectetur dolorem doloribus excepturi facere, id iusto maiores molestiae, necessitatibus nemo praesentium quo similique, sint ut voluptates! Eum explicabo ipsa laboriosam qui sit!
-                                    </div>
-                                    <div class="queue__item">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium aliquam atque autem culpa dolorem doloribus earum eum explicabo in laborum modi nemo nihil numquam officiis perferendis, repellendus rerum soluta tempore, veniam. A ab accusamus amet corporis cumque, dicta doloremque dolores, ea eligendi eveniet id in incidunt iure laborum magnam magni maiores maxime minima nemo nulla numquam odio perferendis porro praesentium quas recusandae repudiandae rerum temporibus tenetur voluptatibus. Adipisci harum hic ipsam possimus quisquam. Cupiditate nobis officiis possimus quasi, quia quod recusandae vero. Accusamus adipisci eligendi error minus molestiae sequi veniam vero voluptate voluptatem voluptatum? Aliquid atque cumque est, fuga fugiat laudantium maxime minus molestias nam nesciunt nisi, perspiciatis quaerat repellendus reprehenderit rerum sequi, vel. Ab accusamus ad asperiores atque, consectetur culpa debitis dolore, dolorem eligendi error eum ex id incidunt iste magni nam neque nisi nobis optio, perferendis quidem reprehenderit repudiandae ullam ut velit. Architecto doloremque ex laboriosam laborum, necessitatibus nulla odio praesentium reprehenderit! Architecto at laboriosam modi quaerat repellendus repudiandae vero vitae. Doloribus earum explicabo ipsa iste laborum necessitatibus nostrum quo saepe? Accusamus animi beatae consectetur dolorem doloribus excepturi facere, id iusto maiores molestiae, necessitatibus nemo praesentium quo similique, sint ut voluptates! Eum explicabo ipsa laboriosam qui sit!
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--/Внутренняя страница -->
 
-                </main>
-            </div>
+        <br>
+        <h2>.health--success</h2>
+
+        <div class="health health--success">
+            <div class="health__point health__point--filled"></div>
+            <div class="health__point health__point--filled"></div>
+            <div class="health__point health__point--filled"></div>
+            <div class="health__point health__point--filled"></div>
+            <div class="health__point health__point--filled"></div>
+            <div class="health__point health__point--filled"></div>
+            <div class="health__point health__point--filled"></div>
+            <div class="health__point health__point--filled"></div>
+            <div class="health__point health__point--filled"></div>
+            <div class="health__point health__point--filled"></div>
+            <div class="health__point health__point--filled"></div>
+            <div class="health__point health__point--filled"></div>
+            <div class="health__point"></div>
         </div>
+
+        <br>
+        <br>
+        <h2>.health--warning</h2>
+
+        <div class="health health--warning">
+            <div class="health__point health__point--filled"></div>
+            <div class="health__point health__point--filled"></div>
+            <div class="health__point health__point--filled"></div>
+            <div class="health__point health__point--filled"></div>
+            <div class="health__point health__point--filled"></div>
+            <div class="health__point health__point--filled"></div>
+            <div class="health__point health__point--filled"></div>
+            <div class="health__point"></div>
+            <div class="health__point"></div>
+            <div class="health__point"></div>
+            <div class="health__point"></div>
+            <div class="health__point"></div>
+            <div class="health__point"></div>
+        </div>
+
+        <br>
+        <br>
+        <h2>.health--danger</h2>
+
+        <div class="health health--danger">
+            <div class="health__point health__point--filled"></div>
+            <div class="health__point health__point--filled"></div>
+            <div class="health__point health__point--filled"></div>
+            <div class="health__point"></div>
+            <div class="health__point"></div>
+            <div class="health__point"></div>
+            <div class="health__point"></div>
+            <div class="health__point"></div>
+            <div class="health__point"></div>
+            <div class="health__point"></div>
+            <div class="health__point"></div>
+            <div class="health__point"></div>
+            <div class="health__point"></div>
+        </div>
+
+
+        <br>
+        <br>
+        <br>
+        <h2>.health--larger</h2>
+
+        <div class="health health--success health--larger">
+            <div class="health__point health__point--filled"></div>
+            <div class="health__point health__point--filled"></div>
+            <div class="health__point health__point--filled"></div>
+            <div class="health__point health__point--filled"></div>
+            <div class="health__point health__point--filled"></div>
+            <div class="health__point health__point--filled"></div>
+            <div class="health__point health__point--filled"></div>
+            <div class="health__point health__point--filled"></div>
+            <div class="health__point health__point--filled"></div>
+            <div class="health__point health__point--filled"></div>
+            <div class="health__point health__point--filled"></div>
+            <div class="health__point health__point--filled"></div>
+            <div class="health__point"></div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
     </div>
+
 </div>
 
-
-<script src="../scripts/_sort.js"></script>
-<script src="../scripts/_aside.js"></script>
 
 </body>
 </html>
