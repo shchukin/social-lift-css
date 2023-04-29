@@ -1,5 +1,5 @@
 .queue {
-
+    padding-bottom: 80px;
 }
     .queue__heading {
         margin-top: 0 !important;
@@ -36,7 +36,7 @@
                 }
 
                 .queue__sort {
-
+                    margin-right: 38px;
                 }
 
             .queue__list {
@@ -53,6 +53,48 @@
                     margin-top: 0;
                 }
 
+    .queue__selection {
+        position: fixed;
+        z-index: 100;
+        left: 220px;
+        right: 0;
+        bottom: 0;
+        height: 80px;
+        background-color: #FFFFFF;
+        box-shadow: 0 2px 28px rgba(0, 0, 0, 0.04),
+                    0 12px 56px rgba(0, 0, 0, 0.04),
+                    0 16px 72px rgba(0, 0, 0, 0.04);
+    }
+
+    @media (max-width: 1219px) {
+        .queue__selection {
+            left: 44px;
+        }
+    }
+
+        .queue__selection-container {
+            max-width: 1200px; /* Как и контенйера в раме сайта */
+            margin-left: auto;
+            margin-right: auto;
+            padding-right: 360px;
+            height: 100%;
+        }
+            .queue__selection-card {
+                height: 100%;
+                padding-left: 120px;
+                padding-right: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+                .queue__checkbox {
+
+                }
+
+                .queue__speed-up.button,
+                .queue__speed-up .button {
+                    width: 216px;
+                }
 
 @media (max-width: 991px) {
 
@@ -99,7 +141,7 @@
                     }
 
                     .queue__sort {
-
+                        margin-right: 0;
                     }
 
                 .queue__list {
@@ -118,4 +160,45 @@
                     .queue__item:first-child {
                         /*margin-top: 0;*/
                     }
+
+        .queue__selection {
+            /*position: fixed;*/
+            /*z-index: 100;*/
+            left: 0;
+            /*right: 0;*/
+            /*bottom: 0;*/
+            height: 64px;
+            /*background-color: #FFFFFF;*/
+            /*box-shadow: 0 2px 28px rgba(0, 0, 0, 0.04),*/
+            /*            0 12px 56px rgba(0, 0, 0, 0.04),*/
+            /*            0 16px 72px rgba(0, 0, 0, 0.04);*/
+        }
+            .queue__selection-container {
+                /*max-width: 1200px; !* Как и контенйера в раме сайта *!*/
+                /*margin-left: auto;*/
+                /*margin-right: auto;*/
+                padding-right: 0;
+                /*height: 100%;*/
+            }
+                .queue__selection-card {
+                    /*height: 100%;*/
+                    padding-left: 24px;
+                    padding-right: 24px;
+                    /*display: flex;*/
+                    /*align-items: center;*/
+                    /*justify-content: space-between;*/
+                }
+
+                .queue__checkbox {
+
+                }
+                    .queue__checkbox .choice__label {
+                        font-family: var(--font-ui) !important;
+                    }
+
+                .queue__speed-up.button,
+                .queue__speed-up .button {
+                    width: 145px;
+                }
+
 }
