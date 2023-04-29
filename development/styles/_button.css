@@ -1,6 +1,7 @@
 .button {
-    display: inline-block;
+    display: inline-flex;
     vertical-align: top;
+    justify-content: center;
     border: none;
     padding: 17px 32px;
     background-color: var(--buttonColor) !important;
@@ -29,7 +30,14 @@
 .button:focus {
     background-color: var(--buttonColor) !important;
 }
+    .button__icon {
+        vertical-align: top;
+        fill: currentColor;
+    }
 
+    .button__icon--right {
+        margin-left: 5px;
+    }
 
 
 .button--secondary {
@@ -51,9 +59,33 @@
 
 
 
+.button--small {
+    padding: 12px 24px;
+    font-weight: 500;
+    font-size: 16px !important;
+    line-height: 16px !important;
+}
+
 .button--smaller {
     padding: 10px 24px;
     font-weight: 500;
     font-size: 14px !important;
     line-height: 16px !important;
 }
+
+
+.button--energy {
+
+}
+    .button--energy::after {
+        content: "";
+        margin-left: 5px;
+        display: inline-block;
+        vertical-align: top;
+        width: 16px;
+        height: 16px;
+        background-image: url("../images/button-energy.svg");
+        background-size: 16px 16px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }

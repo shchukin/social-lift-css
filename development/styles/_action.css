@@ -1,0 +1,25 @@
+.action {
+    display: inline-block;
+    vertical-align: top;
+    width: 40px;
+    height: 40px;
+    border: none;
+    padding: 0;
+    background-color: #F2F3F8;
+    box-shadow: 0 1px 0 rgba(25, 27, 41, 0.2);
+    border-radius: 40px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-indent: 200%;
+    white-space: nowrap;
+    overflow: hidden !important;
+    cursor: pointer;
+}
+
+/* stylelint-disable */
+.action--minus { background-image: url("../images/dash-minus.svg"); }
+.action--plus  { background-image: url("../images/dash-plus.svg"); }
+.action--prev  { background-image: url("../images/dash-prev.svg"); }
+.action--next  { background-image: url("../images/dash-next.svg"); }
+/* stylelint-enable */
