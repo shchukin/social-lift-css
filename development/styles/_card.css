@@ -9,6 +9,7 @@
     }
 
     .card__head {
+        margin-top: 10px;
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
@@ -20,6 +21,10 @@
                 margin-top: -12px;
             }
 
+            .card__queue {
+
+            }
+
         .card__data {
             margin-top: 1px;
         }
@@ -29,14 +34,212 @@
                 justify-content: flex-end;
                 gap: 16px;
             }
+                .card__energy {
+
+                }
+
+                .card__time-left {
+
+                }
 
             .card__progress {
                 margin-top: 15px;
             }
 
-            .card__body {
-                margin-top: 18px;
-                border-top: 1px solid #EBECF1;
-                padding-top: 16px;
+    .card__body {
+        margin-top: 18px;
+        border-top: 1px solid #EBECF1;
+        padding-top: 16px;
+    }
+        .card__boosters {
+            position: relative;
+            padding: 23px 16px 16px;
+            margin-top: 16px;
+            background-color: #F3F4F9;
+            border-radius: 16px;
+        }
+            .card__boosters-heading {
+
             }
 
+            .card__speed-up {
+                position: absolute;
+                right: 16px;
+                top: 16px;
+            }
+                .card__speed-up.button,
+                .card__speed-up .button {
+                    width: 123px;
+                }
+
+            .card__boosters-list {
+                margin-top: 32px;
+                overflow-x: auto;
+                margin-left: -16px;
+                margin-right: -16px;
+            }
+
+            .card__boosters-list::-webkit-scrollbar {
+                background-color: transparent;
+                height: 5px;
+            }
+            .card__boosters-list::-webkit-scrollbar-thumb {
+                background-color: #A7A8B1;
+                border-radius: 5px;
+            }
+                .card__ribbon {
+                    display: inline-flex;
+                    vertical-align: top;
+                    gap: 12px;
+                    padding-bottom: 11px;
+                    padding-left: 16px;
+                    padding-right: 16px;
+                }
+
+        .card__footer-params {
+            margin-top: 16px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-end;
+            gap: 16px;
+        }
+
+
+
+@media (max-width: 991px) {
+
+    .card {
+        padding: 0;
+    }
+        .card__preview {
+            position: static;
+            /*left: 24px;*/
+            /*top: 24px;*/
+            float: right;
+            margin-top: 24px;
+            margin-right: 24px;
+        }
+            .card__preview .avatar__image {
+                width: 56px;
+                height: 56px;
+            }
+
+        .card__head {
+            display: block;
+            margin-top: 0;
+            padding: 24px 16px;
+            /*align-items: flex-start;*/
+            /*justify-content: space-between;*/
+        }
+            .card__summary {
+
+            }
+                .card__heading {
+                    /*margin-top: -12px;*/
+                }
+                    .card__heading .choice--heading .choice__label {
+                        padding-top: 6px;
+                        padding-bottom: 8px;
+                        font-size: 24px;
+                        line-height: 28px;
+                    }
+
+                .card__queue {
+                    margin-top: -4px;
+                    display: inline-block;
+                    vertical-align: top;
+                }
+
+            .card__data {
+                margin-top: 29px;
+                display: flex;
+                flex-direction: column-reverse;
+            }
+                .card__params {
+                    margin-top: 10px;
+                    /*display: flex;*/
+                    /*align-items: baseline;*/
+                    justify-content: flex-start;
+                    /*gap: 16px;*/
+                }
+                    .card__energy {
+
+                    }
+
+                    .card__time-left {
+
+                    }
+
+                .card__progress {
+                    margin-top: 0;
+                }
+
+        .card__body {
+            margin-top: 0;
+            /*border-top: 1px solid #EBECF1;*/
+            padding: 26px 16px 12px;
+            display: none;
+        }
+
+        .card--expanded .card__body {
+            display: block;
+        }
+
+            .card__carousel {
+
+            }
+
+            .card__boosters {
+                margin-top: 22px;
+                /*position: relative;*/
+                /*padding: 23px 16px 16px;*/
+                /*margin-top: 16px;*/
+                /*background-color: #F3F4F9;*/
+                /*border-radius: 16px;*/
+            }
+                .card__boosters-heading {
+
+                }
+
+                .card__speed-up {
+                    /*position: absolute;*/
+                    /*right: 16px;*/
+                    /*top: 16px;*/
+                }
+                    .card__speed-up.button,
+                    .card__speed-up .button {
+                        /*width: 123px;*/
+                    }
+
+                .card__boosters-list {
+                    /*margin-top: 32px;*/
+                    /*overflow-x: auto;*/
+                    /*margin-left: -16px;*/
+                    /*margin-right: -16px;*/
+                }
+
+                .card__boosters-list::-webkit-scrollbar {
+                    /*background-color: transparent;*/
+                    /*height: 5px;*/
+                }
+                .card__boosters-list::-webkit-scrollbar-thumb {
+                    /*background-color: #A7A8B1;*/
+                    /*border-radius: 5px;*/
+                }
+                    .card__ribbon {
+                        /*display: inline-flex;*/
+                        /*vertical-align: top;*/
+                        /*gap: 12px;*/
+                        /*padding-bottom: 11px;*/
+                        /*padding-left: 16px;*/
+                        /*padding-right: 16px;*/
+                    }
+
+            .card__footer-params {
+                margin-top: 12px;
+                /*display: flex;*/
+                /*align-items: flex-start;*/
+                justify-content: flex-start;
+                /*gap: 16px;*/
+            }
+}

@@ -6,6 +6,7 @@
     --primaryColor: #191B29;
     --primaryColor-50pct: rgba(25, 27, 41, 0.5);
     --primaryColor-60pct: rgba(25, 27, 41, 0.6);
+    --primaryColor-70pct: rgba(25, 27, 41, 0.7);
     --primaryColor-80pct: rgba(25, 27, 41, 0.8);
     --panelBackground: #E3E4EB;
     --panelBackground35pct: rgba(227, 228, 235, 0.35);
@@ -44,6 +45,11 @@
     --UI-14-16-font-size: 14px;
     --UI-14-16-line-height: 16px;
     --UI-14-16-letter-spacing: -0.01em;
+
+    --UI-12-16-font-family: var(--font-ui);
+    --UI-12-16-font-size: 12px;
+    --UI-12-16-line-height: 16px;
+    --UI-12-16-letter-spacing: -0.01em;
 
     --UI-16-16-font-family: var(--font-ui);
     --UI-16-16-font-size: 16px;

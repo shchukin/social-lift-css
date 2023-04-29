@@ -16,7 +16,7 @@
         gap: 40px;
     }
         .queue__sidebar {
-
+            min-width: 0;
         }
             .queue__side-section {
 
@@ -24,6 +24,7 @@
 
         .queue__content {
             order: -1;
+            min-width: 0;
         }
             .queue__head {
                 margin-top: 6px;
@@ -91,8 +92,8 @@
 
                 }
 
-                .queue__speed-up.button,
-                .queue__speed-up .button {
+                .queue__boost.button,
+                .queue__boost .button {
                     width: 216px;
                 }
 
@@ -196,8 +197,8 @@
                         font-family: var(--font-ui) !important;
                     }
 
-                .queue__speed-up.button,
-                .queue__speed-up .button {
+                .queue__boost.button,
+                .queue__boost .button {
                     width: 145px;
                 }
 

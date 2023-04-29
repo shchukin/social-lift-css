@@ -27,3 +27,11 @@
     background-image: url("../images/stat-energy.svg");
     background-size: 16px 16px;
 }
+
+
+@media (max-width: 991px) {
+    .stat {
+        font-size: 14px !important;
+        line-height: 16px !important;
+    }
+}

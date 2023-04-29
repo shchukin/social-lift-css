@@ -1,0 +1,14 @@
+.simpler-stat {
+    font-family: var(--UI-12-16-font-family) !important;
+    font-size: var(--UI-12-16-font-size) !important;
+    line-height: var(--UI-12-16-line-height) !important;
+    letter-spacing: var(--UI-12-16-letter-spacing) !important;
+    text-transform: uppercase;
+}
+    .simpler-stat__param {
+        color: var(--hintColor);
+    }
+
+    .simpler-stat__value {
+
+    }
