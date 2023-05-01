@@ -1,0 +1,46 @@
+.profile {
+    width: 360px;
+    padding: 16px 24px 6px;
+}
+    .profile__preview {
+        float: right;
+    }
+
+    .profile__heading {
+        font-family: var(--UI-20-20-font-family) !important;
+        font-weight: bold;
+        font-size: var(--UI-20-20-font-size) !important;
+        line-height: var(--UI-20-20-line-height) !important;
+        letter-spacing: var(--UI-20-20-letter-spacing) !important;
+    }
+
+    .profile__speed {
+        margin-top: 8px;
+    }
+
+    .profile__row {
+        margin-top: 8px;
+        display: flex;
+        align-items: baseline;
+        gap: 12px;
+    }
+
+    .profile__speed + .profile__row {
+        margin-top: 3px;
+    }
+
+    .profile__boosters {
+        margin-top: 16px;
+        border-top: 1px solid #EBECF1;
+        border-bottom: 1px solid #EBECF1;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .profile__more {
+        margin-top: 6px;
+    }

@@ -35,3 +35,11 @@
         line-height: 16px !important;
     }
 }
+
+
+.stat--smaller {
+    font-family: var(--UI-14-16-font-family) !important;
+    font-size: var(--UI-14-16-font-size) !important;
+    line-height: var(--UI-14-16-line-height) !important;
+    letter-spacing: var(--UI-14-16-letter-spacing) !important;
+}

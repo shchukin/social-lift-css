@@ -34,13 +34,6 @@
                 justify-content: flex-end;
                 gap: 16px;
             }
-                .card__energy {
-
-                }
-
-                .card__time-left {
-
-                }
 
             .card__progress {
                 margin-top: 15px;
@@ -163,13 +156,6 @@
                     justify-content: flex-start;
                     /*gap: 16px;*/
                 }
-                    .card__energy {
-
-                    }
-
-                    .card__time-left {
-
-                    }
 
                 .card__progress {
                     margin-top: 0;

@@ -2,9 +2,12 @@
     position: fixed;
     z-index: 1050; /* higher than header (same as bootstrap) */
     opacity: 0;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.11);
+    border-radius: 24px;
     visibility: hidden;
-    transition: opacity var(--transition-show),
-                visibility var(--transition-show);
+    transition: opacity 0.2s ease,
+                visibility 0.2s ease;
 }
 
 .flyover--visible,
@@ -12,29 +15,4 @@
     opacity: 1;
     visibility: visible;
 }
-    /* peak */
-    .flyover__peak {
-        position: absolute;
-        display: block;
-        width: 12px;
-        height: 12px;
-        transform: rotate(45deg);
-        transform-origin: center center;
-    }
-
-    .flyover__peak--shadow {
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.11);
-    }
-
-    .flyover__peak--background {
-        background-color: #FFFFFF;
-    }
-
-
-    .flyover__bubble {
-        position: relative;
-        background-color: #FFFFFF;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.11);
-        border-radius: 7px;
-    }
 

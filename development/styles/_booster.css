@@ -21,3 +21,10 @@
 .booster--disabled {
     opacity: 0.2;
 }
+
+
+.booster--smaller {
+    width: 32px;
+    padding-top: 32px;
+    background-size: 32px 32px;
+}
