@@ -16,6 +16,7 @@
 .booster--type-b { background-image: url("../images/booster-type-b.svg"); }
 .booster--type-c { background-image: url("../images/booster-type-c.svg"); }
 .booster--type-d { background-image: url("../images/booster-type-d.svg"); }
+.booster--type-e { background-image: url("../images/booster-type-e.svg"); }
 
 .booster--disabled {
     opacity: 0.2;

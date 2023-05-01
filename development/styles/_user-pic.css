@@ -1,6 +1,24 @@
 .user-pic {
-
+    position: relative;
 }
     .user-pic__photo {
+        vertical-align: top;
+        background-color: var(--image-fallback);
+        border-radius: 50%;
+    }
 
+
+.user-pic--highlight {
+
+}
+    .user-pic--highlight::after {
+        content: "";
+        position: absolute;
+        left: -2px;
+        top: -2px;
+        right: -2px;
+        bottom: -2px;
+        display: block;
+        border-radius: 50%;
+        border: 3px solid #191B2A;
     }

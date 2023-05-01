@@ -1,16 +1,16 @@
-.health {
+.speedometer {
     display: inline-flex;
     align-items: flex-start;
     gap: 3px;
 }
-    .health__point {
+    .speedometer__value {
         width: 10px;
         height: 14px;
         background-color: #DADBE3;
         border-radius: 5px / 4px;
     }
 
-    .health__point--filled {
+    .speedometer__value--filled {
 
     }
 
@@ -18,7 +18,7 @@
 .health--larger {
     gap: 9px;
 }
-    .health--larger .health__point {
+    .health--larger .speedometer__value {
         width: 12px;
         height: 17px;
         border-radius: 6px / 5px;
@@ -28,7 +28,7 @@
 .health--success {
 
 }
-    .health--success .health__point--filled {
+    .health--success .speedometer__value--filled {
         background-color: #00E300;
         background-image: linear-gradient(#00E300, #ABFD00);
     }
@@ -36,7 +36,7 @@
 .health--warning {
 
 }
-    .health--warning .health__point--filled {
+    .health--warning .speedometer__value--filled {
         background-color: #FF5500;
         background-image: linear-gradient(#FF5500, #FFC400);
     }
@@ -44,7 +44,7 @@
 .health--danger {
 
 }
-    .health--danger .health__point--filled {
+    .health--danger .speedometer__value--filled {
         background-color: #FF0000;
         background-image: linear-gradient(#FF0000, #FF6B00);
     }

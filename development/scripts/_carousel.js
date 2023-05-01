@@ -5,23 +5,24 @@
     $(document).ready(function () {
 
         $('.carousel__control').on('click', function () {
+            if( ! $(this).hasClass('carousel__control--disabled') ) {
+                var $carousel = $(this).parents('.carousel');
+                var $scrollContainer = $carousel.find('.carousel__container');
+                var scrolled = $scrollContainer.scrollLeft();
+                var toScroll = $carousel.data('step') ? Math.ceil( $carousel.data('step') * $carousel.find('.carousel__item:first-child()').outerWidth() + $carousel.data('step') * parseInt($carousel.find('.carousel__item:first-child()').css('margin-right'), 10) ) : $scrollContainer.outerWidth() ;
+                var scrollCoordinate = 0;
 
-            var $carousel = $(this).parents('.carousel');
-            var $scrollContainer = $carousel.find('.carousel__container');
-            var scrolled = $scrollContainer.scrollLeft();
-            var toScroll = $carousel.data('step') ? Math.ceil( $carousel.data('step') * $carousel.find('.carousel__item:first-child()').outerWidth() + $carousel.data('step') * parseInt($carousel.find('.carousel__item:first-child()').css('margin-right'), 10) ) : $scrollContainer.outerWidth() ;
-            var scrollCoordinate = 0;
+                scrollCoordinate = $(this).hasClass('carousel__control--next') ? scrolled + toScroll : scrolled - toScroll;
 
-            scrollCoordinate = $(this).hasClass('carousel__control--next') ? scrolled + toScroll : scrolled - toScroll;
+                $carousel.addClass('carousel--being-scrolled-by-arrow');
 
-            $carousel.addClass('carousel--being-scrolled-by-arrow');
-
-            $scrollContainer.animate({
-                scrollLeft: scrollCoordinate
-            }, 500, function () {
-                arrowsVisibility($scrollContainer);
-                $carousel.removeClass('carousel--being-scrolled-by-arrow');
-            });
+                $scrollContainer.animate({
+                    scrollLeft: scrollCoordinate
+                }, 500, function () {
+                    arrowsVisibility($scrollContainer);
+                    $carousel.removeClass('carousel--being-scrolled-by-arrow');
+                });
+            }
         });
 
     });

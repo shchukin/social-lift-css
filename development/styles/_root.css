@@ -14,7 +14,7 @@
     --hintColor: rgba(25, 27, 41, 0.5);
     --buttonColor: #B0FC33;
     --mobile-container-padding: 16px;
-
+    --image-fallback: #B0FC33;
 
     --BODY-12-16-font-family: var(--font);
     --BODY-12-16-font-size: 12px;

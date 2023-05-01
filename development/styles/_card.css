@@ -89,6 +89,7 @@
             }
                 .card__ribbon {
                     display: inline-flex;
+                    align-items: flex-start;
                     vertical-align: top;
                     gap: 12px;
                     padding-bottom: 11px;
