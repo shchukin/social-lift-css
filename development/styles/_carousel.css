@@ -1,0 +1,84 @@
+.carousel {
+    margin-left: calc(-1 * var(--mobile-container-padding));
+    margin-right: calc(-1 * var(--mobile-container-padding));
+}
+    .carousel__container {
+        overflow-x: auto; /* add scrollbar */
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* hide scrollbar in Firefox */
+        -ms-overflow-style: none; /* hide scrollbar in Edge */
+    }
+
+    .carousel__container::-webkit-scrollbar {
+      display: none;
+    }
+        .carousel__ribbon {
+            display: inline-flex;
+            vertical-align: top;
+            min-width: 100%;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .popup .scrollable--expanded-width-padding .carousel__ribbon {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+            .carousel__item {
+                flex-shrink: 0;
+            }
+
+    .carousel__control {
+        display: none; /* swipe by finger */
+    }
+
+
+
+@media (min-width: 1100px) {
+
+    .carousel {
+        position: relative;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+        .carousel__container {
+
+        }
+            .carousel__ribbon {
+                width: 100%; /* we need to use things such as 20% inside of ribbon and we need to have context */
+                padding-left: 0;
+                padding-right: 0;
+            }
+                .carousel__item {
+
+                }
+
+        .carousel__control {
+            position: absolute;
+            top: 50%;
+            margin-top: -20px !important;
+        }
+
+        .carousel__control--prev {
+            left: 0;
+        }
+
+        .carousel__control--next {
+            right: 0;
+        }
+
+        .carousel__control--disabled {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+
+    .carousel--initialized {
+
+    }
+        .carousel--initialized .carousel__control {
+            display: block;
+        }
+}

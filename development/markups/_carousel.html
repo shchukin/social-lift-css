@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>.choice</title>
+    <title>.carousel</title>
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <script src="../legacy/jquery-2.1.1.min.js"></script>
     <link href="../legacy/bootstrap.min.css" rel="stylesheet">
@@ -815,143 +815,148 @@
 <body class="kmfdm-body custom-css-body module-main binded">
 
 
-<div class="kmfdm-page">
+<div class="kmfdm-page" style="background: white;">
 
     <div style="width: 600px; margin: 0 auto;">
         <br>
         <br>
-        <h1>.choice</h1>
+        <h1>.carousel</h1>
 
-
-        <label class="choice choice--checkbox">
-            <input class="choice__widget" type="checkbox">
-            <i class="choice__icon" role="presentation"></i>
-            <span class="choice__label">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, maxime, placeat. Esse ipsa libero non praesentium repellat sunt suscipit ullam.</span>
-        </label>
-
-        <br>
-
-        <label class="choice choice--radio">
-            <input class="choice__widget" type="radio">
-            <i class="choice__icon" role="presentation"></i>
-            <span class="choice__label">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, maxime, placeat. Esse ipsa libero non praesentium repellat sunt suscipit ullam.</span>
-        </label>
-
-        <br>
-
-
-        <label class="choice choice--checkbox">
-            <input class="choice__widget" type="checkbox" checked>
-            <i class="choice__icon" role="presentation"></i>
-            <span class="choice__label">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, maxime, placeat. Esse ipsa libero non praesentium repellat sunt suscipit ullam.</span>
-        </label>
-
-        <br>
-
-        <label class="choice choice--radio">
-            <input class="choice__widget" type="radio" checked>
-            <i class="choice__icon" role="presentation"></i>
-            <span class="choice__label">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, maxime, placeat. Esse ipsa libero non praesentium repellat sunt suscipit ullam.</span>
-        </label>
-
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <h2>.choice--heading</h2>
-
-        <label class="choice choice--heading choice--checkbox">
-            <input class="choice__widget" type="checkbox">
-            <i class="choice__icon" role="presentation"></i>
-            <span class="choice__label">3 этаж</span>
-        </label>
-
-
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <h2>.choice--disabled</h2>
+        <h1>.carousel</h1>
         <p>
-            Also please use <b>disabled</b> attribute to block it on logic level
+            Расчёт на использование внутри var(--mobile-container-padding)
         </p>
+        <p>
+            JS-ка тут: <a href="../scripts/_carousel.js">../scripts/_carousel.js</a>
+        </p>
+
+        <div class="carousel" data-step="2">
+            <div class="carousel__container">
+                <div class="carousel__ribbon">
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                </div>
+            </div>
+            <button class="carousel__control carousel__control--prev action action--prev carousel__control--disabled" type="button">
+                ←
+            </button>
+            <button class=" carousel__control carousel__control--next action action--next" type="button">
+                →
+            </button>
+        </div>
+
+        <br>
+        <br>
         <br>
 
+        <div class="carousel carousel--avatars" data-step="2">
+            <div class="carousel__container">
+                <div class="carousel__ribbon">
+                    <div class="carousel__item">
 
-        <label class="choice choice--checkbox choice--disabled">
-            <input class="choice__widget" type="checkbox" disabled>
-            <i class="choice__icon" role="presentation"></i>
-            <span class="choice__label">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, maxime, placeat. Esse ipsa libero non praesentium repellat sunt suscipit ullam.</span>
-        </label>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="user-pic">
 
-        <br>
-
-        <label class="choice choice--radio choice--disabled">
-            <input class="choice__widget" type="radio" disabled>
-            <i class="choice__icon" role="presentation"></i>
-            <span class="choice__label">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, maxime, placeat. Esse ipsa libero non praesentium repellat sunt suscipit ullam.</span>
-        </label>
-
-        <br>
-
-
-        <label class="choice choice--checkbox choice--disabled">
-            <input class="choice__widget" type="checkbox" checked disabled>
-            <i class="choice__icon" role="presentation"></i>
-            <span class="choice__label">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, maxime, placeat. Esse ipsa libero non praesentium repellat sunt suscipit ullam.</span>
-        </label>
-
-        <br>
-
-        <label class="choice choice--radio choice--disabled">
-            <input class="choice__widget" type="radio" checked disabled>
-            <i class="choice__icon" role="presentation"></i>
-            <span class="choice__label">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, maxime, placeat. Esse ipsa libero non praesentium repellat sunt suscipit ullam.</span>
-        </label>
-
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <h2>.choice--hidden-label</h2>
-
-        <label class="choice choice--checkbox choice--hidden-label">
-            <input class="choice__widget" type="checkbox">
-            <i class="choice__icon" role="presentation"></i>
-            <span class="choice__label">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, maxime, placeat. Esse ipsa libero non praesentium repellat sunt suscipit ullam.</span>
-        </label>
-
-        <br>
-
-        <label class="choice choice--radio choice--hidden-label">
-            <input class="choice__widget" type="radio">
-            <i class="choice__icon" role="presentation"></i>
-            <span class="choice__label">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, maxime, placeat. Esse ipsa libero non praesentium repellat sunt suscipit ullam.</span>
-        </label>
-
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <h2>.choice--full-width</h2>
-
-        <label class="choice choice--checkbox choice--full-width">
-            <input class="choice__widget" type="checkbox">
-            <i class="choice__icon" role="presentation"></i>
-            <span class="choice__label">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, maxime, placeat. Esse ipsa libero non praesentium repellat sunt suscipit ullam.</span>
-        </label>
-
-        <br>
-
-        <label class="choice choice--radio choice--full-width">
-            <input class="choice__widget" type="radio">
-            <i class="choice__icon" role="presentation"></i>
-            <span class="choice__label">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, maxime, placeat. Esse ipsa libero non praesentium repellat sunt suscipit ullam.</span>
-        </label>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                </div>
+            </div>
+            <button class="carousel__control carousel__control--prev action action--prev carousel__control--disabled" type="button">
+                ←
+            </button>
+            <button class=" carousel__control carousel__control--next action action--next" type="button">
+                →
+            </button>
+        </div>
 
 
         <br>
