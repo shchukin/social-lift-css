@@ -15,36 +15,36 @@
     }
 
 
-.health--larger {
+.speedometer--larger {
     gap: 9px;
 }
-    .health--larger .speedometer__value {
+    .speedometer--larger .speedometer__value {
         width: 12px;
         height: 17px;
         border-radius: 6px / 5px;
     }
 
 
-.health--success {
+.speedometer--success {
 
 }
-    .health--success .speedometer__value--filled {
+    .speedometer--success .speedometer__value--filled {
         background-color: #00E300;
         background-image: linear-gradient(#00E300, #ABFD00);
     }
 
-.health--warning {
+.speedometer--warning {
 
 }
-    .health--warning .speedometer__value--filled {
+    .speedometer--warning .speedometer__value--filled {
         background-color: #FF5500;
         background-image: linear-gradient(#FF5500, #FFC400);
     }
 
-.health--danger {
+.speedometer--danger {
 
 }
-    .health--danger .speedometer__value--filled {
+    .speedometer--danger .speedometer__value--filled {
         background-color: #FF0000;
         background-image: linear-gradient(#FF0000, #FF6B00);
     }
