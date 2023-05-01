@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>.round-progress</title>
+    <title>.choice</title>
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <script src="../legacy/jquery-2.1.1.min.js?1682769546"></script>
     <link href="../legacy/bootstrap.min.css?1682769546" rel="stylesheet">
@@ -820,183 +820,138 @@
     <div style="width: 600px; margin: 0 auto;">
         <br>
         <br>
-        <h1>.round-loading</h1>
+        <h1>.choice</h1>
 
 
-        <br>
-        <h2>TL;DR</h2>
-        Используем вот этот кусок кода и динамично меняем <b>stroke-dashoffset</b><br> от <b>62.8319</b> до <b>0</b>:
-<pre style="margin: 0"><code>
-&lt;svg class="round-loading" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"&gt;
-    &lt;circle stroke="#EEEBE0" stroke-width="2" cx="11" cy="11" r="10"&gt;&lt;/circle&gt;
-    &lt;circle stroke-dashoffset="<b>47.1239</b>" stroke-dasharray="62.8319" stroke="#4FDB0D" stroke-width="2" cx="11" cy="11" r="10" transform="rotate(-90)" transform-origin="11 11"&gt;&lt;/circle&gt;
-&lt;/svg&gt;
-</code></pre>
-
+        <label class="choice choice--checkbox">
+            <input class="choice__widget" type="checkbox">
+            <i class="choice__icon" role="presentation"></i>
+            <span class="choice__label">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, maxime, placeat. Esse ipsa libero non praesentium repellat sunt suscipit ullam.</span>
+        </label>
 
         <br>
-        <br>
-        <br>
-        <h2>В деталях</h2>
 
-        <p>
-            Для начала мы хотим нарисовать две окружности. Фоновую и ещё одну поверх (ту, который станет индикатором загрузки).
-            Радиус <b>21px</b>.
-        </p>
-        <p>
-            Для заливки в этот раз используем <b>stroke</b>.
-            Обычно то для заливки используется fill, что проще, но его нельзя анимировать. А вот stroke можно.
-            Но пока просто круги.
-        </p>
-
-
-        <svg class="round-loading" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle stroke="#EEEBE0" stroke-width="2" cx="11" cy="11" r="10"></circle>
-            <circle stroke="#4FDB0D" stroke-width="2" cx="11" cy="11" r="10"></circle>
-        </svg>
+        <label class="choice choice--radio">
+            <input class="choice__widget" type="radio">
+            <i class="choice__icon" role="presentation"></i>
+            <span class="choice__label">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, maxime, placeat. Esse ipsa libero non praesentium repellat sunt suscipit ullam.</span>
+        </label>
 
         <br>
+
+
+        <label class="choice choice--checkbox">
+            <input class="choice__widget" type="checkbox" checked>
+            <i class="choice__icon" role="presentation"></i>
+            <span class="choice__label">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, maxime, placeat. Esse ipsa libero non praesentium repellat sunt suscipit ullam.</span>
+        </label>
+
         <br>
-        <p>
-            Далее нарезаем верхнюю окружность на дуги. Это делается при помощи
-            <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stroke-dasharray"><b>stroke-dasharray</b></a>.
-            В этом примере длина дуги 8px:
-        </p>
 
-        <svg class="round-loading" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle stroke="#EEEBE0" stroke-width="2" cx="11" cy="11" r="10"></circle>
-            <circle stroke-dasharray="8" stroke="#4FDB0D" stroke-width="2" cx="11" cy="11" r="10"></circle>
-        </svg>
-
-        <p>
-            К сожалению нельзя просто так взять одну из этих дуг и удалить остальные. Дуги всегда будут заполнять круг.
-            Так работает <b>stroke-dasharray</b> -- нарезает окружность на дуги. Как dash-бордюр в CSS.
-        </p>
-        <p>
-            Что мы хотим так это сделать дугу длинной в 100% (другими словами в 360deg) и потом скрывать её частично.
-            Длину такой дуги сначала нужно подсчитать.
-        </p>
-        <p>
-            Формула: <b>L</b> = <b>πrα / 180°</b>, где:
-        </p>
-
-        <p><img src="../temp/arc-length.jpg" width="200" alt=""></p>
-
-
-        <p>
-            Получается <b>L</b> = <b>π * 10 * 360 / 180</b> = <b>62.8319</b>. Пробуем:
-        </p>
-
-
-        <svg class="round-loading" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle stroke="#EEEBE0" stroke-width="2" cx="11" cy="11" r="10"></circle>
-            <circle stroke-dasharray="62.8319" stroke="#4FDB0D" stroke-width="2" cx="11" cy="11" r="10"></circle>
-        </svg>
-
-        <p>
-            Визуально это выглядит как полноценная окружность, но техничкски это одна дуга длинной в <b>62.8319px</b>.
-            Важный момент! Все вычисления зависят от радиуса. Т.е. для каждого нового размера картинки будет новый радиус и длину дуги нужно будет пересчитывать.
-        </p>
-        <p>
-            Теперь к дуге можно начать применять
-            <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stroke-dashoffset"><b>stroke-dashoffset</b></a>.
-            Это свойство как бы двигает дугу в пустоту. Сдвинем, например, на <b>10px</b>:
-        </p>
-
-        <svg class="round-loading" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle stroke="#EEEBE0" stroke-width="2" cx="11" cy="11" r="10"></circle>
-            <circle stroke-dashoffset="10" stroke-dasharray="62.8319" stroke="#4FDB0D" stroke-width="2" cx="11" cy="11" r="10"></circle>
-        </svg>
-
-
-        <p>
-            Собсна так и работают анимации кривых в SVG: заливаются дугой, которая потом смещается.
-            Значения для этого смешения <b>stroke-dashoffset</b> будут в диапазоне от <b>0</b> до <b>62.8319</b>.
-        </p>
-        <p>
-            Где <b>0</b> -- это 100% заливки:
-        </p>
-
-        <svg class="round-loading" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle stroke="#EEEBE0" stroke-width="2" cx="11" cy="11" r="10"></circle>
-            <circle stroke-dasharray="62.8319" stroke="#4FDB0D" stroke-width="2" cx="11" cy="11" r="10"></circle>
-        </svg>
-
-        <p>
-            а <b>62.8319</b> -- это 0%:
-        </p>
-
-        <svg class="round-loading" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle stroke="#EEEBE0" stroke-width="2" cx="11" cy="11" r="10"></circle>
-            <circle stroke-dashoffset="62.8319" stroke-dasharray="62.8319" stroke="#4FDB0D" stroke-width="2" cx="11" cy="11" r="10"></circle>
-        </svg>
+        <label class="choice choice--radio">
+            <input class="choice__widget" type="radio" checked>
+            <i class="choice__icon" role="presentation"></i>
+            <span class="choice__label">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, maxime, placeat. Esse ipsa libero non praesentium repellat sunt suscipit ullam.</span>
+        </label>
 
 
         <br>
         <br>
+        <br>
+        <br>
+        <h2>.choice--heading</h2>
+
+        <label class="choice choice--heading choice--checkbox">
+            <input class="choice__widget" type="checkbox">
+            <i class="choice__icon" role="presentation"></i>
+            <span class="choice__label">3 этаж</span>
+        </label>
+
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2>.choice--disabled</h2>
         <p>
-            Переписываю формулу в программный вид получается переменная:<br> <b>dashoffset</b> = <b>62.8319 * (100 - progress) / 100</b>;
+            Also please use <b>disabled</b> attribute to block it on logic level
         </p>
-        <p>
-            Пример! Если мы хотим отобразить прогресс в 25%, то вычисление переменной будет:
-            <br>dashoffset = 62.8319 * (100 - 25) / 100 = 47.1239
-            <br>Подставляем в SVG:
-        </p>
+        <br>
 
-        <svg class="round-loading" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle stroke="#EEEBE0" stroke-width="2" cx="11" cy="11" r="10"></circle>
-            <circle stroke-dashoffset="47.1239" stroke-dasharray="62.8319" stroke="#4FDB0D" stroke-width="2" cx="11" cy="11" r="10"></circle>
-        </svg>
+
+        <label class="choice choice--checkbox choice--disabled">
+            <input class="choice__widget" type="checkbox" disabled>
+            <i class="choice__icon" role="presentation"></i>
+            <span class="choice__label">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, maxime, placeat. Esse ipsa libero non praesentium repellat sunt suscipit ullam.</span>
+        </label>
+
+        <br>
+
+        <label class="choice choice--radio choice--disabled">
+            <input class="choice__widget" type="radio" disabled>
+            <i class="choice__icon" role="presentation"></i>
+            <span class="choice__label">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, maxime, placeat. Esse ipsa libero non praesentium repellat sunt suscipit ullam.</span>
+        </label>
+
+        <br>
+
+
+        <label class="choice choice--checkbox choice--disabled">
+            <input class="choice__widget" type="checkbox" checked disabled>
+            <i class="choice__icon" role="presentation"></i>
+            <span class="choice__label">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, maxime, placeat. Esse ipsa libero non praesentium repellat sunt suscipit ullam.</span>
+        </label>
+
+        <br>
+
+        <label class="choice choice--radio choice--disabled">
+            <input class="choice__widget" type="radio" checked disabled>
+            <i class="choice__icon" role="presentation"></i>
+            <span class="choice__label">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, maxime, placeat. Esse ipsa libero non praesentium repellat sunt suscipit ullam.</span>
+        </label>
 
 
         <br>
         <br>
-        <p>
-            Вишенка на торт -- нужно немного повернуть картинку против часовой стрелки, чтобы дуга выходила из самой верзней точки
-            Добавляем трансформации в код svg. Их считать не нужно, просто статичный поворот:
-        </p>
+        <br>
+        <br>
+        <h2>.choice--hidden-label</h2>
 
-        <svg class="round-loading" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle stroke="#EEEBE0" stroke-width="2" cx="11" cy="11" r="10"></circle>
-            <circle stroke-dashoffset="47.1239" stroke-dasharray="62.8319" stroke="#4FDB0D" stroke-width="2" cx="11" cy="11" r="10" transform="rotate(-90)" transform-origin="11 11"></circle>
-        </svg>
+        <label class="choice choice--checkbox choice--hidden-label">
+            <input class="choice__widget" type="checkbox">
+            <i class="choice__icon" role="presentation"></i>
+            <span class="choice__label">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, maxime, placeat. Esse ipsa libero non praesentium repellat sunt suscipit ullam.</span>
+        </label>
 
-        <p>Окончательно:</p>
-<pre><code>
-&lt;svg class="round-loading" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"&gt;
-    &lt;circle stroke="#EEEBE0" stroke-width="2" cx="11" cy="11" r="10"&gt;&lt;/circle&gt;
-    &lt;circle stroke-dashoffset="47.1239" stroke-dasharray="62.8319" stroke="#4FDB0D" stroke-width="2" cx="11" cy="11" r="10" <b>transform="rotate(-90)" transform-origin="11 11"</b>&gt;&lt;/circle&gt;
-&lt;/svg&gt;
-</code></pre>
+        <br>
+
+        <label class="choice choice--radio choice--hidden-label">
+            <input class="choice__widget" type="radio">
+            <i class="choice__icon" role="presentation"></i>
+            <span class="choice__label">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, maxime, placeat. Esse ipsa libero non praesentium repellat sunt suscipit ullam.</span>
+        </label>
 
 
         <br>
         <br>
-        <h2>Анимирование</h2>
-        <p>
-            Если нужна именно анимация прогресса, а не просто его значение,
-            то к счасть это можно сделать стилями. Добавляем класс <b>.round-loading--animated</b>
-            и тогда изменение значения <b>.stroke-dashoffset</b> будет происходить плавно
-            за счёт транзишнов в CSS.
-        </p>
-
-        <svg class="round-loading round-loading--animated" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle stroke="#EEEBE0" stroke-width="2" cx="11" cy="11" r="10"></circle>
-            <circle id="random-offset" stroke-dashoffset="47.1239" stroke-dasharray="62.8319" stroke="#4FDB0D" stroke-width="2" cx="11" cy="11" r="10" transform="rotate(-90)" transform-origin="11 11"></circle>
-        </svg>
-
-
         <br>
         <br>
-        <button id="set-random-value">
-            Случайное значение
-        </button>
+        <h2>.choice--full-width</h2>
 
-        <script>
-            $('#set-random-value').on('click', function () {
-                $('#random-offset').attr('stroke-dashoffset', Math.abs(Math.random()) * 62.8319)
-            });
-        </script>
+        <label class="choice choice--checkbox choice--full-width">
+            <input class="choice__widget" type="checkbox">
+            <i class="choice__icon" role="presentation"></i>
+            <span class="choice__label">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, maxime, placeat. Esse ipsa libero non praesentium repellat sunt suscipit ullam.</span>
+        </label>
+
+        <br>
+
+        <label class="choice choice--radio choice--full-width">
+            <input class="choice__widget" type="radio">
+            <i class="choice__icon" role="presentation"></i>
+            <span class="choice__label">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, maxime, placeat. Esse ipsa libero non praesentium repellat sunt suscipit ullam.</span>
+        </label>
 
 
         <br>
