@@ -33,6 +33,19 @@
     }
 
 
+.carousel--avatar .carousel__ribbon {
+
+}
+    .carousel--avatar .carousel__item {
+        background-image: url("../images/carousel-avatar.svg");
+        background-size: 9px 2px;
+        background-repeat: repeat-x;
+        background-position: left center;
+    }
+
+.carousel--avatar .carousel__item:last-child {
+    margin-right: 0;
+}
 
 @media (min-width: 1100px) {
 
@@ -40,8 +53,6 @@
         position: relative;
         margin-left: 0;
         margin-right: 0;
-        padding-left: 40px;
-        padding-right: 40px;
     }
         .carousel__container {
 
@@ -81,4 +92,43 @@
         .carousel--initialized .carousel__control {
             display: block;
         }
+
+    .carousel--avatar {
+        padding-left: 47px;
+        padding-right: 47px;
+    }
+
+    .carousel--avatar::before {
+        content: "";
+        position: absolute;
+        z-index: 10;
+        left: 47px;
+        top: 0;
+        bottom: 0;
+        width: 8px;
+        background-image: linear-gradient(to right, #FFFFFF, rgba(255, 255, 255, 0));
+    }
+
+    .carousel--avatar::after {
+        content: "";
+        position: absolute;
+        z-index: 10;
+        right: 47px;
+        top: 0;
+        bottom: 0;
+        width: 8px;
+        background-image: linear-gradient(to left, #FFFFFF, rgba(255, 255, 255, 0));
+    }
+
+        .carousel--avatar .carousel__ribbon {
+
+        }
+            .carousel--avatar .carousel__item {
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+
+            .carousel--avatar .carousel__item:last-child {
+                margin-right: 0;
+            }
 }

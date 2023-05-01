@@ -43,7 +43,7 @@
         var RibbonWidth = 0;
 
         $carouselContainer.find('.carousel__item').each(function () {
-            RibbonWidth += $(this).outerWidth();
+            RibbonWidth += $(this).outerWidth() + parseInt($(this).css('margin-right'), 10);
         });
 
         if( $carouselContainer.scrollLeft() >= Math.ceil(RibbonWidth - $carouselContainer.outerWidth() ) - 1 ) {
