@@ -4,6 +4,8 @@
 }
     .profile__preview {
         float: right;
+        margin-left: 24px;
+        margin-bottom: 10px;
     }
 
     .profile__heading {

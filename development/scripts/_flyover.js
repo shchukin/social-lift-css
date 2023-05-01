@@ -13,6 +13,7 @@
             });
         }
 
+        // Few more examples:
         // if( target.hasClass('flyover--side-card') ) {
         //     target.css({
         //         'top': $(this)[0].getBoundingClientRect().top + $(this).height(),
