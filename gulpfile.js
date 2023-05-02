@@ -12,7 +12,54 @@ var svgstore     = require('gulp-svgstore');
 var svgmin       = require('gulp-svgmin');
 var change       = require('gulp-change');
 
+/* css prefixes */
+var name = require('gulp-rename');
+var rework = require('gulp-rework');
+var reworkNPM = require('rework-npm');
+var classPrefix = require('rework-class-prefix');
 
+var prefixString = 'lift-';
+
+function addPrefixes(content) {
+
+    var source = content.split('\n');
+    var outputLine = '';
+    var classString = '';
+    var prefixedString = '';
+    var result = '';
+    var i = 0;
+
+
+    source.forEach(function (line) {
+
+        if (line.indexOf('class=') !== -1 && line.indexOf('kmfdm-') === -1) {
+
+
+            /* get attributes */
+
+            classString = line.match('class[ \t]*=[ \t]*"[^"]+"');
+            classString = classString ? classString[0] : null;
+
+
+            /* work with string such as:    class="foobar"    */
+
+            prefixedString = classString.replace('class="', 'class="' + prefixString);  // first occurrence at the beginning of a    class="
+            prefixedString = prefixedString.split(' ').join(' ' + prefixString);        // rest of occurrence after each space
+
+
+            /* write down results */
+
+            outputLine = line.replace(classString, prefixedString);
+
+            result += outputLine + '\n';
+        } else {
+            result += line + '\n';
+        }
+
+    });
+
+    return result;
+}
 
 function addSourcesTimestamp(content) {
     var source = content.split('\n');
@@ -181,6 +228,7 @@ gulp.task('images', function() {
 gulp.task('markups', function() {
   return gulp.src('development/markups/**/*')
       .pipe(plumber())
+      .pipe(change(addPrefixes))
       .pipe(change(symbolsImgToSpriteSvg))
       .pipe(change(uncommentGoogleFonts))
       .pipe(change(addSourcesTimestamp))
@@ -204,6 +252,7 @@ gulp.task('legacy', function() {
 gulp.task('layouts', function() {
   return gulp.src('development/layouts/**/*')
       .pipe(plumber())
+      .pipe(change(addPrefixes))
       .pipe(change(symbolsImgToSpriteSvg))
       .pipe(change(uncommentGoogleFonts))
       .pipe(change(addSourcesTimestamp))
@@ -269,6 +318,12 @@ gulp.task('styles', function() {
       .pipe(base64({
         // Allow files from /vectors/ only
         exclude: ['/sprite/', '/images/', '/symbols/']
+      }))
+      .pipe(rework(reworkNPM(), classPrefix(prefixString)))
+      /* По какой-то причине classPrefix чуть выше отменяет минификацию файла, так что запускаем её опять: */
+      .pipe(cleanCSS({
+          advanced: false,
+          keepSpecialComments: 0
       }))
       .pipe(gulp.dest('production/styles/'))
       .pipe(size())
