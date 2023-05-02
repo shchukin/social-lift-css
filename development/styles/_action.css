@@ -16,6 +16,8 @@
     overflow: hidden !important;
     cursor: pointer;
     user-select: none;
+    transition: background-color var(--button-transition),
+                transform var(--button-transition);
 }
 
 /* stylelint-disable */
@@ -24,3 +26,20 @@
 .action--prev  { background-image: url("../images/dash-prev.svg"); }
 .action--next  { background-image: url("../images/dash-next.svg"); }
 /* stylelint-enable */
+
+
+.action:hover {
+    background-color: #E3E4EC;
+    transform: scale(1.1) !important;
+}
+
+.action:active {
+    background-color: #F2F3F9;
+    transform: none !important;
+    transition: none;
+}
+
+
+.action:focus {
+    background-color: #F2F3F9;
+}

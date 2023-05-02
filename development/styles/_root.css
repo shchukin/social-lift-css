@@ -1,5 +1,6 @@
 :root {
     --easeOutCirc: cubic-bezier(0, 0.55, 0.45, 1);
+    --button-transition: 0.15s ease;
 
     --font: 'Golos Text';
     --font-ui: 'Golos UI';
@@ -9,6 +10,7 @@
     --primaryColor-70pct: rgba(25, 27, 41, 0.7);
     --primaryColor-80pct: rgba(25, 27, 41, 0.8);
     --panelBackground: #E3E4EB;
+    --panelBackgroundHover: #D4D5DD;
     --panelBackground35pct: rgba(227, 228, 235, 0.35);
     --panelBackground50pct: rgba(227, 228, 235, 0.5);
     --hintColor: rgba(25, 27, 41, 0.5);

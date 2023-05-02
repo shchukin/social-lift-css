@@ -18,17 +18,19 @@
     white-space: nowrap;
     cursor: pointer;
     user-select: none;
-    transition: transform 0.15s ease;
+    transition: background-color var(--button-transition),
+                transform var(--button-transition);
 }
 
-.button:hover {
-    background-color: var(--buttonColor) !important;
+.button:hover,
+.button:focus:hover {
+    background-color: #ABF72E !important;
     transform: scale(1.02);
 }
 
 .button:active {
     background-color: var(--buttonColor) !important;
-    transform: none;
+    transform: none !important;
     transition: none !important;
 }
 
@@ -50,8 +52,9 @@
     box-shadow: none;
 }
 
-.button--secondary:hover {
-    background-color: var(--panelBackground) !important;
+.button--secondary:hover,
+.button--secondary:focus:hover {
+    background-color: var(--panelBackgroundHover) !important;
 }
 
 .button--secondary:active {
