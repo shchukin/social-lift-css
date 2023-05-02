@@ -12,6 +12,7 @@
     letter-spacing: var(--UI-16-16-letter-spacing);
     color: inherit !important;
     text-decoration: none !important;
+    user-select: none;
 }
 
 .dash--more {

@@ -17,6 +17,7 @@
     text-decoration: none !important;
     white-space: nowrap;
     cursor: pointer;
+    user-select: none;
     transition: transform 0.15s ease;
 }
 

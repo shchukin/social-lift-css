@@ -15,6 +15,7 @@
     white-space: nowrap;
     overflow: hidden !important;
     cursor: pointer;
+    user-select: none;
 }
 
 /* stylelint-disable */
