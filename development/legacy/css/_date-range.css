@@ -1,0 +1,12 @@
+.date-range {
+    display: inline-flex;
+    vertical-align: top;
+    align-items: center;
+}
+    .date-range__separator {
+        margin: 0 10px;
+    }
+
+    .date-range__control {
+
+    }

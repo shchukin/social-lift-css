@@ -1,0 +1,61 @@
+.event-preview {
+    width: 474px;
+    height: 110px;
+    position: relative;
+    padding: 0 0 0 110px;
+    border-radius: 3px;
+}
+    .event-preview__preview {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+        .event-preview__image {
+            vertical-align: top;
+            border-radius: 3px 0 0 3px;
+            width: 110px;
+            height: 110px;
+        }
+
+    .event-preview__body {
+        padding: 18px 26px 0;
+    }
+
+    .event-preview__title {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000;
+    }
+
+
+.event-preview__footer {
+    position: absolute;
+    left: 130px;
+    right: 20px;
+    bottom: 14px;
+    height: 30px;
+    padding: 0 0 0 116px;
+}
+
+.event-preview__submit {
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 108px;
+}
+.event-preview__submit-long{
+	width: 130px;
+}
+
+.event-preview__start {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: #7c7c7c;
+}
+
+.event-preview__countdown {
+    margin: 1px 0 0;
+}

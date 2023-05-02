@@ -1,0 +1,48 @@
+.investment {
+    padding: 30px;
+    display: flex;
+}
+    .investment__column {
+        width: 50%;
+        flex-shrink: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-left: 1px solid #999;
+    }
+
+    .investment__column:first-child {
+        padding-left: 0;
+        border-left: none;
+    }
+
+    .investment__column:last-child {
+        padding-right: 0;
+    }
+
+        .investment__heading {
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .investment__hint {
+            text-align: center;
+        }
+
+        .investment__section {
+            margin-top: 40px;
+        }
+            .investment__sub-title {
+                text-align: center;
+            }
+
+        .investment__operations {
+            margin-top: 40px;
+        }
+            .investment__action {
+                margin-top: 14px;
+                text-align: center;
+            }
+
+            .investment__action:first-child {
+                margin-top: 0;
+            }

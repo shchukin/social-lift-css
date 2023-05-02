@@ -1,0 +1,30 @@
+.add-mail-icon {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 250px;
+    background-color: #c3c9cd;
+}
+
+.add-mail-icon:before,
+.add-mail-icon:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    display: block;
+    background-color: #728695;
+    border-radius: 4px;
+}
+
+.add-mail-icon:before {
+    width: 80px;
+    height: 8px;
+}
+.add-mail-icon:after {
+    width: 8px;
+    height: 80px;
+}

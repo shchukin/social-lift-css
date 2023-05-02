@@ -1,0 +1,40 @@
+.invest-project {
+
+}
+    .invest-project__list {
+        padding-left: 20px;
+    }
+        .invest-project__item {
+            margin-top: 8px;
+        }
+
+        .invest-project__item:first-child {
+            margin-top: 0;
+        }
+
+            .invest-project__title {
+                display: inline-block;
+                vertical-align: top;
+                margin-top: -3px;
+                width: 200px;
+                font-weight: bold;
+                font-size: 18px;
+                margin-right: 5px;
+            }
+            .invest-project__username {
+                display: inline-block;
+                vertical-align: top;
+                margin-top: -3px;
+                width: 200px;
+                font-weight: bold;
+                font-size: 18px;
+                margin-right: 5px;
+            }
+            .investment__column-edit .invest-project__title{
+                width: 186px;
+            }
+
+            .invest-project__actions {
+                font-size: 13px;
+                white-space: nowrap;
+            }

@@ -1,0 +1,94 @@
+.chat-stat {
+    font-size: 14px;
+    line-height: 16px;
+}
+    .chat-stat__crowd {
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        padding-left: 40px;
+    }
+        .chat-stat__icon {
+            position: absolute !important;
+            left: 0;
+            top: -4px;
+        }
+            /* for js hovers */
+            #tolpa:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: -100px;
+                right: -600px;
+                bottom: -93px;
+                display: none;
+            }
+
+            #tolpa:hover:before {
+                display: block;
+            }
+
+            /* for js hovers */
+            #tolpa:after {
+                content: '';
+                position: absolute;
+                left: 58px;
+                top: -100px;
+                right: -600px;
+                bottom: -260px;
+                transform: rotate(30deg);
+                display: none;
+            }
+
+            #tolpa:hover:after {
+                display: block;
+            }
+
+            .body__head_account {
+                position: relative;
+                z-index: 100;
+            }
+
+        .chat-stat__data-row {
+            position: relative;
+            margin-right: 20px;
+        }
+
+        .chat-stat__data-row:last-child {
+            margin-right: 0;
+        }
+
+            .chat-stat__data-row:after {
+                content: '/';
+                position: absolute;
+                left: 100%;
+                top: 0;
+                margin-left: 9px;
+            }
+
+            .chat-stat__data-row:last-child:after {
+                display: none;
+            }
+
+    .chat-stat__link {
+        margin-top: 10px;
+    }
+        .chat-stat__link-title {
+            margin-right: 4px;
+        }
+
+        .chat-stat__link-input {
+            position: relative;
+            z-index: 100;
+            color: #333;
+            background: #fff;
+            box-shadow: none;
+        }
+
+@media (max-width: 1240px) {
+
+    .chat-stat__link-title {
+        display: block;
+        margin-bottom: 2px;
+    }
+}

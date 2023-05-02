@@ -1,0 +1,11 @@
+.limited-input {
+    position: relative;
+}
+    .limited-input__letters-left {
+        position: absolute;
+        right: 0;
+        bottom: 100%;
+        margin-bottom: 4px;
+        font-size: 12px;
+        line-height: 20px;
+    }

@@ -1,0 +1,11 @@
+.info {
+    display: inline-block;
+    vertical-align: top;
+    width: 16px;
+    height: 16px;
+    background: url(../images/info.png) no-repeat center top;
+}
+
+.info:hover {
+    background-position: center bottom;
+}

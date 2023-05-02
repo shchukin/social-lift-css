@@ -1,0 +1,54 @@
+.screen {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding: 56.25% 0 0;
+    background: #444 url(../images/screen.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+            background-size: cover;
+}
+    .screen__content {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+    }
+        .screen__title {
+            white-space: nowrap;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 22px;
+            color: #fff;
+        }
+
+        .screen__countdown {
+
+        }
+
+
+
+@media screen and ( min-width: 1240px ) {
+
+    .screen__title {
+        font-size: 33px;
+        line-height: 33px;
+    }
+
+    .screen__countdown {
+        margin-top: 10px;
+    }
+
+}
+
+
+@media screen and ( min-width: 1600px ) {
+    .screen__title {
+        font-size: 44px;
+        line-height: 44px;
+    }
+
+    .screen__countdown {
+        margin-top: 20px;
+    }
+}

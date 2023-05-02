@@ -1,0 +1,75 @@
+.single-message {
+    position: relative;
+    margin: 20px;
+}
+
+.single-message_responder_self {
+    padding-left: 140px;
+    padding-right: 60px;
+    text-align: right;
+}
+
+.single-message_responder_opponent {
+    padding-right: 140px;
+    padding-left: 60px;
+}
+    .single-message__avatar {
+        position: absolute;
+        top: 4px;
+        display: block;
+    }
+
+    .single-message_responder_self .single-message__avatar {
+        right: 0;
+    }
+
+    .single-message_responder_opponent .single-message__avatar {
+        left: 0;
+    }
+        .single-message__picture {
+            vertical-align: top;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            box-shadow: 0 0 0 2px #333;
+        }
+
+    .single-message__container {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        padding: 14px 20px;
+        background-color: #efefef;
+        border-radius: 6px;
+        text-align: left;
+    }
+        .single-message__container:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 14px;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+        }
+
+        .single-message_responder_self .single-message__container:before {
+            left: 100%;
+            border-left: 10px solid #efefef;
+        }
+
+        .single-message_responder_opponent .single-message__container:before {
+            right: 100%;
+            border-right: 10px solid #efefef;
+        }
+
+        .single-message__content {
+            font-size: 14px;
+            line-height: 18px;
+            color: #333;
+        }
+        .single-message__date {
+            margin-top: 4px;
+            font-size: 12px;
+            line-height: 14px;
+            color: #aaa;
+        }

@@ -1,0 +1,15 @@
+.partnership-bonus {
+    text-align: center;
+}
+    .partnership-bonus__handler {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .partnership-bonus__bonus {
+
+    }
+
+    .partnership-bonus td {
+        vertical-align: middle !important;
+    }

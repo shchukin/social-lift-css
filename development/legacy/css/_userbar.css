@@ -1,0 +1,30 @@
+.userbar {
+    position: relative;
+	display: flex;
+	align-items: center;
+}
+	.userbar__avatar {
+		margin-right: 18px;
+	}
+
+	.userbar__content {
+
+	}
+	.userbar__head {
+		/*display: flex;*/
+		/*align-items: baseline;*/
+	}
+	.userbar__title {
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	.userbar_link {
+		/*margin-left: 13px;*/
+	}
+
+	.userbar__note {
+		font-size: 14px;
+		line-height: 18px;
+	}

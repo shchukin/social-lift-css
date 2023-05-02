@@ -1,0 +1,8 @@
+.logo-placeholder {
+    display: flex;
+    align-items: center;
+    width: 116px;
+    height: 100%;
+    padding: 0 10px 8px;
+    font-size: 16px;
+}

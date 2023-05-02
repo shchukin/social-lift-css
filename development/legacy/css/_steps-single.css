@@ -1,0 +1,52 @@
+.single-step {
+	position: relative;
+	padding: 36px 240px 12px 30px;
+	min-height: 105px;
+	cursor: default;
+}
+
+.single-step__check {
+	position: absolute;
+	left: 0;
+	top: 38px;
+	font-size: 30px;
+}
+
+.steps__progress .progress-bar {
+	overflow: hidden;
+	width: 0;
+}
+
+.single-step__label {
+	font-weight: inherit;
+}
+
+.single-step__title {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 20px;
+	line-height: 28px;
+}
+
+.single-step__check:checked + .single-step__title:after {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+	margin-top: 1px;
+	height: 2px;
+	background: #f44c4c;
+}
+
+.single-step__note {
+	margin-top: -2px;
+}
+
+.single-step__action {
+	position: absolute;
+	right: 0;
+	top: 50%;
+}

@@ -1,0 +1,30 @@
+.sort-heading {
+    padding-right: 30px !important;
+    position: relative;
+    cursor: pointer;
+}
+
+.sort-heading:after {
+    content: "\e150";
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    display: block;
+    font-family: 'Glyphicons Halflings';
+    opacity: 0.2;
+    transition: opacity .24s ease;
+}
+
+.sort-heading:hover:after {
+    opacity: .5;
+}
+
+
+.sort-heading_desc:after {
+    content: "\e156";
+    opacity: .5;
+}
+.sort-heading_asc:after {
+    content: "\e155";
+    opacity: .5;
+}

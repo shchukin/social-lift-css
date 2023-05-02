@@ -1,0 +1,7 @@
+.accordion-panel {
+
+}
+
+.accordion-panel ~ .accordion-panel {
+    margin-top: 5px;
+}

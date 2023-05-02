@@ -1,0 +1,14 @@
+.clipboard-btn:not(.kmfdm-button).success{
+	background: #31c516!important;
+	padding-left: 3px!important;
+	color: #fff!important;
+}
+.icons__plate.success{
+	fill: #1A9C20!important;
+	background: transparent!important;
+}
+
+
+.button_volumetric {
+	min-width: 200px;
+}

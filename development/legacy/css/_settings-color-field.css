@@ -1,0 +1,37 @@
+.settings-color-field {
+    display: flex;
+    padding-right: 40px;
+    align-items: center;
+}
+
+    .settings-color-field__input {
+        width: 240px;
+    }
+
+    .settings-color-field__output {
+        position: relative;
+        margin-left: 10px;
+        width: 32px;
+        height: 32px;
+        min-width: 32px;
+        border: 1px solid #000;
+        box-shadow: 0 0 0 1px rgb(204, 204, 204);
+        border-radius: 3px;
+        background-image: linear-gradient(to right, #fff, #fff 10px, #ccc 10px, #ccc 20px, #fff 20px, #fff 30px), 
+                          linear-gradient(to right, #ccc, #ccc 10px, #fff 10px, #fff 20px, #ccc 20px, #ccc 30px);
+        background-position: 0 10px, 0 0;
+        background-size: 30px 10px, 30px 30px;
+        background-repeat: no-repeat, no-repeat
+    }
+        .settings-color-field__value {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%
+        }
+
+    .settings-color-field__clear {
+        margin-left: 6px;
+        white-space: nowrap;
+    }

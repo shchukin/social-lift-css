@@ -1,0 +1,31 @@
+.logo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+}
+
+.logo:active {
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
+}
+
+.logo_dark {
+    
+}
+
+.logo_big {
+    
+    width: 254px;
+    height: 65px;
+}
+
+.logo img{
+	max-width: 210px;
+	max-height: 75px;
+}
+@media(max-width: 1400px){
+	
+
+}

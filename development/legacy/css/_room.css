@@ -1,0 +1,31 @@
+.room {
+
+}
+    .room__content {
+
+    }
+
+    .room {
+        height: 100%;
+        padding: 0 304px;
+        position: relative;
+        background: #ffffff;
+    }
+
+    .room__sidebar {
+        position: absolute;
+        width: 304px;
+        top: 0;
+        bottom: 0;
+        border: 0 solid #cbcbcb
+    }
+
+    .room__sidebar_position_left {
+        left: 0;
+        border-right-width: 1px;
+    }
+
+    .room__sidebar_position_right {
+        right: 0;
+        border-left-width: 1px;
+    }

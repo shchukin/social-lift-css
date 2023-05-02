@@ -1,0 +1,45 @@
+.contact-card {
+    position: relative;
+    padding: 12px 18px 12px 88px;
+}
+    .contact-card__avatar {
+        position: absolute;
+        left: 14px;
+        top: 12px;
+        display: block;
+    }
+        .contact-card__picture {
+            vertical-align: top;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: 0 0 0 2px #333;
+        }
+
+        .contact-card__online {
+            position: absolute;
+            right: 1px;
+            bottom: 1px;
+            display: block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid #333;
+            border-radius: 50%;
+            background: #62be2a;
+        }
+
+    .contact-card__title {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 20px;
+    }
+        .contact-card__link {
+            color: inherit;
+        }
+
+    .contact-card__description {
+        margin-top: 6px;
+        font-size: 12px;
+        line-height: 14px;
+        color: #999;
+    }

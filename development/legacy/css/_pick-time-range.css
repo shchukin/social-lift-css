@@ -1,0 +1,38 @@
+.pick-time-range {
+
+}
+    .pick-time-range__input {
+
+    }
+
+    .pick-time-range__shortcuts {
+        display: flex;
+        margin: 10px 0 0;
+        padding: 0;
+        list-style: none;
+        flex-wrap: wrap;
+        font-size: 13px;
+        line-height: 14px;
+    }
+
+    .pick-time-range__action {
+        margin-right: 30px;
+        position: relative;
+    }
+
+    .pick-time-range__action:last-child {
+        margin-right: 0;
+    }
+        .pick-time-range__action:before {
+            content: '|';
+            position: absolute;
+            left: 100%;
+            top: 0;
+            margin-left: 12px;
+            color: #ccc;
+        }
+
+        .pick-time-range__action:last-child:before {
+            display: none;
+        }
+

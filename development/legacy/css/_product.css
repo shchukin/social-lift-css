@@ -1,0 +1,122 @@
+.product {
+    padding: 30px 30px 60px;
+}
+    .product__back-to-index {
+
+    }
+
+    .product__note {
+        font-style: italic;
+        font-size: 14px;
+        color: #737373;
+    }
+    .product__info {
+        display: flex;
+    }
+        .product__preview {
+            flex-basis: 253px;
+            min-width: 253px;
+            max-width: 253px;
+        }
+            .product__image {
+                width: 100%;
+                height: auto;
+            }
+
+        .product__data {
+            margin-left: 20px;
+            margin-top: 0;
+            flex-basis: 600px;
+        }
+            .product__title {
+                margin: 0;
+            }
+
+            .product__highlight {
+                max-width: 400px;
+                margin-top: 10px;
+                font-size: 18px;
+                line-height: 24px;
+            }
+
+            .product__description {
+                margin-top: 20px;
+            }
+
+            .product__price {
+                margin-top: 20px;
+                font-size: 24px;
+                line-height: 24px;
+            }
+                .product__price-multiplier,
+                .product__price-multiplier__input {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                .product__price-multiplier .input-group {
+                    width: 110px;
+                    margin-top: -1px;
+                }
+                .product__price-period {
+                }
+                    .product__price-period__main-label {
+                        font-size: 18px;
+                        line-height: 20px;
+                    }
+                    .product__price-period__label {
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 16px;
+                        padding-left: 15px;
+                    }
+                    .product__price-period__label-promo {
+                        background-color: #bbffd5;
+                        padding: 15px;
+                    }
+                    .product__price-period__select {
+                        display: inline-block;
+                        margin-left: 8px;
+                        width: auto;
+                        max-width: 253px;
+                    }
+
+            .product__description + .product__price {
+                margin-top: 40px;
+            }
+
+            .product__buy {
+                margin-top: 30px;
+                margin-right: -100px;
+            }
+                .product__buy .btn {
+                    margin-right: 4px;
+                }
+            .product__buy-counter {
+                width: 80px;
+            }
+
+            .product__promo-code {
+                margin-top: 6px;
+            }
+
+    .product__payment {
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .product__legal {
+        margin-top: 50px;
+        font-size: 12px;
+        line-height: 16px;
+        color: #737373;
+    }
+    .product__external-button {
+        display: inline-block;
+        max-width: 230px;
+    }
+    .product__countdown {
+        margin-left: 1.3em;
+        font-size: 14px;
+        line-height: normal;
+        margin-top: 8px;
+    }

@@ -1,0 +1,22 @@
+.contacts-table {
+
+}
+    .contacts-table th {
+        text-align: center;
+    }
+
+    .contacts-table td {
+        vertical-align: middle !important;
+    }
+
+    .contacts-table__name {
+
+    }
+
+    .contacts-table__email {
+
+    }
+
+    .contacts-table__subscription {
+
+    }

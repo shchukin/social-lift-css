@@ -1,0 +1,14 @@
+.contacts-wrap-list {
+
+}
+    .contacts-wrap-list .checkbox {
+        padding-top: 0;
+    }
+
+    .contacts-wrap-list .checkbox:first-child {
+        margin-top: -10px;
+    }
+
+    .contacts-wrap-list .checkbox:last-child {
+        margin-bottom: -6px;
+    }

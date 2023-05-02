@@ -1,0 +1,30 @@
+.page-preview {
+}
+
+.page-preview__link {
+    position: relative;
+    display: block;
+    color: #FFFFFF;
+}
+
+.page-preview__link:hover {
+    color: #ADD8E6;
+}
+
+.page-preview__picture {
+    width: 100%;
+    vertical-align: top;
+}
+
+.page-preview__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    max-height: 140px;
+    padding: 5px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 4px;
+    transform: translate(-50%, -50%);
+}

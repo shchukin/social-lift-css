@@ -1,0 +1,28 @@
+.verify-list{
+	background: #fff;
+	padding: 20px 0;
+	font-size: 12px;
+}
+.verify-list:first-child{
+	padding-top: 0;
+}
+.verify__item-ceil{
+	display: inline-block;
+	width: 140px;
+	overflow: hidden;
+	border-right: 1px solid #ccc;
+	padding: 4px;
+}
+.verify__item-default{
+	width: 100px;
+}
+.verify__item:nth-child(even){
+	background: #eee;
+}
+.verify__header{
+	font-size: 16px;
+	font-weight: 400;
+}
+.verify__item-link{
+	width: 170px;
+}

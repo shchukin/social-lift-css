@@ -1,0 +1,108 @@
+.page {
+    position: relative;
+}
+    .page__header {
+        position: static;
+        width: 800px;
+        height: 0;
+        margin: 0 auto !important;
+    }
+        .page__header .header {
+            z-index: 30;
+        }
+    .module-chat .page__header {
+        position: absolute;
+        margin-top: -100px;
+        z-index: 201;
+    }
+    
+
+    /* ??? */
+    .page__header_index {
+        /*background-color: transparent;*/
+        /*position: absolute;*/
+        /*z-index: 100;*/
+        /*top: 0;*/
+        /*left: 0;*/
+        /*right: 0;*/
+        /*z-index: 100;*/
+    }
+
+
+    .page__top {
+        /* height: 645px; */
+        padding: 98px;
+        position: relative;
+    }
+
+    .page__main {
+        position: relative;
+        z-index: 20;
+    }
+
+    .page__heading-wrap {
+        position: relative;
+    }
+
+    .page__links {
+        padding: 40px 0;
+    }
+
+    .page__links_visibility_hover {
+        display: none;
+        position: absolute;
+        z-index: 2000;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        background: #f3f3f3;
+        padding: 10px 0;
+    }
+
+    .page__links_visibility_hover:hover {
+        display: block;
+    }
+
+    .page__header:hover + .page__links_visibility_hover {
+        display: block;
+    }
+
+
+    .page__footer{
+		border-top: 1px solid transparent;	
+		margin-top: auto;
+	}
+
+    .welcome .page__footer {
+		background-color: transparent !important;
+	}
+    .welcome .page__footer .region {
+		width: auto;
+        background: rgba(255,255,255,.5);
+	}
+
+    .page__room {
+        height: 100%;
+        padding: 0px;
+    }
+    
+    .body__content{
+	    padding: 20px;
+    }
+    .body__video{
+	    text-align: center;
+    }
+
+
+
+    /* footer to bottom */
+    .body__container {
+        min-width: 1140px; /* shift left on iphone */
+        min-height: calc(100vh - 100px);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .body__container > .page__body {
+        flex-grow: 1;
+    }

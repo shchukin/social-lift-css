@@ -1,0 +1,15 @@
+.status {
+    font-weight: bold;
+}
+
+.status_state_success {
+    color: #5cb85c;
+}
+
+.status_state_warning {
+    color: #f0ad4e;
+}
+
+.status_state_error {
+    color: #d9534f;
+}

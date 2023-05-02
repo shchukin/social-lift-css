@@ -1,0 +1,15 @@
+.highlight{
+	
+}
+
+.highlight_negative{
+	color: #f44c4c;
+}
+
+.highlight_positive{
+	color: #20b97e;
+}
+
+.highlight_neutral{
+	color: #fac655;
+}

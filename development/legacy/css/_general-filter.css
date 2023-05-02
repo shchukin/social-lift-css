@@ -1,0 +1,13 @@
+.general-filter {
+
+}
+    .general-filter__param {
+
+    }
+        .general-filter__param .form-control {
+            margin-left: 6px;
+        }
+
+    .general-filter__value {
+        margin-top: 10px;
+    }

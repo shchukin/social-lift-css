@@ -1,0 +1,12 @@
+.edit-import-contacts-submit {
+    margin-top: 40px;
+    border-top: 1px solid #333;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.edit-import-contacts-submit_top {
+    border-top: none;
+    margin-top: none;
+    padding-top: 0;
+}

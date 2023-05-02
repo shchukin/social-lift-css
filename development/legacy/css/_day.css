@@ -1,0 +1,42 @@
+.day {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.day_today {
+    background: #f8f8f8;
+    box-shadow: inset 0 0 3px rgba(0,0,0,.09);
+}
+
+    .day__index {
+        position: absolute;
+        right: 6px;
+        top: 8px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 18px;
+        color: #000;
+    }
+
+    .day__index_another-month {
+        color: #dadada;
+    }
+
+    .day__index_weekend {
+        color: #e63e3e;
+    }
+
+    .day__list {
+        width: 83px;
+        padding: 10px 0 0 10px;
+    }
+        .day__item {
+            margin: 5px 0 0;
+            height: 18px;
+        }
+
+        .day__item:first-child {
+            margin-top: 0;
+        }
+

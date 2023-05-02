@@ -1,0 +1,17 @@
+.promo-table{
+	width: 100%;
+	font-size: 12px;
+	margin-bottom: 0;
+}
+
+.promo-table td{
+	text-align: center;
+	vertical-align: middle !important;
+}
+
+.promo-table th{
+	text-align: center;
+	text-transform: uppercase;
+	border-top: 2px solid #ddd !important;
+	vertical-align: middle !important;
+}

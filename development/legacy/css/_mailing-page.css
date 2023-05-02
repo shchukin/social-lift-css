@@ -1,0 +1,10 @@
+.mailing-page {
+    padding: 30px 0;
+}
+    .mailing-page__tags {
+        padding: 0 30px;
+    }
+
+    .mailing-page__tabs {
+        padding: 20px 30px 0;
+    }

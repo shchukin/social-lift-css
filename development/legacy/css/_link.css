@@ -1,0 +1,27 @@
+.link {
+    display: inline;
+    text-decoration: underline;
+    color: #008ace;
+}
+
+.link:hover,
+.link:focus {
+    text-decoration: none;
+    color: #008ace;
+}
+
+.link_fake,
+.link_fake:hover,
+.link_fake:focus {
+    text-decoration: none;
+    color: inherit;
+}
+
+.link_inverted {
+    text-decoration: none;
+}
+
+.link_inverted:hover,
+.link_inverted:focus {
+    text-decoration: underline;
+}

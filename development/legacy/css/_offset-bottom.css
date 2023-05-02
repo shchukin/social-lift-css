@@ -1,0 +1,7 @@
+.offset-bottom{
+	margin-bottom: 20px;
+}
+
+.offset-bottom:last-child{
+	margin-bottom: 0;
+}

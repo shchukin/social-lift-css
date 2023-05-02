@@ -1,0 +1,20 @@
+.request-task {
+    display: flex;
+    align-items: flex-end;
+}
+    .request-task__summary {
+        width: 343px;
+    }
+
+    .request-task__comment {
+        margin-left: 20px;
+        width: 343px;
+    }
+        .request-task__widget-for-comment {
+            height: 108px !important;
+            resize: none;
+        }
+
+    .request-task__action {
+        margin-left: 20px;
+    }

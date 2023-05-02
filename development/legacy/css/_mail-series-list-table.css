@@ -1,0 +1,24 @@
+.mail-series-list-table {
+
+}
+    .mail-series-list-table td {
+        vertical-align: middle !important;
+    }
+
+    .mail-series-list-table__preview {
+        width: 100px;
+    }
+
+    .mail-series-list-table__schedule {
+
+    }
+
+    .mail-series-list-table__actions {
+        width: 1px;
+        white-space: nowrap;
+    }
+
+    .mail-series-list-table__order {
+        width: 1px;
+        white-space: nowrap;
+    }

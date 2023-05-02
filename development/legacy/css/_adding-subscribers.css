@@ -1,0 +1,11 @@
+.adding-subscribers {
+
+}
+    .adding-subscribers__tags {
+        margin: 0 -15px;
+        padding: 0 15px;
+    }
+
+    .adding-subscribers__tabs {
+        padding-top: 30px;
+    }

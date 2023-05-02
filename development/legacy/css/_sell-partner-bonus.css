@@ -1,0 +1,17 @@
+.sell-partner-bonus {
+
+}
+    .sell-partner-bonus th {
+        padding-left: 16px !important;
+        vertical-align: middle !important;
+        width: 1px;
+        white-space: nowrap;
+    }
+    .sell-partner-bonus td {
+        vertical-align: middle !important;
+        white-space: nowrap;
+    }
+
+    .sell-partner-bonus__input {
+        width: 100px;
+    }

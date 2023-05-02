@@ -1,0 +1,34 @@
+.request-table {
+
+}
+    .request-table th {
+        text-align: center;
+    }
+
+    .request-table td {
+        vertical-align: middle !important;
+    }
+
+    .request-table__status {
+
+    }
+
+    .request-table__name {
+
+    }
+
+    .request-table__phone {
+        white-space: nowrap;
+    }
+
+    .request-table__email {
+
+    }
+
+    .request-table__source {
+
+    }
+
+    .request-table__date {
+        white-space: nowrap;
+    }

@@ -1,0 +1,11 @@
+.settings-help {
+    padding-top: 48px;
+}
+
+.settings-help > p:first-child {
+    margin-top: 0;
+}
+
+.settings-help > p:last-child {
+    margin-bottom: 0;
+}

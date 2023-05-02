@@ -1,0 +1,145 @@
+.category{
+	
+}
+
+.category__header{
+	display: flex;
+	align-items:center;
+	justify-content:space-between;
+	padding: 10px;
+	padding: 5px;
+	border:1px solid #ADD8E6;
+	border-bottom-right-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:20px;
+	border-top-left-radius:20px;
+}
+
+.category__header_root{
+	border:1px solid #ffb3b3;
+}
+
+.category__content{
+	display: none;
+	padding-left: 38px;
+	padding-top: 20px;
+}
+
+.category_disabled{
+	opacity:0.5;
+	transition:opacity 0.24s;
+}
+
+.category_disabled .category_disabled{
+	opacity:1;
+}
+
+.category_disabled:hover{
+	opacity:1;
+}
+
+.category__designation{
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 20px;
+	line-height: normal;
+	margin-right: 15px;
+	cursor:pointer;
+	color:#696969;
+	transition:color 0.24s;
+}
+
+.category__designation:hover{
+	color:#555;
+}
+
+.category__info{
+	display: flex;
+	align-items:center;
+	padding-right: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+
+.category__toggle{
+	cursor:pointer;
+	width: 33px;
+	height: 33px;
+	margin-right: 15px;
+	position: relative;
+	flex-shrink:0;
+	border:1px solid #ccc;
+	border-radius:50%;
+	background-color: #fff;
+}
+
+.category__toggle:before{
+	content:"";
+	position: absolute;
+	width: 60%;
+	height: 2px;
+	background-color: #333;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	transition:width 0.6s;
+}
+
+.category__toggle:after{
+	content:"";
+	position: absolute;
+	width: 60%;
+	height: 2px;
+	background-color: #333;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%) rotate(90deg);
+	transition:transform 0.6s;
+}
+
+.category__toggle_unfold:after{
+	transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.category__toggle_unfold:before{
+	width:0;
+}
+
+.category__toggle:hover{
+	background-color: #e6e6e6;
+	border:1px solid #adadad;
+}
+
+.category__title{
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: normal;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	font-size: 20px;
+}
+
+.category__title-link{
+	color:#333;
+	transition:color 0.24s;
+}
+
+.category__title-link:hover{
+	color:#000;
+	text-decoration: none;
+}
+
+.category__buttons{
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+	width: 290px;
+	flex-shrink:0;
+}
+
+.category__button-wrap{
+	min-width: 140px;
+	text-align: right;
+}

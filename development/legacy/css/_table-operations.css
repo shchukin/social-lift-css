@@ -1,0 +1,44 @@
+.table-operations {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    margin-left: 13px;
+    padding-left: 40px;
+}
+    .table-operations:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 15px;
+        display: block;
+        width: 30px;
+        height: 1px;
+        background-color: #666;
+    }
+
+    .table-operations:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -15px;
+        display: block;
+        width: 1px;
+        height: 30px;
+        background-color: #666;
+    }
+
+    .table-operations__title {
+
+    }
+
+    .table-operations__action {
+        margin-left: 8px;
+        width: auto;
+    }
+
+    .table-operations__list {
+        margin-left: 8px;
+        width: auto;
+    }

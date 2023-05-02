@@ -1,0 +1,10 @@
+.add-field {
+    height: 34px;
+    line-height: 34px;
+}
+    .add-field__action {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 14px;
+        line-height: 16px;
+    }

@@ -1,0 +1,36 @@
+.param-list {
+    display: flex;
+    align-items: flex-start;
+}
+    .param-list__title {
+        padding-top: 6px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+
+    .param-list__body {
+        margin-left: 10px;
+    }
+
+    .param-list__body:first-child {
+        margin: 0;
+    }
+
+        .param-list__list-of-inputs {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+            .param-list__input {
+                margin-top: 6px;
+            }
+
+            .param-list__input:first-child {
+                margin-top: 0;
+            }
+
+        .param-list__add-input {
+            margin-top: 4px;
+            font-size: 14px;
+            line-height: 20px;
+        }

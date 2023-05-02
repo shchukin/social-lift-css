@@ -1,0 +1,95 @@
+.user {
+    display: table;
+}
+    .user__icon {
+        display: table-cell;
+        vertical-align: top;
+        padding: 0 6px 0 0;
+    }
+
+    .user__country {
+        display: table-cell;
+        vertical-align: top;
+        width: 26px;
+        padding: 0 6px 0 0;
+        transform: translateY(-1px);
+    }
+        .user__country > .flag-icon {
+            box-shadow: 0 0 2px rgba(0,0,0,.5);
+        }
+
+    .user__name {
+        display: table-cell;
+        vertical-align: top;
+        padding: 0 4px 0 0;
+    }
+
+    .user__action {
+        display: table-cell;
+        vertical-align: top;
+        width: 16px;
+        padding: 0 0 0 4px;
+    }
+
+
+
+    .user__label {
+        display: block;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 172px;
+        overflow: hidden;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        color: #000;
+    }
+	
+    .user_self .user__label {
+        max-width: 204px;
+        color: #138500;
+    }
+	
+	
+    .user__bust {
+        display: block;
+        width: 14px;
+        height: 16px;
+        background: url(../images/user__bust.png) no-repeat center top;
+    }
+
+    .user_self .user__bust {
+        background-position: center bottom;
+    }
+
+    .user__star {
+        display: block;
+        width: 14px;
+        height: 14px;
+        margin: 2px 0 0;
+        background: url(../images/user__star.png) no-repeat center center;
+    }
+
+    .user__delete {
+        display: block;
+        width: 10px;
+        height: 14px;
+        margin: 2px 0 0;
+        background: url(../images/user__delete.png) no-repeat center top;
+    }
+
+    .user__delete:hover {
+        background-position: center bottom;
+    }
+
+    .user__ban {
+        display: block;
+        width: 12px;
+        height: 14px;
+        margin: 2px 0 0;
+        background: url(../images/user__ban.png) no-repeat center top;
+    }
+
+    .user__ban:hover {
+        background-position: center bottom;
+    }

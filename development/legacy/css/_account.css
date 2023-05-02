@@ -1,0 +1,126 @@
+.account{
+        
+}
+
+.account__menu{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.account__item{
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.account__item:last-child{
+    margin-bottom: 0;
+}
+
+.account__link{
+    color: inherit;
+}
+
+.account__link_current{
+    color: #008ace;
+}
+
+.account__screen{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-left: 1px solid #ccc;
+}
+
+.account__head{
+    display: flex;
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+.account__avatar{
+    width: 150px;
+    flex-shrink: 0;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.account__image{
+    vertical-align: top;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.account__name{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.account__status{
+    margin-bottom: 10px;
+}
+
+.account__registration{
+    position: relative;
+    padding-right: 50px;
+}
+
+.account__copy{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -15px;
+}
+
+.account__highlight{
+    font-weight: 700;
+}
+
+.account__info{
+    width: 100%;
+}
+
+.account__form {
+    width: 500px;
+    padding-left: 10px;
+}
+
+.account__fill{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.account__fill:last-child{
+    margin-bottom: 0;
+}
+
+.account__fill_obligatory:after{
+    content: "*";
+    position: absolute;
+    right: -15px;
+    top: -5px;
+    color: red;
+    font-size: 20px;
+}
+
+.account__control{
+    width: 300px;
+    flex-shrink: 0;
+}
+
+.account__label{
+    padding-right: 20px;
+    margin-bottom: 0;
+}
+
+.account__options{
+    width: 300px;
+}
+
+.account__well{
+    cursor: pointer;
+    position: relative;
+}

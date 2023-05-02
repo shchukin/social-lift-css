@@ -1,0 +1,26 @@
+.now-showing {
+    display: flex;
+    align-items: center;
+}
+    .now-showing__item {
+        margin-left: 40px;
+        position: relative;
+    }
+
+    .now-showing__item:first-child {
+        margin-left: 0;
+    }
+
+        .now-showing__item:before {
+            content: '|';
+            position: absolute;
+            right: 100%;
+            top: 50%;
+            margin-right: 16px;
+            transform: translateY(-55%);
+            color: #ccc;
+        }
+
+        .now-showing__item:first-child:before {
+            display: none;
+        }

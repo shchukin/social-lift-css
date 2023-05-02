@@ -1,0 +1,18 @@
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+    .list__item {
+
+    }
+
+
+
+.list_sparse .list__item {
+    margin-top: 6px;
+}
+
+.list_sparse .list__item:first-child {
+    margin-top: 0;
+}

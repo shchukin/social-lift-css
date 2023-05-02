@@ -1,0 +1,115 @@
+.top-menu{
+    position: relative;
+    z-index: 100;
+    text-align: center;
+    margin-top: 20px;
+}
+.top-menu__list{
+    display: inline-block;
+    vertical-align: top;
+    min-width: 500px;
+    height: 40px;
+    margin: 0;
+    padding: 0 20px;
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    line-height: 40px;
+    font-size: 0;
+}
+
+.top-menu__list .top-menu__item:last-child .top-menu__sublist .top-menu__item:first-child{
+    border-top-right-radius: 10px;
+}
+
+.top-menu__list .top-menu__item:last-child .top-menu__sublist .top-menu__item:first-child .top-menu__link{
+    border-top-right-radius: 8px;
+}
+
+.top-menu__item{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    transition: background-color 0.2s ease;
+    z-index: 999;
+}
+
+.top-menu__item:hover,
+.top-menu__item:hover .top-menu__item {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.top-menu__item .top-menu__item:last-child {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.top-menu__link{
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 14px 0 44px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    transition: background-color 0.2s ease;
+}
+
+.top-menu__item .top-menu__item:last-child .top-menu__link {
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+
+.top-menu__link:hover,
+.top-menu__item:hover .top-menu__link:hover{
+    background-color: rgba(63, 163, 234, 0.890196);
+    color: #fff;
+	text-decoration: none;
+}
+
+.top-menu__icon{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    width: 24px;
+    height: 24px;
+    margin-top: -12px;
+    line-height: 24px;
+    vertical-align: top;
+}
+
+.top-menu__label {
+
+}
+
+.top-menu__sublist{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 2;
+    padding-left: 0;
+    display: none;
+}
+
+.top-menu__item:hover .top-menu__sublist{
+    display: block;
+}
+
+.top-menu__sublist{
+
+}
+.top-menu__sublist .top-menu__item{
+    display: block;
+    text-align: left;
+}
+
+.top-menu__sublist .top-menu__link{
+    padding: 0 10px;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.top-menu__sublist .top-menu__item:first-child .top-menu__link{
+    /* border-top-right-radius: 8px; */
+}

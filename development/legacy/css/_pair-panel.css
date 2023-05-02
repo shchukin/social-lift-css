@@ -1,0 +1,9 @@
+.pair-panel {
+
+}
+    .pair-panel > .panel-group {
+        margin: 5px 0 0;
+    }
+    .pair-panel > .panel-group:first-child {
+        margin-top: 0;
+    }

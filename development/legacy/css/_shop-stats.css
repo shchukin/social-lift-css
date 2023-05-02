@@ -1,0 +1,11 @@
+.shop-stats {
+
+}
+    .shop-stats th,
+    .shop-stats td {
+        text-align: center;
+    }
+
+    .shop-stats td:first-child {
+        text-align: left;
+    }

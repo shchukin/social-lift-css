@@ -1,0 +1,7 @@
+.check {
+    display: inline-block;
+    vertical-align: middle;
+    width: 14px;
+    height: 11px;
+    background: url(../images/check.png) no-repeat center center;
+}

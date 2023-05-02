@@ -1,0 +1,20 @@
+.russian-date {
+    display: flex;
+    margin: 0 -5px;
+}
+    .russian-date__day {
+        padding: 0 5px;
+        width: 30%;
+    }
+
+    .russian-date__month {
+        position: relative;
+        padding: 0 5px;
+        width: 30%;
+    }
+
+    .russian-date__year {
+        position: relative;
+        padding: 0 5px;
+        width: 40%;
+    }

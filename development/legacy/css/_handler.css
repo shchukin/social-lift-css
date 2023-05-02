@@ -1,0 +1,17 @@
+.handler {
+    margin: 0;
+}
+    .handler label {
+        display: block;
+        position: relative;
+    }
+
+    .handler label:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: -16px;
+        right: -16px;
+        top: -10px;
+        bottom: -13px;
+    }

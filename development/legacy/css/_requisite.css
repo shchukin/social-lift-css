@@ -1,0 +1,26 @@
+.requisite{
+        
+}
+
+.requisite__fill{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.requisite__fill:last-child{
+    margin-bottom: 0;
+}
+
+.requisite__control{
+    width: 300px;
+    flex-shrink: 0;
+}
+
+.requisite__label{
+    padding-right: 20px;
+    margin-bottom: 10px;
+}
+

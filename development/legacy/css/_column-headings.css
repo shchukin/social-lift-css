@@ -1,0 +1,26 @@
+.column-headings {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+    .column-headings__row {
+        display: flex;
+        padding: 4px 10px;
+    }
+
+    .column-headings__row:last-child {
+        margin-bottom: 0;
+    }
+
+        .column-headings__activity {
+            margin-right: 10px;
+        }
+
+        .column-headings__title {
+            width: 150px;
+            font-weight: bold;
+        }
+
+        .column-headings__drag {
+
+        }

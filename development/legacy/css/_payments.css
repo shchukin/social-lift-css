@@ -1,0 +1,54 @@
+.payments_methods__title{
+	font-size: 20px;
+	font-weight: bold;
+}
+.payments_methods__period, .payments_methods__count{
+	font-style: italic;
+}
+
+.payments_header {
+	font-size: 22px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.payments_table {
+	padding: 20px 0;
+}
+
+.payment_methods {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+	margin: 0px 0 10px 0;
+}
+.payment_method{
+	display: inline-block;
+	margin: 15px 20px 2px 0px;
+	border-radius: 10px;
+	padding: 10px 15px;
+	text-align: center;
+	font-weight: normal;
+	border: 2px solid #d2d2d2;
+	transition: transform 0.3s ease;
+}
+
+.current_method_r:checked+.payment_method {
+	border-color: #eb5c0c;
+}
+.payment_error {
+	font-size: 12px;
+	height: 15px;
+	line-height: 15px;
+	color: #ec2323;
+	margin-bottom: 10px;
+}
+
+.payment_method:hover {
+	transform: scale(1.03);
+	cursor: pointer;
+}
+.payment_method_pic {
+	max-height: 40px;
+}

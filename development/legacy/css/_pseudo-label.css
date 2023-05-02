@@ -1,0 +1,25 @@
+.pseudo-label{
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 20px;
+	display: inline-block;
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+.pseudo-label_bigger-offset{
+	margin-bottom: 10px;
+}
+
+.pseudo-label_no-offset{
+	margin-bottom: 0;
+}
+
+.radio .pseudo-label{
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 20px;
+	display: inline-block;
+	margin-top: 0;
+	margin-bottom: 5px;
+}

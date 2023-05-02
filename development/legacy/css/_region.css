@@ -1,0 +1,11 @@
+.region {
+    /*width: 1040px;*/
+    margin: 0 auto;
+}
+
+.region_big{
+	margin-left: 70px;
+	margin-right: 50px;
+	display: block;
+	width: auto;
+}

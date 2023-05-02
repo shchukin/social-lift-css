@@ -1,0 +1,44 @@
+.curator-card {
+    text-align: center;
+}
+    .curator-card__avatar {
+        vertical-align: top;
+        box-shadow: 0 0 0 4px #333;
+        border-radius: 50%;
+    }
+
+    .curator-card__title {
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 36px;
+        color: #333;
+    }
+
+    .curator-card__note {
+        margin-top: 10px;
+        font-size: 18px;
+        line-height: 24px;
+        color: #999;
+    }
+
+    .curator-card__channels {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+        .curator-card__contact {
+            margin: 0 30px;
+        }
+
+    .curator-card__chat {
+        margin-top: 20px;
+    }
+
+    .curator-card__web {
+        margin-top: 20px;
+    }
+
+    .curator-card__heading {
+
+    }

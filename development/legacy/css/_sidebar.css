@@ -1,0 +1,10 @@
+.sidebar {
+
+}
+    .sidebar__section {
+        margin: 20px 0 0;
+    }
+
+    .sidebar__section:first-child {
+        margin-top: 0;
+    }

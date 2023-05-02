@@ -1,0 +1,124 @@
+.primary-navigation{
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+    max-width: 50px;
+    overflow: hidden;
+    transition: max-width 0.25s;
+}
+
+.primary-navigation:hover{
+    max-width: 1000px;
+    overflow: visible;
+}
+.primary-navigation__item{
+    position: relative;
+}
+.primary-navigation__link{
+    position: relative;
+    display: block;
+    height: 40px;
+    padding-left: 50px;
+    font-size: 14px;
+    line-height: 40px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+}
+
+.primary-navigation__link:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+.primary-navigation__item:first-child > .primary-navigation__link{
+    border-top-right-radius: 15px;
+    /* transition: border-radius 0.25s ease 0s; */
+}
+
+.primary-navigation__item:last-child > .primary-navigation__link{
+    border-bottom-right-radius: 15px;
+    /* transition: border-radius 0.25s ease 0s; */
+}
+.primary-navigation__link:before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    width: 0;
+    background-color: rgba(63, 163, 234, 0.890196);
+    transition: width 0.25s ease 0s;
+}
+
+.primary-navigation__link:hover:before{
+    width: 100%;
+}
+
+.primary-navigation__icon{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    vertical-align: top;
+}
+
+.primary-navigation__label{
+    position: relative;
+    padding-right: 20px;
+    white-space: nowrap;
+}
+
+/* subnav */
+.primary-navigation__item > .primary-navigation{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    max-width: 0;
+}
+
+.primary-navigation__item_dropdown-direction-up > .primary-navigation {
+    top: auto;
+    bottom: 0;
+}
+
+.primary-navigation__item:hover > .primary-navigation{
+    max-width: 1000px;
+}
+
+.primary-navigation__item > .primary-navigation .primary-navigation__link{
+    padding-left: 20px;
+}
+
+/* only child is for last item in tree of sub navs */
+.primary-navigation__item:hover > .primary-navigation__link:not(:only-child) {
+    border-radius: 0;
+}
+
+/*отмена скругления последнего компонента*/
+
+.primary-navigation__item_has-long-submenu-to-drop-down:hover ~ .primary-navigation__item > .primary-navigation__link{
+    border-radius: 0;
+}
+
+.primary-navigation__item_has-long-submenu-to-drop-down:hover > .primary-navigation > .primary-navigation__item:last-child > .primary-navigation__link{
+    border-bottom-left-radius: 15px;
+}
+
+
+.primary-navigation__item_has-long-submenu-to-drop-up:hover > .primary-navigation > .primary-navigation__item:first-child > .primary-navigation__link{
+    border-top-left-radius: 15px;
+}
+
+/*отмена анимаций*/
+
+.primary-navigation_has-at-least-one-sub-menu,
+.primary-navigation_has-at-least-one-sub-menu .primary-navigation,
+.primary-navigation_has-at-least-one-sub-menu .primary-navigation__link {
+    transition: none;
+}
+
+.primary-navigation .primary-navigation .primary-navigation__icon {
+    display: none;
+}

@@ -1,0 +1,42 @@
+.progress {
+    position: relative;
+    height: 16px;
+    border: 1px solid #b9b9b9;
+    border-radius: 4px;
+    background: #fff;
+    overflow: hidden;
+}
+    .progress__bar {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background: #ffd563;
+    }
+
+    .progress__value {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        color: #000;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    .progress-start .progress__bar{
+	    background: #B62F2F;
+    }
+    .progress-middle .progress__bar{
+	    background: #ffd663;
+    }
+    .progress-finish .progress__bar{
+	    background: #1A9C20;
+	    color: #fff;
+    }
+    .progress-finish .progress__value{
+	    color: #fff;
+    }
+    
