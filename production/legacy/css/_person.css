@@ -1,0 +1,90 @@
+.person {
+    display: table;
+    table-layout: fixed;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 17px;
+    color: #000;
+}
+    .person__cell {
+        display: inline-block;
+        vertical-align: middle;
+        border-left: 1px solid #dadada;
+        padding: 10px 7px;
+		min-height: 37px;
+		text-align: center;
+    }
+
+    .person__cell:first-child {
+        border-left: none;
+    }
+
+    .person_heading .person__cell {
+        padding: 2px 0;
+        font-size: 12px;
+        line-height: 14px;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 33px; 
+        vertical-align: top;
+    }
+
+    .person__cell_id_level {
+
+    }
+
+    .person__cell_id_level         { width: 46px; }
+    .person__cell_id_interest      { width: 135px; }
+    .person__cell_id_telegram      { width: 130px; }
+    @media(max-width: 1180px){
+	    .person__cell_id_telegram , .person__cell_id_date{
+		    display: none;
+	    }
+	    .person__cell_id_interest{
+		    width: 160px;
+	    }
+    }
+    .person__cell_id_system-paid   { width: 73px; text-align: center;  margin-top: 3px;}
+    .person__cell_id_one-coin-paid { width: 73px; text-align: center;  margin-top: 3px;}
+    .person__cell_id_name          { width: 170px; }
+    @media(max-width: 1180px){
+	    .person__cell_id_name{width: 140px;}
+    }
+    .person__cell_id_email         { width: 160px; }
+    .person__cell_id_skype         { width: 135px; }
+    .person__cell_id_date          { width: 98px;  margin-top: 3px;}
+    .person__cell_id_info          { width: 28px;  text-align: center;}
+	.person__cell_id_phone		   {width: 130px}
+
+    .person__collapse {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 0;
+    }
+
+    .person__level {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 0 0 9px;
+        position: relative;
+        top: 1px;
+    }
+
+    .person__progress {
+        margin: 0 8px;
+    }
+    
+    .person__cell_50{
+	    width: 50%;
+    }
+    .person_heading_100{
+	    width: 100%;
+    }
+    .person__cell_id_phone{
+	    position: relative;
+		padding-left: 14px;
+    }
+    .person__cell_id_phone .flag-icon{
+	    position: absolute;
+	    left: 4px;
+    }

@@ -1,0 +1,21 @@
+.team-table{
+	width: 100%;
+	font-size: 12px;
+	margin-bottom: 0;
+}
+
+.team-table td{
+	text-align: center;
+	vertical-align: middle !important;
+}
+
+.team-table th{
+	text-align: center;
+	text-transform: uppercase;
+	border-top: 2px solid #ddd !important;
+	vertical-align: middle !important;
+}
+
+.team-table tr:nth-child(even){
+	display: none;
+}

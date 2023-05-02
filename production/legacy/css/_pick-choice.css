@@ -1,0 +1,25 @@
+.pick-choice {
+
+}
+    .pick-choice__item {
+        margin-top: 12px;
+    }
+
+    .pick-choice__item:first-child {
+        margin-top: 0;
+    }
+        .pick-choice__item .form-control {
+
+        }
+
+        .pick-choice__item_checked .form-control {
+            opacity: 1;
+        }
+
+    .pick-choice[type="radio"] {
+        cursor: pointer;
+    }
+
+    .pick-choice .input-group-addon {
+        cursor: pointer;
+    }

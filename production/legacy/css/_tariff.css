@@ -1,0 +1,372 @@
+.scrm-license-upgrade {
+    padding: 56px 33px 70px;
+}
+    .scrm-license-upgrade__head {
+
+    }
+
+    .scrm-license-upgrade__primary {
+        margin-top: 20px;
+    }
+
+    .scrm-license-upgrade__secondary {
+        margin-top: 48px;
+        display: flex;
+    }
+        .scrm-license-upgrade__option {
+            flex-basis: 244px;
+            min-width: 244px;
+            max-width: 244px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .scrm-license-upgrade__option:first-child {
+            margin-left: 0;
+        }
+
+        .scrm-license-upgrade__option:last-child {
+            margin-right: 0;
+        }
+
+
+.scrm-expired {
+
+}
+    .scrm-expired__title {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 41px;
+        color: #303030;
+        text-align: center;
+    }
+
+    .scrm-expired__value {
+        margin-top: 21px;
+        text-align: center;
+    }
+
+
+
+
+
+.is-countdown {
+
+}
+
+.countdown-rtl {
+    direction: rtl;
+}
+
+.countdown {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.countdown_skin_default {
+
+}
+
+    .countdown_skin_default .countdown__container {
+        display: flex;
+    }
+        .countdown_skin_default .countdown__section {
+            position: relative;
+            margin-left: 9px;
+        }
+
+            .countdown_skin_default .countdown__section:before,
+            .countdown_skin_default .countdown__section:after {
+                content: '';
+                position: absolute;
+                right: 100%;
+                margin-right: 3px;
+                top: 0;
+                width: 3px;
+                height: 3px;
+                background: #F44C4C;
+                border-radius: 50%;
+            }
+
+            .countdown_skin_default .countdown__section:before {
+                top: 8px;
+            }
+
+            .countdown_skin_default .countdown__section:after {
+                top: 13px;
+            }
+
+            .countdown_skin_default .countdown__section:first-child:before,
+            .countdown_skin_default .countdown__section:first-child:after {
+                display: none;
+            }
+
+        .countdown_skin_default .countdown__section:first-child {
+            margin-left: 0;
+        }
+            .countdown_skin_default .countdown__value {
+                display: flex;
+            }
+                .countdown_skin_default .countdown__digit {
+                    display: block;
+                    box-sizing: content-box;
+                    margin-left: 2px;
+                    width: 21px;
+                    height: 23px;
+                    padding-bottom: 2px;
+                    background-color: #E5E9EE;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: 23px;
+                    color: #F44C4C;
+                    text-align: center;
+                }
+
+                .countdown_skin_default .countdown__digit:first-child {
+                    margin-left: 0;
+                }
+
+            .countdown_skin_default .countdown__label {
+                display: block;
+                margin-top: 7px;
+                font-size: 14px;
+                line-height: 16px;
+                color: #303030;
+                text-align: center;
+            }
+
+
+
+.countdown_skin_highlight {
+
+}
+
+    .countdown_skin_highlight .countdown__container {
+        display: flex;
+    }
+        .countdown_skin_highlight .countdown__section {
+            position: relative;
+            margin-left: 19px;
+        }
+
+        .countdown_skin_highlight .countdown__section:first-child {
+            margin-left: 0;
+        }
+            .countdown_skin_highlight .countdown__section:before,
+            .countdown_skin_highlight .countdown__section:after {
+                content: '';
+                position: absolute;
+                right: 100%;
+                margin-right: 6px;
+                top: 0;
+                width: 7px;
+                height: 7px;
+                background: #1C94E0;
+                border-radius: 50%;
+            }
+
+            .countdown_skin_highlight .countdown__section:before {
+                top: 16px;
+            }
+
+            .countdown_skin_highlight .countdown__section:after {
+                top: 27px;
+            }
+
+            .countdown_skin_highlight .countdown__section:first-child:before,
+            .countdown_skin_highlight .countdown__section:first-child:after {
+                display: none;
+            }
+
+
+            .countdown_skin_highlight .countdown__value {
+                display: flex;
+            }
+                .countdown_skin_highlight .countdown__digit {
+                    display: block;
+                    box-sizing: content-box;
+                    margin-left: 3px;
+                    width: 42px;
+                    height: 48px;
+                    padding-bottom: 2px;
+                    background-color: #E5E9EE;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    font-size: 40px;
+                    line-height: 48px;
+                    color: #1C94E0;
+                    text-align: center;
+                }
+
+                .countdown_skin_highlight .countdown__digit:first-child {
+                    margin-left: 0;
+                }
+
+            .countdown_skin_highlight .countdown__label {
+                display: block;
+                margin-top: 7px;
+                font-size: 14px;
+                line-height: 16px;
+                color: #303030;
+                text-align: center;
+            }
+
+
+.scrm-platinum-package {
+    position: relative;
+    box-sizing: content-box;
+    padding-top: 46px;
+    padding-left: 330px;
+    min-height: 274px;
+}
+    .scrm-platinum-package__preview {
+        position: absolute;
+        left: -9px;
+        top: 0;
+        vertical-align: top;
+    }
+
+    .scrm-platinum-package__note {
+        font-style: italic;
+        font-size: 14px;
+        line-height: 19px;
+        color: #303030;
+    }
+
+    .scrm-platinum-package__title {
+        margin-left: -2px;
+        font-size: 48px;
+        line-height: 48px;
+        color: #303030;
+    }
+
+    .scrm-platinum-package__loyalty {
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 21px;
+        color: #303030;
+    }
+
+    .scrm-platinum-package__actions {
+        margin-top: 22px;
+        display: flex;
+    }
+        .scrm-platinum-package__submit {
+
+        }
+
+        .scrm-platinum-package__expired {
+            margin-top: -2px;
+            margin-left: 26px;
+        }
+
+
+.scrm-button {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: content-box;
+    height: 42px;
+    padding: 0 15px;
+    border: none;
+    background: #1C94E0;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 42px;
+    color: #FFFFFF;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+
+.scrm-button:hover {
+    background: #3CA7EB;
+}
+
+.scrm-button:active {
+    background: #0C88D6;
+}
+
+
+.scrm-button_size_larger {
+    height: 48px;
+    line-height: 48px;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+.scrm-button_width_full {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.irrelevant {
+    position: relative;
+}
+
+.irrelevant:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -3px;
+    left: -3px;
+    display: block;
+    height: 1px;
+    background: rgba(244,76,76, 0.8);
+    transform: rotate(-17deg);
+}
+
+
+.scrm-expiring-time {
+
+}
+    .scrm-expiring-time__title {
+        padding-left: 2px;
+        font-size: 14px;
+        line-height: 16px;
+        color: #303030;
+    }
+
+    .scrm-expiring-time__value {
+        margin-top: 5px;
+    }
+
+
+.scrm-package {
+    text-align: center;
+}
+    .scrm-package__preview {
+        vertical-align: top;
+    }
+
+    .scrm-package__title {
+        margin-top: 11px;
+        font-size: 24px;
+        line-height: 24px;
+        color: #303030;
+    }
+
+    .scrm-package__loyalty {
+        margin-top: 11px;
+        font-size: 16px;
+        line-height: 21px;
+        color: #303030;
+    }
+
+    .scrm-package__submit {
+        margin-top: 25px;
+    }
+
+    .scrm-package__save {
+        font-size: 14px;
+        line-height: 18px;
+        color: #303030;
+    }
+
+    .scrm-package__save {
+        margin-top: 10px;
+    }

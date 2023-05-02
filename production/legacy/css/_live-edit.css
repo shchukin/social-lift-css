@@ -1,0 +1,42 @@
+.live-edit {
+
+}
+    .live-edit__current {
+        position: relative;
+    }
+
+    .live-edit__action-icon {
+        content: "\270f";
+        display: inline;
+        margin-left: 8px;
+        font-family: 'Glyphicons Halflings';
+        font-size: 12px;
+        color: #ccc;
+        cursor: pointer;
+        opacity: 0;
+        transition: opacity .24s ease;
+    }
+
+    .live-edit:hover .live-edit__action-icon {
+        opacity: 1;
+    }
+
+    .live-edit__widget {
+        display: none;
+    }
+        .live-edit__input {
+
+        }
+
+        .live-edit__submit {
+            margin-left: 4px;
+        }
+
+.live-edit_active .live-edit__current {
+    display: none;
+}
+
+.live-edit_active .live-edit__widget {
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,389 @@
+.body_head {
+    position: relative;
+    z-index: 200;
+    height: 100px;
+    min-width: 1140px;
+    border-bottom: 1px solid #ccc;
+}
+    .body__head__logo {
+        display: inline-block;
+        vertical-align: top;
+        width: auto;
+        padding: 10px;
+        height: 99px;
+        text-align: center;
+    }
+
+    .body__head__descript {
+        position: relative;
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        vertical-align: top;
+        width: 250px;
+        height: 66px;
+        padding: 0 0 0 20px;
+        margin-left: 20px;
+        margin-top: 13px;
+        font-size: 16px;
+        line-height: 22px;
+        color: #fff;
+        text-align: center;
+    }
+        .body__head__descript:before {
+            content: '';
+            position: absolute;
+            left: -10px;
+            top: 6px;
+            width: 1px;
+            height: 61px;
+            background: #ccc;
+        }
+    .body__head__extension {
+        display: inline-block;
+        margin: 12px 0 0 30px;
+        vertical-align: middle;
+    }
+    .body__head__balance-and-fake {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+        @media (max-width: 1580px) {
+
+            .body__head__balance-and-fake .body__head__chat-sell {
+                padding-top: 30px;
+                margin-top: -8px;
+            }
+
+            .body__head__balance-and-fake .body__head__chat-sell:first-child {
+                margin-top: 0;
+            }
+
+                .body__head__balance-and-fake .chat-actions {
+                    height: auto;
+                    transform: scale(0.75);
+                }
+        }
+
+        @media (min-width: 1581px) {
+            .body__head__balance-and-fake {
+                /*display: inline-flex;*/
+                /*vertical-align: top;*/
+            }
+
+                .body__head__balance-and-fake .body__head__chat-sell {
+                    margin-left: 30px;
+                }
+
+                .body__head__balance-and-fake .body__head__chat-sell:first-child {
+                    margin-left: 0;
+                }
+        }
+
+
+
+    .body__head_account {
+        max-width: 225px;
+    }
+
+    .body_head_chat .body__head_account {
+        min-width: 0;
+    }
+
+        .body__head__flags {
+            display: inline-block;
+            vertical-align: top;
+            width: 37px;
+            margin-right: 15px;
+            margin-top: 4px;
+        }
+            .body__head__flag_list {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+                .body__head__flag_list-item {
+                    opacity: .5;
+                }
+
+                .body__head__flag_list-item:hover {
+                    opacity: 1;
+                }
+
+                .body__head__flag_list-item + .body__head__flag_list-item {
+                    margin-top: 1px;
+                }
+
+                .body__head__flag_list-item.current {
+                    opacity: 1;
+                }
+
+                .current-lang-ru .item-ru {
+                    display: none !important;
+                }
+                .current-lang-en .item-en {
+                    display: none !important;
+                }
+                .current-lang-de .item-de {
+                    display: none !important;
+                }
+                    .body__head__flag_list-item .flag-icon {
+                        cursor: pointer;
+                    }
+
+                    .body__head__flag_list-item.current .flag-icon {
+                        cursor: default;
+                    }
+
+            .body__head_account .button-baccount {
+                margin-top: 6px;
+                margin-right: 4px;
+            }
+
+
+    .body__head_account-item {
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        width: auto;
+        padding-bottom: 20px;
+        font-size: 14px;
+    }
+        .body__head_account-item > a {
+            display: block;
+            height: auto;
+            background: #fff;
+            border-radius: 10px;
+        }
+
+        .body__head_account-item > a:hover {
+            opacity: .8;
+        }
+
+            .body__head_account-img {
+                border-radius: 10px;
+            }
+
+        .body__head_account-menu {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            z-index: 300;
+            top: 66px;
+            display: block;
+            right: -1px;
+            width: 160px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            border: 1px solid #ccc;
+            background: #fff;
+            text-align: center;
+            -webkit-transition: visibility .2s ease, opacity .2s ease;
+            transition: visibility .2s ease, opacity .2s ease;
+        }
+
+        .body__head_account-item:hover .body__head_account-menu {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        /* empty area for better hovering */
+        .body__head_account-menu:after {
+            content: '';
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 100%;
+            height: 20px;
+        }
+
+        /* triangle */
+        .body__head_account-menu:before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            right: 18px;
+            width: 15px;
+            height: 15px;
+            border: 1px solid #ccc;
+            background: #fff;
+            -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+            border-radius: 0 0 50px 0;
+        }
+
+            .body__head_account-menu-item {
+                position: relative;
+                background: #fff;
+                -webkit-box-shadow: inset 0 1px 0 0 #e8efff;
+                        box-shadow: inset 0 1px 0 0 #e8efff;
+                cursor: pointer;
+            }
+
+            .body__head_account-menu-item:first-child {
+                -webkit-box-shadow: none;
+                        box-shadow: none;
+            }
+
+                .body__head_account-menu-item:hover {
+                    background: #e8efff;
+                }
+                    .body__head_account-menu-item a {
+                        display: block;
+                        padding: 8px 0;
+                        text-decoration: none;
+                    }
+
+                    .body__head_account-menu-item a:hover {
+                        text-decoration: none;
+                    }
+
+
+
+    .body__head_phone {
+        float: right;
+        height: 99px;
+        line-height: 99px;
+        margin-right: 0px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #fff;
+        text-align: center;
+        white-space: nowrap;
+    }
+        .body__head_phone-soc {
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: -4px;
+            width: 184px;
+            text-align: center;
+            margin-right: 0px;
+            white-space: normal;
+        }
+            .body__head_phone-soc__list {
+                height: 28px;
+                font-size: 0;
+                line-height: 0;
+                -webkit-transform: translateY(2px);
+                    -ms-transform: translateY(2px);
+                        transform: translateY(2px);
+            }
+                .body__head_phone-soc__list > .soc__link {
+                    display: inline-block;
+                    margin: 0 2px;
+                    width: 25px;
+                    height: 20px;
+                }
+
+                .body__head_phone-soc__list > .soc__link .icons__plate {
+                    margin-top: -3px;
+                }
+
+
+                .body__head_phone-soc__list > .soc__link .icons__plate:hover  {
+                    fill: #FFFFFF;
+                }
+
+            .body__head_phone-soc .body__head_phone-cta {
+                margin-top: -2px;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 18px;
+            }
+
+
+        .body__head_phone-phone {
+            display: -webkit-inline-box;
+            display: -webkit-inline-flex;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            vertical-align: middle;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            margin-top: -4px;
+            width: 210px;
+            height: 53px;
+            white-space: normal;
+        }
+            .body__head_phone-container {
+                padding-bottom: 4px;
+            }
+                .body__head_phone-number {
+                    font-weight: normal;
+                    letter-spacing: 1px;
+                    font-size: 22px;
+                    line-height: 28px;
+                    white-space: nowrap;
+                }
+                    .body__head_phone-link,
+                    .body__head_phone-link:hover,
+                    .body__head_phone-link:focus {
+                        text-decoration: none;
+                        color: inherit;
+                    }
+
+                .body__head_phone-phone .body__head_phone-cta {
+                    margin-top: 2px;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+
+    .body__head__chat-info {
+        float: right;
+        height: 100px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-right: 20px;
+    }
+
+
+@media (max-width: 1240px) {
+
+    .body__head__logo {
+        
+    }
+        .body__head__logo .logo img {
+            max-width: 160px;
+            max-height: 49px;
+        }
+
+    .body__head_phone {
+
+    }
+
+    .body__head_phone-soc {
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 1300px){
+	.body__head__descript{
+		width: 150px;
+		font-size: 14px;
+	}
+}
+@media(max-width: 1170px){
+	.body__head_phone-soc{
+		display: none;
+	}
+	.body__head_phone-phone{
+		margin-top: 30px;
+	}
+}

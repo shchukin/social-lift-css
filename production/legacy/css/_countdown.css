@@ -1,0 +1,134 @@
+.countdown {
+    font-weight: 300;
+    line-height: 44px;
+    text-align: center;
+}
+
+
+/*
+ * Event skin
+ */
+
+.countdown_skin_event {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000;
+}
+
+/*
+ * Calendar skin
+ */
+
+.countdown_skin_calendar {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000;
+    text-align: left    ;
+}
+
+
+/*
+ * Main skin
+ */
+.countdown_skin_main {
+    color: #fff;
+}
+
+.countdown_skin_main .countdown-section {
+    margin: 0 16px 0 0;
+}
+
+.countdown_skin_main .countdown-section:last-child {
+    margin-right: 0;
+}
+
+.countdown_skin_main .countdown-amount {
+    margin: 0 10px 0 0;
+    font-size: 44px;
+    line-height: 44px;
+}
+
+.countdown_skin_main .countdown-period {
+    font-size: 21px;
+    line-height: 44px;
+    text-transform: uppercase;
+}
+
+
+.countdown_skin_main .countdown-show4 .countdown-amount {
+    margin-right: 7px;
+    font-size: 33px;
+    position: relative;
+    top: 2px;
+}
+
+.countdown_skin_main .countdown-show4 .countdown-period {
+    padding-top: 2px;
+    font-size: 16px;
+    position: relative;
+    top: 2px;
+}
+
+
+
+.countdown_skin_stage {
+    color: #fff;
+}
+
+.countdown_skin_stage .countdown-section {
+    margin-right: 10px;
+}
+
+
+.countdown_skin_stage .countdown-section:last-child {
+    margin-right: 0;
+}
+
+.countdown_skin_stage .countdown-amount {
+    margin-right: 5px;
+    font-size: 22px;
+}
+
+.countdown_skin_stage .countdown-period {
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+
+@media screen and ( min-width: 1240px ) {
+
+    .countdown_skin_stage .countdown-section {
+        margin-right: 13px;
+    }
+
+    .countdown_skin_stage .countdown-amount {
+        margin: 0 7px 0 0;
+        font-size: 33px;
+    }
+
+    .countdown_skin_stage .countdown-period {
+        font-size: 15px;
+    }
+
+}
+
+
+@media screen and ( min-width: 1600px ) {
+
+    .countdown_skin_stage .countdown-section {
+        margin-right: 16px;
+    }
+
+    .countdown_skin_stage .countdown-amount {
+        margin-right: 10px;
+        font-size: 44px;
+    }
+
+    .countdown_skin_stage .countdown-period {
+        font-size: 21px;
+    }
+}
+
+

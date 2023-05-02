@@ -1,0 +1,21 @@
+.event-date{
+
+}
+
+.event-date__header{
+	background-color: #e5f6ff;
+	padding: 15px 0;
+	margin-top: 0;
+	margin-bottom: 15px;
+	text-align: center;
+	position: relative;
+}
+
+.event-date__amount{
+	position: absolute;
+	top:50%;
+	transform:translateY(-50%);
+	font-size: 14px;
+	color:#696969;
+	right:20px;
+}

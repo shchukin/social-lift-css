@@ -1,0 +1,13 @@
+.select-group {
+
+}
+    .select-group .select-group__addon {
+        position: relative;
+        z-index: 10;
+        border-right: 1px solid rgb(204, 204, 204);
+    }
+
+    .select-group .select-group__widget {
+        margin-left: -4px;
+        width: calc(100% + 4px);
+    }

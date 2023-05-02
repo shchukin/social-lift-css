@@ -1,0 +1,13 @@
+.show-lines {
+    margin: 4px 0;
+    display: flex;
+    align-items: center;
+}
+    .show-lines__title {
+        white-space: nowrap;
+    }
+
+    .show-lines__amount {
+        margin-left: 10px;
+        width: auto !important;
+    }

@@ -1,0 +1,25 @@
+.header {
+    position: relative;
+    padding: 19px 0 0;
+}
+    .header__nav-container {
+        margin: 19px 0 0;
+        text-align: center;
+    }
+        .header__nav {
+            display: inline-block;
+            vertical-align: top;
+            padding: 0 20px;
+            min-width: 500px;
+            height: 40px;
+            background: rgba(0,0,0,.7);
+            border-radius: 10px;
+            text-align: center;
+        }
+        .header__icon {
+            width: 37px;
+            height: 37px;
+            display: inline-block;
+            vertical-align: middle;
+            fill: #bbb;
+        }

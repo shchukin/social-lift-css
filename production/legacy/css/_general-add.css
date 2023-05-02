@@ -1,0 +1,16 @@
+.general-add {
+    position: relative;
+}
+
+.general-add_position_top {
+    margin-bottom: 20px;
+}
+
+.general-add_position_bottom {
+    margin-top: 40px;
+}
+    .general-add__sub-action {
+        position: absolute;
+        right: 4px;
+        top: 11px;
+    }

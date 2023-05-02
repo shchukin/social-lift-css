@@ -1,0 +1,18 @@
+.shop {
+    padding: 0px;
+}
+    .shop__showcase {
+        display: flex;
+        flex-wrap: wrap;
+    }
+        .shop__item {
+            flex-basis: 253px;
+            min-width: 253px;
+            max-width: 300px;
+            margin: 20px 13px;
+        }
+
+    .shop__pagination {
+        margin: 0 33px;
+        text-align: center;
+    }

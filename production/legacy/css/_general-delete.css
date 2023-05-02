@@ -1,0 +1,9 @@
+.general-delete {
+
+}
+    .general-delete .glyphicon-remove {
+        transform: translateY(1px);
+    }
+    .general-delete.btn-lg .glyphicon-remove {
+        transform: translateY(2px);
+    }

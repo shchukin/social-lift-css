@@ -1,0 +1,14 @@
+.team-user-info{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.team-user-info__key{
+	font-weight: 700;
+}
+
+.team-user-info__key_full-width{
+	width: 100%;
+	margin-bottom: 5px;
+	display: block;
+}

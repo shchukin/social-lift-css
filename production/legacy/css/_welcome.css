@@ -1,0 +1,525 @@
+.welcome {
+    height: 100%;
+    background-image: url(../images/default-wallpaper.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    top: 0!important;
+}
+.kmfdm-page .welcome{
+    background-image: none;
+}
+    .welcome__container {
+        padding: 0 50px;
+    }
+
+    .welcome__fields {
+        margin-top: 30px;
+        font-size: 0;
+        text-align: center;
+        white-space: nowrap;
+    }
+    .auth-webinar-full-window .welcome__fields{
+        margin-top: 204px;
+    }
+        .welcome__registration {
+            display: inline-block;
+            vertical-align: top;
+            white-space: normal;
+            width: 580px;
+            margin-right: 56px;
+            padding-right: 64px;
+            border-right: 1px solid rgba(255, 255, 255, .15);
+            text-align: left;
+        }
+
+        .welcome__login {
+            display: inline-block;
+            vertical-align: top;
+            white-space: normal;
+            width: 243px;
+            text-align: center;
+        }
+
+        .welcome__login-product_fast{
+	    	width: 443px;    
+        }
+        .welcome__login-webinar{
+	        width: 400px;
+	        margin-right: 50px;
+	        padding-right: 50px;
+        }
+
+    .welcome__title {
+        font-size: 28px;
+        line-height: 30px;
+        color: #000;
+        font-weight: 300;
+    }
+
+    .welcome__cols {
+        margin-top: 40px;
+    }
+    .welcome__cols-w240{
+	    width: 240px;
+	    margin: 30px auto;
+	    
+    }
+    .welcome__login_center{
+	   /* background: rgba(0, 0, 0, 0.5); */
+	    border-radius: 20px;
+	    left: 50%;
+	    margin-left: -250px;
+	    padding: 20px;
+	    position: relative;
+	    width: 500px;
+    }
+    .welcome__login_center .input__area{
+	 background: #fff;   
+    }
+    .welcome__wasreg{
+	text-align: center;
+	color: #ddd;
+	padding-top: 15px;
+}
+
+.welcome__text{
+	font-size: 18px;
+	line-height: 20px;
+	color: #ddd;
+	margin-bottom: 20px;
+}
+
+
+#search_sponsor_form{
+		
+}
+
+.welcome_link{
+	font-size: 14px;
+	text-decoration: underline;
+	color: #ddd;
+}
+.welcome_link:hover{
+	text-decoration: none;
+}
+
+
+/* auth-login-full-window */
+
+.auth-login-full-window, .auth-webinar-full-window{
+	margin-top: -131px;
+}
+.auth-login-full-window .welcome__container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+.body_head ~ .auth-login-full-window .welcome__container {
+    height: calc(100vh - 100px);
+}
+
+.auth-login-full-window .welcome__container .page__footer {
+    margin-top: auto;
+}
+
+.auth-login-full-window .welcome__fields {
+
+}
+.auth-login-full-window .welcome__fields::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    display: block;
+    margin: -30px 0 0 -160px;
+    width: 320px;
+    height: 410px;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+}
+
+.auth-login-full-window .welcome__fields > * {
+    position: relative;
+}
+
+
+/* .auth-register-full-window */
+
+.auth-register-full-window .welcome__registration {
+    position: relative;
+}
+
+.auth-register-full-window .welcome__registration::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    display: block;
+    margin: -30px 0 30px -330px;
+    width: 600px;
+    height: 590px;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+}
+
+.auth-register-full-window .welcome__registration > * {
+    position: relative;
+}
+
+.auth-register-full-window .welcome__registration {
+    margin-bottom: 90px;
+}
+
+.auth-register-full-window .welcome__login {
+    position: relative;
+}
+
+.auth-register-full-window .welcome__login::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    display: block;
+    margin: -30px 0 0 -160px;
+    width: 320px;
+    height: 590px;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+}
+
+.auth-register-full-window .welcome__login > * {
+    position: relative;
+}
+
+.auth-register-full-window .welcome__container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.body_head ~ .auth-register-full-window .welcome__container {
+    min-height: calc(100vh - 100px);
+}
+
+
+
+/* .auth-webinar-full-window */
+
+.auth-webinar-full-window .welcome {
+    height: auto;
+    min-height: 0;
+}
+
+.auth-webinar-full-window .welcome__logo {
+    display: none;
+}
+
+.auth-webinar-full-window .input {
+    text-align: left;
+}
+
+.auth-webinar-full-window .welcome__container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.body_head ~ .auth-webinar-full-window .welcome__container {
+    height: calc(100vh - 100px);
+}
+
+
+.auth-webinar-full-window .welcome__container .page__footer {
+    margin-top: auto;
+}
+
+.auth-webinar-full-window .welcome__login {
+    position: relative;
+}
+
+.auth-webinar-full-window .welcome__login::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    display: block;
+    margin: -30px 0 0 -160px;
+    width: 320px;
+    height: 410px;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+}
+
+.auth-webinar-full-window .welcome__login > * {
+    position: relative;
+}
+
+.auth-webinar-full-window .welcome__login-webinar::before {
+    width: 410px;
+    margin-left: -230px;
+}
+
+
+
+/* auth-login-modal-window */
+
+.auth-login-modal-window .welcome__container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 120px;
+	top: 0;
+}
+
+.auth-login-modal-window .welcome__logo {
+    display: none;
+}
+
+.auth-login-modal-window .welcome__container .page__footer {
+    margin-top: auto;
+}
+
+.auth-login-modal-window .welcome__fields {
+
+}
+.auth-login-modal-window .welcome__fields::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    display: block;
+    margin: -30px 0 0 -160px;
+    width: 320px;
+    height: 410px;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+}
+
+.auth-login-modal-window .welcome__fields > * {
+    position: relative;
+}
+
+
+
+
+
+/* .auth-register-modal-window */
+
+.auth-register-modal-window {
+    padding-bottom: 120px;
+}
+
+.auth-register-modal-window .welcome__logo {
+    padding-top: 10px;
+}
+
+.auth-register-modal-window .welcome__registration {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+}
+
+.auth-register-modal-window .welcome__registration::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    display: block;
+    margin: -40px 0 0 -330px;
+    width: 660px;
+    height: 600px;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+}
+
+.auth-register-modal-window .welcome__registration > * {
+    position: relative;
+}
+
+.auth-register-modal-window .welcome__login {
+    position: relative;
+}
+
+.auth-register-modal-window .welcome__login::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    display: block;
+    margin: -30px 0 0 -160px;
+    width: 320px;
+    height: 570px;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+}
+
+.auth-register-modal-window .welcome__login > * {
+    position: relative;
+}
+
+
+
+
+/* auth-payment-modal-window */
+
+.auth-payment-modal-window .welcome__container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 120px;
+}
+
+.auth-payment-modal-window .welcome__logo {
+    display: none;
+}
+
+.auth-payment-modal-window .welcome__container .page__footer {
+    margin-top: auto;
+}
+
+.auth-payment-modal-window .welcome__fields {
+
+}
+.auth-payment-modal-window .welcome__fields::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    display: block;
+    margin: -30px 0 0 -350px;
+    width: 700px;
+    height: 560px;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+}
+
+.auth-payment-modal-window .welcome__fields > * {
+    position: relative;
+}
+
+.auth-payment-modal-window .welcome__login-product_fast {
+    width: 260px;
+}
+
+.auth-payment-modal-window .welcome__title {
+    margin-left: -100px;
+    margin-right: -100px;
+}
+
+
+
+
+/* auth-webinar-modal-window */
+
+.auth-webinar-modal-window .welcome__container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 120px;
+}
+
+.auth-webinar-modal-window .welcome__logo {
+    display: none;
+}
+
+.auth-webinar-modal-window .welcome__container .page__footer {
+    margin-top: auto;
+}
+
+.auth-webinar-modal-window .welcome__fields {
+
+}
+.auth-webinar-modal-window .welcome__fields::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    display: block;
+    margin: -30px 0 0 -350px;
+    width: 700px;
+    height: 540px;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+}
+
+.auth-webinar-modal-window .welcome__fields > * {
+    position: relative;
+}
+
+.auth-webinar-modal-window .welcome__login-product_fast {
+    width: 260px;
+}
+
+.auth-webinar-modal-window .welcome__title {
+    margin-left: -140px;
+    margin-right: -140px;
+}
+
+
+/* purchase-email-confirmation-modal-window */
+
+.purchase-email-confirmation-modal-window .welcome__container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 120px;
+}
+
+.purchase-email-confirmation-modal-window .welcome__logo {
+    display: none;
+}
+
+.purchase-email-confirmation-modal-window .welcome__container .page__footer {
+    margin-top: auto;
+}
+
+.purchase-email-confirmation-modal-window .welcome__fields {
+
+}
+.purchase-email-confirmation-modal-window .welcome__fields::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    display: block;
+    margin: -30px 0 0 -260px;
+    width: 520px;
+    height: 580px;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+}
+
+.purchase-email-confirmation-modal-window .welcome__fields > * {
+    position: relative;
+}
+
+
+
+/* event-sign-in-modal-window */
+
+.event-sign-in-modal-window .welcome__container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 120px;
+}
+
+.event-sign-in-modal-window .welcome__logo {
+    display: none;
+}
+
+.event-sign-in-modal-window .welcome__container .page__footer {
+    margin-top: auto;
+}
+
+.event-sign-in-modal-window .welcome__fields {
+
+}
+.event-sign-in-modal-window .welcome__fields::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    display: block;
+    margin: -30px 0 0 -260px;
+    width: 520px;
+    height: 480px;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+}
+
+.event-sign-in-modal-window .welcome__fields > * {
+    position: relative;
+}
+
+
+.overlay .welcome {
+    border-radius: 15px!important;
+}

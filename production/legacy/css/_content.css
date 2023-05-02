@@ -1,0 +1,21 @@
+.content {
+
+}
+    .content__head {
+
+    }
+        .content__head__breadcrumbs {
+
+        }
+
+    .content__body {
+        margin: 50px 0 0;
+    }
+        .content__body__section {
+            margin: 100px 0 0;
+        }
+
+        .content__body__section:first-child {
+            margin-top: 0;
+        }
+

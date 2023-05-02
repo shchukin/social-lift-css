@@ -1,0 +1,45 @@
+.editable-ava {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	background: #303030;
+	border-radius: 50%;
+}
+.editable-ava__picture {
+	vertical-align: top;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	opacity: .5;
+
+}
+
+.editable-ava__change {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	font-size: 12px;
+	line-height: 15px;
+	color: rgba(255,255,255,.7) !important;
+	text-align: center;
+}
+.editable-ava__change:before {
+	content: "";
+	display: block;
+	margin: 44px auto 1px;
+	width: 26px;
+	height: 24px;
+	background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNHB4IiB2aWV3Qm94PSIwIDAgMTYgMTQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPGcgZmlsbD0iI0ZGRkZGRiI+ICAgICAgICA8cGF0aCBkPSJNOCwxMC4zNzAzNzA0IEM5LjQ3Mjc1OTMzLDEwLjM3MDM3MDQgMTAuNjY2NjY2Nyw5LjIwOTYyNzEzIDEwLjY2NjY2NjcsNy43Nzc3Nzc3OCBDMTAuNjY2NjY2Nyw2LjM0NTkyODQzIDkuNDcyNzU5MzMsNS4xODUxODUxOSA4LDUuMTg1MTg1MTkgQzYuNTI3MjQwNjcsNS4xODUxODUxOSA1LjMzMzMzMzMzLDYuMzQ1OTI4NDMgNS4zMzMzMzMzMyw3Ljc3Nzc3Nzc4IEM1LjMzMzMzMzMzLDkuMjA5NjI3MTMgNi41MjcyNDA2NywxMC4zNzAzNzA0IDgsMTAuMzcwMzcwNCBaIj48L3BhdGg+ICAgICAgICA8cGF0aCBkPSJNNS42LDAgTDQuMTYsMS41NTU1NTU1NiBMMS42LDEuNTU1NTU1NTYgQzAuNzIsMS41NTU1NTU1NiAwLDIuMjU1NTU1NTYgMCwzLjExMTExMTExIEwwLDEyLjQ0NDQ0NDQgQzAsMTMuMyAwLjcyLDE0IDEuNiwxNCBMMTQuNCwxNCBDMTUuMjgsMTQgMTYsMTMuMyAxNiwxMi40NDQ0NDQ0IEwxNiwzLjExMTExMTExIEMxNiwyLjI1NTU1NTU2IDE1LjI4LDEuNTU1NTU1NTYgMTQuNCwxLjU1NTU1NTU2IEwxMS44NCwxLjU1NTU1NTU2IEwxMC40LDAgTDUuNiwwIEw1LjYsMCBaIE04LDExLjY2NjY2NjcgQzUuNzYsMTEuNjY2NjY2NyA0LDkuOTU1NTU1NTYgNCw3Ljc3Nzc3Nzc4IEM0LDUuNiA1Ljc2LDMuODg4ODg4ODkgOCwzLjg4ODg4ODg5IEMxMC4yNCwzLjg4ODg4ODg5IDEyLDUuNiAxMiw3Ljc3Nzc3Nzc4IEMxMiw5Ljk1NTU1NTU2IDEwLjI0LDExLjY2NjY2NjcgOCwxMS42NjY2NjY3IEw4LDExLjY2NjY2NjcgWiI+PC9wYXRoPiAgICA8L2c+PC9zdmc+);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	opacity: .7;
+}
+
+.editable-ava__change:hover, .editable-ava__change.hover {
+	color: #FFF !important;
+}
+.editable-ava__change:hover:before {
+	opacity: 1;
+}

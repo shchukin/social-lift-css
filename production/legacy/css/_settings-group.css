@@ -1,0 +1,11 @@
+.settings-group {
+    padding: 10px 15px;
+}
+
+#design-settings .settings-group > .row {
+    margin-top: 50px;
+}
+
+#design-settings .settings-group > .row:first-child {
+    margin-top: 0;
+}

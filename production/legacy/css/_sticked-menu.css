@@ -1,0 +1,157 @@
+.sticked-menu{
+    position: fixed;
+    top: 50%;
+    left: 0;
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+    max-width: 50px;
+    overflow: hidden;
+    transition: max-width 0.25s;
+    transform: translateY(-50%);
+}
+
+.sticked-menu:hover{
+    max-width: 1000px;
+    overflow: visible;
+}
+
+.sticked-menu__icon{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    left: 10px;
+}
+
+.sticked-menu__label{
+    position: relative;
+    padding-right: 20px;
+    white-space: nowrap;
+}
+
+.sticked-menu__item{
+    position: relative;
+}
+
+.sticked-menu__item > .sticked-menu{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transform: translateY(0);
+    max-width: 0;
+    transition: max-width 0.25s ease 0.25s;
+}
+
+.sticked-menu__item:hover > .sticked-menu{
+    max-width: 1000px;
+}
+
+.sticked-menu__link{
+    color: #fff;
+    display: block;
+    padding-left: 50px;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    position: relative;
+}
+
+.sticked-menu__link:hover{
+    color: #fff;
+    /* background-color: #eee; */
+    transition: background-color 0s ease 0.25s;
+}
+
+.sticked-menu__item:first-child > .sticked-menu__link{
+    border-top-right-radius: 15px;
+    transition: border-radius 0.25s ease 0.25s;
+}
+
+.sticked-menu__item:last-child > .sticked-menu__link{
+    border-bottom-right-radius: 15px;
+    transition: border-radius 0.25s ease 0.25s;
+}
+
+.sticked-menu__link:before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    width: 0;
+    /* background-color: rgba(63, 163, 234, 0.890196); */
+    background-color: #eee;
+    transition: width 0.25s ease 0s;
+}
+
+.sticked-menu__link:hover:before{
+    width: 100%;
+}
+
+.sticked-menu__item > .sticked-menu .sticked-menu__link{
+    padding-left: 20px;
+}
+
+.sticked-menu__item:hover > .sticked-menu__link{
+    border-radius: 0;
+}
+
+.sticked-menu__item:first-child > .sticked-menu__link:only-child{
+    border-top-right-radius: 15px;
+}
+
+.sticked-menu__item:last-child > .sticked-menu__link:only-child{
+    border-bottom-right-radius: 15px;
+}
+
+.sticked-menu__item:first-child > .sticked-menu__link:hover{
+    transition: background-color 0s ease 0.25s, border-radius 0.25s ease 0.25s;
+    /* transition: border-radius 0.25s ease 0.25s; */
+}
+
+.sticked-menu__item:last-child > .sticked-menu__link:hover{
+    transition: background-color 0s ease 0.25s, border-radius 0.25s ease 0.25s;
+    /* transition: border-radius 0.25s ease 0.25s; */
+}
+
+/*отмена анимаций*/
+
+.sticked-menu_no-animations{
+    transition: none;
+}
+
+.sticked-menu_no-animations .sticked-menu{
+    transition: none;
+}
+
+.sticked-menu_no-animations .sticked-menu__item:first-child > .sticked-menu__link{
+    transition: none;
+}
+
+.sticked-menu_no-animations .sticked-menu__item:last-child > .sticked-menu__link{
+    transition: none;
+}
+
+.sticked-menu_no-animations .sticked-menu__link:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.sticked-menu_no-animations .sticked-menu__link:hover:before{
+    width: 0;
+}
+
+/*отмена скругления последнего компонента*/
+
+.sticked-menu__item_has-long-submenu:hover ~ .sticked-menu__item > .sticked-menu__link{
+    border-radius: 0;
+}
+
+.sticked-menu__item_has-long-submenu:hover > .sticked-menu > .sticked-menu__item:last-child > .sticked-menu__link{
+    border-bottom-left-radius: 15px;
+}

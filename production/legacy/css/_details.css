@@ -1,0 +1,44 @@
+.details {
+    display: table;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000;
+}
+    .details__avatar {
+        display: inline-block;
+        vertical-align: top;
+        width: 86px;
+        height: 86px;
+        padding: 0 0 0 0px;
+        text-align: center;
+        color: #000;
+    }
+        .details__pic {
+            vertical-align: top;
+            width: 86px;
+            height: 86px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+    .details__menu {
+        display: inline-block;
+        vertical-align: top;
+         width: 580px;
+        padding: 0px 20px 0 0;
+    }
+
+    .details__data {
+        display: inline-block;
+        vertical-align: top;
+        width: 222px;
+		padding-right: 0px;
+    }
+        .details__value {
+            font-weight: 400;
+        }
+        .nastav_pic{
+	        border: 1px solid #ccc;
+			box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+        }

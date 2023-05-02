@@ -1,0 +1,43 @@
+.optional-choice {
+
+}
+    .optional-choice__item {
+
+    }
+
+    .optional-choice__item + .optional-choice__item {
+        margin-top: -14px
+    }
+
+        .optional-choice__control {
+            cursor: pointer;
+        }
+            .optional-choice__widget {
+                cursor: pointer;
+            }
+
+        .optional-choice__label {
+            opacity: .5;
+        }
+
+        .optional-choice__field {
+            opacity: .5;
+        }
+
+    .optional-choice__item_checked {
+
+    }
+        .optional-choice__item_checked .optional-choice__control {
+            cursor: default;
+        }
+            .optional-choice__item_checked .optional-choice__widget {
+                cursor: default;
+            }
+
+        .optional-choice__item_checked .optional-choice__label {
+            opacity: 1;
+        }
+
+        .optional-choice__item_checked .optional-choice__field {
+            opacity: 1;
+        }

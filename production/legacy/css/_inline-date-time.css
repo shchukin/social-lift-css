@@ -1,0 +1,10 @@
+.inline-date-time {
+    display: inline-flex;
+}
+    .inline-date-time__date {
+
+    }
+
+    .inline-date-time__time {
+        margin-left: 20px;
+    }

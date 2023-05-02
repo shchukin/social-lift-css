@@ -1,0 +1,112 @@
+.packs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+    .packs__item {
+        min-height: 350px;
+        margin-top: 5px;
+        position: relative;
+        padding-left: 0px;
+        font-weight: 300;
+        color: #000;
+    }
+
+    .packs__item:first-child {
+        margin-top: 0;
+    }
+
+        .packs__image {
+            display: inline-block;
+		    width: 300px;
+		    vertical-align: top;
+        }
+
+        .packs__info {
+            padding-top: 11px;
+            display: inline-block;
+            width: 630px;
+        }
+        @media(max-width: 1180px){
+	        .packs__info{
+		        width: 490px;
+		    }
+        }
+
+            .packs__title {
+               font-size: 28px;
+                line-height: 30px;
+            }
+
+            .packs__list {
+                padding: 0;
+                margin: 22px 0 0;
+                list-style: none;
+                min-height: 108px;
+            }
+
+                .packs__line {
+                    font-size: 16px;
+                    line-height: 18px;
+                    margin-top: 12px;
+                    position: relative;
+                    padding-left: 16px;
+                }
+
+                .packs__line:before {
+                    content: '';
+                    position: absolute;
+                    top: 6px;
+                    left: 0;
+                    width: 5px;
+                    height: 5px;
+                    background-color: #386dc4;
+                }
+
+                .packs__line:first-child {
+                    margin-top: 0;
+                }
+
+            .packs__price {
+                font-size: 18px;
+                line-height: 24px;
+                margin-top: 13px;
+            }
+
+            .packs__action {
+                margin-top: 15px;
+                font-size: 0;
+            }
+
+                .packs__button {
+                    display: flex;
+                    vertical-align: middle;
+                    width: 600px;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .packs__link {
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-size: 18px;
+                    line-height: 20px;
+                    border-bottom: 1px solid #b2b2b2;
+                    text-decoration: none;
+                    color: #000;
+                }
+
+                .packs__link:hover,
+                .packs__link:focus {
+                    text-decoration: none;
+                    border-bottom: none;
+                    color: #000;
+                }
+
+    .packs__separator {
+        height: 1px;
+        background-color: #d6d6d6;
+        margin: 25px -50px 80px;
+    }
+

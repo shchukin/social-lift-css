@@ -1,0 +1,36 @@
+.summary {
+    font-weight: 300;
+    color: #000;
+}
+    .summary__title {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .summary__content {
+        margin: 5px 0 0;
+        font-size: 14px;
+        line-height: 19px;
+    }
+        .summary__value {
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 0 0 16px;
+            position: relative;
+        }
+
+        .summary__value:before {
+            content: '|';
+            position: absolute;
+            right: 100%;
+            top: 0;
+            margin: 0 8px 0 0;
+        }
+
+        .summary__value:first-child {
+            margin-left: 0;
+        }
+
+        .summary__value:first-child:before {
+            display: none;
+        }

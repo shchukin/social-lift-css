@@ -1,0 +1,18 @@
+.gradient-angle {
+    position: relative;
+    padding-top: 4px;
+    padding-bottom: 12px;
+}
+    .gradient-angle__range {
+        width: 215px;
+    }
+
+    .gradient-angle__output {
+        position: absolute;
+        left: 225px;
+        top: -9px;
+        width: 84px;
+    }
+        .gradient-angle__output .form-control {
+            text-align: right;
+        }

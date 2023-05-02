@@ -1,0 +1,36 @@
+.search {
+    border: 1px solid #dadada;
+    border-radius: 4px;
+    padding: 26px 30px 22px;
+    position: relative;
+}
+    .search__title {
+        position: absolute;
+        left: 15px;
+        top: -12px;
+        padding: 0 15px;
+        background: #fff;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 20px;
+        color: #000;
+    }
+
+    .search__form {
+        position: relative;
+        padding: 0 180px 0 0;
+    }
+        .search__input {
+
+        }
+
+        .search__submit {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 162px;
+        }
+
+        .search__submit .button {
+            min-width: 0;
+        }

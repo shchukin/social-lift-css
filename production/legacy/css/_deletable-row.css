@@ -1,0 +1,9 @@
+.deletable-row {
+    position: relative;
+    padding-right: 60px;
+}
+    .deletable-row__action {
+        position: absolute;
+        right: 15px;
+        top: 0;
+    }

@@ -1,0 +1,13 @@
+.settings-submit {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#design-settings .settings-submit {
+    margin-top: 60px;
+}
+
+
+.new-domain-page .settings-submit {
+    margin-top: 40px;
+}

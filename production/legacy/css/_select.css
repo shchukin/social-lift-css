@@ -1,0 +1,24 @@
+.select {
+    width: 100%;
+    height: 38px;
+    padding: 0 0 0 15px;
+    background: transparent;
+    border: 1px solid #d5cfcf;
+    border-radius: 2px;
+    font-weight: 300;
+    font-size: 16px;
+    color: #000;
+}
+
+.windows:not(.webkit) .select {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.webkit .select {
+    -webkit-appearance: none;
+    background: url(../images/select.png) no-repeat right center;
+}
+.select.width-auto{
+	padding-right: 26px;
+}

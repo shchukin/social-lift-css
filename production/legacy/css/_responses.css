@@ -1,0 +1,18 @@
+.responses{
+    position: relative;
+}
+
+.responses__tabs{
+    width: 392px;
+    position: relative;
+    z-index: 600;
+    top: 0;
+    left: 0;
+}
+
+.responses__cards{
+    width: 980px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}

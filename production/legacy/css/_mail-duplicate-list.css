@@ -1,0 +1,15 @@
+.mail-duplicate-list {
+    overflow-x: auto;
+}
+    .mail-duplicate-list__ribbon {
+        display: inline-flex;
+        padding-bottom: 20px;
+    }
+        .mail-duplicate-list__item {
+            margin-left: 16px;
+            padding: 2px;
+        }
+
+        .mail-duplicate-list__item:first-child {
+            margin-left: 0;
+        }

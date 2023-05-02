@@ -1,0 +1,12 @@
+.table-actions {
+    margin: 30px 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+    .table-actions__filter {
+
+    }
+
+    .table-actions__search {
+
+    }

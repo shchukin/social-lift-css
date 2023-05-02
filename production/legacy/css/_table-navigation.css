@@ -1,0 +1,17 @@
+.table-navigation {
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    .table-navigation__show {
+
+    }
+
+
+    .table-navigation__pagination {
+
+    }
+        .table-navigation__pagination .pagination {
+            margin: 4px 0 0 !important;
+        }

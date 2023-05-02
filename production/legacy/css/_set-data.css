@@ -1,0 +1,107 @@
+.day-options .set-data{
+	margin-bottom: 10px;
+}
+
+.day-options .set-data:last-child{
+	margin-bottom: 0;
+}
+
+.set-data{
+	margin-bottom: 15px;
+}
+
+.set-data:last-child{
+	margin-bottom: 0;
+}
+
+.form-inline .set-data{
+	margin-bottom: 20px;
+}
+
+.form-inline .set-data:last-child{
+	margin-bottom: 0;
+}
+
+.form-inline .set-data__input{
+	width: 75px;
+	margin-right: 10px;
+}
+
+.form-inline .set-data__input:last-child{
+	margin-right: 0;
+}
+
+.form-inline .set-data__input_widest{
+	width: 200px;
+	margin-right: 10px;
+}
+
+.form-inline .set-data__input_widest:last-child{
+	margin-right: 0;
+}
+
+.form-inline .set-data__input_wide{
+	width: 120px;
+	margin-right: 10px;
+}
+
+.form-inline .set-data__input_wide:last-child{
+	margin-right: 0;
+}
+
+.form-inline .set-data__text{
+	margin-right: 10px;
+}
+
+.form-inline .set-data__text:last-child{
+	margin-right: 0;
+}
+
+.form-inline .offset-right-margin{
+	margin-right: 30px;
+}
+
+
+
+
+
+
+
+
+
+.set-data__input{
+	width: 75px;
+	margin-right: 10px;
+}
+
+.set-data__input:last-child{
+	margin-right: 0;
+}
+
+.set-data__input_widest{
+	width: 200px;
+	margin-right: 10px;
+}
+
+.set-data__input_widest:last-child{
+	margin-right: 0;
+}
+
+.set-data__input_wide{
+	width: 120px;
+	margin-right: 10px;
+}
+
+.set-data__input_wide:last-child{
+	margin-right: 0;
+}
+
+.set-data__text{
+	margin-right: 10px;
+}
+
+.set-data__text:last-child{
+	margin-right: 0;
+}
+
+

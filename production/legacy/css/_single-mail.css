@@ -1,0 +1,21 @@
+.single-mail {
+    display: block;
+}
+    .single-mail__preview {
+
+    }
+        .single-mail__picture {
+            vertical-align: top;
+        }
+
+    .single-mail__title {
+        margin-top: 12px;
+        font-size: 14px;
+        line-height: 18px;
+        color: #333;
+        text-align: center;
+    }
+
+    .single-mail:hover .single-mail__title {
+        color: #00C3FF;
+    }

@@ -1,0 +1,8 @@
+.checkbox-bottom-offset{
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.checkbox-bottom-offset:last-child{
+	margin-bottom: 0;
+}

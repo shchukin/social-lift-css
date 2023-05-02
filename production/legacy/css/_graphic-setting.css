@@ -1,0 +1,58 @@
+.graphic-setting {
+
+}
+    .graphic-setting__label {
+
+    }
+
+
+    .graphic-setting__field {
+        margin-top: 4px;
+    }
+        .graphic-setting__upload {
+
+        }
+            .graphic-setting__widget {
+
+            }
+
+            .graphic-setting__file-note {
+                margin-top: 8px;
+                font-size: 13px;
+                line-height: 16px;
+                color: #959595;
+            }
+
+
+        .graphic-setting__current-uploads {
+
+        }
+            .graphic-setting__container {
+                display: flex;
+                align-items: center;
+            }
+                .graphic-setting__background {
+                    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAABlBMVEXMzMz////TjRV2AAAAFElEQVR4AWNAAEY4GNKCw8YfcAAApbQAyTy17q4AAAAASUVORK5CYII=);
+                    background-repeat: repeat;
+                    background-position: left top;
+                }
+                    .graphic-setting__preview {
+                        max-width: 240px;
+                        width: auto;
+                        height: auto;
+                    }
+
+                .graphic-setting__delete {
+                    margin-left: 8px
+                }
+
+                .graphic-setting__options {
+
+                }
+
+
+.graphic-setting_size_larger-square .graphic-setting__preview {
+    max-width: 300px;
+    max-height: 300px;
+}
+

@@ -1,0 +1,24 @@
+.html {
+    min-width: 1140px;
+    overflow-y: scroll;
+}
+.html.overlay-open {
+    overflow-y: hidden;
+}
+
+    .html__body {
+        position: relative;
+        font-family: 'Ubuntu', sans-serif;
+    }
+/*
+    .html__body:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+    
+    */

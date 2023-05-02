@@ -1,0 +1,36 @@
+.new-lessons {
+    /*margin: 0 20px;*/
+}
+
+    .new-lessons__title {
+
+    }
+
+    .new-lessons__list {
+        font-size: 0;
+        margin: 20px 0 0;
+    }
+
+    .new-lessons__list_offset_no {
+        margin-top: 0;
+    }
+
+    .new-lessons__folders {
+        margin: 22px 0 0;
+    }
+
+        .new-lessons__item {
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 14px;
+            width: 210px;
+            text-decoration: none;
+        }
+        @media(max-width: 1220px){
+            .new-lessons__item {
+                margin-right: 26px;
+            }
+        }
+        .new-lessons__item:last-child {
+            margin-right: 0;
+        }

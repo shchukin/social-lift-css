@@ -1,0 +1,14 @@
+.strikethrough {
+	position: relative;
+}
+
+.strikethrough:before {
+	content: "";
+	border-bottom: 2px solid red;
+	position: absolute;
+	top: 2px;
+	opacity: 0.8;
+	width: 100%;
+	height: 50%;
+	transform: rotate(-7deg);
+}

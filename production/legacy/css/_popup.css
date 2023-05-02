@@ -1,0 +1,13 @@
+.popup{
+	
+	position: fixed;
+	left: 50%;
+	width: 900px;
+	margin-left: -450px;
+	top: 100px;
+	background: #fff;
+	min-height: 400px;
+	padding: 20px;
+	
+}
+

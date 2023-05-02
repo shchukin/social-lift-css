@@ -1,0 +1,17 @@
+.inline-date {
+    display: inline-flex;
+    vertical-align: top;
+}
+    .inline-date__day {
+        width: 50px !important;
+    }
+
+    .inline-date__month {
+        width: auto;
+        margin-left: 8px;
+    }
+
+    .inline-date__year {
+        width: 60px !important;
+        margin-left: 8px;
+    }

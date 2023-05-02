@@ -1,0 +1,32 @@
+.settings-heading {
+
+}
+    .settings-heading a {
+        display: block;
+        position: relative;
+        margin: -10px -15px;
+        padding: 10px 15px;
+        text-decoration: none;
+        color: #0a0a0a!important;
+    }
+
+    /*.settings-heading a:after {
+        content: '';
+        position: absolute;
+        right: 20px;
+        top: 17px;
+        display: block;
+        border-top: 10px solid;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+    }*/
+
+
+.settings-heading .arrow-icon, .panel-heading .arrow-icon {
+    top: 9px;
+    right:10px;
+}
+.panel-group .panel-group .panel-group .panel-heading .arrow-icon{
+    top: 0px;
+    right:0px;
+}

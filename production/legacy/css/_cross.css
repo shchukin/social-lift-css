@@ -1,0 +1,7 @@
+.cross {
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 11px;
+    background: url(../images/cross.png) no-repeat center center;
+}

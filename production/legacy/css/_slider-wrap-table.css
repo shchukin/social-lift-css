@@ -1,0 +1,10 @@
+.slider-wrap-table {
+    width: 100%;
+    width: calc(100% + 8px);
+    margin-left: -4px;
+    align-items: center;
+}
+    .slider-wrap-table td:not(:first-child) {
+        width: 1px;
+        white-space: nowrap;
+    }

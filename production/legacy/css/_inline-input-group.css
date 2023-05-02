@@ -1,0 +1,9 @@
+.inline-input-group {
+    display: inline-table;
+    vertical-align: middle;
+    margin-left: 4px;
+}
+
+.inline-input-group_width_percent-value {
+    width: 90px;
+}

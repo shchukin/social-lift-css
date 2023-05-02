@@ -1,0 +1,22 @@
+.subscription-table {
+
+}
+    .subscription-table th {
+
+    }
+
+    .subscription-table td {
+        vertical-align: middle !important;
+    }
+
+    .subscription-table__name {
+        width: 250px !important;
+    }
+
+    .subscription-table__subscription {
+
+    }
+
+    .subscription-table__actions {
+        white-space: nowrap;
+    }

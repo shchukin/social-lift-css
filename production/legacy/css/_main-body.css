@@ -1,0 +1,35 @@
+@font-face{
+	font-family: "Ubuntu";
+	src: url("../fonts/Ubuntu/Ubuntu-R.ttf");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Ubuntu";
+	src: url("../fonts/Ubuntu/Ubuntu-B.ttf");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Lato";
+	src: url("../fonts/Lato2OFL/Lato-Regular.ttf");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Lucida Grande";
+	src: url("../fonts/lucida-grande/8292.ttf");
+	font-weight: 700;
+	font-style: normal;
+}
+
+.main-body{
+	font-family: "Ubuntu"; 
+	font-weight: 400; 
+	font-size: 14px; 
+	line-height: 1.42857143; 
+	color: #333;
+}

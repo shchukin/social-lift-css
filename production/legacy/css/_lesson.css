@@ -1,0 +1,50 @@
+.lesson {
+    position: relative;
+    padding-left: 540px;
+    min-height: 295px;
+}
+
+    .lesson__image {
+        position: absolute;
+        top: 4px;
+        left: 0;
+    }
+
+    .lesson__image img {
+        max-width: 510px;
+        max-height: 300px;
+    }
+
+    .lesson__info {
+
+    }
+
+        .lesson__title {
+
+        }
+
+        .lesson__badge {
+            margin-top: 19px;
+        }
+
+        .lesson__text {
+            margin-top: 17px;
+            font-size: 18px;
+            line-height: 21px;
+            font-weight: 300;
+            color: #000;
+        }
+
+        .lesson__button {
+            margin-top: 35px;
+            width: 165px;
+        }
+        .lesson__text{
+	        max-height: 165px;
+	        overflow: hidden;
+        }
+        .lesson__text:after{
+	        box-shadow: 5px 4px 10px rgba(0,0,0);
+	        width: 100px;
+	        height: 20px;
+        }

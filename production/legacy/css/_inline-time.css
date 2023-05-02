@@ -1,0 +1,18 @@
+.inline-time {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: top;
+}
+    .inline-time__hours {
+        width: 50px !important;
+    }
+
+    .inline-time__seconds {
+        width: 50px !important;
+    }
+
+    .inline-time__separator {
+        margin: 0 4px;
+        width: 4px;
+        text-align: center;
+    }

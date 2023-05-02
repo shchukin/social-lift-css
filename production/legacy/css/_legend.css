@@ -1,0 +1,14 @@
+.legend {
+    margin: 11px 0 0;
+    padding: 0;
+    list-style: none;
+}
+    .legend__item {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 0 0 14px;
+    }
+
+    .legend__item:first-child {
+        margin-left: 0;
+    }

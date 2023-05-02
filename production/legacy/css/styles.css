@@ -1,0 +1,121 @@
+@import url(_html.css);
+@import url(_ancients.css);
+@import url(_body.css);
+@import url(_breadcrumbs.css);
+@import url(_button.css);
+@import url(_clearfix.css);
+@import url(_content.css);
+@import url(_input.css);
+@import url(_body_head.css);
+@import url(_chat-actions.css);
+@import url(_chat-stat.css);
+@import url(_header.css);
+@import url(_link.css);
+@import url(_logo.css);
+@import url(_nav.css);
+@import url(_phone.css);
+@import url(_main.css);
+@import url(_page.css);
+@import url(_container.css);
+@import url(_sidebar.css);
+@import url(_title.css);
+@import url(_inline-block.css);
+@import url(_request.css);
+@import url(_tiles.css);
+@import url(_call.css);
+@import url(_number.css);
+@import url(_details.css);
+@import url(_stat.css);
+@import url(_construction.css);
+@import url(_choice.css);
+@import url(_geo.css);
+@import url(_showcase.css);
+@import url(_stage.css);
+@import url(_feedback.css);
+@import url(_features.css);
+@import url(_progress.css);
+@import url(_contacts.css);
+@import url(_thumb.css);
+@import url(_tabs.css);
+/*@import url(_preview.css);*/
+@import url(_dealer.css);
+@import url(_more.css);
+@import url(_photo.css);
+@import url(_comment.css);
+@import url(_wysiwyg.css);
+@import url(_map.css);
+@import url(_balloon.css);
+@import url(_catalog.css);
+@import url(_side-heading.css);
+@import url(_accordion.css);
+@import url(_item.css);
+@import url(_heading.css);
+@import url(_stats.css);
+@import url(_pic.css);
+@import url(_fancybox.css);
+@import url(_query.css);
+@import url(_accordion-panel.css);
+@import url(_gradient-overlay.css);
+@import url(_logo-placeholder.css);
+@import url(st.css);
+
+.container-top{
+	padding-top: 40px;
+	min-height: 700px;
+}
+.stat__counter.scroll-animate{
+	
+}
+.animate-scale{
+	opacity: 0.01;
+    transform: scale(0.5, 0.5);
+    transition: all 1s ease 0s;
+}
+
+.no-js .animate-scale, .touch .animate-scale{
+	opacity: 1;
+	transform: scale(1.0, 1.0);
+}
+
+
+.p_menu_top {
+    height: 16px;
+    list-style: outside none none;
+    margin: 0 0 20px;
+    padding: 0;
+}
+.p_menu_top_right li {
+    float: left;
+    font-weight: bold;
+    padding: 0 0 0 15px;
+}
+.p_menu_top li {
+    float: left;
+    font-weight: bold;
+    line-height: 18px;
+    padding: 0 10px 0 0;
+}
+.p_menu_top_right li a {
+    text-decoration: none;
+}
+.p_menu_top li a {
+    color: #000000;
+    text-decoration: none;
+}
+.p_menu_top_right li.active a {
+    color: #bf0d0d;
+    text-decoration: underline;
+}
+.p_menu_top_right li a:hover {
+    color: #bf0d0d;
+    text-decoration: underline;
+}
+.p_menu_top li.active a, .p_menu_top li a:hover {
+    color: #bf0d0d;
+    text-decoration: underline;
+}
+
+.button_background_none{
+	background: none;
+	border: 1px solid #fff;
+}

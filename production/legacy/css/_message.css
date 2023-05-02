@@ -1,0 +1,39 @@
+.message {
+    color: #000;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 300;
+}
+
+.message_admin {
+    color: #990000;
+}
+
+.message_self {
+
+}
+    .message_self .message__sender {
+        color: #138500;
+    }
+
+    .message__time {
+        font-weight: 300;
+        color: #757575;
+    }
+
+    .message__sender {
+        margin: 0 0 0 8px;
+        font-weight: normal;
+    }
+
+    .message__text {
+        padding: 1px 0 0;
+        font-weight: 300;
+    }
+    .message_self .message__text{
+	    color: #000;
+    }
+
+.message b {
+    font-weight: normal;
+}

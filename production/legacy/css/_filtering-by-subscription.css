@@ -1,0 +1,11 @@
+.filtering-by-subscription {
+    width: 700px;
+}
+    .filtering-by-subscription .checkbox-inline {
+        margin-left: 0 !important;
+        margin-right: 10px !important;
+    }
+
+    .filtering-by-subscription__apply {
+        margin-top: 14px;
+    }

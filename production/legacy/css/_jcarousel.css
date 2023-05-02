@@ -1,0 +1,181 @@
+.jcarousel {
+    position: relative;
+}
+
+    .jcarousel__viewport {
+        position: relative;
+        overflow: hidden;
+    }
+
+        .jcarousel__list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            width: 20000px;
+            position: relative;
+            white-space: nowrap;
+        }
+
+            .jcarousel__item {
+                display: inline-block;
+                vertical-align: top;
+                white-space: normal;
+                float: left;
+            }
+
+
+    .jcarousel__control {
+        cursor: pointer;
+    }
+
+    .jcarousel__control_prev {
+
+    }
+
+    .jcarousel__control_next {
+
+    }
+
+    .jcarousel__control_disabled {
+        opacity: .5;
+        cursor: default;
+    }
+
+
+
+.jcarousel_skin_calendar {
+
+}
+    .jcarousel_skin_calendar .jcarousel__head {
+        text-align: center;
+    }
+        .jcarousel_skin_calendar .jcarousel__title {
+            display: inline-block;
+            vertical-align: top;
+            width: 176px;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 24px;
+            color: #000;
+        }
+
+        .jcarousel_skin_calendar .jcarousel__control {
+            display: inline-block;
+            vertical-align: top;
+            width: 15px;
+            height: 14px;
+            margin: 6px 0 0;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        .jcarousel_skin_calendar .jcarousel__control_prev {
+            background-image: url(../images/jcarousel_skin_calendar__control_prev.png);
+        }
+        .jcarousel_skin_calendar .jcarousel__control_next {
+            background-image: url(../images/jcarousel_skin_calendar__control_next.png);
+        }
+
+
+
+    .jcarousel_skin_calendar .jcarousel__viewport {
+        overflow: visible;
+        margin-top: 16px;
+    }
+
+    .jcarousel_skin_calendar .jcarousel__list {
+        width: 100%;
+    }
+
+    .jcarousel_skin_calendar .jcarousel__item {
+        width: 100%;
+    }
+
+.jcarousel_skin_navigation {
+    background-color: transparent !important;
+    text-align: center;
+    padding: 0 40px;
+}
+    .jcarousel_skin_navigation .jcarousel__viewport {
+
+    }
+        .jcarousel_skin_navigation .jcarousel__list {
+
+        }
+            .jcarousel_skin_navigation .jcarousel__item {
+
+            }
+
+
+    .jcarousel_skin_navigation .jcarousel__control {
+        position: absolute;
+        top: 0;
+        width: 40px;
+        height: 40px;
+        border: none;
+        padding: 0;
+        background: none;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        outline: none;
+
+    }
+
+    .jcarousel_skin_navigation .jcarousel__control_disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+
+    .jcarousel_skin_navigation .jcarousel__control_prev {
+        left: 0;
+    }
+
+    .jcarousel_skin_navigation .jcarousel__control_next {
+        right: 0;
+    }
+        .jcarousel_skin_navigation .jcarousel__control:after {
+            content: "";
+            position: absolute;
+            top: 8px;
+            display: block;
+            width: 0;
+            height: 0;
+            border: 12px solid #000;
+            border-top-color: transparent;
+            border-bottom-color: transparent;
+        }
+
+    .jcarousel_skin_navigation .jcarousel__control_prev:after {
+        border-left-width: 0;
+        left: 12px;
+    }
+
+    .jcarousel_skin_navigation .jcarousel__control_next:after {
+        border-right-width: 0;
+        right: 16px;
+    }
+
+    .jcarousel_skin_navigation .jcarousel__control_prev:hover:after {
+        border-right-color: #008ace;
+    }
+
+    .jcarousel_skin_navigation .jcarousel__control_next:hover:after {
+        border-left-color: #008ace;
+    }
+
+
+.jcarousel_skin_navigation.jcarousel_disabled {
+
+}
+    .jcarousel_skin_navigation.jcarousel_disabled .jcarousel__list {
+        left: 0 !important;
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .jcarousel_skin_navigation.jcarousel_disabled .jcarousel__control {
+        display: none !important;
+    }
+
+

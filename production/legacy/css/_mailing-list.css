@@ -1,0 +1,29 @@
+.mailing-list {
+    margin-top: 40px;
+    display: flex;
+}
+    .mailing-list__new {
+        flex-basis: 200px;
+        min-width: 200px;
+    }
+
+    .mailing-list__viewport {
+        flex-basis: 740px;
+        min-width: 740px;
+        margin-left: 40px;
+        overflow-x: auto;
+    }
+        .mailing-list__ribbon {
+            display: inline-flex;
+            vertical-align: top;
+            padding-bottom: 10px;
+        }
+            .mailing-list__item {
+                flex-basis: 200px;
+                min-width: 200px;
+                margin-right: 20px;
+            }
+
+            .mailing-list__item:last-child {
+                margin-right: 0;
+            }

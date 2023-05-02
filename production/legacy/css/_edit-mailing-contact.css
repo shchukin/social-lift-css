@@ -1,0 +1,15 @@
+.edit-mailing-contact {
+
+}
+
+.import-contacts .edit-mailing-contact {
+    margin-top: 40px;
+    border-top:  1px solid #333;
+    padding-top: 40px;
+}
+
+.edit-mailing-contact + .edit-mailing-contact {
+    margin-top: 40px;
+    border-top:  1px solid #333;
+    padding-top: 40px;
+}

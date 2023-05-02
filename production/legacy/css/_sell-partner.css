@@ -1,0 +1,13 @@
+.sell-partner {
+
+}
+    .sell-partner th {
+        padding-left: 16px !important;
+        vertical-align: middle !important;
+        width: 1px;
+        white-space: nowrap;
+    }
+
+    .sell-partner__input {
+        width: 100px;
+    }

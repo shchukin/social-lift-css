@@ -1,0 +1,6 @@
+.general-preview {
+
+}
+    .general-preview .glyphicon-eye-open {
+        transform: translateY(2px);
+    }

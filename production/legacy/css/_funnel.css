@@ -1,0 +1,130 @@
+.funnel{
+	height: 370px;
+	width: 460px;
+	position: relative;
+}
+
+.funnel:after{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0 370px 150px;
+	border-color: transparent transparent #fff transparent;
+	z-index: 2;
+}
+
+.funnel:before{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 370px 0 0 150px;
+	border-color: transparent transparent transparent #fff;
+	z-index: 2;
+}
+
+.funnel__section{
+	height: 70px;
+	margin-bottom: 5px;
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+	line-height: 70px;
+	position: relative;
+}
+
+.funnel__section:before{
+	content: "";
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	background-color: #d4dae1;
+	top: 32px;
+	border-radius: 50%;
+}
+
+.funnel__section:after{
+	content: "";
+	position: absolute;
+	width: 310px;
+	height: 1px;
+	background-color: #d4dae1;
+	top: 34px;
+	z-index: 3;
+}
+
+.funnel__section:last-child{
+	margin-bottom: 0;
+}
+
+.funnel__section_1{
+	background-color: rgba(28, 147, 224, 0.85);
+}
+
+.funnel__section_1:before{
+	right: 27px;
+}
+
+.funnel__section_1:after{
+	right: -280px;
+}
+
+.funnel__section_2{
+	background-color: rgba(70, 222, 118, 0.85);
+}
+
+.funnel__section_2:before{
+	right: 57px;
+}
+
+.funnel__section_2:after{
+	right: -250px;
+}
+
+.funnel__section_3{
+	background-color: rgba(255, 213, 73, 0.85);
+}
+
+.funnel__section_3:before{
+	right: 87px;
+}
+
+.funnel__section_3:after{
+	right: -220px;
+}
+
+.funnel__section_4{
+	background-color: rgba(255, 158, 65, 0.85);
+}
+
+.funnel__section_4:before{
+	right: 117px;
+}
+
+.funnel__section_4:after{
+	right: -190px;
+}
+
+.funnel__section_5{
+	background-color: rgba(255, 73, 72, 0.85);
+}
+
+.funnel__section_5:before{
+	right: 147px;
+}
+
+.funnel__section_5:after{
+	right: -160px;
+}
+
+
+
+
+

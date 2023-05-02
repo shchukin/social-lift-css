@@ -1,0 +1,26 @@
+.stat-item{
+	text-align: center;
+	width: 160px;
+	margin: 0 auto;
+	background-color: #eee;
+	border-radius: 10px;
+	padding-top: 15px;
+	padding-bottom: 25px;
+}
+
+.stat-item_width_wide {
+	width: 100%;
+}
+
+.stat-item__value{
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 50px;
+}
+
+.stat-item__key{
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}

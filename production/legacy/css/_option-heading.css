@@ -1,0 +1,13 @@
+.option-heading {
+
+}
+    .option-heading__title {
+        display: inline;
+        vertical-align: middle;
+    }
+
+    .option-heading__widget {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 4px;
+    }

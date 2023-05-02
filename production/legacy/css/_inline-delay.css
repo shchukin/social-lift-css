@@ -1,0 +1,21 @@
+.inline-delay {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: top;
+    font-weight: normal;
+}
+    .inline-delay__widget {
+        margin-top: 0 !important;
+    }
+
+    .inline-delay__label {
+        margin: 0 8px;
+    }
+
+    .inline-delay__period {
+        width: 50px;
+    }
+
+    .inline-delay__unit {
+        margin: 0 8px;
+    }

@@ -4,27 +4,30 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Живая очередь</title>
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
-    <script src="../legacy/jquery-2.1.1.min.js?1682927423"></script>
-    <link href="../legacy/bootstrap.min.css?1682927423" rel="stylesheet">
-    <link href="../legacy/jquery-ui.min.css?1682927423" rel="stylesheet">
-    <link href="../legacy/colortip-1.0-jquery.css?1682927423" rel="stylesheet">
-    <link href="../legacy/style.css?1682927423" rel="stylesheet">
-    <link href="../legacy/style(1).css?1682927423" rel="stylesheet">
-    <link href="../legacy/style(2).css?1682927423" rel="stylesheet">
-    <link href="../legacy/style(3).css?1682927423" rel="stylesheet">
-    <link href="../legacy/fix.css?1682927423" rel="stylesheet">
-    <link href="../legacy/custom_styles.css?1682927423" rel="stylesheet">
-    <link href="../legacy/flag-icon.css?1682927423" rel="stylesheet">
-    <link href="../legacy/iziToast.min.css?1682927423" rel="stylesheet">
-    <link href="../legacy/style(4).css?1682927423" rel="stylesheet">
-    <link href="../legacy/_bshare.css?1682927423" rel="stylesheet">
-    <link href="../legacy/nprogress.css?1682927423" rel="stylesheet">
-    <link href="../legacy/material-design-iconic-font.min.css?1682927423" rel="stylesheet">
-    <link href="../legacy/mediaelementplayer.min.css?1682927423" rel="stylesheet">
-    <link href="../legacy/plyr.css?1682927423" rel="stylesheet">
-    <link href="../legacy/_modules_main_templates_space_style.css.minify.css?1682927423" rel="stylesheet" type="text/css" id="c83a1a7ebaf08549eb1759763b2975ff">
+    <script src="../legacy/jquery-2.1.1.min.js?1683009700"></script>
+    <link href="../legacy/bootstrap.min.css?1683009700" rel="stylesheet">
+    <link href="../legacy/jquery-ui.min.css?1683009700" rel="stylesheet">
+    <link href="../legacy/colortip-1.0-jquery.css?1683009700" rel="stylesheet">
+    <link href="../legacy/style.css?1683009700" rel="stylesheet">
+    <link href="../legacy/style(1).css?1683009700" rel="stylesheet">
+    <link href="../legacy/style(2).css?1683009700" rel="stylesheet">
+    <link href="../legacy/style(3).css?1683009700" rel="stylesheet">
+    <link href="../legacy/fix.css?1683009700" rel="stylesheet">
+    <link href="../legacy/custom_styles.css?1683009700" rel="stylesheet">
+    <link href="../legacy/flag-icon.css?1683009700" rel="stylesheet">
+    <link href="../legacy/iziToast.min.css?1683009700" rel="stylesheet">
+    <link href="../legacy/style(4).css?1683009700" rel="stylesheet">
+    <link href="../legacy/_bshare.css?1683009700" rel="stylesheet">
+    <link href="../legacy/nprogress.css?1683009700" rel="stylesheet">
+    <link href="../legacy/material-design-iconic-font.min.css?1683009700" rel="stylesheet">
+    <link href="../legacy/mediaelementplayer.min.css?1683009700" rel="stylesheet">
+    <link href="../legacy/plyr.css?1683009700" rel="stylesheet">
+    <link href="../legacy/_modules_main_templates_space_style.css.minify.css?1683009700" rel="stylesheet" type="text/css">
+    <link href="../legacy/css/style.css?1683009700" rel="stylesheet" type="text/css">
 
-    <link href="../styles/style.css?1682927423" rel="stylesheet">
+    <!-- Новые стили для Social Lift -->
+    <link href="../fonts/fonts.css?1683009700" rel="stylesheet" type="text/css">
+    <link href="../styles/style.css?1683009700" rel="stylesheet" type="text/css">
 
     <style>
         :root {
@@ -822,37 +825,37 @@
                 <main class="kmfdm-page__main kmfdm-main kmfdm-panel">
 
                     <!-- Внутренняя страница -->
-                    <div class="queue">
-                        <h1 class="queue__heading">
+                    <div class="lift-queue">
+                        <h1 class="lift-queue__heading">
                             Живая очередь
                         </h1>
-                        <div class="queue__body">
-                            <div class="queue__sidebar">
-                                <div class="aside">
-                                    <div class="aside__section aside__section--expanded">
-                                        <button class="aside__heading" type="button">
+                        <div class="lift-queue__body">
+                            <div class="lift-queue__sidebar">
+                                <div class="lift-aside">
+                                    <div class="lift-aside__section lift-aside__section--expanded">
+                                        <button class="lift-aside__heading" type="button">
                                             Доступная энергия
                                         </button>
-                                        <div class="aside__widget">
-                                            <div class="aside__energy">
+                                        <div class="lift-aside__widget">
+                                            <div class="lift-aside__energy">
                                                 1 200
                                             </div>
-                                            <a class="aside__submit button button--small" href="#">
+                                            <a class="lift-aside__submit lift-button lift-button--small" href="#">
                                                 Пополнить
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="aside__section">
-                                        <button class="aside__heading" type="button">
+                                    <div class="lift-aside__section">
+                                        <button class="lift-aside__heading" type="button">
                                             Купить аватар
                                         </button>
-                                        <div class="aside__widget">
-                                            <div class="aside__note">
+                                        <div class="lift-aside__widget">
+                                            <div class="lift-aside__note">
                                                 Чем больше аватаров, тем больше призов
                                             </div>
-                                            <div class="aside__preview">
-                                                <div class="avatar avatar--no-hover">
-                                                    <img class="avatar__image"
+                                            <div class="lift-aside__preview">
+                                                <div class="lift-avatar lift-avatar--no-hover">
+                                                    <img class="lift-avatar__image"
                                                          srcset="../temp/crocodile-72x72@2x.jpg 2x"
                                                          src="../temp/crocodile-72x72.jpg"
                                                          width="72"
@@ -861,65 +864,69 @@
                                                     >
                                                 </div>
                                             </div>
-                                            <div class="aside__operations">
-                                                <button class="aside__action action action--minus" type="button">
+                                            <div class="lift-aside__operations">
+                                                <button class="lift-aside__action lift-action lift-action--minus" type="button">
                                                     -
                                                 </button>
-                                                <div class="aside__value">
+                                                <div class="lift-aside__value">
                                                     1
                                                 </div>
-                                                <button class="aside__action action action--plus" type="button">
+                                                <button class="lift-aside__action lift-action lift-action--plus" type="button">
                                                     +
                                                 </button>
                                             </div>
-                                            <a class="aside__submit button button--small button--energy" href="#">
+                                            <a class="lift-aside__submit lift-button lift-button--small lift-button--energy" href="#">
                                                 1 Аватар за 300
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="aside__section">
-                                        <button class="aside__heading" type="button">
+                                    <div class="lift-aside__section">
+                                        <button class="lift-aside__heading" type="button">
                                             Получить ускорители
                                         </button>
-                                        <div class="aside__widget">
-                                            <div class="aside__note">
+                                        <div class="lift-aside__widget">
+                                            <div class="lift-aside__note">
                                                 Чем быстрее скорость, тем больше шансов победить
                                             </div>
-                                            <div class="aside__list">
-                                                <div class="aside__sub-heading">
+                                            <div class="lift-aside__list">
+                                                <div class="lift-aside__sub-heading">
                                                     Пригласить друзей
                                                 </div>
-                                                <div class="aside__field input">
-                                                    <div class="input">
-                                                        <button class="input__action input__action--share" type="button"><span class="kmfdm-visuallyhidden">Refresh</span></button>
-                                                        <button class="input__action input__action--copy" type="button"><span class="kmfdm-visuallyhidden">Refresh</span></button>
-                                                        <input class="input__widget" type="text" readonly value="https://social-lift.com/lorem-impsum-dolor-sit-amen">
+                                                <div class="lift-aside__field lift-input">
+                                                    <div class="lift-input">
+                                                        <button class="lift-input__action lift-input__action--share" type="button">
+                                                            <span class="kmfdm-visuallyhidden">Refresh</span>
+                                                        </button>
+                                                        <button class="lift-input__action lift-input__action--copy" type="button">
+                                                            <span class="kmfdm-visuallyhidden">Refresh</span>
+                                                        </button>
+                                                        <input class="lift-input__widget" type="text" readonly value="https://social-lift.com/lorem-impsum-dolor-sit-amen">
                                                     </div>
                                                 </div>
-                                                <div class="aside__goal aside__goal--next-qualification">
+                                                <div class="lift-aside__goal lift-aside__goal--next-qualification">
                                                     Следующая квалификация <strong>&nbsp;+10%</strong>
                                                 </div>
-                                                <a class="aside__more dash dash--more" href="#">
+                                                <a class="lift-aside__more lift-dash lift-dash--more" href="#">
                                                     Подробнее
                                                 </a>
                                             </div>
-                                            <div class="aside__list">
-                                                <div class="aside__sub-heading">
+                                            <div class="lift-aside__list">
+                                                <div class="lift-aside__sub-heading">
                                                     Выполнить задания
                                                 </div>
-                                                <div class="aside__goal aside__goal--completed-tasks">
+                                                <div class="lift-aside__goal lift-aside__goal--completed-tasks">
                                                     За выполнение заданий <strong>&nbsp;+10%</strong>
                                                 </div>
-                                                <div class="aside__item aside__item--completed">
+                                                <div class="lift-aside__item lift-aside__item--completed">
                                                     Попдисаться на Телеграм
                                                 </div>
-                                                <div class="aside__item aside__item--completed">
+                                                <div class="lift-aside__item lift-aside__item--completed">
                                                     Поставить аватарку
                                                 </div>
-                                                <a class="aside__item" href="#">
+                                                <a class="lift-aside__item" href="#">
                                                     Подключить бота
                                                 </a>
-                                                <a class="aside__more dash dash--more" href="#">
+                                                <a class="lift-aside__more lift-dash lift-dash--more" href="#">
                                                     Подробнее
                                                 </a>
                                             </div>
@@ -927,35 +934,35 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="queue__content">
-                                <div class="queue__head">
-                                    <div class="queue__navigation filter">
-                                        <a class="filter__link filter__link--current" href="#">
+                            <div class="lift-queue__content">
+                                <div class="lift-queue__head">
+                                    <div class="lift-queue__navigation lift-filter">
+                                        <a class="lift-filter__link lift-filter__link--current" href="#">
                                             Мои аватары (4)
                                         </a>
-                                        <a class="filter__link" href="#">
+                                        <a class="lift-filter__link" href="#">
                                             Вся очередь
                                         </a>
                                     </div>
-                                    <div class="queue__sort">
-                                        <div class="sort">
-                                            <button class="sort__handler" type="button">
-                                                <span class="sort__label">Сортировать:</span>
+                                    <div class="lift-queue__sort">
+                                        <div class="lift-sort">
+                                            <button class="lift-sort__handler" type="button">
+                                                <span class="lift-sort__label">Сортировать:</span>
                                                 По уровню энергии
                                             </button>
-                                            <div class="sort__dropdown menu">
-                                                <a class="menu__link" href="#">По уровню энергии</a>
-                                                <a class="menu__link" href="#">Lorem ipsum dolor sit amen</a>
-                                                <a class="menu__link" href="#">Consectetur adipiscing elit</a>
-                                                <a class="menu__link" href="#">Cras mattis rutrum pharetra</a>
+                                            <div class="lift-sort__dropdown lift-menu">
+                                                <a class="lift-menu__link" href="#">По уровню энергии</a>
+                                                <a class="lift-menu__link" href="#">Lorem ipsum dolor sit amen</a>
+                                                <a class="lift-menu__link" href="#">Consectetur adipiscing elit</a>
+                                                <a class="lift-menu__link" href="#">Cras mattis rutrum pharetra</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="queue__list">
-                                    <div class="queue__item card">
-                                        <div class="card__preview avatar avatar--no-hover">
-                                            <img class="avatar__image"
+                                <div class="lift-queue__list">
+                                    <div class="lift-queue__item lift-floor">
+                                        <div class="lift-floor__preview lift-avatar lift-avatar--no-hover">
+                                            <img class="lift-avatar__image"
                                                  srcset="../temp/crocodile-72x72@2x.jpg 2x"
                                                  src="../temp/crocodile-72x72.jpg"
                                                  width="72"
@@ -963,64 +970,64 @@
                                                  alt=""
                                             >
                                         </div>
-                                        <div class="card__head">
-                                            <div class="card__summary">
-                                                <div class="card__heading">
-                                                    <label class="choice choice--heading choice--checkbox">
-                                                        <input class="choice__widget" type="checkbox">
-                                                        <i class="choice__icon" role="presentation"></i>
-                                                        <span class="choice__label">3 этаж</span>
+                                        <div class="lift-floor__head">
+                                            <div class="lift-floor__summary">
+                                                <div class="lift-floor__heading">
+                                                    <label class="lift-choice lift-choice--heading lift-choice--checkbox">
+                                                        <input class="lift-choice__widget" type="checkbox">
+                                                        <i class="lift-choice__icon" role="presentation"></i>
+                                                        <span class="lift-choice__label">3 этаж</span>
                                                     </label>
                                                 </div>
-                                                <div class="card__queue stat stat--queue">
-                                                    <span class="stat__param">Место в очереди:</span>
-                                                    <span class="stat__value">1 200</span>
+                                                <div class="lift-floor__queue lift-stat lift-stat--queue">
+                                                    <span class="lift-stat__param">Место в очереди:</span>
+                                                    <span class="lift-stat__value">1 200</span>
                                                 </div>
                                             </div>
-                                            <div class="card__data">
-                                                <div class="card__params">
-                                                    <div class="stat stat--energy">
-                                                        <span class="stat__param">
+                                            <div class="lift-floor__data">
+                                                <div class="lift-floor__params">
+                                                    <div class="lift-stat lift-stat--energy">
+                                                        <span class="lift-stat__param">
                                                             Энергия:
                                                         </span>
-                                                        <span class="stat__value">
+                                                        <span class="lift-stat__value">
                                                             1200
                                                         </span>
                                                     </div>
-                                                    <div class="stat">
-                                                        <span class="stat__param">
+                                                    <div class="lift-stat">
+                                                        <span class="lift-stat__param">
                                                             Хватит на:
                                                         </span>
-                                                        <span class="stat__value">
+                                                        <span class="lift-stat__value">
                                                             2 дня
                                                         </span>
                                                     </div>
                                                 </div>
-                                                <div class="card__progress speedometer speedometer--success speedometer--larger">
-                                                    <div class="speedometer__value speedometer__value--filled"></div>
-                                                    <div class="speedometer__value speedometer__value--filled"></div>
-                                                    <div class="speedometer__value speedometer__value--filled"></div>
-                                                    <div class="speedometer__value speedometer__value--filled"></div>
-                                                    <div class="speedometer__value speedometer__value--filled"></div>
-                                                    <div class="speedometer__value speedometer__value--filled"></div>
-                                                    <div class="speedometer__value speedometer__value--filled"></div>
-                                                    <div class="speedometer__value speedometer__value--filled"></div>
-                                                    <div class="speedometer__value speedometer__value--filled"></div>
-                                                    <div class="speedometer__value speedometer__value--filled"></div>
-                                                    <div class="speedometer__value speedometer__value--filled"></div>
-                                                    <div class="speedometer__value speedometer__value--filled"></div>
-                                                    <div class="speedometer__value"></div>
+                                                <div class="lift-floor__progress lift-speedometer lift-speedometer--success lift-speedometer--larger">
+                                                    <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                                    <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                                    <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                                    <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                                    <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                                    <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                                    <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                                    <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                                    <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                                    <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                                    <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                                    <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                                    <div class="lift-speedometer__value"></div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card__body">
-                                            <div class="card__carousel">
-                                                <div class="carousel carousel--avatar" data-step="5">
-                                                    <div class="carousel__container">
-                                                        <div class="carousel__ribbon">
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                        <div class="lift-floor__body">
+                                            <div class="lift-floor__carousel">
+                                                <div class="lift-carousel lift-carousel--avatar" data-step="5">
+                                                    <div class="lift-carousel__container">
+                                                        <div class="lift-carousel__ribbon">
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-a-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-a-56x56.jpg"
                                                                          width="56"
@@ -1029,9 +1036,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-b-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-b-56x56.jpg"
                                                                          width="56"
@@ -1040,9 +1047,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic user-pic--highlight" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic lift-user-pic--highlight" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-c-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-c-56x56.jpg"
                                                                          width="56"
@@ -1051,9 +1058,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-a-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-a-56x56.jpg"
                                                                          width="56"
@@ -1062,9 +1069,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-b-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-b-56x56.jpg"
                                                                          width="56"
@@ -1073,9 +1080,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-c-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-c-56x56.jpg"
                                                                          width="56"
@@ -1084,9 +1091,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-a-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-a-56x56.jpg"
                                                                          width="56"
@@ -1095,9 +1102,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-b-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-b-56x56.jpg"
                                                                          width="56"
@@ -1106,9 +1113,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-c-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-c-56x56.jpg"
                                                                          width="56"
@@ -1117,9 +1124,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-a-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-a-56x56.jpg"
                                                                          width="56"
@@ -1128,9 +1135,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-b-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-b-56x56.jpg"
                                                                          width="56"
@@ -1139,9 +1146,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-c-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-c-56x56.jpg"
                                                                          width="56"
@@ -1150,9 +1157,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-a-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-a-56x56.jpg"
                                                                          width="56"
@@ -1161,9 +1168,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-b-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-b-56x56.jpg"
                                                                          width="56"
@@ -1172,9 +1179,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-c-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-c-56x56.jpg"
                                                                          width="56"
@@ -1183,9 +1190,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-a-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-a-56x56.jpg"
                                                                          width="56"
@@ -1194,9 +1201,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-b-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-b-56x56.jpg"
                                                                          width="56"
@@ -1205,9 +1212,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-c-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-c-56x56.jpg"
                                                                          width="56"
@@ -1216,9 +1223,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-a-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-a-56x56.jpg"
                                                                          width="56"
@@ -1227,9 +1234,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-b-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-b-56x56.jpg"
                                                                          width="56"
@@ -1238,9 +1245,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-c-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-c-56x56.jpg"
                                                                          width="56"
@@ -1249,9 +1256,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-a-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-a-56x56.jpg"
                                                                          width="56"
@@ -1260,9 +1267,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-b-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-b-56x56.jpg"
                                                                          width="56"
@@ -1271,9 +1278,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-c-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-c-56x56.jpg"
                                                                          width="56"
@@ -1284,70 +1291,70 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <button class="carousel__control carousel__control--prev action action--prev carousel__control--disabled" type="button">
+                                                    <button class="lift-carousel__control lift-carousel__control--prev lift-action lift-action--prev lift-carousel__control--disabled" type="button">
                                                         ←
                                                     </button>
-                                                    <button class=" carousel__control carousel__control--next action action--next" type="button">
+                                                    <button class="lift- lift-carousel__control lift-carousel__control--next lift-action lift-action--next" type="button">
                                                         →
                                                     </button>
                                                 </div>
                                             </div>
-                                            <div class="card__boosters">
-                                                <div class="card__boosters-heading stat stat--energy">
-                                                    <span class="stat__param">
+                                            <div class="lift-floor__boosters">
+                                                <div class="lift-floor__boosters-heading lift-stat lift-stat--energy">
+                                                    <span class="lift-stat__param">
                                                         Ускорители:
                                                     </span>
-                                                    <span class="stat__value">
+                                                    <span class="lift-stat__value">
                                                         +60%
                                                     </span>
                                                 </div>
-                                                <div class="card__speed-up button button--alternate button--smallest">
+                                                <div class="lift-floor__speed-up lift-button lift-button--alternate lift-button--smallest">
                                                     Ускорить
                                                 </div>
-                                                <div class="card__boosters-list">
-                                                    <div class="card__ribbon">
-                                                        <div class="booster booster--type-a">+50%</div>
-                                                        <div class="booster booster--type-b">+50%</div>
-                                                        <div class="booster booster--type-c">+50%</div>
-                                                        <div class="booster booster--type-d">+50%</div>
-                                                        <div class="booster booster--type-e">+50%</div>
-                                                        <div class="booster booster--type-a booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-b booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-c booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-d booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-a booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-b booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-c booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-d booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-a booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-b booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-c booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-d booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-a booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-b booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-c booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-d booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-a booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-b booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-c booster--disabled">+50%</div>
+                                                <div class="lift-floor__boosters-list">
+                                                    <div class="lift-floor__ribbon">
+                                                        <div class="lift-booster lift-booster--type-a">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-b">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-c">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-d">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-e">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-a lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-b lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-c lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-d lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-a lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-b lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-c lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-d lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-a lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-b lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-c lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-d lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-a lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-b lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-c lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-d lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-a lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-b lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-c lift-booster--disabled">+50%</div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="card__footer-params">
-                                                <div class="simpler-stat">
-                                                    <span class="simpler-stat__param">Аватар:</span>
-                                                    <span class="simpler-stat__value">13123</span>
+                                            <div class="lift-floor__footer-params">
+                                                <div class="lift-simpler-stat">
+                                                    <span class="lift-simpler-stat__param">Аватар:</span>
+                                                    <span class="lift-simpler-stat__value">13123</span>
                                                 </div>
-                                                <div class="simpler-stat">
-                                                    <span class="simpler-stat__param">Создан:</span>
-                                                    <span class="simpler-stat__value">12.03.2023</span>
+                                                <div class="lift-simpler-stat">
+                                                    <span class="lift-simpler-stat__param">Создан:</span>
+                                                    <span class="lift-simpler-stat__value">12.03.2023</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="queue__item card">
-                                        <div class="card__preview avatar avatar--no-hover">
-                                            <img class="avatar__image"
+                                    <div class="lift-queue__item lift-floor">
+                                        <div class="lift-floor__preview lift-avatar lift-avatar--no-hover">
+                                            <img class="lift-avatar__image"
                                                  srcset="../temp/crocodile-72x72@2x.jpg 2x"
                                                  src="../temp/crocodile-72x72.jpg"
                                                  width="72"
@@ -1355,64 +1362,64 @@
                                                  alt=""
                                             >
                                         </div>
-                                        <div class="card__head">
-                                            <div class="card__summary">
-                                                <div class="card__heading">
-                                                    <label class="choice choice--heading choice--checkbox">
-                                                        <input class="choice__widget" type="checkbox">
-                                                        <i class="choice__icon" role="presentation"></i>
-                                                        <span class="choice__label">3 этаж</span>
+                                        <div class="lift-floor__head">
+                                            <div class="lift-floor__summary">
+                                                <div class="lift-floor__heading">
+                                                    <label class="lift-choice lift-choice--heading lift-choice--checkbox">
+                                                        <input class="lift-choice__widget" type="checkbox">
+                                                        <i class="lift-choice__icon" role="presentation"></i>
+                                                        <span class="lift-choice__label">3 этаж</span>
                                                     </label>
                                                 </div>
-                                                <div class="card__queue stat stat--queue">
-                                                    <span class="stat__param">Место в очереди:</span>
-                                                    <span class="stat__value">1 200</span>
+                                                <div class="lift-floor__queue lift-stat lift-stat--queue">
+                                                    <span class="lift-stat__param">Место в очереди:</span>
+                                                    <span class="lift-stat__value">1 200</span>
                                                 </div>
                                             </div>
-                                            <div class="card__data">
-                                                <div class="card__params">
-                                                    <div class="stat stat--energy">
-                                                        <span class="stat__param">
+                                            <div class="lift-floor__data">
+                                                <div class="lift-floor__params">
+                                                    <div class="lift-stat lift-stat--energy">
+                                                        <span class="lift-stat__param">
                                                             Энергия:
                                                         </span>
-                                                        <span class="stat__value">
+                                                        <span class="lift-stat__value">
                                                             1200
                                                         </span>
                                                     </div>
-                                                    <div class="stat">
-                                                        <span class="stat__param">
+                                                    <div class="lift-stat">
+                                                        <span class="lift-stat__param">
                                                             Хватит на:
                                                         </span>
-                                                        <span class="stat__value">
+                                                        <span class="lift-stat__value">
                                                             2 дня
                                                         </span>
                                                     </div>
                                                 </div>
-                                                <div class="card__progress speedometer speedometer--success speedometer--larger">
-                                                    <div class="speedometer__value speedometer__value--filled"></div>
-                                                    <div class="speedometer__value speedometer__value--filled"></div>
-                                                    <div class="speedometer__value speedometer__value--filled"></div>
-                                                    <div class="speedometer__value speedometer__value--filled"></div>
-                                                    <div class="speedometer__value speedometer__value--filled"></div>
-                                                    <div class="speedometer__value speedometer__value--filled"></div>
-                                                    <div class="speedometer__value speedometer__value--filled"></div>
-                                                    <div class="speedometer__value speedometer__value--filled"></div>
-                                                    <div class="speedometer__value speedometer__value--filled"></div>
-                                                    <div class="speedometer__value speedometer__value--filled"></div>
-                                                    <div class="speedometer__value speedometer__value--filled"></div>
-                                                    <div class="speedometer__value speedometer__value--filled"></div>
-                                                    <div class="speedometer__value"></div>
+                                                <div class="lift-floor__progress lift-speedometer lift-speedometer--success lift-speedometer--larger">
+                                                    <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                                    <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                                    <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                                    <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                                    <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                                    <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                                    <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                                    <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                                    <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                                    <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                                    <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                                    <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                                    <div class="lift-speedometer__value"></div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card__body">
-                                            <div class="card__carousel">
-                                                <div class="carousel carousel--avatar" data-step="5">
-                                                    <div class="carousel__container">
-                                                        <div class="carousel__ribbon">
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                        <div class="lift-floor__body">
+                                            <div class="lift-floor__carousel">
+                                                <div class="lift-carousel lift-carousel--avatar" data-step="5">
+                                                    <div class="lift-carousel__container">
+                                                        <div class="lift-carousel__ribbon">
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-a-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-a-56x56.jpg"
                                                                          width="56"
@@ -1421,9 +1428,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-b-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-b-56x56.jpg"
                                                                          width="56"
@@ -1432,9 +1439,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic user-pic--highlight" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic lift-user-pic--highlight" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-c-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-c-56x56.jpg"
                                                                          width="56"
@@ -1443,9 +1450,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-a-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-a-56x56.jpg"
                                                                          width="56"
@@ -1454,9 +1461,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-b-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-b-56x56.jpg"
                                                                          width="56"
@@ -1465,9 +1472,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-c-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-c-56x56.jpg"
                                                                          width="56"
@@ -1476,9 +1483,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-a-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-a-56x56.jpg"
                                                                          width="56"
@@ -1487,9 +1494,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-b-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-b-56x56.jpg"
                                                                          width="56"
@@ -1498,9 +1505,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-c-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-c-56x56.jpg"
                                                                          width="56"
@@ -1509,9 +1516,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-a-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-a-56x56.jpg"
                                                                          width="56"
@@ -1520,9 +1527,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-b-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-b-56x56.jpg"
                                                                          width="56"
@@ -1531,9 +1538,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-c-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-c-56x56.jpg"
                                                                          width="56"
@@ -1542,9 +1549,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-a-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-a-56x56.jpg"
                                                                          width="56"
@@ -1553,9 +1560,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-b-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-b-56x56.jpg"
                                                                          width="56"
@@ -1564,9 +1571,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-c-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-c-56x56.jpg"
                                                                          width="56"
@@ -1575,9 +1582,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-a-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-a-56x56.jpg"
                                                                          width="56"
@@ -1586,9 +1593,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-b-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-b-56x56.jpg"
                                                                          width="56"
@@ -1597,9 +1604,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-c-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-c-56x56.jpg"
                                                                          width="56"
@@ -1608,9 +1615,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-a-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-a-56x56.jpg"
                                                                          width="56"
@@ -1619,9 +1626,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-b-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-b-56x56.jpg"
                                                                          width="56"
@@ -1630,9 +1637,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-c-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-c-56x56.jpg"
                                                                          width="56"
@@ -1641,9 +1648,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-a-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-a-56x56.jpg"
                                                                          width="56"
@@ -1652,9 +1659,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-b-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-b-56x56.jpg"
                                                                          width="56"
@@ -1663,9 +1670,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-c-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-c-56x56.jpg"
                                                                          width="56"
@@ -1676,70 +1683,70 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <button class="carousel__control carousel__control--prev action action--prev carousel__control--disabled" type="button">
+                                                    <button class="lift-carousel__control lift-carousel__control--prev lift-action lift-action--prev lift-carousel__control--disabled" type="button">
                                                         ←
                                                     </button>
-                                                    <button class=" carousel__control carousel__control--next action action--next" type="button">
+                                                    <button class="lift- lift-carousel__control lift-carousel__control--next lift-action lift-action--next" type="button">
                                                         →
                                                     </button>
                                                 </div>
                                             </div>
-                                            <div class="card__boosters">
-                                                <div class="card__boosters-heading stat stat--energy">
-                                                    <span class="stat__param">
+                                            <div class="lift-floor__boosters">
+                                                <div class="lift-floor__boosters-heading lift-stat lift-stat--energy">
+                                                    <span class="lift-stat__param">
                                                         Ускорители:
                                                     </span>
-                                                    <span class="stat__value">
+                                                    <span class="lift-stat__value">
                                                         +60%
                                                     </span>
                                                 </div>
-                                                <div class="card__speed-up button button--alternate button--smallest">
+                                                <div class="lift-floor__speed-up lift-button lift-button--alternate lift-button--smallest">
                                                     Ускорить
                                                 </div>
-                                                <div class="card__boosters-list">
-                                                    <div class="card__ribbon">
-                                                        <div class="booster booster--type-a">+50%</div>
-                                                        <div class="booster booster--type-b">+50%</div>
-                                                        <div class="booster booster--type-c">+50%</div>
-                                                        <div class="booster booster--type-d">+50%</div>
-                                                        <div class="booster booster--type-e">+50%</div>
-                                                        <div class="booster booster--type-a booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-b booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-c booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-d booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-a booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-b booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-c booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-d booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-a booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-b booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-c booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-d booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-a booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-b booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-c booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-d booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-a booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-b booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-c booster--disabled">+50%</div>
+                                                <div class="lift-floor__boosters-list">
+                                                    <div class="lift-floor__ribbon">
+                                                        <div class="lift-booster lift-booster--type-a">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-b">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-c">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-d">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-e">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-a lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-b lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-c lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-d lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-a lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-b lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-c lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-d lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-a lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-b lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-c lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-d lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-a lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-b lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-c lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-d lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-a lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-b lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-c lift-booster--disabled">+50%</div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="card__footer-params">
-                                                <div class="simpler-stat">
-                                                    <span class="simpler-stat__param">Аватар:</span>
-                                                    <span class="simpler-stat__value">13123</span>
+                                            <div class="lift-floor__footer-params">
+                                                <div class="lift-simpler-stat">
+                                                    <span class="lift-simpler-stat__param">Аватар:</span>
+                                                    <span class="lift-simpler-stat__value">13123</span>
                                                 </div>
-                                                <div class="simpler-stat">
-                                                    <span class="simpler-stat__param">Создан:</span>
-                                                    <span class="simpler-stat__value">12.03.2023</span>
+                                                <div class="lift-simpler-stat">
+                                                    <span class="lift-simpler-stat__param">Создан:</span>
+                                                    <span class="lift-simpler-stat__value">12.03.2023</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="queue__item card">
-                                        <div class="card__preview avatar avatar--no-hover">
-                                            <img class="avatar__image"
+                                    <div class="lift-queue__item lift-floor">
+                                        <div class="lift-floor__preview lift-avatar lift-avatar--no-hover">
+                                            <img class="lift-avatar__image"
                                                  srcset="../temp/crocodile-72x72@2x.jpg 2x"
                                                  src="../temp/crocodile-72x72.jpg"
                                                  width="72"
@@ -1747,64 +1754,64 @@
                                                  alt=""
                                             >
                                         </div>
-                                        <div class="card__head">
-                                            <div class="card__summary">
-                                                <div class="card__heading">
-                                                    <label class="choice choice--heading choice--checkbox">
-                                                        <input class="choice__widget" type="checkbox">
-                                                        <i class="choice__icon" role="presentation"></i>
-                                                        <span class="choice__label">3 этаж</span>
+                                        <div class="lift-floor__head">
+                                            <div class="lift-floor__summary">
+                                                <div class="lift-floor__heading">
+                                                    <label class="lift-choice lift-choice--heading lift-choice--checkbox">
+                                                        <input class="lift-choice__widget" type="checkbox">
+                                                        <i class="lift-choice__icon" role="presentation"></i>
+                                                        <span class="lift-choice__label">3 этаж</span>
                                                     </label>
                                                 </div>
-                                                <div class="card__queue stat stat--queue">
-                                                    <span class="stat__param">Место в очереди:</span>
-                                                    <span class="stat__value">1 200</span>
+                                                <div class="lift-floor__queue lift-stat lift-stat--queue">
+                                                    <span class="lift-stat__param">Место в очереди:</span>
+                                                    <span class="lift-stat__value">1 200</span>
                                                 </div>
                                             </div>
-                                            <div class="card__data">
-                                                <div class="card__params">
-                                                    <div class="stat stat--energy">
-                                                        <span class="stat__param">
+                                            <div class="lift-floor__data">
+                                                <div class="lift-floor__params">
+                                                    <div class="lift-stat lift-stat--energy">
+                                                        <span class="lift-stat__param">
                                                             Энергия:
                                                         </span>
-                                                        <span class="stat__value">
+                                                        <span class="lift-stat__value">
                                                             1200
                                                         </span>
                                                     </div>
-                                                    <div class="stat">
-                                                        <span class="stat__param">
+                                                    <div class="lift-stat">
+                                                        <span class="lift-stat__param">
                                                             Хватит на:
                                                         </span>
-                                                        <span class="stat__value">
+                                                        <span class="lift-stat__value">
                                                             2 дня
                                                         </span>
                                                     </div>
                                                 </div>
-                                                <div class="card__progress speedometer speedometer--success speedometer--larger">
-                                                    <div class="speedometer__value speedometer__value--filled"></div>
-                                                    <div class="speedometer__value speedometer__value--filled"></div>
-                                                    <div class="speedometer__value speedometer__value--filled"></div>
-                                                    <div class="speedometer__value speedometer__value--filled"></div>
-                                                    <div class="speedometer__value speedometer__value--filled"></div>
-                                                    <div class="speedometer__value speedometer__value--filled"></div>
-                                                    <div class="speedometer__value speedometer__value--filled"></div>
-                                                    <div class="speedometer__value speedometer__value--filled"></div>
-                                                    <div class="speedometer__value speedometer__value--filled"></div>
-                                                    <div class="speedometer__value speedometer__value--filled"></div>
-                                                    <div class="speedometer__value speedometer__value--filled"></div>
-                                                    <div class="speedometer__value speedometer__value--filled"></div>
-                                                    <div class="speedometer__value"></div>
+                                                <div class="lift-floor__progress lift-speedometer lift-speedometer--success lift-speedometer--larger">
+                                                    <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                                    <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                                    <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                                    <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                                    <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                                    <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                                    <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                                    <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                                    <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                                    <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                                    <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                                    <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                                    <div class="lift-speedometer__value"></div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card__body">
-                                            <div class="card__carousel">
-                                                <div class="carousel carousel--avatar" data-step="5">
-                                                    <div class="carousel__container">
-                                                        <div class="carousel__ribbon">
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                        <div class="lift-floor__body">
+                                            <div class="lift-floor__carousel">
+                                                <div class="lift-carousel lift-carousel--avatar" data-step="5">
+                                                    <div class="lift-carousel__container">
+                                                        <div class="lift-carousel__ribbon">
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-a-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-a-56x56.jpg"
                                                                          width="56"
@@ -1813,9 +1820,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-b-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-b-56x56.jpg"
                                                                          width="56"
@@ -1824,9 +1831,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic user-pic--highlight" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic lift-user-pic--highlight" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-c-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-c-56x56.jpg"
                                                                          width="56"
@@ -1835,9 +1842,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-a-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-a-56x56.jpg"
                                                                          width="56"
@@ -1846,9 +1853,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-b-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-b-56x56.jpg"
                                                                          width="56"
@@ -1857,9 +1864,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-c-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-c-56x56.jpg"
                                                                          width="56"
@@ -1868,9 +1875,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-a-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-a-56x56.jpg"
                                                                          width="56"
@@ -1879,9 +1886,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-b-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-b-56x56.jpg"
                                                                          width="56"
@@ -1890,9 +1897,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-c-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-c-56x56.jpg"
                                                                          width="56"
@@ -1901,9 +1908,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-a-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-a-56x56.jpg"
                                                                          width="56"
@@ -1912,9 +1919,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-b-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-b-56x56.jpg"
                                                                          width="56"
@@ -1923,9 +1930,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-c-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-c-56x56.jpg"
                                                                          width="56"
@@ -1934,9 +1941,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-a-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-a-56x56.jpg"
                                                                          width="56"
@@ -1945,9 +1952,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-b-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-b-56x56.jpg"
                                                                          width="56"
@@ -1956,9 +1963,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-c-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-c-56x56.jpg"
                                                                          width="56"
@@ -1967,9 +1974,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-a-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-a-56x56.jpg"
                                                                          width="56"
@@ -1978,9 +1985,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-b-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-b-56x56.jpg"
                                                                          width="56"
@@ -1989,9 +1996,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-c-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-c-56x56.jpg"
                                                                          width="56"
@@ -2000,9 +2007,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-a-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-a-56x56.jpg"
                                                                          width="56"
@@ -2011,9 +2018,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-b-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-b-56x56.jpg"
                                                                          width="56"
@@ -2022,9 +2029,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-c-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-c-56x56.jpg"
                                                                          width="56"
@@ -2033,9 +2040,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-a-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-a-56x56.jpg"
                                                                          width="56"
@@ -2044,9 +2051,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-b-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-b-56x56.jpg"
                                                                          width="56"
@@ -2055,9 +2062,9 @@
                                                                     >
                                                                 </div>
                                                             </div>
-                                                            <div class="carousel__item">
-                                                                <div class="user-pic" data-flyover="#fkeprkdlap">
-                                                                    <img class="user-pic__photo"
+                                                            <div class="lift-carousel__item">
+                                                                <div class="lift-user-pic" data-flyover="#fkeprkdlap">
+                                                                    <img class="lift-user-pic__photo"
                                                                          srcset="../temp/crocodile-c-56x56@2x.jpg 2x"
                                                                          src="../temp/crocodile-c-56x56.jpg"
                                                                          width="56"
@@ -2068,63 +2075,63 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <button class="carousel__control carousel__control--prev action action--prev carousel__control--disabled" type="button">
+                                                    <button class="lift-carousel__control lift-carousel__control--prev lift-action lift-action--prev lift-carousel__control--disabled" type="button">
                                                         ←
                                                     </button>
-                                                    <button class=" carousel__control carousel__control--next action action--next" type="button">
+                                                    <button class="lift- lift-carousel__control lift-carousel__control--next lift-action lift-action--next" type="button">
                                                         →
                                                     </button>
                                                 </div>
                                             </div>
-                                            <div class="card__boosters">
-                                                <div class="card__boosters-heading stat stat--energy">
-                                                    <span class="stat__param">
+                                            <div class="lift-floor__boosters">
+                                                <div class="lift-floor__boosters-heading lift-stat lift-stat--energy">
+                                                    <span class="lift-stat__param">
                                                         Ускорители:
                                                     </span>
-                                                    <span class="stat__value">
+                                                    <span class="lift-stat__value">
                                                         +60%
                                                     </span>
                                                 </div>
-                                                <div class="card__speed-up button button--alternate button--smallest">
+                                                <div class="lift-floor__speed-up lift-button lift-button--alternate lift-button--smallest">
                                                     Ускорить
                                                 </div>
-                                                <div class="card__boosters-list">
-                                                    <div class="card__ribbon">
-                                                        <div class="booster booster--type-a">+50%</div>
-                                                        <div class="booster booster--type-b">+50%</div>
-                                                        <div class="booster booster--type-c">+50%</div>
-                                                        <div class="booster booster--type-d">+50%</div>
-                                                        <div class="booster booster--type-e">+50%</div>
-                                                        <div class="booster booster--type-a booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-b booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-c booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-d booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-a booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-b booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-c booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-d booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-a booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-b booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-c booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-d booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-a booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-b booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-c booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-d booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-a booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-b booster--disabled">+50%</div>
-                                                        <div class="booster booster--type-c booster--disabled">+50%</div>
+                                                <div class="lift-floor__boosters-list">
+                                                    <div class="lift-floor__ribbon">
+                                                        <div class="lift-booster lift-booster--type-a">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-b">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-c">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-d">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-e">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-a lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-b lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-c lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-d lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-a lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-b lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-c lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-d lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-a lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-b lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-c lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-d lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-a lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-b lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-c lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-d lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-a lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-b lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--type-c lift-booster--disabled">+50%</div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="card__footer-params">
-                                                <div class="simpler-stat">
-                                                    <span class="simpler-stat__param">Аватар:</span>
-                                                    <span class="simpler-stat__value">13123</span>
+                                            <div class="lift-floor__footer-params">
+                                                <div class="lift-simpler-stat">
+                                                    <span class="lift-simpler-stat__param">Аватар:</span>
+                                                    <span class="lift-simpler-stat__value">13123</span>
                                                 </div>
-                                                <div class="simpler-stat">
-                                                    <span class="simpler-stat__param">Создан:</span>
-                                                    <span class="simpler-stat__value">12.03.2023</span>
+                                                <div class="lift-simpler-stat">
+                                                    <span class="lift-simpler-stat__param">Создан:</span>
+                                                    <span class="lift-simpler-stat__value">12.03.2023</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -2132,15 +2139,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="queue__selection">
-                            <div class="queue__selection-container">
-                                <div class="queue__selection-card">
-                                    <label class="queue__checkbox choice choice--heading choice--checkbox">
-                                        <input class="choice__widget" type="checkbox">
-                                        <i class="choice__icon" role="presentation"></i>
-                                        <span class="choice__label">Выбрано 2 аватара</span>
+                        <div class="lift-queue__selection">
+                            <div class="lift-queue__selection-container">
+                                <div class="lift-queue__selection-card">
+                                    <label class="lift-queue__checkbox lift-choice lift-choice--heading lift-choice--checkbox">
+                                        <input class="lift-choice__widget" type="checkbox">
+                                        <i class="lift-choice__icon" role="presentation"></i>
+                                        <span class="lift-choice__label">Выбрано 2 аватара</span>
                                     </label>
-                                    <a class="queue__boost button button--small" href="#">
+                                    <a class="lift-queue__boost lift-button lift-button--small" href="#">
                                         Ускорить
                                     </a>
                                 </div>
@@ -2155,10 +2162,10 @@
     </div>
 </div>
 
-<div class="flyover flyover--avatar" id="fkeprkdlap">
-    <div class="profile">
-        <div class="profile__preview avatar avatar--no-hover">
-            <img class="avatar__image"
+<div class="lift-flyover lift-flyover--avatar" id="fkeprkdlap">
+    <div class="lift-profile">
+        <div class="lift-profile__preview lift-avatar lift-avatar--no-hover">
+            <img class="lift-avatar__image"
                  srcset="../temp/crocodile-48x48@2x.jpg 2x"
                  src="../temp/crocodile-48x48.jpg"
                  width="48"
@@ -2166,86 +2173,88 @@
                  alt=""
             >
         </div>
-        <div class="profile__heading">
+        <div class="lift-profile__heading">
             Александр Плужников
         </div>
-        <div class="profile__speed speedometer speedometer--success">
-            <div class="speedometer__value speedometer__value--filled"></div>
-            <div class="speedometer__value speedometer__value--filled"></div>
-            <div class="speedometer__value speedometer__value--filled"></div>
-            <div class="speedometer__value speedometer__value--filled"></div>
-            <div class="speedometer__value speedometer__value--filled"></div>
-            <div class="speedometer__value speedometer__value--filled"></div>
-            <div class="speedometer__value speedometer__value--filled"></div>
-            <div class="speedometer__value speedometer__value--filled"></div>
-            <div class="speedometer__value speedometer__value--filled"></div>
-            <div class="speedometer__value speedometer__value--filled"></div>
-            <div class="speedometer__value speedometer__value--filled"></div>
-            <div class="speedometer__value speedometer__value--filled"></div>
-            <div class="speedometer__value"></div>
+        <div class="lift-profile__speed lift-speedometer lift-speedometer--success">
+            <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+            <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+            <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+            <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+            <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+            <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+            <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+            <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+            <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+            <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+            <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+            <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+            <div class="lift-speedometer__value"></div>
         </div>
-        <div class="profile__row">
-            <div class="stat stat--smaller">
-                <span class="stat__param">
+        <div class="lift-profile__row">
+            <div class="lift-stat lift-stat--smaller">
+                <span class="lift-stat__param">
                     Этаж:
                 </span>
-                <span class="stat__value">
+                <span class="lift-stat__value">
                     3
                 </span>
             </div>
         </div>
-        <div class="profile__row">
-            <div class="stat stat--smaller stat--energy">
-                <span class="stat__param">
+        <div class="lift-profile__row">
+            <div class="lift-stat lift-stat--smaller lift-stat--energy">
+                <span class="lift-stat__param">
                     Место в очереди:
                 </span>
-                <span class="stat__value">
+                <span class="lift-stat__value">
                     1200
                 </span>
             </div>
         </div>
-        <div class="profile__row">
-            <div class="stat stat--smaller stat--energy">
-                <span class="stat__param">
+        <div class="lift-profile__row">
+            <div class="lift-stat lift-stat--smaller lift-stat--energy">
+                <span class="lift-stat__param">
                     Энергия:
                 </span>
-                <span class="stat__value">
+                <span class="lift-stat__value">
                     1200
                 </span>
             </div>
-            <div class="stat stat--smaller">
-                <span class="stat__param">
+            <div class="lift-stat lift-stat--smaller">
+                <span class="lift-stat__param">
                     Ускорители:
                 </span>
-                <span class="stat__value">
+                <span class="lift-stat__value">
                     +60%
                 </span>
             </div>
         </div>
-        <div class="profile__boosters">
-            <div class="booster booster--smaller booster--type-a">+50%</div>
-            <div class="booster booster--smaller booster--type-b">+50%</div>
-            <div class="booster booster--smaller booster--type-c">+50%</div>
-            <div class="booster booster--smaller booster--type-d">+50%</div>
-            <div class="booster booster--smaller booster--type-e">+50%</div>
-            <div class="booster booster--smaller booster--type-a booster--disabled">+50%</div>
-            <div class="booster booster--smaller booster--type-b booster--disabled">+50%</div>
-            <div class="booster booster--smaller booster--type-c booster--disabled">+50%</div>
+        <div class="lift-profile__boosters">
+            <div class="lift-booster lift-booster--smaller lift-booster--type-a">+50%</div>
+            <div class="lift-booster lift-booster--smaller lift-booster--type-b">+50%</div>
+            <div class="lift-booster lift-booster--smaller lift-booster--type-c">+50%</div>
+            <div class="lift-booster lift-booster--smaller lift-booster--type-d">+50%</div>
+            <div class="lift-booster lift-booster--smaller lift-booster--type-e">+50%</div>
+            <div class="lift-booster lift-booster--smaller lift-booster--type-a lift-booster--disabled">+50%</div>
+            <div class="lift-booster lift-booster--smaller lift-booster--type-b lift-booster--disabled">+50%</div>
+            <div class="lift-booster lift-booster--smaller lift-booster--type-c lift-booster--disabled">+50%</div>
         </div>
-        <a class="profile__more dash dash--more" href="#">
+        <a class="lift-profile__more lift-dash lift-dash--more" href="#">
             Наставники (13)
         </a>
     </div>
 </div>
 
-<script src="../scripts/_sort.js?1682927423"></script>
-<script src="../scripts/_aside.js?1682927423"></script>
-<script src="../scripts/_card.js?1682927423"></script>
-<script src="../scripts/_carousel.js?1682927423"></script>
-<script src="../scripts/_flyover.js?1682927423"></script>
+<script src="../vendors/outline/outline.js"></script>
+<script src="../scripts/_sort.js?1683009700"></script>
+<script src="../scripts/_aside.js?1683009700"></script>
+<script src="../scripts/_floor.js?1683009700"></script>
+<script src="../scripts/_carousel.js?1683009700"></script>
+<script src="../scripts/_flyover.js?1683009700"></script>
 
 </body>
 </html>
+
 
 
 

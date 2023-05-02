@@ -1,0 +1,20 @@
+.pick-preview {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+    .pick-preview__widget {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+    }
+
+    .pick-preview__preview {
+        position: relative;
+        vertical-align: top;
+    }
+
+    .pick-preview__widget:checked + .pick-preview__preview {
+        box-shadow: 0 0 0 2px #333;
+    }

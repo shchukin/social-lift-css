@@ -1,0 +1,47 @@
+.tab{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 40px 20px 20px;
+    position: relative;
+}
+
+.tab_unread{
+    background-color: #ccc;
+}
+
+.tab:last-child{
+    margin-bottom: 0;
+}
+
+.tab__watch-btn{
+    position: absolute;
+    right:5px;
+    top:5px;
+}
+
+.tab__watch-btn:hover{
+    background-color: #e6e6e6;
+    border-color:#adadad;
+    color:#333;
+}
+
+.tab__date{
+    display: flex;
+    position: absolute;
+    left:7px;
+    top:5px;
+}
+
+.tab__section{
+    margin-right: 6px;
+}
+
+.tab__section:last-child{
+    margin-right: 0;
+}
+
+.tab__key{
+    margin-right: 5px;
+    font-weight: 700;
+}

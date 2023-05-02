@@ -1,0 +1,47 @@
+/*default - if has 4 or more items*/
+
+.pages-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: -20px;
+    margin-right: -20px;
+}
+
+.pages-list__item {
+    margin-bottom: 20px;
+    width: 230px;
+	margin-right: 20px;
+}
+
+/*if has 1 item*/
+
+.pages-list_has_one {
+    justify-content: center;
+}
+
+.pages-list_has_one .pages-list__item {
+    width: 475px;
+}
+
+/*if has 2 items*/
+
+.pages-list_has_two {
+    margin-right: -30px;
+}
+
+.pages-list_has_two .pages-list__item {
+    width: 475px;
+    margin-right: 30px;
+}
+
+/*if has 3 items*/
+
+.pages-list_has_three {
+    margin-right: -22px;
+}
+
+.pages-list_has_three .pages-list__item {
+    width: 312px;
+    margin-right: 22px;
+}

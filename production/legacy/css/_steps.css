@@ -1,0 +1,84 @@
+.steps {
+	width: 820px;
+    margin: 0 auto;
+}
+.steps__presentation_video_scroll {
+    width: 620px;
+    display: flex;
+    position: relative;
+    left: 50%;
+    margin-left: -300px;
+}
+.steps__presentation, .steps__presentation_video_scroll {
+        width: 620px;
+        margin: 30px auto 0;
+        text-align: center;
+    }
+        .steps__presentation:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: -25px;
+            background: transparent;
+            cursor: pointer;
+        }
+        .steps__video {
+
+        }
+
+        .steps__note {
+            text-align: right;
+        }
+
+        .steps__progress {
+            margin-top: 44px;
+            height: 20px;
+            border: none;
+            background: #E5EAEF;
+        }
+
+    .steps__list {
+
+    }
+        .steps__item {
+            border-top: 1px solid #E5E9EE;
+        }
+
+        .steps__item:first-child {
+            border-top: none;
+        }
+
+.overlay__steps__help__video {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+    .overlay__steps__help__video::after {
+        content: "";
+        background: transparent;
+        cursor: pointer;
+    }
+
+.overlay__step__button {
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    margin-top: 25px;
+}
+
+    .overlay__step__button .single-step__action {
+        position: relative!important;
+    }
+
+.video__help {
+    position: absolute;
+    right: 0px;
+    top: 25px;
+}

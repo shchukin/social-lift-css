@@ -1,0 +1,14 @@
+
+.copied-helper{
+	width: 400px;
+	padding: 30px 50px;
+	border-radius: 40px;
+	background: #fff;
+	font-size: 18px;
+	position: absolute;
+	left: 50%;
+	top: 200px;
+	margin-left: -200px;
+	box-shadow: 2px 3px 10px rgba(0,0,0,.5);
+	text-align: center;	
+}

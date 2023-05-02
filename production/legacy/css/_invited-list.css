@@ -1,0 +1,41 @@
+.invited-list {
+    margin-top: 20px;
+}
+    .invited-list__row {
+
+    }
+
+    .invited-list__row_top-10 {
+        background-color: #d9edf7 !important;
+    }
+
+    .invited-list__row_gold {
+        background-color: #f8e3ab !important;
+        background-image: linear-gradient(to top, #ff5858 0%, #f09819 100%);
+        font-weight: bold;
+        font-size: 14px!important;
+    }
+
+    .invited-list__row_silver {
+        background-color: #eaeaea !important;
+        background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+        color: #fff!important;
+        font-size: 14px;
+        font-weight: bold;
+        font-size: 14px!important;
+    }
+
+    .invited-list__row_bronze {
+        background-color: #ebe0cf !important;
+        background-image: linear-gradient(to top, #cc208e 0%, #6713d2 100%);
+        color: #fff!important;
+        font-weight: bold;
+        font-size: 14px!important;
+
+    }
+    .invited-list__row img{
+        border-radius: 50%;
+        width: 30px!important;
+        height: 30px!important;
+        margin-right: 5px;
+    }

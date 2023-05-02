@@ -1,0 +1,11 @@
+.input-wrap{
+	position: relative;
+}
+
+.input-wrap span{
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin-top: -7px;
+	color: #ccc;
+}

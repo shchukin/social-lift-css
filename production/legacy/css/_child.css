@@ -1,0 +1,62 @@
+.child-info__body{
+	padding: 15px;
+}
+
+.child__contact .icons__plate{
+	position: absolute;
+}
+.child__contact-link{
+	display: inline-block;
+	width: 100%;
+	overflow: hidden;	
+	margin-left: 20px;
+}
+
+.child-info__pages-list{
+	list-style: decimal;
+}
+
+.child-info__pages-list a{
+	color: #F4A4A4;
+	text-decoration: underline;
+}
+.child-info__pages-list a:hover{
+	text-decoration: none;
+}
+.child-info__pages-list .checked a{
+	color: #2A9C32;
+}
+.child__contacts_wrap{
+	border-bottom: 1px solid #ccc;
+	padding: 10px 0px 10px 0px;
+	margin-bottom: 10px;
+}
+.child-info__avatar{
+	width: 118px;
+	display: inline-block;
+	vertical-align: top;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+.child__contacts{
+	width: 300px;
+	display: inline-block;
+}
+.child__contacts_seccond{
+	width: 300px;
+	display: inline-block;
+}
+.child-info__title{
+	font-size: 18px;
+	font-weight: 400;
+}
+.child-info__online{
+	font-size: 12px;
+}
+.child-info__avatar-wrap{
+	display: inline-block;
+	width: 118px;
+	vertical-align: top;
+	background: #fff;
+	border-radius: 5px;
+}

@@ -1,0 +1,18 @@
+.card{
+    padding: 35px;
+    width: 588px;
+    float:right;
+}
+
+.card__row{
+    margin-bottom: 10px;
+}
+
+.card__row:last-child{
+    margin-bottom: 0;
+}
+
+.card__key{
+	margin-right: 5px;
+    font-weight: 700;
+}

@@ -1,0 +1,5 @@
+.td-nowrap{
+	width: 1px;
+	white-space: nowrap;
+	text-align: center;
+}
