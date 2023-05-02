@@ -1,6 +1,7 @@
 :root {
     --easeOutCirc: cubic-bezier(0, 0.55, 0.45, 1);
     --button-transition: 0.15s ease;
+    --transition-hover: 0.1s ease;
 
     --font: 'Golos Text';
     --font-ui: 'Golos UI';

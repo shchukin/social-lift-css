@@ -18,19 +18,19 @@
         color: inherit !important;
         text-align: center;
         text-decoration: none !important;
+        transition: background-color var(--transition-hover);
     }
 
-    .filter__link:hover {
+    .filter__link:not(.filter__link--current):hover {
         background-color: var(--panelBackground35pct) !important;
     }
 
-    .filter__link:active {
+    .filter__link:not(.filter__link--current):active {
         background-color: var(--panelBackground50pct) !important;
+        transition: none;
     }
 
-    .filter__link--current,
-    .filter__link--current:hover,
-    .filter__link--current:active {
+    .filter__link--current {
         background-color: var(--panelBackground) !important;
     }
 

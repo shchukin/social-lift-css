@@ -165,6 +165,7 @@
                     letter-spacing: var(--UI-14-16-letter-spacing);
                     color: var(--primaryColor-50pct) !important;
                     text-decoration: none !important;
+                    transition: opacity var(--transition-hover);
                 }
 
                 .aside__item--completed {
@@ -172,10 +173,16 @@
                     color: var(--primaryColor) !important;
                 }
 
+                .aside__item:not(.aside__item--completed):hover {
+                    opacity: 0.7;
+                    transition: none;
+                }
+
                 .aside__more {
                     margin-top: 6px;
                     margin-bottom: -2px;
                 }
+
 
 
 
