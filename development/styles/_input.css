@@ -24,11 +24,11 @@
     }
 
     .input__widget:not([readonly]):hover {
-        border-color: #7E7E7E;
+        border-color: var(--primaryColor-90pct);
     }
 
     .input__widget:not([readonly]):focus {
-        border-color: var(--primaryColor);
+        border-color: var(--primaryColor-90pct);
     }
 
     /* stylelint-disable block-opening-brace-space-before */
