@@ -277,6 +277,16 @@ gulp.task('legacy', function() {
 });
 
 
+// Fonts: copy and change symbols <img> to sprite <svg>
+
+gulp.task('fonts', function() {
+  return gulp.src('development/fonts/**/*')
+      .pipe(plumber())
+      .pipe(gulp.dest('production/fonts/'))
+  ;
+});
+
+
 // Layouts: copy and change symbols <img> to sprite <svg>
 
 gulp.task('layouts', function() {
@@ -382,7 +392,7 @@ gulp.task('lint', function() {
 
 
 gulp.task('default', function (fn) {
-  run('clean', 'temp', 'content', 'images', 'legacy', 'markups', 'layouts', 'vendors', 'scripts', 'symbols', 'styles', 'lint', fn);
+  run('clean', 'temp', 'content', 'images', 'legacy', 'fonts', 'markups', 'layouts', 'vendors', 'scripts', 'symbols', 'styles', 'lint', fn);
 });
 
 

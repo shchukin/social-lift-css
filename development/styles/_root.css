@@ -1,7 +1,7 @@
 :root {
     --easeOutCirc: cubic-bezier(0, 0.55, 0.45, 1);
 
-    --font: 'Golos';
+    --font: 'Golos Text';
     --font-ui: 'Golos UI';
     --primaryColor: #191B29;
     --primaryColor-50pct: rgba(25, 27, 41, 0.5);
