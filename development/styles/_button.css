@@ -5,7 +5,7 @@
     border: none;
     padding: 17px 32px;
     background-color: var(--buttonColor) !important;
-    box-shadow: 0 1px 0 rgba(25, 27, 41, 0.2);
+    box-shadow: 0 2px 0 rgba(25, 27, 41, 0.2);
     border-radius: 27px;
     font-family: var(--UI-20-20-font-family) !important;
     font-weight: bold;
@@ -17,14 +17,18 @@
     text-decoration: none !important;
     white-space: nowrap;
     cursor: pointer;
+    transition: transform 0.15s ease;
 }
 
 .button:hover {
     background-color: var(--buttonColor) !important;
+    transform: scale(1.02);
 }
 
 .button:active {
     background-color: var(--buttonColor) !important;
+    transform: none;
+    transition: none !important;
 }
 
 .button:focus {
