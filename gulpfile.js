@@ -19,6 +19,7 @@ var reworkNPM = require('rework-npm');
 var classPrefix = require('rework-class-prefix');
 
 var prefixString = 'lift-';
+var imagesPath = '/assets/modules/lift/';
 
 function addPrefixes(content) {
 
@@ -186,6 +187,35 @@ function symbolsImgToSpriteSvg(content) {
 }
 
 
+function renameImgPath(content) {
+
+    var source = content.split('\n');
+    var outputLine = '';
+    var classString = '';
+    var prefixedString = '';
+    var result = '';
+    var i = 0;
+
+
+    source.forEach(function (line) {
+
+        if (line.indexOf('../images/') !== -1) {
+
+            /* write down results */
+
+            outputLine = line.replace('../images/', imagesPath);
+
+            result += outputLine + '\n';
+        } else {
+            result += line + '\n';
+        }
+
+    });
+
+    return result;
+}
+
+
 // Clean up production folder
 
 gulp.task('clean', function() {
@@ -319,7 +349,9 @@ gulp.task('styles', function() {
         // Allow files from /vectors/ only
         exclude: ['/sprite/', '/images/', '/symbols/']
       }))
+
       .pipe(rework(reworkNPM(), classPrefix(prefixString)))
+      .pipe(change(renameImgPath))
       /* По какой-то причине classPrefix чуть выше отменяет минификацию файла, так что запускаем её опять: */
       .pipe(cleanCSS({
           advanced: false,
