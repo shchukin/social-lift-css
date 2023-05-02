@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>.carousel</title>
+    <title>Живая очередь</title>
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <script src="../legacy/jquery-2.1.1.min.js"></script>
     <link href="../legacy/bootstrap.min.css" rel="stylesheet">
@@ -413,7 +413,7 @@
             left: -110px;
         }
 
-        .kmfdm-statistics-summary__item, .search, .kmfdm-income__stat.kmfdm-single-stat, .kmfdm-income__wrap .kmfdm-income__get {
+        .kmfdm-statistics-menu__item, .search, .kmfdm-income__stat.kmfdm-single-stat, .kmfdm-income__wrap .kmfdm-income__get {
             border-radius: 20px !important;
             background: var(--smoke-white);
         }
@@ -499,7 +499,7 @@
             border: 1px solid rgb(245 247 248);
         }
 
-        .kmfdm-lesson__summary {
+        .kmfdm-lesson__menu {
             position: absolute !important;
             bottom: -40px;
             width: 100%;
@@ -586,7 +586,7 @@
             border-radius: 15px !important;
         }
 
-        .isMobile .kmfdm-lesson__summary {
+        .isMobile .kmfdm-lesson__menu {
             background: #fff !important;
             bottom: -32px;
         }
@@ -815,457 +815,199 @@
 </head>
 
 <body class="kmfdm-body custom-css-body module-main binded">
+<div class="kmfdm-page">
+    <div class="kmfdm-page__container userid-2833939">
+        <div class="kmfdm-page__body">
+            <div class="kmfdm-page__sidebar" id="leftNavigate">
 
-
-<div class="kmfdm-page" style="background: white;">
-
-    <div style="width: 600px; margin: 0 auto;">
-        <br>
-        <br>
-        <h1>.carousel</h1>
-        <p>
-            Самопальная карусель. Не плагин. На самом деле это просто горизонтальный скроллбар -- его удобно дёргать
-            пальцами на тачпаде и на телефоне. Но к нему мы добавляем кнопки влево/вправо и чтобы их заставить работать
-            пишем небольшой скрипт: <a href="../scripts/_carousel.js">../scripts/_carousel.js</a>
-        </p>
-        <br>
-
-        <div class="carousel" data-step="2">
-            <div class="carousel__container">
-                <div class="carousel__ribbon">
-                    <div class="carousel__item">
-                        <!-- temp -->
-                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
-                        <!--/temp -->
-                    </div>
-                    <div class="carousel__item">
-                        <!-- temp -->
-                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
-                        <!--/temp -->
-                    </div>
-                    <div class="carousel__item">
-                        <!-- temp -->
-                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
-                        <!--/temp -->
-                    </div>
-                    <div class="carousel__item">
-                        <!-- temp -->
-                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
-                        <!--/temp -->
-                    </div>
-                    <div class="carousel__item">
-                        <!-- temp -->
-                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
-                        <!--/temp -->
-                    </div>
-                    <div class="carousel__item">
-                        <!-- temp -->
-                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
-                        <!--/temp -->
-                    </div>
-                    <div class="carousel__item">
-                        <!-- temp -->
-                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
-                        <!--/temp -->
-                    </div>
-                    <div class="carousel__item">
-                        <!-- temp -->
-                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
-                        <!--/temp -->
-                    </div>
-                    <div class="carousel__item">
-                        <!-- temp -->
-                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
-                        <!--/temp -->
-                    </div>
-                </div>
             </div>
-            <button class="carousel__control carousel__control--prev action action--prev carousel__control--disabled" type="button">
-                ←
-            </button>
-            <button class=" carousel__control carousel__control--next action action--next" type="button">
-                →
-            </button>
-        </div>
+            <div class="kmfdm-page__content">
+                <main class="kmfdm-page__main kmfdm-main kmfdm-panel">
 
-        <br>
-        <br>
-        <h2>.carousel--avatar</h2>
-        <p>
-            Добавляем градиенты, отступы, фон:
-        </p>
+                    <!-- Внутренняя страница -->
+                    <div class="stage">
+                        <h1 class="stage__heading">
+                            Живая очередь
+                        </h1>
+                        <div class="stage__filters filter">
+                            <a class="filter__link filter__link--current" href="#">
+                                Мои аватары (4)
+                            </a>
+                            <a class="filter__link" href="#">
+                                Вся очередь
+                            </a>
+                        </div>
+                        <label class="stage__mine choice choice--checkbox">
+                            <input class="choice__widget" type="checkbox">
+                            <i class="choice__icon" role="presentation"></i>
+                            <span class="choice__label">Только этажи с моими аватарами</span>
+                        </label>
+                        <div class="stage__navigation carousel carousel--floors" data-step="10">
+                            <div class="carousel__container">
+                                <div class="carousel__ribbon">
+                                    <button class="carousel__item single-floor single-floor--passed" type="button">1</button>
+                                    <button class="carousel__item single-floor single-floor--passed" type="button">2</button>
+                                    <button class="carousel__item single-floor single-floor--passed" type="button">3</button>
+                                    <button class="carousel__item single-floor single-floor--passed" type="button">4</button>
+                                    <button class="carousel__item single-floor single-floor--current single-floor--has-my-avatar" type="button">5</button>
+                                    <button class="carousel__item single-floor" type="button">6</button>
+                                    <button class="carousel__item single-floor" type="button">7</button>
+                                    <button class="carousel__item single-floor" type="button">8</button>
+                                    <button class="carousel__item single-floor" type="button">9</button>
+                                    <button class="carousel__item single-floor" type="button">10</button>
+                                    <button class="carousel__item single-floor single-floor--has-my-avatar" type="button">11</button>
+                                    <button class="carousel__item single-floor" type="button">12</button>
+                                    <button class="carousel__item single-floor" type="button">13</button>
+                                    <button class="carousel__item single-floor" type="button">14</button>
+                                    <button class="carousel__item single-floor" type="button">15</button>
+                                    <button class="carousel__item single-floor" type="button">16</button>
+                                    <button class="carousel__item single-floor" type="button">17</button>
+                                    <button class="carousel__item single-floor" type="button">18</button>
+                                    <button class="carousel__item single-floor" type="button">19</button>
+                                    <button class="carousel__item single-floor" type="button">20</button>
+                                    <button class="carousel__item single-floor" type="button">21</button>
+                                    <button class="carousel__item single-floor" type="button">22</button>
+                                    <button class="carousel__item single-floor" type="button">23</button>
+                                    <button class="carousel__item single-floor" type="button">24</button>
+                                    <button class="carousel__item single-floor" type="button">25</button>
+                                    <button class="carousel__item single-floor" type="button">26</button>
+                                    <button class="carousel__item single-floor" type="button">27</button>
+                                    <button class="carousel__item single-floor" type="button">28</button>
+                                    <button class="carousel__item single-floor" type="button">29</button>
+                                    <button class="carousel__item single-floor" type="button">30</button>
+                                    <button class="carousel__item single-floor" type="button">31</button>
+                                    <button class="carousel__item single-floor" type="button">32</button>
+                                    <button class="carousel__item single-floor" type="button">33</button>
+                                    <button class="carousel__item single-floor" type="button">34</button>
+                                    <button class="carousel__item single-floor" type="button">35</button>
+                                    <button class="carousel__item single-floor" type="button">36</button>
+                                    <button class="carousel__item single-floor" type="button">37</button>
+                                    <button class="carousel__item single-floor" type="button">38</button>
+                                    <button class="carousel__item single-floor" type="button">39</button>
+                                    <button class="carousel__item single-floor" type="button">30</button>
+                                    <button class="carousel__item single-floor" type="button">41</button>
+                                    <button class="carousel__item single-floor" type="button">42</button>
+                                    <button class="carousel__item single-floor" type="button">43</button>
+                                    <button class="carousel__item single-floor" type="button">44</button>
+                                    <button class="carousel__item single-floor" type="button">45</button>
+                                    <button class="carousel__item single-floor" type="button">46</button>
+                                    <button class="carousel__item single-floor" type="button">47</button>
+                                    <button class="carousel__item single-floor" type="button">48</button>
+                                    <button class="carousel__item single-floor" type="button">49</button>
+                                    <button class="carousel__item single-floor" type="button">40</button>
+                                    <button class="carousel__item single-floor" type="button">51</button>
+                                    <button class="carousel__item single-floor" type="button">52</button>
+                                    <button class="carousel__item single-floor" type="button">53</button>
+                                    <button class="carousel__item single-floor" type="button">54</button>
+                                    <button class="carousel__item single-floor" type="button">55</button>
+                                    <button class="carousel__item single-floor" type="button">56</button>
+                                    <button class="carousel__item single-floor" type="button">57</button>
+                                    <button class="carousel__item single-floor" type="button">58</button>
+                                    <button class="carousel__item single-floor" type="button">59</button>
+                                    <button class="carousel__item single-floor" type="button">50</button>
+                                </div>
+                            </div>
+                            <button class="carousel__control carousel__control--prev action action--prev carousel__control--disabled" type="button">
+                                ←
+                            </button>
+                            <button class=" carousel__control carousel__control--next action action--next" type="button">
+                                →
+                            </button>
+                        </div>
+                        <div class="floor__body">
+                            123
+                        </div>
+                    </div>
+                    <!--/Внутренняя страница -->
 
-        <div class="carousel carousel--avatar" data-step="5">
-            <div class="carousel__container">
-                <div class="carousel__ribbon">
-                    <div class="carousel__item">
-                        <div class="user-pic">
-                            <img class="user-pic__photo"
-                                 srcset="../temp/crocodile-a-56x56@2x.jpg 2x"
-                                 src="../temp/crocodile-a-56x56.jpg"
-                                 width="56"
-                                 height="56"
-                                 alt=""
-                            >
-                        </div>
-                    </div>
-                    <div class="carousel__item">
-                        <div class="user-pic">
-                            <img class="user-pic__photo"
-                                 srcset="../temp/crocodile-b-56x56@2x.jpg 2x"
-                                 src="../temp/crocodile-b-56x56.jpg"
-                                 width="56"
-                                 height="56"
-                                 alt=""
-                            >
-                        </div>
-                    </div>
-                    <div class="carousel__item">
-                        <div class="user-pic">
-                            <img class="user-pic__photo"
-                                 srcset="../temp/crocodile-c-56x56@2x.jpg 2x"
-                                 src="../temp/crocodile-c-56x56.jpg"
-                                 width="56"
-                                 height="56"
-                                 alt=""
-                            >
-                        </div>
-                    </div>
-                    <div class="carousel__item">
-                        <div class="user-pic">
-                            <img class="user-pic__photo"
-                                 srcset="../temp/crocodile-a-56x56@2x.jpg 2x"
-                                 src="../temp/crocodile-a-56x56.jpg"
-                                 width="56"
-                                 height="56"
-                                 alt=""
-                            >
-                        </div>
-                    </div>
-                    <div class="carousel__item">
-                        <div class="user-pic">
-                            <img class="user-pic__photo"
-                                 srcset="../temp/crocodile-b-56x56@2x.jpg 2x"
-                                 src="../temp/crocodile-b-56x56.jpg"
-                                 width="56"
-                                 height="56"
-                                 alt=""
-                            >
-                        </div>
-                    </div>
-                    <div class="carousel__item">
-                        <div class="user-pic">
-                            <img class="user-pic__photo"
-                                 srcset="../temp/crocodile-c-56x56@2x.jpg 2x"
-                                 src="../temp/crocodile-c-56x56.jpg"
-                                 width="56"
-                                 height="56"
-                                 alt=""
-                            >
-                        </div>
-                    </div>
-                    <div class="carousel__item">
-                        <div class="user-pic">
-                            <img class="user-pic__photo"
-                                 srcset="../temp/crocodile-a-56x56@2x.jpg 2x"
-                                 src="../temp/crocodile-a-56x56.jpg"
-                                 width="56"
-                                 height="56"
-                                 alt=""
-                            >
-                        </div>
-                    </div>
-                    <div class="carousel__item">
-                        <div class="user-pic">
-                            <img class="user-pic__photo"
-                                 srcset="../temp/crocodile-b-56x56@2x.jpg 2x"
-                                 src="../temp/crocodile-b-56x56.jpg"
-                                 width="56"
-                                 height="56"
-                                 alt=""
-                            >
-                        </div>
-                    </div>
-                    <div class="carousel__item">
-                        <div class="user-pic">
-                            <img class="user-pic__photo"
-                                 srcset="../temp/crocodile-c-56x56@2x.jpg 2x"
-                                 src="../temp/crocodile-c-56x56.jpg"
-                                 width="56"
-                                 height="56"
-                                 alt=""
-                            >
-                        </div>
-                    </div>
-                    <div class="carousel__item">
-                        <div class="user-pic">
-                            <img class="user-pic__photo"
-                                 srcset="../temp/crocodile-a-56x56@2x.jpg 2x"
-                                 src="../temp/crocodile-a-56x56.jpg"
-                                 width="56"
-                                 height="56"
-                                 alt=""
-                            >
-                        </div>
-                    </div>
-                    <div class="carousel__item">
-                        <div class="user-pic">
-                            <img class="user-pic__photo"
-                                 srcset="../temp/crocodile-b-56x56@2x.jpg 2x"
-                                 src="../temp/crocodile-b-56x56.jpg"
-                                 width="56"
-                                 height="56"
-                                 alt=""
-                            >
-                        </div>
-                    </div>
-                    <div class="carousel__item">
-                        <div class="user-pic">
-                            <img class="user-pic__photo"
-                                 srcset="../temp/crocodile-c-56x56@2x.jpg 2x"
-                                 src="../temp/crocodile-c-56x56.jpg"
-                                 width="56"
-                                 height="56"
-                                 alt=""
-                            >
-                        </div>
-                    </div>
-                    <div class="carousel__item">
-                        <div class="user-pic">
-                            <img class="user-pic__photo"
-                                 srcset="../temp/crocodile-a-56x56@2x.jpg 2x"
-                                 src="../temp/crocodile-a-56x56.jpg"
-                                 width="56"
-                                 height="56"
-                                 alt=""
-                            >
-                        </div>
-                    </div>
-                    <div class="carousel__item">
-                        <div class="user-pic">
-                            <img class="user-pic__photo"
-                                 srcset="../temp/crocodile-b-56x56@2x.jpg 2x"
-                                 src="../temp/crocodile-b-56x56.jpg"
-                                 width="56"
-                                 height="56"
-                                 alt=""
-                            >
-                        </div>
-                    </div>
-                    <div class="carousel__item">
-                        <div class="user-pic">
-                            <img class="user-pic__photo"
-                                 srcset="../temp/crocodile-c-56x56@2x.jpg 2x"
-                                 src="../temp/crocodile-c-56x56.jpg"
-                                 width="56"
-                                 height="56"
-                                 alt=""
-                            >
-                        </div>
-                    </div>
-                    <div class="carousel__item">
-                        <div class="user-pic">
-                            <img class="user-pic__photo"
-                                 srcset="../temp/crocodile-a-56x56@2x.jpg 2x"
-                                 src="../temp/crocodile-a-56x56.jpg"
-                                 width="56"
-                                 height="56"
-                                 alt=""
-                            >
-                        </div>
-                    </div>
-                    <div class="carousel__item">
-                        <div class="user-pic">
-                            <img class="user-pic__photo"
-                                 srcset="../temp/crocodile-b-56x56@2x.jpg 2x"
-                                 src="../temp/crocodile-b-56x56.jpg"
-                                 width="56"
-                                 height="56"
-                                 alt=""
-                            >
-                        </div>
-                    </div>
-                    <div class="carousel__item">
-                        <div class="user-pic">
-                            <img class="user-pic__photo"
-                                 srcset="../temp/crocodile-c-56x56@2x.jpg 2x"
-                                 src="../temp/crocodile-c-56x56.jpg"
-                                 width="56"
-                                 height="56"
-                                 alt=""
-                            >
-                        </div>
-                    </div>
-                    <div class="carousel__item">
-                        <div class="user-pic">
-                            <img class="user-pic__photo"
-                                 srcset="../temp/crocodile-a-56x56@2x.jpg 2x"
-                                 src="../temp/crocodile-a-56x56.jpg"
-                                 width="56"
-                                 height="56"
-                                 alt=""
-                            >
-                        </div>
-                    </div>
-                    <div class="carousel__item">
-                        <div class="user-pic">
-                            <img class="user-pic__photo"
-                                 srcset="../temp/crocodile-b-56x56@2x.jpg 2x"
-                                 src="../temp/crocodile-b-56x56.jpg"
-                                 width="56"
-                                 height="56"
-                                 alt=""
-                            >
-                        </div>
-                    </div>
-                    <div class="carousel__item">
-                        <div class="user-pic">
-                            <img class="user-pic__photo"
-                                 srcset="../temp/crocodile-c-56x56@2x.jpg 2x"
-                                 src="../temp/crocodile-c-56x56.jpg"
-                                 width="56"
-                                 height="56"
-                                 alt=""
-                            >
-                        </div>
-                    </div>
-                    <div class="carousel__item">
-                        <div class="user-pic">
-                            <img class="user-pic__photo"
-                                 srcset="../temp/crocodile-a-56x56@2x.jpg 2x"
-                                 src="../temp/crocodile-a-56x56.jpg"
-                                 width="56"
-                                 height="56"
-                                 alt=""
-                            >
-                        </div>
-                    </div>
-                    <div class="carousel__item">
-                        <div class="user-pic">
-                            <img class="user-pic__photo"
-                                 srcset="../temp/crocodile-b-56x56@2x.jpg 2x"
-                                 src="../temp/crocodile-b-56x56.jpg"
-                                 width="56"
-                                 height="56"
-                                 alt=""
-                            >
-                        </div>
-                    </div>
-                    <div class="carousel__item">
-                        <div class="user-pic">
-                            <img class="user-pic__photo"
-                                 srcset="../temp/crocodile-c-56x56@2x.jpg 2x"
-                                 src="../temp/crocodile-c-56x56.jpg"
-                                 width="56"
-                                 height="56"
-                                 alt=""
-                            >
-                        </div>
-                    </div>
-                </div>
+                </main>
             </div>
-            <button class="carousel__control carousel__control--prev action action--prev carousel__control--disabled" type="button">
-                ←
-            </button>
-            <button class=" carousel__control carousel__control--next action action--next" type="button">
-                →
-            </button>
         </div>
-
-
-        <br>
-        <br>
-        <br>
-        <br>
-
-        <div class="carousel carousel--floors" data-step="10">
-            <div class="carousel__container">
-                <div class="carousel__ribbon">
-                    <button class="carousel__item single-floor single-floor--passed" type="button">1</button>
-                    <button class="carousel__item single-floor single-floor--passed" type="button">2</button>
-                    <button class="carousel__item single-floor single-floor--passed" type="button">3</button>
-                    <button class="carousel__item single-floor single-floor--passed" type="button">4</button>
-                    <button class="carousel__item single-floor single-floor--current single-floor--has-my-avatar" type="button">5</button>
-                    <button class="carousel__item single-floor" type="button">6</button>
-                    <button class="carousel__item single-floor" type="button">7</button>
-                    <button class="carousel__item single-floor" type="button">8</button>
-                    <button class="carousel__item single-floor" type="button">9</button>
-                    <button class="carousel__item single-floor" type="button">10</button>
-                    <button class="carousel__item single-floor single-floor--has-my-avatar" type="button">11</button>
-                    <button class="carousel__item single-floor" type="button">12</button>
-                    <button class="carousel__item single-floor" type="button">13</button>
-                    <button class="carousel__item single-floor" type="button">14</button>
-                    <button class="carousel__item single-floor" type="button">15</button>
-                    <button class="carousel__item single-floor" type="button">16</button>
-                    <button class="carousel__item single-floor" type="button">17</button>
-                    <button class="carousel__item single-floor" type="button">18</button>
-                    <button class="carousel__item single-floor" type="button">19</button>
-                    <button class="carousel__item single-floor" type="button">20</button>
-                    <button class="carousel__item single-floor" type="button">21</button>
-                    <button class="carousel__item single-floor" type="button">22</button>
-                    <button class="carousel__item single-floor" type="button">23</button>
-                    <button class="carousel__item single-floor" type="button">24</button>
-                    <button class="carousel__item single-floor" type="button">25</button>
-                    <button class="carousel__item single-floor" type="button">26</button>
-                    <button class="carousel__item single-floor" type="button">27</button>
-                    <button class="carousel__item single-floor" type="button">28</button>
-                    <button class="carousel__item single-floor" type="button">29</button>
-                    <button class="carousel__item single-floor" type="button">30</button>
-                    <button class="carousel__item single-floor" type="button">31</button>
-                    <button class="carousel__item single-floor" type="button">32</button>
-                    <button class="carousel__item single-floor" type="button">33</button>
-                    <button class="carousel__item single-floor" type="button">34</button>
-                    <button class="carousel__item single-floor" type="button">35</button>
-                    <button class="carousel__item single-floor" type="button">36</button>
-                    <button class="carousel__item single-floor" type="button">37</button>
-                    <button class="carousel__item single-floor" type="button">38</button>
-                    <button class="carousel__item single-floor" type="button">39</button>
-                    <button class="carousel__item single-floor" type="button">30</button>
-                    <button class="carousel__item single-floor" type="button">41</button>
-                    <button class="carousel__item single-floor" type="button">42</button>
-                    <button class="carousel__item single-floor" type="button">43</button>
-                    <button class="carousel__item single-floor" type="button">44</button>
-                    <button class="carousel__item single-floor" type="button">45</button>
-                    <button class="carousel__item single-floor" type="button">46</button>
-                    <button class="carousel__item single-floor" type="button">47</button>
-                    <button class="carousel__item single-floor" type="button">48</button>
-                    <button class="carousel__item single-floor" type="button">49</button>
-                    <button class="carousel__item single-floor" type="button">40</button>
-                    <button class="carousel__item single-floor" type="button">51</button>
-                    <button class="carousel__item single-floor" type="button">52</button>
-                    <button class="carousel__item single-floor" type="button">53</button>
-                    <button class="carousel__item single-floor" type="button">54</button>
-                    <button class="carousel__item single-floor" type="button">55</button>
-                    <button class="carousel__item single-floor" type="button">56</button>
-                    <button class="carousel__item single-floor" type="button">57</button>
-                    <button class="carousel__item single-floor" type="button">58</button>
-                    <button class="carousel__item single-floor" type="button">59</button>
-                    <button class="carousel__item single-floor" type="button">50</button>
-                </div>
-            </div>
-            <button class="carousel__control carousel__control--prev action action--prev carousel__control--disabled" type="button">
-                ←
-            </button>
-            <button class=" carousel__control carousel__control--next action action--next" type="button">
-                →
-            </button>
-        </div>
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
     </div>
-
 </div>
 
+<div class="flyover flyover--avatar" id="fkeprkdlap">
+    <div class="profile">
+        <div class="profile__preview avatar avatar--no-hover">
+            <img class="avatar__image"
+                 srcset="../temp/crocodile-48x48@2x.jpg 2x"
+                 src="../temp/crocodile-48x48.jpg"
+                 width="48"
+                 height="48"
+                 alt=""
+            >
+        </div>
+        <div class="profile__heading">
+            Александр Плужников
+        </div>
+        <div class="profile__speed speedometer speedometer--success">
+            <div class="speedometer__value speedometer__value--filled"></div>
+            <div class="speedometer__value speedometer__value--filled"></div>
+            <div class="speedometer__value speedometer__value--filled"></div>
+            <div class="speedometer__value speedometer__value--filled"></div>
+            <div class="speedometer__value speedometer__value--filled"></div>
+            <div class="speedometer__value speedometer__value--filled"></div>
+            <div class="speedometer__value speedometer__value--filled"></div>
+            <div class="speedometer__value speedometer__value--filled"></div>
+            <div class="speedometer__value speedometer__value--filled"></div>
+            <div class="speedometer__value speedometer__value--filled"></div>
+            <div class="speedometer__value speedometer__value--filled"></div>
+            <div class="speedometer__value speedometer__value--filled"></div>
+            <div class="speedometer__value"></div>
+        </div>
+        <div class="profile__row">
+            <div class="stat stat--smaller">
+                <span class="stat__param">
+                    Этаж:
+                </span>
+                <span class="stat__value">
+                    3
+                </span>
+            </div>
+        </div>
+        <div class="profile__row">
+            <div class="stat stat--smaller stat--energy">
+                <span class="stat__param">
+                    Место в очереди:
+                </span>
+                <span class="stat__value">
+                    1200
+                </span>
+            </div>
+        </div>
+        <div class="profile__row">
+            <div class="stat stat--smaller stat--energy">
+                <span class="stat__param">
+                    Энергия:
+                </span>
+                <span class="stat__value">
+                    1200
+                </span>
+            </div>
+            <div class="stat stat--smaller">
+                <span class="stat__param">
+                    Ускорители:
+                </span>
+                <span class="stat__value">
+                    +60%
+                </span>
+            </div>
+        </div>
+        <div class="profile__boosters">
+            <div class="booster booster--smaller booster--type-a">+50%</div>
+            <div class="booster booster--smaller booster--type-b">+50%</div>
+            <div class="booster booster--smaller booster--type-c">+50%</div>
+            <div class="booster booster--smaller booster--type-d">+50%</div>
+            <div class="booster booster--smaller booster--type-e">+50%</div>
+            <div class="booster booster--smaller booster--type-a booster--disabled">+50%</div>
+            <div class="booster booster--smaller booster--type-b booster--disabled">+50%</div>
+            <div class="booster booster--smaller booster--type-c booster--disabled">+50%</div>
+        </div>
+        <a class="profile__more dash dash--more" href="#">
+            Наставники (13)
+        </a>
+    </div>
+</div>
 
 <script src="../vendors/outline/outline.js"></script>
 <script src="../scripts/_sort.js"></script>

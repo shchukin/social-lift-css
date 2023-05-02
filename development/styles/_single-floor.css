@@ -1,0 +1,60 @@
+.single-floor {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.single-floor--passed {
+    color: #BABBBF;
+}
+
+
+.single-floor:not(.single-floor--passed):not(.single-floor--current):not(.single-floor--has-my-avatar):hover {
+    color: var(--buttonColor);
+}
+
+
+.single-floor--current {
+    cursor: default !important;
+}
+    .single-floor--current::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        display: block;
+        width: 32px;
+        height: 32px;
+        background-color: #E3E4EB;
+        border-radius: 50%;
+    }
+
+.single-floor--has-my-avatar {
+
+}
+    .single-floor--has-my-avatar::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        display: block;
+        width: 32px;
+        height: 32px;
+        border: 2px solid currentColor;
+        border-radius: 50%;
+    }
