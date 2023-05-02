@@ -152,7 +152,8 @@
             text-align: center;
         }
             .lottery__prize-preview {
-
+                vertical-align: top;
+                object-fit: contain;
             }
 
             .lottery__prize-name {
