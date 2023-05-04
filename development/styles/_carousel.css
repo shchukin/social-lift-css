@@ -143,18 +143,23 @@
 
 
 .carousel--floors {
-    padding-left: 2px; /* чтобы не вылезало из под контролов */
-    padding-right: 2px; /* чтобы не вылезало из под контролов */
+    padding-left: 2px;   /* чтобы не вылезало из под контролов */
+    padding-right: 2px;  /* чтобы не вылезало из под контролов */
+
 }
-    .carousel--floors .carousel__item {
-
+    .carousel--floors .carousel__ribbon {
+        padding-top: 16px; /* теньки под стрелками */
+        padding-bottom: 16px; /* теньки под стрелками */
     }
+        .carousel--floors .carousel__item {
 
-    .carousel--floors .carousel__item:last-child {
+        }
 
-    }
+        .carousel--floors .carousel__item:last-child {
 
-    .carousel--floors .carousel__control--disabled {
-        opacity: 0;
-        visibility: hidden;
-    }
+        }
+
+        .carousel--floors .carousel__control--disabled {
+            opacity: 0;
+            visibility: hidden;
+        }

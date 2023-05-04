@@ -15,10 +15,12 @@
     color: #BABBBF;
 }
 
-
 .single-floor:not(.single-floor--passed):not(.single-floor--current):not(.single-floor--has-my-avatar):hover {
     color: var(--buttonColor);
 }
+    .single-floor__value {
+        position: relative;
+    }
 
 
 .single-floor--current {
@@ -27,7 +29,6 @@
     .single-floor--current::before {
         content: "";
         position: absolute;
-        z-index: -1;
         left: 0;
         top: 0;
         right: 0;
@@ -43,7 +44,7 @@
 .single-floor--has-my-avatar {
 
 }
-    .single-floor--has-my-avatar::before {
+    .single-floor--has-my-avatar::after {
         content: "";
         position: absolute;
         z-index: -1;

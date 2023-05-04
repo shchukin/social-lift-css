@@ -22,7 +22,7 @@
 
     .stage__navigation {
         margin-top: 24px;
-        padding: 16px 24px;
+        /*padding: 16px 24px;*/
         background-color: #FFFFFF;
         box-shadow: 0 2px 0 rgba(25, 27, 41, 0.2);
         border-radius: 32px;
@@ -30,6 +30,7 @@
         align-items: flex-start;
     }
         .stage__floor {
+            margin-top: 11px;
             flex-shrink: 0;
             font-family: var(--UI-16-16-font-family);
             font-weight: bold;
@@ -38,9 +39,12 @@
             letter-spacing: var(--UI-16-16-letter-spacing);
         }
 
+        .stage__carousel {
+            overflow: hidden;
+        }
+
     .stage__body {
         margin-top: 16px;
-
     }
 
 

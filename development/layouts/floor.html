@@ -842,77 +842,204 @@
                             <i class="choice__icon" role="presentation"></i>
                             <span class="choice__label">Только этажи с моими аватарами</span>
                         </label>
-                        <div class="stage__navigation carousel carousel--floors" data-step="10">
-                            <div class="carousel__container">
-                                <div class="carousel__ribbon">
-                                    <button class="carousel__item single-floor single-floor--passed" type="button">1</button>
-                                    <button class="carousel__item single-floor single-floor--passed" type="button">2</button>
-                                    <button class="carousel__item single-floor single-floor--passed" type="button">3</button>
-                                    <button class="carousel__item single-floor single-floor--passed" type="button">4</button>
-                                    <button class="carousel__item single-floor single-floor--current single-floor--has-my-avatar" type="button">5</button>
-                                    <button class="carousel__item single-floor" type="button">6</button>
-                                    <button class="carousel__item single-floor" type="button">7</button>
-                                    <button class="carousel__item single-floor" type="button">8</button>
-                                    <button class="carousel__item single-floor" type="button">9</button>
-                                    <button class="carousel__item single-floor" type="button">10</button>
-                                    <button class="carousel__item single-floor single-floor--has-my-avatar" type="button">11</button>
-                                    <button class="carousel__item single-floor" type="button">12</button>
-                                    <button class="carousel__item single-floor" type="button">13</button>
-                                    <button class="carousel__item single-floor" type="button">14</button>
-                                    <button class="carousel__item single-floor" type="button">15</button>
-                                    <button class="carousel__item single-floor" type="button">16</button>
-                                    <button class="carousel__item single-floor" type="button">17</button>
-                                    <button class="carousel__item single-floor" type="button">18</button>
-                                    <button class="carousel__item single-floor" type="button">19</button>
-                                    <button class="carousel__item single-floor" type="button">20</button>
-                                    <button class="carousel__item single-floor" type="button">21</button>
-                                    <button class="carousel__item single-floor" type="button">22</button>
-                                    <button class="carousel__item single-floor" type="button">23</button>
-                                    <button class="carousel__item single-floor" type="button">24</button>
-                                    <button class="carousel__item single-floor" type="button">25</button>
-                                    <button class="carousel__item single-floor" type="button">26</button>
-                                    <button class="carousel__item single-floor" type="button">27</button>
-                                    <button class="carousel__item single-floor" type="button">28</button>
-                                    <button class="carousel__item single-floor" type="button">29</button>
-                                    <button class="carousel__item single-floor" type="button">30</button>
-                                    <button class="carousel__item single-floor" type="button">31</button>
-                                    <button class="carousel__item single-floor" type="button">32</button>
-                                    <button class="carousel__item single-floor" type="button">33</button>
-                                    <button class="carousel__item single-floor" type="button">34</button>
-                                    <button class="carousel__item single-floor" type="button">35</button>
-                                    <button class="carousel__item single-floor" type="button">36</button>
-                                    <button class="carousel__item single-floor" type="button">37</button>
-                                    <button class="carousel__item single-floor" type="button">38</button>
-                                    <button class="carousel__item single-floor" type="button">39</button>
-                                    <button class="carousel__item single-floor" type="button">30</button>
-                                    <button class="carousel__item single-floor" type="button">41</button>
-                                    <button class="carousel__item single-floor" type="button">42</button>
-                                    <button class="carousel__item single-floor" type="button">43</button>
-                                    <button class="carousel__item single-floor" type="button">44</button>
-                                    <button class="carousel__item single-floor" type="button">45</button>
-                                    <button class="carousel__item single-floor" type="button">46</button>
-                                    <button class="carousel__item single-floor" type="button">47</button>
-                                    <button class="carousel__item single-floor" type="button">48</button>
-                                    <button class="carousel__item single-floor" type="button">49</button>
-                                    <button class="carousel__item single-floor" type="button">40</button>
-                                    <button class="carousel__item single-floor" type="button">51</button>
-                                    <button class="carousel__item single-floor" type="button">52</button>
-                                    <button class="carousel__item single-floor" type="button">53</button>
-                                    <button class="carousel__item single-floor" type="button">54</button>
-                                    <button class="carousel__item single-floor" type="button">55</button>
-                                    <button class="carousel__item single-floor" type="button">56</button>
-                                    <button class="carousel__item single-floor" type="button">57</button>
-                                    <button class="carousel__item single-floor" type="button">58</button>
-                                    <button class="carousel__item single-floor" type="button">59</button>
-                                    <button class="carousel__item single-floor" type="button">50</button>
+                        <div class="stage__navigation">
+                            <div class="stage__floor">
+                                Этаж:
+                            </div>
+                            <div class="stage__carousel">
+                                <div class="carousel carousel--floors" data-step="10">
+                                    <div class="carousel__container">
+                                        <div class="carousel__ribbon">
+                                            <button class="carousel__item single-floor single-floor--passed" type="button">
+                                                <span class="single-floor__value">1</span>
+                                            </button>
+                                            <button class="carousel__item single-floor single-floor--passed" type="button">
+                                                <span class="single-floor__value">2</span>
+                                            </button>
+                                            <button class="carousel__item single-floor single-floor--passed" type="button">
+                                                <span class="single-floor__value">3</span>
+                                            </button>
+                                            <button class="carousel__item single-floor single-floor--passed" type="button">
+                                                <span class="single-floor__value">4</span>
+                                            </button>
+                                            <button class="carousel__item single-floor single-floor--current single-floor--has-my-avatar" type="button">
+                                                <span class="single-floor__value">5</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">6</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">7</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">8</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">9</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">10</span>
+                                            </button>
+                                            <button class="carousel__item single-floor single-floor--has-my-avatar" type="button">
+                                                <span class="single-floor__value">11</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">12</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">13</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">14</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">15</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">16</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">17</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">18</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">19</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">20</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">21</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">22</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">23</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">24</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">25</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">26</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">27</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">28</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">29</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">30</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">31</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">32</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">33</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">34</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">35</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">36</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">37</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">38</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">39</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">30</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">41</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">42</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">43</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">44</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">45</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">46</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">47</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">48</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">49</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">40</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">51</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">52</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">53</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">54</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">55</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">56</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">57</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">58</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">59</span>
+                                            </button>
+                                            <button class="carousel__item single-floor" type="button">
+                                                <span class="single-floor__value">50</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <button class="carousel__control carousel__control--prev action action--prev carousel__control--disabled" type="button">
+                                        ←
+                                    </button>
+                                    <button class=" carousel__control carousel__control--next action action--next" type="button">
+                                        →
+                                    </button>
                                 </div>
                             </div>
-                            <button class="carousel__control carousel__control--prev action action--prev carousel__control--disabled" type="button">
-                                ←
-                            </button>
-                            <button class=" carousel__control carousel__control--next action action--next" type="button">
-                                →
-                            </button>
                         </div>
                         <div class="floor__body">
                             123
