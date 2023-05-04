@@ -145,7 +145,6 @@
 .carousel--floors {
     padding-left: 2px;   /* чтобы не вылезало из под контролов */
     padding-right: 2px;  /* чтобы не вылезало из под контролов */
-
 }
     .carousel--floors .carousel__ribbon {
         padding-top: 12px; /* теньки под стрелками */
@@ -163,3 +162,16 @@
             opacity: 0;
             visibility: hidden;
         }
+
+@media (max-width: 992px) {
+    .carousel--floors {
+        margin-left: 0;
+        margin-right: 0;
+    }
+        .carousel--floors .carousel__container {
+            overflow: visible;
+        }
+            .carousel--floors .carousel__ribbon {
+
+            }
+}

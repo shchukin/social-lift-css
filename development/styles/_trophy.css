@@ -24,3 +24,36 @@
         background-repeat: no-repeat;
         background-position: center center;
     }
+
+
+@media (max-width: 991px) {
+
+    .trophy {
+        /*position: relative;*/
+        /*display: inline-block;*/
+        /*vertical-align: top;*/
+    }
+        .trophy__image {
+            /*vertical-align: top;*/
+            /*border-radius: 50%;*/
+            width: 72px;
+            height: 72px;
+        }
+
+    .trophy--received {
+
+    }
+        .trophy--received::after {
+            /*content: "";*/
+            /*position: absolute;*/
+            left: -3px;
+            top: -3px;
+            /*display: block;*/
+            width: 30px;
+            height: 30px;
+            /*background-image: url("../images/tropy-received.svg");*/
+            /*background-size: contain;*/
+            /*background-repeat: no-repeat;*/
+            /*background-position: center center;*/
+        }
+}
