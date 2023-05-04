@@ -22,7 +22,6 @@
 
     .stage__navigation {
         margin-top: 24px;
-        /*padding: 16px 24px;*/
         background-color: #FFFFFF;
         box-shadow: 0 2px 0 rgba(25, 27, 41, 0.2);
         border-radius: 32px;
@@ -30,7 +29,9 @@
         align-items: flex-start;
     }
         .stage__floor {
-            margin-top: 11px;
+            margin-top: 23px;
+            margin-left: 25px;
+            margin-right: 4px;
             flex-shrink: 0;
             font-family: var(--UI-16-16-font-family);
             font-weight: bold;
@@ -40,13 +41,66 @@
         }
 
         .stage__carousel {
+            margin-right: 16px;
             overflow: hidden;
         }
 
     .stage__body {
         margin-top: 16px;
+        padding: 28px 40px 24px;
+        background-color: #FFFFFF;
+        box-shadow: 0 2px 0 rgba(25, 27, 41, 0.2);
+        border-radius: 32px;
     }
+        .stage__sub-head {
 
+        }
+            .stage__badges {
+
+            }
+                .stage__bonus {
+
+                }
+
+            .stage__floor-heading {
+                padding-left: 36px;
+                font-weight: bold;
+                font-size: 28px;
+                line-height: 32px;
+                letter-spacing: -0.02em;
+                background-image: url("../images/floor.svg");
+                background-size: 20px 20px;
+                background-repeat: no-repeat;
+                background-position: 6px center;
+            }
+
+            .stage__stats {
+                margin-top: 24px;
+                display: flex;
+                align-items: flex-start;
+                gap: 87px;
+            }
+                .stage__column {
+
+                }
+                    .stage__param {
+                        margin-top: 8px;
+                    }
+
+                    .stage__param:first-child {
+                        margin-top: 0;
+                    }
+
+                    .stage__more {
+                        margin-top: -2px;
+                    }
+
+
+        .stage__list {
+            margin-top: 24px;
+            border-top: 1px solid #EBECF1;
+            padding-top: 24px;
+        }
 
 
 @media (max-width: 991px) {

@@ -2,17 +2,11 @@
     position: relative;
     width: 40px;
     height: 40px;
-    padding: 0;
+    padding: 4px;
     border: none;
     background-color: transparent;
     border-radius: 50%;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 16px;
-}
-
-.single-floor--passed {
-    color: #BABBBF;
+    user-select: none;
 }
 
 .single-floor:not(.single-floor--passed):not(.single-floor--current):not(.single-floor--has-my-avatar):hover {
@@ -20,42 +14,37 @@
 }
     .single-floor__value {
         position: relative;
+        display: block;
+        width: 32px;
+        height: 32px;
+        border: 2px solid transparent;
+        padding-top: 6px;
+        border-radius: 50%;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+
+.single-floor--passed {
+
+}
+    .single-floor--passed .single-floor__value {
+        color: #BABBBF;
     }
 
 
 .single-floor--current {
     cursor: default !important;
 }
-    .single-floor--current::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
-        display: block;
-        width: 32px;
-        height: 32px;
+    .single-floor--current .single-floor__value {
         background-color: #E3E4EB;
-        border-radius: 50%;
     }
+
 
 .single-floor--has-my-avatar {
 
 }
-    .single-floor--has-my-avatar::after {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
-        display: block;
-        width: 32px;
-        height: 32px;
-        border: 2px solid currentColor;
-        border-radius: 50%;
+    .single-floor--has-my-avatar .single-floor__value {
+        border-color: currentColor;
     }

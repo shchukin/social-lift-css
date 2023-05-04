@@ -148,8 +148,8 @@
 
 }
     .carousel--floors .carousel__ribbon {
-        padding-top: 16px; /* теньки под стрелками */
-        padding-bottom: 16px; /* теньки под стрелками */
+        padding-top: 12px; /* теньки под стрелками */
+        padding-bottom: 12px; /* теньки под стрелками */
     }
         .carousel--floors .carousel__item {
 
