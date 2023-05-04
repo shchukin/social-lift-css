@@ -1,0 +1,56 @@
+.floor-card {
+    height: 96px;
+    padding: 12px 32px 12px 16px;
+    background-color: #F3F4F9;
+    border-radius: 48px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.floor-card--mine {
+    box-shadow: 0 0 0 1px var(--primaryColor),
+                inset 0 0 0 1px var(--primaryColor);
+}
+
+    .floor-card__preview {
+        flex-shrink: 0;
+    }
+
+    .floor-card__body {
+
+    }
+        .floor-card__heading {
+            font-family: var(--UI-16-16-font-family);
+            font-weight: bold;
+            font-size: var(--UI-16-16-font-size);
+            line-height: var(--UI-16-16-line-height);
+            letter-spacing: var(--UI-16-16-letter-spacing);
+        }
+
+        .floor-card__speed {
+            margin-top: 10px;
+        }
+
+        .floor-card__boosters {
+            margin-top: 4px;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+    .floor-card__counter {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+        font-family: var(--BODY-12-16-font-family);
+        font-size: var(--BODY-12-16-font-size);
+        line-height: var(--BODY-12-16-line-height);
+        letter-spacing: var(--BODY-12-16-letter-spacing);
+        color: var(--primaryColor-90pct);
+    }

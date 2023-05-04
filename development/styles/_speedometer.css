@@ -15,6 +15,13 @@
     }
 
 
+.speedometer--smaller {
+
+}
+    .speedometer--smaller .speedometer__value {
+        height: 12px;
+    }
+
 .speedometer--larger {
     gap: 9px;
 }

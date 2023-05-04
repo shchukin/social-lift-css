@@ -28,3 +28,8 @@
     padding-top: 32px;
     background-size: 32px 32px;
 }
+.booster--smallest {
+    width: 24px;
+    padding-top: 24px;
+    background-size: 24px 24px;
+}

@@ -72,7 +72,8 @@
     box-shadow: none;
 }
 
-.button--alternate:hover {
+.button--alternate:hover,
+.button--alternate:focus:hover {
     background-color: #2F3037 !important;
     color: #FFFFFF !important;
 }
