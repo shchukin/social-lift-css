@@ -248,7 +248,7 @@ gulp.task('content', function() {
 gulp.task('images', function() {
   return gulp.src('development/images/**/*')
       .pipe(plumber())
-      .pipe(gulp.dest('production'))
+      .pipe(gulp.dest('production/images/'))
   ;
 });
 
