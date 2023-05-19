@@ -1,5 +1,7 @@
 .user-pic {
     position: relative;
+    display: inline-block;
+    vertical-align: top;
 }
     .user-pic__photo {
         vertical-align: top;
@@ -22,3 +24,36 @@
         border-radius: 50%;
         border: 3px solid #191B2A;
     }
+
+    .user-pic__boosters {
+
+    }
+        .user-pic__badge {
+            position: absolute;
+            z-index: 10;
+        }
+
+        .user-pic__badge:nth-child(1) {
+            left: 48px;
+            top: 20px;
+        }
+
+        .user-pic__badge:nth-child(2) {
+            left: 44px;
+            top: 34px;
+        }
+
+        .user-pic__badge:nth-child(3) {
+            left: 34px;
+            top: 44px;
+        }
+
+        .user-pic__badge:nth-child(4) {
+            left: 20px;
+            top: 48px;
+        }
+
+        .user-pic__badge:nth-child(5) {
+            left: 6px;
+            top: 44px;
+        }

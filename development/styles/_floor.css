@@ -164,7 +164,7 @@
         .floor__body {
             margin-top: 0;
             /*border-top: 1px solid #EBECF1;*/
-            padding: 26px 16px 12px;
+            padding: 16px 16px 12px;
             display: none;
         }
 
@@ -177,7 +177,7 @@
             }
 
             .floor__boosters {
-                margin-top: 22px;
+                margin-top: 12px;
                 /*position: relative;*/
                 /*padding: 23px 16px 16px;*/
                 /*margin-top: 16px;*/
