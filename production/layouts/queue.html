@@ -4,30 +4,30 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Живая очередь</title>
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
-    <script src="../legacy/jquery-2.1.1.min.js?1684511156"></script>
-    <link href="../legacy/bootstrap.min.css?1684511156" rel="stylesheet">
-    <link href="../legacy/jquery-ui.min.css?1684511156" rel="stylesheet">
-    <link href="../legacy/colortip-1.0-jquery.css?1684511156" rel="stylesheet">
-    <link href="../legacy/style.css?1684511156" rel="stylesheet">
-    <link href="../legacy/style(1).css?1684511156" rel="stylesheet">
-    <link href="../legacy/style(2).css?1684511156" rel="stylesheet">
-    <link href="../legacy/style(3).css?1684511156" rel="stylesheet">
-    <link href="../legacy/fix.css?1684511156" rel="stylesheet">
-    <link href="../legacy/custom_styles.css?1684511156" rel="stylesheet">
-    <link href="../legacy/flag-icon.css?1684511156" rel="stylesheet">
-    <link href="../legacy/iziToast.min.css?1684511156" rel="stylesheet">
-    <link href="../legacy/style(4).css?1684511156" rel="stylesheet">
-    <link href="../legacy/_bshare.css?1684511156" rel="stylesheet">
-    <link href="../legacy/nprogress.css?1684511156" rel="stylesheet">
-    <link href="../legacy/material-design-iconic-font.min.css?1684511156" rel="stylesheet">
-    <link href="../legacy/mediaelementplayer.min.css?1684511156" rel="stylesheet">
-    <link href="../legacy/plyr.css?1684511156" rel="stylesheet">
-    <link href="../legacy/_modules_main_templates_space_style.css.minify.css?1684511156" rel="stylesheet" type="text/css">
-    <link href="../legacy/css/style.css?1684511156" rel="stylesheet" type="text/css">
+    <script src="../legacy/jquery-2.1.1.min.js?1684747812"></script>
+    <link href="../legacy/bootstrap.min.css?1684747812" rel="stylesheet">
+    <link href="../legacy/jquery-ui.min.css?1684747812" rel="stylesheet">
+    <link href="../legacy/colortip-1.0-jquery.css?1684747812" rel="stylesheet">
+    <link href="../legacy/style.css?1684747812" rel="stylesheet">
+    <link href="../legacy/style(1).css?1684747812" rel="stylesheet">
+    <link href="../legacy/style(2).css?1684747812" rel="stylesheet">
+    <link href="../legacy/style(3).css?1684747812" rel="stylesheet">
+    <link href="../legacy/fix.css?1684747812" rel="stylesheet">
+    <link href="../legacy/custom_styles.css?1684747812" rel="stylesheet">
+    <link href="../legacy/flag-icon.css?1684747812" rel="stylesheet">
+    <link href="../legacy/iziToast.min.css?1684747812" rel="stylesheet">
+    <link href="../legacy/style(4).css?1684747812" rel="stylesheet">
+    <link href="../legacy/_bshare.css?1684747812" rel="stylesheet">
+    <link href="../legacy/nprogress.css?1684747812" rel="stylesheet">
+    <link href="../legacy/material-design-iconic-font.min.css?1684747812" rel="stylesheet">
+    <link href="../legacy/mediaelementplayer.min.css?1684747812" rel="stylesheet">
+    <link href="../legacy/plyr.css?1684747812" rel="stylesheet">
+    <link href="../legacy/_modules_main_templates_space_style.css.minify.css?1684747812" rel="stylesheet" type="text/css">
+    <link href="../legacy/css/style.css?1684747812" rel="stylesheet" type="text/css">
 
     <!-- Новые стили для Social Lift -->
-    <link href="../fonts/fonts.css?1684511156" rel="stylesheet" type="text/css">
-    <link href="../styles/style.css?1684511156" rel="stylesheet" type="text/css">
+    <link href="../fonts/fonts.css?1684747812" rel="stylesheet" type="text/css">
+    <link href="../styles/style.css?1684747812" rel="stylesheet" type="text/css">
 
     <style>
         :root {
@@ -903,7 +903,8 @@
                                                         <input class="lift-input__widget" type="text" readonly value="https://social-lift.com/lorem-impsum-dolor-sit-amen">
                                                     </div>
                                                 </div>
-                                                <div class="lift-aside__goal lift-aside__goal--next-qualification">
+                                                <div class="lift-aside__goal">
+                                                    <div class="lift-aside__booster lift-booster lift-booster--qualification-01"></div>
                                                     Следующая квалификация <strong>&nbsp;+10%</strong>
                                                 </div>
                                                 <a class="lift-aside__more lift-dash lift-dash--more" href="#">
@@ -914,7 +915,8 @@
                                                 <div class="lift-aside__sub-heading">
                                                     Выполнить задания
                                                 </div>
-                                                <div class="lift-aside__goal lift-aside__goal--completed-tasks">
+                                                <div class="lift-aside__goal">
+                                                    <div class="lift-aside__booster lift-booster lift-booster--start"></div>
                                                     За выполнение заданий <strong>&nbsp;+10%</strong>
                                                 </div>
                                                 <div class="lift-aside__item lift-aside__item--completed">
@@ -959,6 +961,11 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="lift-queue__empty lift-null lift-null--avatars">
+                                    <h1 class="lift-null__heading">Аватаров пока нет</h1>
+                                    <div class="lift-null__description">Купите свой первый аватар, чтобы начать игру</div>
+                                </div>
+                                или:
                                 <div class="lift-queue__list">
                                     <div class="lift-queue__item lift-floor">
                                         <div class="lift-floor__preview lift-avatar lift-avatar--no-hover">
@@ -1313,30 +1320,34 @@
                                                 </div>
                                                 <div class="lift-floor__boosters-list">
                                                     <div class="lift-floor__ribbon">
-                                                        <div class="lift-booster lift-booster--type-a">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-b">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-c">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-d">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-e">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-a lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-b lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-c lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-d lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-a lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-b lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-c lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-d lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-a lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-b lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-c lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-d lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-a lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-b lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-c lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-d lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-a lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-b lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-c lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--start">+50%</div>
+                                                        <div class="lift-booster lift-booster--qualification-01">+50%</div>
+                                                        <div class="lift-booster lift-booster--qualification-02">+50%</div>
+                                                        <div class="lift-booster lift-booster--qualification-03">+50%</div>
+                                                        <div class="lift-booster lift-booster--qualification-04">+50%</div>
+                                                        <div class="lift-booster lift-booster--subscribe-01">+50%</div>
+                                                        <div class="lift-booster lift-booster--subscribe-02">+50%</div>
+                                                        <div class="lift-booster lift-booster--weekly">+50%</div>
+                                                        <div class="lift-booster lift-booster--power">+50%</div>
+                                                        <div class="lift-booster lift-booster--start lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--qualification-01 lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--subscribe-01 lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--weekly lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--start lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--qualification-01 lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--subscribe-01 lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--weekly lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--start lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--qualification-01 lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--subscribe-01 lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--weekly lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--start lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--qualification-01 lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--subscribe-01 lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--weekly lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--start lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--qualification-01 lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--subscribe-01 lift-booster--disabled">+50%</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1427,11 +1438,11 @@
                                                                          alt=""
                                                                     >
                                                                     <div class="lift-user-pic__boosters">
-                                                                        <div class="lift-user-pic__badge lift-booster lift-booster--micro lift-booster--type-a"></div>
-                                                                        <div class="lift-user-pic__badge lift-booster lift-booster--micro lift-booster--type-b"></div>
-                                                                        <div class="lift-user-pic__badge lift-booster lift-booster--micro lift-booster--type-c"></div>
-                                                                        <div class="lift-user-pic__badge lift-booster lift-booster--micro lift-booster--type-d"></div>
-                                                                        <div class="lift-user-pic__badge lift-booster lift-booster--micro lift-booster--type-e"></div>
+                                                                        <div class="lift-user-pic__badge lift-booster lift-booster--micro lift-booster--start"></div>
+                                                                        <div class="lift-user-pic__badge lift-booster lift-booster--micro lift-booster--qualification-01"></div>
+                                                                        <div class="lift-user-pic__badge lift-booster lift-booster--micro lift-booster--subscribe-01"></div>
+                                                                        <div class="lift-user-pic__badge lift-booster lift-booster--micro lift-booster--weekly"></div>
+                                                                        <div class="lift-user-pic__badge lift-booster lift-booster--micro lift-booster--power"></div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1456,11 +1467,11 @@
                                                                          alt=""
                                                                     >
                                                                     <div class="lift-user-pic__boosters">
-                                                                        <div class="lift-user-pic__badge lift-booster lift-booster--micro lift-booster--type-a"></div>
-                                                                        <div class="lift-user-pic__badge lift-booster lift-booster--micro lift-booster--type-b"></div>
-                                                                        <div class="lift-user-pic__badge lift-booster lift-booster--micro lift-booster--type-c"></div>
-                                                                        <div class="lift-user-pic__badge lift-booster lift-booster--micro lift-booster--type-d"></div>
-                                                                        <div class="lift-user-pic__badge lift-booster lift-booster--micro lift-booster--type-e"></div>
+                                                                        <div class="lift-user-pic__badge lift-booster lift-booster--micro lift-booster--start"></div>
+                                                                        <div class="lift-user-pic__badge lift-booster lift-booster--micro lift-booster--qualification-01"></div>
+                                                                        <div class="lift-user-pic__badge lift-booster lift-booster--micro lift-booster--subscribe-01"></div>
+                                                                        <div class="lift-user-pic__badge lift-booster lift-booster--micro lift-booster--weekly"></div>
+                                                                        <div class="lift-user-pic__badge lift-booster lift-booster--micro lift-booster--power"></div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1694,11 +1705,11 @@
                                                                          alt=""
                                                                     >
                                                                     <div class="lift-user-pic__boosters">
-                                                                        <div class="lift-user-pic__badge lift-booster lift-booster--micro lift-booster--type-a"></div>
-                                                                        <div class="lift-user-pic__badge lift-booster lift-booster--micro lift-booster--type-b"></div>
-                                                                        <div class="lift-user-pic__badge lift-booster lift-booster--micro lift-booster--type-c"></div>
-                                                                        <div class="lift-user-pic__badge lift-booster lift-booster--micro lift-booster--type-d"></div>
-                                                                        <div class="lift-user-pic__badge lift-booster lift-booster--micro lift-booster--type-e"></div>
+                                                                        <div class="lift-user-pic__badge lift-booster lift-booster--micro lift-booster--start"></div>
+                                                                        <div class="lift-user-pic__badge lift-booster lift-booster--micro lift-booster--qualification-01"></div>
+                                                                        <div class="lift-user-pic__badge lift-booster lift-booster--micro lift-booster--subscribe-01"></div>
+                                                                        <div class="lift-user-pic__badge lift-booster lift-booster--micro lift-booster--weekly"></div>
+                                                                        <div class="lift-user-pic__badge lift-booster lift-booster--micro lift-booster--power"></div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1726,30 +1737,30 @@
                                                 </div>
                                                 <div class="lift-floor__boosters-list">
                                                     <div class="lift-floor__ribbon">
-                                                        <div class="lift-booster lift-booster--type-a">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-b">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-c">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-d">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-e">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-a lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-b lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-c lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-d lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-a lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-b lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-c lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-d lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-a lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-b lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-c lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-d lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-a lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-b lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-c lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-d lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-a lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-b lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-c lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--start">+50%</div>
+                                                        <div class="lift-booster lift-booster--qualification-01">+50%</div>
+                                                        <div class="lift-booster lift-booster--subscribe-01">+50%</div>
+                                                        <div class="lift-booster lift-booster--weekly">+50%</div>
+                                                        <div class="lift-booster lift-booster--power">+50%</div>
+                                                        <div class="lift-booster lift-booster--start lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--qualification-01 lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--subscribe-01 lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--weekly lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--start lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--qualification-01 lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--subscribe-01 lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--weekly lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--start lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--qualification-01 lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--subscribe-01 lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--weekly lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--start lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--qualification-01 lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--subscribe-01 lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--weekly lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--start lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--qualification-01 lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--subscribe-01 lift-booster--disabled">+50%</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2118,30 +2129,30 @@
                                                 </div>
                                                 <div class="lift-floor__boosters-list">
                                                     <div class="lift-floor__ribbon">
-                                                        <div class="lift-booster lift-booster--type-a">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-b">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-c">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-d">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-e">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-a lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-b lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-c lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-d lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-a lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-b lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-c lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-d lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-a lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-b lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-c lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-d lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-a lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-b lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-c lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-d lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-a lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-b lift-booster--disabled">+50%</div>
-                                                        <div class="lift-booster lift-booster--type-c lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--start">+50%</div>
+                                                        <div class="lift-booster lift-booster--qualification-01">+50%</div>
+                                                        <div class="lift-booster lift-booster--subscribe-01">+50%</div>
+                                                        <div class="lift-booster lift-booster--weekly">+50%</div>
+                                                        <div class="lift-booster lift-booster--power">+50%</div>
+                                                        <div class="lift-booster lift-booster--start lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--qualification-01 lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--subscribe-01 lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--weekly lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--start lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--qualification-01 lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--subscribe-01 lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--weekly lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--start lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--qualification-01 lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--subscribe-01 lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--weekly lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--start lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--qualification-01 lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--subscribe-01 lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--weekly lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--start lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--qualification-01 lift-booster--disabled">+50%</div>
+                                                        <div class="lift-booster lift-booster--subscribe-01 lift-booster--disabled">+50%</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2251,27 +2262,181 @@
             </div>
         </div>
         <div class="lift-profile__boosters">
-            <div class="lift-booster lift-booster--smaller lift-booster--type-a">+50%</div>
-            <div class="lift-booster lift-booster--smaller lift-booster--type-b">+50%</div>
-            <div class="lift-booster lift-booster--smaller lift-booster--type-c">+50%</div>
-            <div class="lift-booster lift-booster--smaller lift-booster--type-d">+50%</div>
-            <div class="lift-booster lift-booster--smaller lift-booster--type-e">+50%</div>
-            <div class="lift-booster lift-booster--smaller lift-booster--type-a lift-booster--disabled">+50%</div>
-            <div class="lift-booster lift-booster--smaller lift-booster--type-b lift-booster--disabled">+50%</div>
-            <div class="lift-booster lift-booster--smaller lift-booster--type-c lift-booster--disabled">+50%</div>
+            <div class="lift-booster lift-booster--smaller lift-booster--start">+50%</div>
+            <div class="lift-booster lift-booster--smaller lift-booster--qualification-01">+50%</div>
+            <div class="lift-booster lift-booster--smaller lift-booster--subscribe-01">+50%</div>
+            <div class="lift-booster lift-booster--smaller lift-booster--weekly">+50%</div>
+            <div class="lift-booster lift-booster--smaller lift-booster--power">+50%</div>
+            <div class="lift-booster lift-booster--smaller lift-booster--start lift-booster--disabled">+50%</div>
+            <div class="lift-booster lift-booster--smaller lift-booster--qualification-01 lift-booster--disabled">+50%</div>
+            <div class="lift-booster lift-booster--smaller lift-booster--subscribe-01 lift-booster--disabled">+50%</div>
         </div>
-        <a class="lift-profile__more lift-dash lift-dash--more" href="#">
+        <a class="lift-profile__more lift-dash lift-dash--more" href="#" data-toggle="modal" data-target="#mentors">
             Наставники (13)
         </a>
     </div>
 </div>
 
+
+<!-- Modal -->
+<div class="lift-modal lift-fade" id="mentors" tabindex="-1" role="dialog">
+    <div class="lift-modal-dialog" role="document">
+        <div class="lift-window">
+            <div class="lift-mentors">
+                <div class="lift-mentors__head lift-mentor-card lift-mentor-card--larger">
+                    <div class="lift-mentor-card__heading">
+                        Наставники Александра Плужникова
+                    </div>
+                    <div class="lift-mentor-card__progress lift-speedometer lift-speedometer--success">
+                        <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                        <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                        <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                        <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                        <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                        <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                        <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                        <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                        <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                        <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                        <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                        <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                        <div class="lift-speedometer__value"></div>
+                    </div>
+                    <div class="lift-mentor-card__note">
+                        id: 234111, 27 мар 2021, yzb***33@gmail.com
+                    </div>
+                </div>
+                <div class="lift-mentors__body">
+                    <div class="lift-mentors__item">
+                        <div class="lift-mentors__index">
+                            1
+                        </div>
+                        <div class="lift-mentors__card lift-mentor-card">
+                            <div class="lift-mentor-card__heading">
+                                Александр Плужников
+                            </div>
+                            <div class="lift-mentor-card__progress lift-speedometer lift-speedometer--success">
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value"></div>
+                            </div>
+                            <div class="lift-mentor-card__note">
+                                id: 234111, 27 мар 2021, yzb***33@gmail.com
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lift-mentors__item">
+                        <div class="lift-mentors__index">
+                            2
+                        </div>
+                        <div class="lift-mentors__card lift-mentor-card">
+                            <div class="lift-mentor-card__heading">
+                                Александр Плужников
+                            </div>
+                            <div class="lift-mentor-card__progress lift-speedometer lift-speedometer--success">
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value"></div>
+                            </div>
+                            <div class="lift-mentor-card__note">
+                                id: 234111, 27 мар 2021, yzb***33@gmail.com
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lift-mentors__item">
+                        <div class="lift-mentors__index">
+                            2
+                        </div>
+                        <div class="lift-mentors__card lift-mentor-card">
+                            <div class="lift-mentor-card__heading">
+                                Александр Плужников
+                            </div>
+                            <div class="lift-mentor-card__progress lift-speedometer lift-speedometer--success">
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value"></div>
+                            </div>
+                            <div class="lift-mentor-card__note">
+                                id: 234111, 27 мар 2021, yzb***33@gmail.com
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lift-mentors__item">
+                        <div class="lift-mentors__index">
+                            17
+                        </div>
+                        <div class="lift-mentors__card lift-mentor-card">
+                            <div class="lift-mentor-card__heading">
+                                Александр Плужников
+                            </div>
+                            <div class="lift-mentor-card__progress lift-speedometer lift-speedometer--success">
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value lift-speedometer__value--filled"></div>
+                                <div class="lift-speedometer__value"></div>
+                            </div>
+                            <div class="lift-mentor-card__note">
+                                id: 234111, 27 мар 2021, yzb***33@gmail.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="lift-window__close" data-dismiss="modal" type="button">
+                Закрыть
+            </button>
+        </div>
+    </div>
+</div>
+
+
 <script src="../vendors/outline/outline.js"></script>
-<script src="../scripts/_sort.js?1684511156"></script>
-<script src="../scripts/_aside.js?1684511156"></script>
-<script src="../scripts/_floor.js?1684511156"></script>
-<script src="../scripts/_carousel.js?1684511156"></script>
-<script src="../scripts/_flyover.js?1684511156"></script>
+<script src="../legacy/jquery-2.1.1.min.js?1684747812"></script>
+<script src="../legacy/bootstrap.min.js?1684747812"></script>
+<script src="../scripts/_sort.js?1684747812"></script>
+<script src="../scripts/_aside.js?1684747812"></script>
+<script src="../scripts/_floor.js?1684747812"></script>
+<script src="../scripts/_carousel.js?1684747812"></script>
+<script src="../scripts/_flyover.js?1684747812"></script>
 
 </body>
 </html>
