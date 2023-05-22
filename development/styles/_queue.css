@@ -55,6 +55,10 @@
                     border-radius: 32px;
                 }
 
+                .queue__item--no-energy {
+                    box-shadow: inset 0 0 0 2px #191B29;
+                }
+
                 .queue__item:first-child {
                     margin-top: 0;
                 }
