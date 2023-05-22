@@ -1,0 +1,45 @@
+.mentor-card {
+
+}
+    .mentor-card__heading {
+        font-family: var(--UI-16-16-font-family) !important;
+        font-weight: bold !important;
+        font-size: var(--UI-16-16-font-size) !important;
+        line-height: var(--UI-16-16-line-height) !important;
+        letter-spacing: var(--UI-16-16-letter-spacing) !important;
+    }
+
+    .mentor-card__progress {
+        margin-top: 9px;
+    }
+
+    .mentor-card__note {
+        margin-top: 3px;
+        font-family: var(--UI-14-16-font-family) !important;
+        font-size: var(--UI-14-16-font-size) !important;
+        line-height: var(--UI-14-16-line-height) !important;
+        letter-spacing: var(--UI-14-16-letter-spacing);
+        color: var(--primaryColor-50pct);
+    }
+
+
+
+.mentor-card--larger {
+
+}
+    .mentor-card--larger .mentor-card__heading {
+        font-family: var(--UI-28-24-font-family) !important;
+        font-size: var(--UI-28-24-font-size) !important;
+        line-height: var(--UI-28-24-line-height) !important;
+        letter-spacing: var(--UI-28-24-letter-spacing) !important;
+    }
+
+    @media (max-width: 991px) {
+
+        .mentor-card--larger .mentor-card__heading {
+            font-family: var(--UI-20-20-font-family) !important;
+            font-size: var(--UI-20-20-font-size) !important;
+            line-height: var(--UI-20-20-line-height) !important;
+            letter-spacing: var(--UI-20-20-letter-spacing) !important;
+        }
+    }

@@ -1,0 +1,48 @@
+.modal {
+    /* вертикальное центрирование: */
+    font-size: 0 !important;
+    line-height: 0 !important;
+    white-space: nowrap;
+    text-align: center;
+}
+
+    /* вертикальное центрирование: */
+    .modal::before,
+    .modal::after {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 100%;
+    }
+
+    .modal-dialog {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: var(--BODY-16-24-font-size) !important;
+        line-height: var(--BODY-16-24-line-height) !important;
+        text-align: left;
+        white-space: normal;
+    }
+
+        .modal-content {
+            box-shadow: none; /* bootstrap */
+            border: none; /* bootstrap */
+        }
+
+
+
+@media (max-width: 991px) {
+
+    .modal {
+
+    }
+        .modal-dialog {
+            width: calc(100% - 16px);
+            max-width: 600px;
+            margin: 8px;
+        }
+
+        .modal-content {
+
+        }
+}

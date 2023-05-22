@@ -1,6 +1,6 @@
 .flyover {
     position: fixed;
-    z-index: 1050; /* higher than header (same as bootstrap) */
+    z-index: 1025; /* Выше сайта, меньше чем модалки в бутстрапе */
     opacity: 0;
     background-color: #FFFFFF;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.11);

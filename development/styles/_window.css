@@ -1,0 +1,85 @@
+.window {
+    position: relative;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 28px rgba(25, 27, 41, 0.08),
+                0 12px 56px rgba(25, 27, 41, 0.08),
+                0 16px 72px rgba(25, 27, 41, 0.08);
+    border-radius: 24px;
+}
+    .window__close {
+        position: absolute;
+        right: 24px;
+        top: 16px;
+        padding: 0;
+        border: none;
+        width: 48px;
+        height: 48px;
+        background-color: transparent;
+        background-image: url("../vectors/cross.svg");
+        background-size: 32px 32px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-radius: 50%;
+        text-indent: 200%;
+        white-space: nowrap;
+        overflow: hidden !important;
+    }
+
+    .window__close:hover {
+        background-color: #E3E4EB;
+        box-shadow: 0 1px 0 rgba(25, 27, 41, 0.2);
+        transform: scale(1.1) !important;
+    }
+
+    .window__close:active {
+        background-color: #F2F3F8;
+        box-shadow: 0 1px 0 rgba(25, 27, 41, 0.2);
+        transform: none !important;
+        transition: none;
+    }
+
+
+
+@media (max-width: 991px) {
+
+    .window {
+        /*position: relative;*/
+        /*background-color: #FFFFFF;*/
+        /*box-shadow: 0 2px 28px rgba(25, 27, 41, 0.08),*/
+        /*            0 12px 56px rgba(25, 27, 41, 0.08),*/
+        /*            0 16px 72px rgba(25, 27, 41, 0.08);*/
+        /*border-radius: 24px;*/
+    }
+        .window__close {
+            /*position: absolute;*/
+            right: 10px;
+            top: 10px;
+            /*padding: 0;*/
+            /*border: none;*/
+            width: 36px;
+            height: 36px;
+            /*background-color: transparent;*/
+            /*background-image: url("../vectors/cross.svg");*/
+            background-size: 24px 24px;
+            /*background-repeat: no-repeat;*/
+            /*background-position: center center;*/
+            /*border-radius: 50%;*/
+            /*text-indent: 200%;*/
+            /*white-space: nowrap;*/
+            /*overflow: hidden !important;*/
+        }
+
+        .window__close:hover {
+            /*background-color: #E3E4EB;*/
+            /*box-shadow: 0 1px 0 rgba(25, 27, 41, 0.2);*/
+            /*transform: scale(1.1) !important;*/
+        }
+
+        .window__close:active {
+            /*background-color: #F2F3F8;*/
+            /*box-shadow: 0 1px 0 rgba(25, 27, 41, 0.2);*/
+            /*transform: none !important;*/
+            /*transition: none;*/
+        }
+}
+
