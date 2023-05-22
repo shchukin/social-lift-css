@@ -167,6 +167,12 @@
                         border-radius: 0;
                     }
 
+                    .queue__item--no-energy {
+                        border-bottom-color: transparent;
+                        border-top: 2px solid #191B29;
+                        border-bottom: 2px solid #191B29;
+                    }
+
                     .queue__item:first-child {
                         /*margin-top: 0;*/
                     }
