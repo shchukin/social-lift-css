@@ -33,7 +33,7 @@
         }
 
         .sort__handler::after {
-            content: '';
+            content: "";
             position: absolute;
             right: 0;
             top: 11px;

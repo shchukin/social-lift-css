@@ -363,7 +363,7 @@
                         color: var(--primaryColor-50pct);
                     }
                         .bets__section--body .bets__cell--date::after {
-                            content: '\00a0 ・ \00a0';
+                            content: "\00a0 ・ \00a0";
                         }
 
                     .bets__section--body .bets__cell--number {
@@ -379,7 +379,7 @@
                         color: var(--primaryColor-50pct);
                     }
                         .bets__section--body .bets__cell--referrals::before {
-                            content: 'Referrals: \00a0 ';
+                            content: "Referrals: \00a0 ";
                         }
 
                     .bets__section--body .bets__cell--total-bets {
@@ -391,11 +391,11 @@
                         color: var(--primaryColor-50pct);
                     }
                         .bets__section--body .bets__cell--total-bets::before {
-                            content: 'Bets: \00a0';
+                            content: "Bets: \00a0";
                         }
 
                         .bets__section--body .bets__cell--total-bets::after {
-                            content: ', \00a0';
+                            content: ", \00a0";
                         }
 
 
