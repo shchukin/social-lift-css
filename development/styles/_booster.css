@@ -23,15 +23,15 @@
     }
 
 /* stylelint-disable */
-.booster--start            { background-image: url("../images/booster-start.svg"); }
-.booster--qualification-01 { background-image: url("../images/booster-qualification-01.svg"); }
-.booster--qualification-02 { background-image: url("../images/booster-qualification-02.svg"); }
-.booster--qualification-03 { background-image: url("../images/booster-qualification-03.svg"); }
-.booster--qualification-04 { background-image: url("../images/booster-qualification-04.svg"); }
-.booster--subscribe-01     { background-image: url("../images/booster-subscribe-01.svg"); }
-.booster--subscribe-02     { background-image: url("../images/booster-subscribe-02.svg"); }
-.booster--weekly           { background-image: url("../images/booster-weekly.svg"); }
-.booster--power            { background-image: url("../images/booster-power.svg"); }
+.booster--start            { background-image: url("../images/boosters/booster-start.svg"); }
+.booster--qualification-01 { background-image: url("../images/boosters/booster-qualification-01.svg"); }
+.booster--qualification-02 { background-image: url("../images/boosters/booster-qualification-02.svg"); }
+.booster--qualification-03 { background-image: url("../images/boosters/booster-qualification-03.svg"); }
+.booster--qualification-04 { background-image: url("../images/boosters/booster-qualification-04.svg"); }
+.booster--subscribe-01     { background-image: url("../images/boosters/booster-subscribe-01.svg"); }
+.booster--subscribe-02     { background-image: url("../images/boosters/booster-subscribe-02.svg"); }
+.booster--weekly           { background-image: url("../images/boosters/booster-weekly.svg"); }
+.booster--power            { background-image: url("../images/boosters/booster-power.svg"); }
 /* stylelint-enable */
 
 .booster--disabled {
@@ -56,15 +56,3 @@
     padding-top: 16px;
     background-size: 16px 16px;
 }
-
-
-/* booster-type-a  =  booster-start */
-/* booster-type-b  =  qualification-01 */
-/*                 =  qualification-02 */
-/*                 =  qualification-03 */
-/*                 =  qualification-04 */
-/*                 =  qualification-05 */
-/* booster-type-c  =  booster-subscribe-01 */
-/*                 =  booster-subscribe-02 */
-/* booster-type-d  =  booster-weekly */
-/* booster-type-e  =  booster-power */

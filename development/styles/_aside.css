@@ -120,6 +120,7 @@
                 }
 
                 .aside__goal {
+                    position: relative;
                     margin-top: 16px;
                     padding: 12px 0 12px 48px;
                     background-size: 40px 40px;
@@ -130,26 +131,14 @@
                     line-height: var(--UI-14-16-line-height);
                     letter-spacing: var(--UI-14-16-letter-spacing);
                 }
-
-                .aside__goal--next-qualification {
-                    background-image: url("../images/aside-goal-next-qualification.png");
-                }
-
-                @media (min-resolution: 2dppx) {
-                    .aside__goal--next-qualification {
-                        background-image: url("../images/aside-goal-next-qualification@2x.png");
+                    .aside__booster {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
                     }
-                }
-
-                .aside__goal--completed-tasks {
-                    background-image: url("../images/aside-goal-completed-tasks.png");
-                }
-
-                @media (min-resolution: 2dppx) {
-                    .aside__goal--completed-tasks {
-                        background-image: url("../images/aside-goal-completed-tasks@2x.png");
-                    }
-                }
+                        .aside__booster.booster {
+                            position: absolute;
+                        }
 
                 .aside__item {
                     display: block;
