@@ -40,6 +40,10 @@
                     margin-right: 38px;
                 }
 
+            .queue__empty {
+                margin-top: 40px;
+            }
+
             .queue__list {
                 margin-top: 24px;
             }
