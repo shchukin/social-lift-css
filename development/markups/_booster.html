@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>.flyover</title>
+    <title>.booster</title>
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <script src="../legacy/jquery-2.1.1.min.js"></script>
     <link href="../legacy/bootstrap.min.css" rel="stylesheet">
@@ -819,36 +819,226 @@
 
 <div class="kmfdm-page" style="background: white;">
 
-    <div style="width: 600px; margin: 0 auto;">
+    <div style="width: 1000px; margin: 0 auto;">
         <br>
         <br>
-        <h1>.flyover</h1>
+        <h1>.booster</h1>
+
+        <div class="booster booster--start">+50%</div>
+        <div class="booster booster--qualification-01">+50%</div>
+        <div class="booster booster--qualification-02">+50%</div>
+        <div class="booster booster--qualification-03">+50%</div>
+        <div class="booster booster--qualification-04">+50%</div>
+        <div class="booster booster--subscribe-01">+50%</div>
+        <div class="booster booster--subscribe-02">+50%</div>
+        <div class="booster booster--weekly">+50%</div>
+        <div class="booster booster--power">+50%</div>
+
+        <br>
+        <br>
+        <h4>Классы</h4>
+
+<pre>
+booster--start
+booster--qualification-01
+booster--qualification-02
+booster--qualification-03
+booster--qualification-04
+booster--subscribe-01
+booster--subscribe-02
+booster--weekly
+booster--power
+</pre>
+
+        <br>
+        <br>
+        <h2>Инлайновые стили</h2>
+
         <p>
-            На первый взгляд кажется что это конструкция очень похожа на бабл и можно её просто впихнуть в кнопку
-            и показать при наведении. Однако бывают кейсы, где использование баблов невозможно.
-            Например внутри каруселей -- там свойство overflow нужно для скроллирования обрезает всё что стремится
-            выйти за границы карусели.
-        </p>
-        <p>
-            Чтобы решить эту проблему нужно отделить бабл от родителя. Для этого и создаётся новый компонент
-            flyover. В каком-том смысле это штука даже больше похожа на попап.
-        </p>
-        <p>
-            В этой демке я использую атрибут <b>data-flyover=""</b>, который через айдишник связывается
-            с флайовером, а потом скрипт <a href="../scripts/_flyover.js">../scripts/_flyover.js</a> показывает его.
-        </p>
-        <p>
-            Смотрим:
+            Можно фигачить картинки бустеров прямо в тег:
         </p>
 
-        <button data-flyover="#fkeprkdlap" type="button">
-           Навести
-        </button>
+
+        <div class="booster" style="background-image: url(../images/booster-start.svg);">+50%</div>
+        <div class="booster" style="background-image: url(../images/booster-qualification-01.svg);">+50%</div>
+        <div class="booster" style="background-image: url(../images/booster-qualification-02.svg);">+50%</div>
+        <div class="booster" style="background-image: url(../images/booster-qualification-03.svg);">+50%</div>
+        <div class="booster" style="background-image: url(../images/booster-qualification-04.svg);">+50%</div>
+        <div class="booster" style="background-image: url(../images/booster-subscribe-01.svg);">+50%</div>
+        <div class="booster" style="background-image: url(../images/booster-subscribe-02.svg);">+50%</div>
+        <div class="booster" style="background-image: url(../images/booster-weekly.svg);">+50%</div>
+        <div class="booster" style="background-image: url(../images/booster-power.svg);">+50%</div>
+
+<br>
+<br>
+<p>Вот так вот:</p>
+<pre>
+&lt;div class="booster" style="background-image: url(../images/booster-start.svg);"&gt;+50%&lt;/div&gt;
+&lt;div class="booster" style="background-image: url(../images/booster-qualification-01.svg);"&gt;+50%&lt;/div&gt;
+&lt;div class="booster" style="background-image: url(../images/booster-qualification-02.svg);"&gt;+50%&lt;/div&gt;
+&lt;div class="booster" style="background-image: url(../images/booster-qualification-03.svg);"&gt;+50%&lt;/div&gt;
+&lt;div class="booster" style="background-image: url(../images/booster-qualification-04.svg);"&gt;+50%&lt;/div&gt;
+&lt;div class="booster" style="background-image: url(../images/booster-subscribe-01.svg);"&gt;+50%&lt;/div&gt;
+&lt;div class="booster" style="background-image: url(../images/booster-subscribe-02.svg);"&gt;+50%&lt;/div&gt;
+&lt;div class="booster" style="background-image: url(../images/booster-weekly.svg);"&gt;+50%&lt;/div&gt;
+&lt;div class="booster" style="background-image: url(../images/booster-power.svg);"&gt;+50%&lt;/div&gt;
+</pre>
 
         <p>
-            <br>
-            Важно! Внутри флайоверов нужно использовать компоненты у которых явно проставлена ширина
+            Есть смысл перестроиться на этот вариант если будут появляться новые бустеры. В таком случае не надо редактировать файл стилей.
         </p>
+
+        <br>
+        <br>
+        <h2>Через &lt;img&gt;</h2>
+        <p>В принципе тоже самое:</p>
+
+        <div class="booster">
+            <img class="booster__icon" src="../images/booster-start.svg" width="100%">
+            +50%
+        </div>
+        <div class="booster">
+            <img class="booster__icon" src="../images/booster-qualification-01.svg" width="100%">
+            +50%
+        </div>
+        <div class="booster">
+            <img class="booster__icon" src="../images/booster-qualification-02.svg" width="100%">
+            +50%
+        </div>
+        <div class="booster">
+            <img class="booster__icon" src="../images/booster-qualification-03.svg" width="100%">
+            +50%
+        </div>
+        <div class="booster">
+            <img class="booster__icon" src="../images/booster-qualification-04.svg" width="100%">
+            +50%
+        </div>
+        <div class="booster">
+            <img class="booster__icon" src="../images/booster-subscribe-01.svg" width="100%">
+            +50%
+        </div>
+        <div class="booster">
+            <img class="booster__icon" src="../images/booster-subscribe-02.svg" width="100%">
+            +50%
+        </div>
+        <div class="booster">
+            <img class="booster__icon" src="../images/booster-weekly.svg" width="100%">
+            +50%
+        </div>
+        <div class="booster">
+            <img class="booster__icon" src="../images/booster-power.svg" width="100%">
+            +50%
+        </div>
+
+        <br>
+        <br>
+        <p>
+            Код:
+        </p>
+<pre>
+&lt;div class="booster"&gt;
+    &lt;img class="booster__icon" src="../images/booster-start.svg" width="100%"&gt;
+    +50%
+&lt;/div&gt;
+&lt;div class="booster"&gt;
+    &lt;img class="booster__icon" src="../images/booster-qualification-01.svg" width="100%"&gt;
+    +50%
+&lt;/div&gt;
+&lt;div class="booster"&gt;
+    &lt;img class="booster__icon" src="../images/booster-qualification-02.svg" width="100%"&gt;
+    +50%
+&lt;/div&gt;
+&lt;div class="booster"&gt;
+    &lt;img class="booster__icon" src="../images/booster-qualification-03.svg" width="100%"&gt;
+    +50%
+&lt;/div&gt;
+&lt;div class="booster"&gt;
+    &lt;img class="booster__icon" src="../images/booster-qualification-04.svg" width="100%"&gt;
+    +50%
+&lt;/div&gt;
+&lt;div class="booster"&gt;
+    &lt;img class="booster__icon" src="../images/booster-subscribe-01.svg" width="100%"&gt;
+    +50%
+&lt;/div&gt;
+&lt;div class="booster"&gt;
+    &lt;img class="booster__icon" src="../images/booster-subscribe-02.svg" width="100%"&gt;
+    +50%
+&lt;/div&gt;
+&lt;div class="booster"&gt;
+    &lt;img class="booster__icon" src="../images/booster-weekly.svg" width="100%"&gt;
+    +50%
+&lt;/div&gt;
+&lt;div class="booster"&gt;
+    &lt;img class="booster__icon" src="../images/booster-power.svg" width="100%"&gt;
+    +50%
+&lt;/div&gt;
+</pre>
+
+
+        <br>
+        <br>
+        <h2>Без текста</h2>
+        <p>
+            Текст внутри может отсутствовать. Просто убираем его из DOM:
+        </p>
+
+        <div class="booster booster--start"></div>
+        <div class="booster booster--qualification-01"></div>
+        <div class="booster booster--qualification-02"></div>
+        <div class="booster booster--qualification-03"></div>
+        <div class="booster booster--qualification-04"></div>
+        <div class="booster booster--subscribe-01"></div>
+        <div class="booster booster--subscribe-02"></div>
+        <div class="booster booster--weekly"></div>
+        <div class="booster booster--power"></div>
+
+
+        <br>
+        <br>
+        <br>
+        <h2>Размеры</h2>
+
+        <h3>.booster--smaller</h3>
+
+        <div class="booster booster--smaller booster--start"></div>
+        <div class="booster booster--smaller booster--qualification-01"></div>
+        <div class="booster booster--smaller booster--qualification-02"></div>
+        <div class="booster booster--smaller booster--qualification-03"></div>
+        <div class="booster booster--smaller booster--qualification-04"></div>
+        <div class="booster booster--smaller booster--subscribe-01"></div>
+        <div class="booster booster--smaller booster--subscribe-02"></div>
+        <div class="booster booster--smaller booster--weekly"></div>
+        <div class="booster booster--smaller booster--power"></div>
+
+
+        <br>
+        <br>
+        <h3>.booster--smallest</h3>
+
+        <div class="booster booster--smallest booster--start"></div>
+        <div class="booster booster--smallest booster--qualification-01"></div>
+        <div class="booster booster--smallest booster--qualification-02"></div>
+        <div class="booster booster--smallest booster--qualification-03"></div>
+        <div class="booster booster--smallest booster--qualification-04"></div>
+        <div class="booster booster--smallest booster--subscribe-01"></div>
+        <div class="booster booster--smallest booster--subscribe-02"></div>
+        <div class="booster booster--smallest booster--weekly"></div>
+        <div class="booster booster--smallest booster--power"></div>
+
+
+        <br>
+        <br>
+        <h3>.booster--micro</h3>
+
+        <div class="booster booster--micro booster--start"></div>
+        <div class="booster booster--micro booster--qualification-01"></div>
+        <div class="booster booster--micro booster--qualification-02"></div>
+        <div class="booster booster--micro booster--qualification-03"></div>
+        <div class="booster booster--micro booster--qualification-04"></div>
+        <div class="booster booster--micro booster--subscribe-01"></div>
+        <div class="booster booster--micro booster--subscribe-02"></div>
+        <div class="booster booster--micro booster--weekly"></div>
+        <div class="booster booster--micro booster--power"></div>
 
         <br>
         <br>
@@ -865,88 +1055,6 @@
 
 </div>
 
-<div class="flyover flyover--avatar" id="fkeprkdlap">
-    <div class="profile">
-        <div class="profile__preview avatar avatar--no-hover">
-            <img class="avatar__image"
-                 srcset="../temp/crocodile-48x48@2x.jpg 2x"
-                 src="../temp/crocodile-48x48.jpg"
-                 width="48"
-                 height="48"
-                 alt=""
-            >
-        </div>
-        <div class="profile__heading">
-            Александр Плужников
-        </div>
-        <div class="profile__speed speedometer speedometer--success">
-            <div class="speedometer__value speedometer__value--filled"></div>
-            <div class="speedometer__value speedometer__value--filled"></div>
-            <div class="speedometer__value speedometer__value--filled"></div>
-            <div class="speedometer__value speedometer__value--filled"></div>
-            <div class="speedometer__value speedometer__value--filled"></div>
-            <div class="speedometer__value speedometer__value--filled"></div>
-            <div class="speedometer__value speedometer__value--filled"></div>
-            <div class="speedometer__value speedometer__value--filled"></div>
-            <div class="speedometer__value speedometer__value--filled"></div>
-            <div class="speedometer__value speedometer__value--filled"></div>
-            <div class="speedometer__value speedometer__value--filled"></div>
-            <div class="speedometer__value speedometer__value--filled"></div>
-            <div class="speedometer__value"></div>
-        </div>
-        <div class="profile__row">
-            <div class="stat stat--smaller">
-                <span class="stat__param">
-                    Этаж:
-                </span>
-                <span class="stat__value">
-                    3
-                </span>
-            </div>
-        </div>
-        <div class="profile__row">
-            <div class="stat stat--smaller stat--energy">
-                <span class="stat__param">
-                    Место в очереди:
-                </span>
-                <span class="stat__value">
-                    1200
-                </span>
-            </div>
-        </div>
-        <div class="profile__row">
-            <div class="stat stat--smaller stat--energy">
-                <span class="stat__param">
-                    Энергия:
-                </span>
-                <span class="stat__value">
-                    1200
-                </span>
-            </div>
-            <div class="stat stat--smaller">
-                <span class="stat__param">
-                    Ускорители:
-                </span>
-                <span class="stat__value">
-                    +60%
-                </span>
-            </div>
-        </div>
-        <div class="profile__boosters">
-            <div class="booster booster--smaller booster--start">+50%</div>
-            <div class="booster booster--smaller booster--qualification-01">+50%</div>
-            <div class="booster booster--smaller booster--subscribe-01">+50%</div>
-            <div class="booster booster--smaller booster--weekly">+50%</div>
-            <div class="booster booster--smaller booster--power">+50%</div>
-            <div class="booster booster--smaller booster--start booster--disabled">+50%</div>
-            <div class="booster booster--smaller booster--qualification-01 booster--disabled">+50%</div>
-            <div class="booster booster--smaller booster--subscribe-01 booster--disabled">+50%</div>
-        </div>
-        <a class="profile__more dash dash--more" href="#">
-            Наставники (13)
-        </a>
-    </div>
-</div>
 
 <script src="../vendors/outline/outline.js"></script>
 <script src="../legacy/jquery-2.1.1.min.js"></script>

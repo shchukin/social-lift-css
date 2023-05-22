@@ -1,5 +1,7 @@
 .booster {
-    display: block;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
     width: 40px;
     padding-top: 40px;
     background-size: 40px 40px;
@@ -11,12 +13,26 @@
     color: var(--primaryColor-80pct);
     text-align: center;
 }
+    .booster__icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        vertical-align: top;
+    }
 
-.booster--type-a { background-image: url("../images/booster-type-a.svg"); }
-.booster--type-b { background-image: url("../images/booster-type-b.svg"); }
-.booster--type-c { background-image: url("../images/booster-type-c.svg"); }
-.booster--type-d { background-image: url("../images/booster-type-d.svg"); }
-.booster--type-e { background-image: url("../images/booster-type-e.svg"); }
+/* stylelint-disable */
+.booster--start            { background-image: url("../images/booster-start.svg"); }
+.booster--qualification-01 { background-image: url("../images/booster-qualification-01.svg"); }
+.booster--qualification-02 { background-image: url("../images/booster-qualification-02.svg"); }
+.booster--qualification-03 { background-image: url("../images/booster-qualification-03.svg"); }
+.booster--qualification-04 { background-image: url("../images/booster-qualification-04.svg"); }
+.booster--subscribe-01     { background-image: url("../images/booster-subscribe-01.svg"); }
+.booster--subscribe-02     { background-image: url("../images/booster-subscribe-02.svg"); }
+.booster--weekly           { background-image: url("../images/booster-weekly.svg"); }
+.booster--power            { background-image: url("../images/booster-power.svg"); }
+/* stylelint-enable */
 
 .booster--disabled {
     opacity: 0.2;
@@ -40,3 +56,15 @@
     padding-top: 16px;
     background-size: 16px 16px;
 }
+
+
+/* booster-type-a  =  booster-start */
+/* booster-type-b  =  qualification-01 */
+/*                 =  qualification-02 */
+/*                 =  qualification-03 */
+/*                 =  qualification-04 */
+/*                 =  qualification-05 */
+/* booster-type-c  =  booster-subscribe-01 */
+/*                 =  booster-subscribe-02 */
+/* booster-type-d  =  booster-weekly */
+/* booster-type-e  =  booster-power */
