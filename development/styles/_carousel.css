@@ -96,6 +96,7 @@
 
         .carousel__control--disabled {
             opacity: 0.5;
+            pointer-events: none;
             cursor: default;
         }
 
