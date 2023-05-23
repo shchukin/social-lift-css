@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>.action</title>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <script src="../legacy/jquery-2.1.1.min.js"></script>
+    <link href="../legacy/bootstrap.min.css" rel="stylesheet">
+    <link href="../legacy/jquery-ui.min.css" rel="stylesheet">
+    <link href="../legacy/colortip-1.0-jquery.css" rel="stylesheet">
+    <link href="../legacy/style.css" rel="stylesheet">
+    <link href="../legacy/style(1).css" rel="stylesheet">
+    <link href="../legacy/style(2).css" rel="stylesheet">
+    <link href="../legacy/style(3).css" rel="stylesheet">
+    <link href="../legacy/fix.css" rel="stylesheet">
+    <link href="../legacy/custom_styles.css" rel="stylesheet">
+    <link href="../legacy/flag-icon.css" rel="stylesheet">
+    <link href="../legacy/iziToast.min.css" rel="stylesheet">
+    <link href="../legacy/style(4).css" rel="stylesheet">
+    <link href="../legacy/_bshare.css" rel="stylesheet">
+    <link href="../legacy/nprogress.css" rel="stylesheet">
+    <link href="../legacy/material-design-iconic-font.min.css" rel="stylesheet">
+    <link href="../legacy/mediaelementplayer.min.css" rel="stylesheet">
+    <link href="../legacy/plyr.css" rel="stylesheet">
+    <link href="../legacy/_modules_main_templates_space_style.css.minify.css" rel="stylesheet" type="text/css">
+    <link href="../legacy/css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- Новые стили для Social Lift -->
+    <link href="../fonts/fonts.css" rel="stylesheet" type="text/css">
+    <link href="../styles/style.css" rel="stylesheet" type="text/css">
+
+    <style>
+        :root {
+            --dark-dark-text-h: 240;
+            --dark-dark-text-s: 6%;
+            --dark-dark-text-l: 68%;
+            --dark-dark-text: hsl(var(--dark-dark-text-h) var(--dark-dark-text-s) var(--dark-dark-text-l));
+            --dark-text-h: 226;
+            --dark-text-s: 34%;
+            --dark-text-l: 24%;
+            --dark-text: hsl(var(--dark-text-h) var(--dark-text-s) var(--dark-text-l));
+
+            --landing-yyy-h: 230;
+            --landing-yyy-s: 26%;
+            --landing-yyy-l: 13%;
+            --landing-yyy: hsl(var(--landing-yyy-h) var(--landing-yyy-s) var(--landing-yyy-l));
+
+
+            --light-text-h: 232;
+            --light-text-s: 14%;
+            --light-text-l: 68%;
+            --light-text: hsl(var(--light-text-h) var(--light-text-s) var(--light-text-l));
+
+
+            --smoke-white-h: 0;
+            --smoke-white-s: 0%;
+            --smoke-white-l: 99%;
+            --smoke-white: hsl(var(--smoke-white-h) var(--smoke-white-s) var(--smoke-white-l));
+
+
+            --style_left_menu_item_text_color: var(--light-text);
+            --style_left_menu_item_icons_color: var(--light-text);
+            --style_left_menu_item_icons_hover_color: var(--smoke-white);
+            --style_left_menu_item_text_hover_color: var(--smoke-white);
+
+            --syle_copyright_color: var(--light-text);
+
+            --mainMobileBtn: var(--dark-dark-text);
+
+        }
+
+        .kmfdm-main-nav:hover {
+            --marginHr: 20px;
+        }
+
+        .kmfdm-main-nav__item.custom-css-sidebar-item:nth-child(4):after {
+            border-bottom: 1px solid var(--light-text);
+            content: "";
+            display: block;
+            margin: 10px var(--marginHr, 5px);
+        }
+
+
+        .team__list {
+            border: none !important;
+        }
+
+        .kmfdm-users__item:nth-child(odd) {
+            background-color: #c5d0dd !important;
+        }
+
+        .kmfdm-users__item {
+            border-radius: 5px;
+            margin: 15px 5px;
+        }
+
+        .kmfdm-users__item_active_true {
+            margin: 15px 0;
+        }
+
+        :root.mobileAdapted .kmfdm-page__sidebar .kmfdm-page__sidebar-close {
+            display: block !important;
+            position: fixed !important;
+            top: auto !important;
+            bottom: 10px;
+            left: 50% !important;
+            margin-left: -16px !important;
+        }
+
+        .kmfdm-page__sidebar .kmfdm-page__sidebar-close:after, .kmfdm-page__sidebar .kmfdm-page__sidebar-close:before {
+            background-color: var(--light-text) !important;
+        }
+
+        .lessonFpClass {
+            top: 0 !important;
+        }
+
+        .kmfdm-main-nav__dropdown {
+            background: var(--landing-yyy);
+            border-radius: 0 5px 5px 0;
+            margin-left: 2px;
+            color: var(--dark-dark-text);
+        }
+
+        body:not(.isMobile) .kmfdm-main-nav__sub-item .kmfdm-main-nav__sub-link:hover {
+            color: var(--smoke-white) !important;
+        }
+
+        .kmfdm-sub-header__user {
+            position: fixed !important;
+            left: -3px;
+            bottom: 15px;
+            width: 213px;
+        }
+
+        html:not(.isMobile) .kmfdm-body_has-icons-only-nav .kmfdm-sub-header__user {
+            width: 34px;
+        }
+
+        .kmfdm-profile__name.custom-css-username {
+            color: var(--light-text) !important;
+        }
+
+        .kmfdm-sub-header__user:hover .custom-css-username {
+            color: var(--smoke-white) !important;
+        }
+
+        .kmfdm-profile__dropdown {
+            left: 159px !important;
+            top: -141px !important;
+        }
+
+        .kmfdm-head {
+            height: 20px !important;
+        }
+
+        .kmfdm-page__sidebar:before {
+            content: "";
+            width: 183px;
+            height: 38px;
+            display: block;
+            background-image: url(//static.halk.ai/images/logos/61x2NbuTl.png);
+            background-size: 183px 38px;
+            background-repeat: no-repeat;
+            position: fixed;
+            top: 0;
+            top: 4px;
+            margin-left: 14px;
+            cursor: pointer;
+        }
+
+        .kmfdm-head__logo {
+            position: fixed !important;
+            left: -13px;
+            top: -11px;
+        }
+
+        html:not(.isMobile) .kmfdm-body_has-icons-only-nav .kmfdm-page__sidebar:hover:before {
+            width: 183px;
+        }
+
+        html:not(.isMobile) .kmfdm-body_has-icons-only-nav .kmfdm-profile__dropdown {
+            left: 34px !important;
+        }
+
+        html:not(.isMobile) .kmfdm-body_has-icons-only-nav .kmfdm-page__sidebar:before {
+            width: 41px;
+            margin-left: 6px;
+        }
+
+        .kmfdm-page__navigation-profile {
+            position: absolute;
+            bottom: 82px;
+        }
+
+        .kmfdm-page__container {
+            position: relative;
+            height: 100%;
+            min-height: 100vh;
+            width: calc(100% - 220px);
+            padding: 0 0 40px;
+            margin-left: 220px;
+            background: var(--background-grey);
+            transition: all .3s;
+        }
+
+        html:not(.isMobile) .kmfdm-body_has-icons-only-nav .kmfdm-page__container {
+            width: calc(100vw - 40px);
+            margin-left: 40px
+        }
+
+        .kmfdm-sub-header__secondary {
+            margin-top: 12px;
+        }
+
+        .navigation-profile_header, .kmfdm-main-nav:hover .navigation-profile__avatar {
+            border: none !important;
+        }
+
+        .navigation-profile__wallets, .navigation-profile-right {
+            color: var(--smoke-white);
+        }
+
+        .kmfdm-body_has-icons-only-nav .kmfdm-profile__name.custom-css-username {
+            display: none !important;
+        }
+
+        @media (max-width: 1220px) {
+
+            .kmfdm-body:not(.kmfdm-body_has-text-only-nav) .kmfdm-main-nav:hover .kmfdm-main-nav__body {
+                background: transparent !important;
+            }
+
+            .isMobile .kmfdm-main-nav__link:hover {
+                background-color: #0e1d26 !important;
+            }
+
+            html:not(.isMobile) .kmfdm-page__sidebar:before {
+                width: 41px;
+                margin-left: 6px;
+            }
+
+            .kmfdm-page__sidebar:hover:before {
+                width: 183px;
+            }
+
+            .kmfdm-page__container {
+                width: calc(100vw - 100px);
+                margin-left: 20px;
+            }
+
+            .kmfdm-profile__name.custom-css-username {
+                display: none !important;
+            }
+
+            html:not(.isMobile) .kmfdm-sub-header__user.kmfdm-profile {
+                width: 34px;
+            }
+
+            .kmfdm-profile__dropdown {
+                left: 34px !important;
+            }
+
+
+            :root:not(.isMobile) .kmfdm-main-nav:hover {
+                width: 248px !important;
+                box-shadow: none !important;
+            }
+        }
+
+        @media (min-width: 1220px) and (max-width: 1400px) {
+            .kmfdm-sub-header__secondary {
+                margin-left: calc(100vw - 493px) !important;
+            }
+
+            body:not(.kmfdm-body_has-icons-only-nav) .kmfdm-page__container {
+                width: calc(100vw - 380px);
+                margin-left: 380px;
+            }
+
+            .kmfdm-body_has-icons-only-nav .kmfdm-page__container {
+                width: calc(100vw - 40px);
+                margin-left: 40px;
+            }
+
+            .kmfdm-page__body {
+                width: 100%;
+                /*max-width: calc(100vw - 230px);*/
+            }
+
+            .kmfdm-partnership__head {
+                max-width: calc(100vw - 320px);
+            }
+
+            .kmfdm-partnership__body {
+                max-width: calc(100vw - 250px);
+            }
+
+            /*.kmfdm-page__head {
+            width: calc(100vw - 270px);
+        }*/
+        }
+
+        .kmfdm-page__sidebar:hover {
+            width: 220px !important;
+        }
+
+        .kmfdm-page__sidebar {
+            position: fixed;
+            left: 0;
+            padding-top: 0px;
+            top: 0;
+            background: var(--landing-yyy);
+            height: calc(100vh);
+            z-index: 10;
+        }
+
+        .custom-css-topNav {
+            position: relative;
+            left: 0;
+            top: -45px;
+            padding-top: 0;
+            margin-top: 0 !important;
+            width: 100%;
+            z-index: 1000;
+            max-width: 100vw !important;
+        }
+
+        .kmfdm-head__wrap {
+            width: 100vw;
+        }
+
+        .kmfdm-page__body {
+            width: 100%;
+            margin: 0 auto;
+            opacity: 0.9999;
+        }
+
+        .kmfdm-income, .page__text {
+            padding: 0 !important;
+        }
+
+        @media (min-width: 1400px) {
+            .kmfdm-page__body {
+                max-width: 1200px;
+            }
+        }
+
+        .kmfdm-button_stroke_action {
+
+            border-color: var(--style_buttons_bg, #7fc3ec) !important;
+            color: var(--style_buttons_bg, #0188da) !important;
+        }
+
+        .kmfdm-button_stroke_action:hover {
+            background-color: var(--style_buttons_bg, #7fc3ec) !important;
+            border-color: var(--style_buttons_bg, #7fc3ec) !important;
+            color: var(--style_buttons_color, #ffffff) !important;
+        }
+
+        .kmfdm-button_stroke_action:active {
+            background-color: var(--style_buttons_bg, #017dc9) !important;
+            border-color: var(--style_buttons_bg, #017dc9) !important;
+            color: var(--style_buttons_color, #ffffff) !important;
+        }
+
+        .kmfdm-panel {
+            background-color: var(--main-content-panel-bg-color, transparent) !important;
+            border: var(--main-content-panel-border, none) !important;
+            max-width: 1200px !important;
+
+        }
+
+        .kmfdm-body:not(.kmfdm-body_has-text-only-nav) .kmfdm-page__navigation_sticky {
+            position: relative !important;
+            top: 0 !important;
+            bottom: 0 !important;
+        }
+
+        .kmfdm-schedule {
+            background: transparent !important;
+        }
+
+        .search__title {
+            background: #f5f7f8;
+        }
+
+        .kmfdm-head__logo {
+            opacity: 0 !important;
+        }
+
+        .kmfdm-page__navigation {
+            height: calc(100vw - 50px) !important;
+        }
+
+        .kmfdm-main-nav.custom-css-sidebar {
+            padding-top: 45px;
+        }
+
+        .kmfdm-panel {
+            /* width: 100%!important;*/
+        }
+
+        .kmfdm-page__main, .kmfdm-page__content {
+            width: 100% !important;
+            max-width: 100vw !important;
+        }
+
+        html:not(.isMobile) .kmfdm-head__navigation.kmfdm-nav {
+            margin: 0 auto !important;
+            position: relative;
+            top: 30px;
+            left: -110px;
+        }
+
+        .kmfdm-statistics-summary__item, .search, .kmfdm-income__stat.kmfdm-single-stat, .kmfdm-income__wrap .kmfdm-income__get {
+            border-radius: 20px !important;
+            background: var(--smoke-white);
+        }
+
+        @media (max-width: 1580px) {
+            .kmfdm-page__content {
+                width: calc(100vw - 200px) !important;
+                max-width: calc(100vw) !important;
+            }
+        }
+
+        @media (max-width: 1220px) {
+            .kmfdm-page__content {
+                width: calc(100vw - 50px) !important;
+            }
+        }
+
+        @media (min-width: 1560px) {
+            .kmfdm-courses__list .col-xs-6 {
+                width: 33% !important;
+            }
+
+            .module-education .kmfdm-page__body {
+                width: 100% !important;
+                max-width: 100vw;
+            }
+        }
+
+        @media (min-width: 1950px) {
+            .kmfdm-courses__list .col-xs-6 {
+                width: 25% !important;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .kmfdm-courses__item {
+                width: calc(100vw - 225px) !important;
+            }
+
+            .kmfdm-page__container {
+                margin-left: 0px !important;
+            }
+        }
+
+        @media screen and (max-width: 1100px) {
+            .kmfdm-training {
+                width: 630px !important;
+                min-width: calc(100vw - 350px);
+            }
+        }
+
+        .kmfdm-lesson {
+            background-color: #bebebe !important;
+        }
+
+        @media screen {
+            .kmfdm-body:not(.kmfdm-body_has-text-only-nav) .kmfdm-page__navigation_sticky {
+                position: fixed !important;
+            }
+
+            .kmfdm-page__navigation_sticky.kmfdm-page__navigation-profile {
+                bottom: -5px;
+            }
+
+            .kmfdm-sub-header__user.kmfdm-profile:hover:before {
+                content: "";
+                position: absolute;
+                top: -50px;
+                width: 200px;
+                z-index: 1;
+                height: 200px;
+            }
+
+            .kmfdm-profile__body {
+                position: relative;
+                z-index: 2;
+            }
+        }
+
+        .kmfdm-courses__item {
+            padding: 0 0 34px 0 !important;
+            border-radius: 8px;
+            border: 1px solid rgb(245 247 248);
+        }
+
+        .kmfdm-lesson__summary {
+            position: absolute !important;
+            bottom: -40px;
+            width: 100%;
+            padding: 4px 5px;
+            border-radius: 0 0 8px 8px;
+            background: transparent !important;
+            right: 0;
+            border-top: none;
+        }
+
+        .kmfdm-courses__list .kmfdm-lesson__heading {
+            display: none;
+        }
+
+        .kmfdm-mobile__navigation {
+            z-index: 2000 !important;
+        }
+
+        .kmfdm-button_stroke_inverted {
+            background-color: transparent !important;
+            border-color: var(--style_buttons_bg) !important;
+            color: var(--style_buttons_bg) !important;
+        }
+
+        .kmfdm-button_stroke_black_white, .kmfdm-button_stroke_inverted:hover {
+            background-color: var(--style_buttons_bg) !important;
+            border-color: var(--style_buttons_bg) !important;
+            color: var(--style_buttons_color) !important;
+        }
+
+        .overlay-contentscale.open {
+            background-image: none;
+            background-color: #f5f7f8;
+        }
+
+        html:not(.isMobile) .kmfdm-contents__dropdown, html:not(.isMobile) .kmfdm-training {
+            background-color: transparent !important;
+        }
+
+        :root .kmfdm-contents__item:last-child:after {
+            background: #e7e7e7 !important;
+        }
+
+        .kmfdm-contents__item::before {
+            box-shadow: 0 0 0 4px #f8f7f8 !important;
+        }
+
+        .kmfdm-sign_action {
+            background: var(--style_buttons_bg) !important;
+            color: var(--style_buttons_color) !important;
+        }
+
+        @media (max-width: 900px) {
+            .kmfdm-training__action .kmfdm-sign_action {
+                background: var(--style_buttons_bg) !important;
+            }
+        }
+
+        .kmfdm-sign_action.kmfdm-sign_next::after {
+            background-image: none !important;
+            content: "➜" !important;
+        }
+
+        #overlay-body {
+            box-shadow: none !important;
+        }
+
+        #goog-gt- + div, #goog-gt-tt + div {
+            display: none !important;
+        }
+
+        body .kmfdm-page {
+            position: relative;
+            z-index: 1001;
+        }
+
+        :root .kmfdm-page__sidebar-close, :root .kmfdm-filter-close, .overlay-close {
+            background: transparent;
+            cursor: pointer;
+        }
+
+        html:not(.isMobile) .kmfdm-lesson {
+            background-color: transparent !important;
+            border-radius: 15px !important;
+        }
+
+        .isMobile .kmfdm-lesson__summary {
+            background: #fff !important;
+            bottom: -32px;
+        }
+
+        .kmfdm-article__index {
+            display: none !important;
+        }
+
+        .kmfdm-courses__list .kmfdm-courses__item:before {
+            background-color: #e4e4e4;
+            background: linear-gradient(270deg, #e4e4e4, #9d9d9d, #dfdfdf);
+            background-size: 600% 600%;
+            -webkit-animation: loaderGradient 1s ease infinite;
+            -moz-animation: loaderGradient 1s ease infinite;
+            animation: loaderGradient 1s ease infinite;
+            content: "";
+            position: absolute;
+            left: 16px;
+            top: 0;
+            bottom: 50px;
+            right: 16px;
+            border-radius: 15px;
+        }
+
+        @media (max-width: 900px) {
+            .kmfdm-courses__list .kmfdm-courses__item:before {
+                right: auto !important;
+                width: calc(100% - 18px) !important;
+            }
+        }
+
+        .kmfdm-courses__item {
+            border: none !important;
+            position: relative;
+        }
+
+        @-webkit-keyframes loaderGradient {
+            0% {
+                background-position: 0% 50%
+            }
+            50% {
+                background-position: 100% 50%
+            }
+            100% {
+                background-position: 0% 50%
+            }
+        }
+
+        @-moz-keyframes loaderGradient {
+            0% {
+                background-position: 0% 50%
+            }
+            50% {
+                background-position: 100% 50%
+            }
+            100% {
+                background-position: 0% 50%
+            }
+        }
+
+        @keyframes loaderGradient {
+            0% {
+                background-position: 0% 50%
+            }
+            50% {
+                background-position: 100% 50%
+            }
+            100% {
+                background-position: 0% 50%
+            }
+        }
+
+        @media (max-width: 1220px) {
+            .module-education .header_title:after {
+                width: calc(100vw - 130px);
+            }
+        }
+
+        /* Portfolio */
+
+        .portfolioWrap {
+            border: none;
+            margin-bottom: 20px;
+            min-height: 400px;
+            height: auto;
+            display: inline-flex;
+            overflow-y: visible;
+            max-width: calc(50% - 15px);
+            margin: 5px;
+        }
+
+        .isMobile .portfolioWrap {
+            max-width: 100%;
+        }
+
+        .portfolioAvatar {
+            border-radius: 20px !important;
+        }
+
+        .portfolioAvatar, .portfolioWrap .col-xs-9, .portfolioWrap .col-xs-3 {
+            width: 100%;
+        }
+
+        .portfolioWrap .col-xs-9 {
+            height: 5px;
+        }
+
+        .portfolio_actions .col-xs-4 {
+            width: 100%;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .portfolioWrap h2 {
+            font-weight: 400 !important;
+            font-size: 20px !important;
+        }
+
+        @media (max-width: 900px) {
+            .portfolioWrap > .row > .col-xs-12 {
+                padding: 6px 0 0 10px !important;
+                border-radius: 3px;
+                margin-top: -15px;
+                background: linear-gradient(45deg, #0e78af, #28a0de);
+                color: #fff !important;
+            }
+
+            .portfolioWrap {
+                flex-flow: column;
+            }
+
+            .links__item {
+                padding: 5px;
+                background: rgba(0, 0, 0, .5);
+            }
+
+            .links__item-left, .links__item-right {
+                width: 100%;
+            }
+
+            .links__item-screen {
+                height: 130px;
+            }
+
+            .links__item {
+                padding: 5px;
+                background: rgba(0, 0, 0, .5);
+            }
+
+            .links__item__footer .b-share {
+                display: none;
+            }
+        }
+
+        .zero-copyed {
+            z-index: 3000000001;
+        }
+
+        html:not(.isMobile) .portfolioWrap .col-xs-4 {
+            position: static;
+        }
+
+        html:not(.isMobile) .portfolio_actions .kmfdm-event__submit {
+            width: 200px !important;
+            position: absolute;
+            right: 14px;
+            bottom: -52px;
+        }
+
+        /* Portfolio end */
+        .isMobile .kmfdm-informer__container {
+            margin-top: 0 !important;
+        }
+
+        .isMobile .promo_button_decline {
+            margin-top: 0 !important;
+        }
+
+        .kmfdm-footer__title {
+            display: none !important;
+        }
+
+        .isMobile .portfolioWrap .row:first-child {
+            display: none;
+        }
+
+        .isMobile .portfolioWrap {
+            min-height: 0 !important;
+        }
+
+        .portfolioWrap h2 {
+            display: none !important;
+        }
+
+        .portfolio_actions .col-xs-4 {
+            margin: 0;
+        }
+
+        .kmfdm-partnership__head {
+            padding: 0 !important;
+        }
+
+        .isMobile #worldMapChartdiv {
+            pointer-events: none
+        }
+
+        @media (max-width: 600px) {
+            .row-info {
+                display: flex;
+                flex-flow: column-reverse;
+            }
+
+            .col-sm-9, .col-sm-2, .col-sm-1 {
+                padding: 0 4px;
+            }
+
+            .module-pages .block {
+                padding: 5px;
+            }
+
+            .module-pages .block p {
+                margin-left: 5px
+            }
+        }
+    </style>
+</head>
+
+<body class="kmfdm-body custom-css-body module-main binded">
+
+
+<div class="kmfdm-page" style="background: white;">
+
+    <div style="width: 1000px; margin: 0 auto;">
+        <br>
+        <br>
+        <h1>.action</h1>
+
+        <button class="action action--minus" type="button">
+            -
+        </button>
+        <button class="action action--plus" type="button">
+            +
+        </button>
+        <button class="action action--prev" type="button">
+            ←
+        </button>
+        <button class="action action--next" type="button">
+            →
+        </button>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+</div>
+
+
+<script src="../vendors/outline/outline.js"></script>
+<script src="../legacy/jquery-2.1.1.min.js"></script>
+<script src="../legacy/bootstrap.min.js"></script>
+<script src="../scripts/_sort.js"></script>
+<script src="../scripts/_aside.js"></script>
+<script src="../scripts/_floor.js"></script>
+<script src="../scripts/_carousel.js"></script>
+<script src="../scripts/_flyover.js"></script>
+
+</body>
+</html>

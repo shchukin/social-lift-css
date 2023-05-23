@@ -2,17 +2,39 @@
     position: fixed;
     z-index: 1025; /* Выше сайта, меньше чем модалки в бутстрапе */
     opacity: 0;
-    background-color: #FFFFFF;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.11);
-    border-radius: 24px;
+    background-color: var(--window-background);
+    box-shadow: var(--window-shadow);
+    border-radius: var(--window-radius);
     visibility: hidden;
     transition: opacity 0.2s ease,
                 visibility 0.2s ease;
 }
+    .flyover__close {
+        display: none;
+    }
 
-.flyover--visible,
-.flyover:hover {
+.flyover--visible {
     opacity: 1;
     visibility: visible;
 }
 
+
+@media (min-width: 992px) {
+    /* Перехватываем наведение когда исчезает .flyover--visible */
+    .flyover:hover {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@media (max-width: 991px) {
+    .flyover {
+
+    }
+        .flyover__close {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            display: block;
+        }
+}

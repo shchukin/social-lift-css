@@ -46,3 +46,60 @@
     .profile__more {
         margin-top: 6px;
     }
+
+
+@media (max-width: 991px) {
+
+    .profile {
+        /*width: 360px;*/
+        padding-top: 20px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+        .profile__preview {
+            margin-top: 36px;
+            /*float: right;*/
+            /*margin-left: 24px;*/
+            /*margin-bottom: 10px;*/
+        }
+
+        .profile__heading {
+            font-family: var(--UI-16-16-font-family) !important;
+            /*font-weight: bold;*/
+            font-size: var(--UI-16-16-font-size) !important;
+            line-height: var(--UI-16-16-line-height) !important;
+            letter-spacing: var(--UI-16-16-letter-spacing) !important;
+        }
+
+        .profile__speed {
+            margin-top: 12px;
+        }
+
+        .profile__row {
+            /*margin-top: 8px;*/
+            /*display: flex;*/
+            /*align-items: baseline;*/
+            /*gap: 12px;*/
+        }
+
+        .profile__speed + .profile__row {
+            /*margin-top: 3px;*/
+        }
+
+        .profile__boosters {
+            /*margin-top: 16px;*/
+            /*border-top: 1px solid #EBECF1;*/
+            /*border-bottom: 1px solid #EBECF1;*/
+            /*padding-top: 16px;*/
+            /*padding-bottom: 16px;*/
+            /*display: flex;*/
+            /*align-items: flex-start;*/
+            /*flex-wrap: wrap;*/
+            /*gap: 8px;*/
+        }
+
+        .profile__more {
+            /*margin-top: 6px;*/
+        }
+}
+

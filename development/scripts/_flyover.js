@@ -18,13 +18,16 @@
         $('[data-flyover]').on('click', function () {
             showFlyover($(this), $($(this).attr('data-flyover')));
         });
+        $('.flyover__close').on('click', function () {
+            hideFlyover($(this).parents('.flyover'));
+        });
     }
 
 
     function showFlyover(handler, target) {
         if (target.hasClass('flyover--avatar')) {
             target.css({
-                'bottom': $(window).outerHeight() + 8 - handler[0].getBoundingClientRect().top,
+                'bottom': $(window).outerHeight() - handler[0].getBoundingClientRect().top,
                 'left': handler[0].getBoundingClientRect().left - (target.outerWidth() / 2) + (handler.outerWidth() / 2)
             });
         }
