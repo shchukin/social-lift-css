@@ -1,53 +1,63 @@
+/**
+ * Здесь сложный момент с тем когда вызывать функции showFlyover и hideFlyover.
+ * На десктопах это делается по mouseenter и mouseleave, а на смартфонах по click.
+ * Сложность в том, что бы понять что есть десптоп, а что смартфорн.
+ * Будем следовать за адаптивностью в стилях (ширина 992+) и проверять условие:
+ * window.matchMedia('(min-width: 992px)').matches
+ */
+
 (function($) {
-    var target;
-    var peak;
 
-    $('[data-flyover]').on('mouseenter', function () {
+    if (window.matchMedia('(min-width: 992px)').matches) {
+        $('[data-flyover]').on('mouseenter', function () {
+            showFlyover($(this), $($(this).attr('data-flyover')));
+        }).on('mouseleave', function () {
+            hideFlyover($($(this).attr('data-flyover')))
+        });
+    } else {
+        $('[data-flyover]').on('click', function () {
+            showFlyover($(this), $($(this).attr('data-flyover')));
+        });
+    }
 
-        target = $($(this).attr('data-flyover'));
 
-        if( target.hasClass('flyover--avatar') ) {
+    function showFlyover(handler, target) {
+        if (target.hasClass('flyover--avatar')) {
             target.css({
-                'bottom': $(window).outerHeight() + 8 - $(this)[0].getBoundingClientRect().top,
-                'left': $(this)[0].getBoundingClientRect().left - (target.outerWidth() / 2) + ($(this).outerWidth() / 2)
+                'bottom': $(window).outerHeight() + 8 - handler[0].getBoundingClientRect().top,
+                'left': handler[0].getBoundingClientRect().left - (target.outerWidth() / 2) + (handler.outerWidth() / 2)
             });
         }
-
         // Few more examples:
         // if( target.hasClass('flyover--side-card') ) {
         //     target.css({
-        //         'top': $(this)[0].getBoundingClientRect().top + $(this).height(),
-        //         'right': $(window).outerWidth() - $(this)[0].getBoundingClientRect().left - $(this).outerWidth(),
+        //         'top': handler[0].getBoundingClientRect().top + handler.height(),
+        //         'right': $(window).outerWidth() - handler[0].getBoundingClientRect().left - handler.outerWidth(),
         //         'padding-top': '15px'
         //     });
         // }
-        //
         // if (target.hasClass('flyover--org-angle')) {
         //     target.css({
-        //         'top': $(this)[0].getBoundingClientRect().top + 36,
-        //         'right': $(window).outerWidth() - $(this)[0].getBoundingClientRect().left - 26,
+        //         'top': handler[0].getBoundingClientRect().top + 36,
+        //         'right': $(window).outerWidth() - handler[0].getBoundingClientRect().left - 26,
         //         'padding-bottom': '15px'
         //     });
         // }
-
         target.addClass('flyover--visible');
+    }
 
-    }).on('mouseleave', function () {
-        target.removeClass('flyover--visible');
-    });
+    function hideFlyover(target) {
+        if(target.length) {
+            target.removeClass('flyover--visible');
+        } else {
+            $('.flyover').removeClass('flyover--visible');
+        }
+    }
 
 
     /* to reload on next hover */
-    $(window).on('scroll', function () {
-        $('.flyover').removeClass('flyover--visible');
-    });
-
-    $('.scrollbar').on('scroll', function () {
-        $('.flyover').removeClass('flyover--visible');
-    });
-
-    $('.carousel__container').on('scroll', function () {
-        $('.flyover').removeClass('flyover--visible');
-    });
+    $(window).on('scroll', hideFlyover);
+    $('.scrollbar').on('scroll', hideFlyover);
+    $('.carousel__container').on('scroll', hideFlyover);
 
 })(jQuery);
