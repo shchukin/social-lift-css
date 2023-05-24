@@ -39,7 +39,7 @@
         .modal-dialog {
             width: calc(100% - 16px);
             max-width: 600px;
-            margin: 8px;
+            margin: var(--modal-spacing);
         }
 
         .modal-content {

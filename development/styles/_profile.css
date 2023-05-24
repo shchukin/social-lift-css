@@ -51,7 +51,8 @@
 @media (max-width: 991px) {
 
     .profile {
-        /*width: 360px;*/
+        width: auto;
+        max-width: 360px;
         padding-top: 20px;
         padding-left: 16px;
         padding-right: 16px;
