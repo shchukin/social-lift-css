@@ -18,7 +18,7 @@
     }
 
     .floor-card__body {
-
+        overflow: hidden;
     }
         .floor-card__heading {
             font-family: var(--UI-16-16-font-family);
@@ -36,8 +36,12 @@
             margin-top: 4px;
             display: flex;
             align-items: flex-start;
+            overflow: hidden;
             gap: 8px;
         }
+            .floor-card__boosters .booster {
+                flex-shrink: 0;
+            }
 
     .floor-card__counter {
         margin-left: auto;
