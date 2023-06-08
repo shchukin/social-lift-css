@@ -126,7 +126,7 @@
                 .stage__item {
                     margin-top: 8px;
                     margin-bottom: 8px;
-                    overflow: hidden;
+                    min-width: 0;
                 }
 
         .stage__load-more {
